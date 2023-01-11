@@ -1,0 +1,307 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ParticleAuthService
+import CryptoSwift
+import Foundation
+@_exported import ParticleAuthService
+import ParticleNetworkBase
+import RxAlamofire
+import RxCocoa
+import RxSwift
+import SafariServices
+import Swift
+import SwiftyJSON
+import SwiftyUserDefaults
+import UIKit
+import WebKit
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class ParticleAuthService : ObjectiveC.NSObject {
+  @objc public static let sdkVersion: Swift.String
+  public static func login(type: LoginType, account: Swift.String? = nil, supportAuthType: [SupportAuthType] = [SupportAuthType.all], loginFormMode: Swift.Bool? = nil) -> RxSwift.Single<UserInfo?>
+  @objc public static func login(type: LoginType, account: Swift.String? = nil, supportAuthType: [SupportAuthType] = [SupportAuthType.all], loginFormMode: Swift.Bool = false, successHandler: @escaping ((UserInfo?) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public static func logout() -> RxSwift.Single<Swift.String>
+  @objc public static func logout(successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  @objc public static func isLogin() -> Swift.Bool
+  public static func signMessage(_ message: Swift.String) -> RxSwift.Single<Swift.String>
+  @objc public static func signMessage(_ message: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public static func signTransaction(_ transaction: Swift.String) -> RxSwift.Single<Swift.String>
+  public static func signAllTransactions(_ transactions: [Swift.String]) -> RxSwift.Single<[Swift.String]>
+  @objc public static func signTransaction(_ transaction: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  @objc public static func signAllTransactions(_ transactions: [Swift.String], successHandler: @escaping (([Swift.String]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public static func signAndSendTransaction(_ message: Swift.String) -> RxSwift.Single<Swift.String>
+  @objc public static func signAndSendTransaction(_ message: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public static func signTypedData(_ message: Swift.String, version: EVMSignTypedDataVersion) -> RxSwift.Single<Swift.String>
+  @objc public static func signTypedData(_ message: Swift.String, version: EVMSignTypedDataVersion, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  @objc public static func getAddress() -> Swift.String
+  @objc public static func getUserInfo() -> UserInfo?
+  @objc public static func handleUrl(_ url: Foundation.URL) -> Swift.Bool
+  public static func setChainInfo(_ chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo) -> RxSwift.Single<UserInfo?>
+  @objc public static func setChainInfo(_ chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, successHandler: @escaping ((UserInfo?) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  @objc public static func setModalPresentStyle(_ modalStyle: ParticleAuthModalStyle)
+  @objc public static func setInterfaceStyle(_ style: UIKit.UIUserInterfaceStyle)
+  @objc public static func setDisplayWallet(_ displayWallet: Swift.Bool = false)
+  @objc public static func openWebWallet()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum ParticleAuthModalStyle : Swift.Int {
+  case formSheet = 0
+  case fullScreen = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum ParticleWebType : Swift.Int {
+  case safari = 0
+  case webView = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum EVMSignTypedDataVersion : Swift.Int, Swift.RawRepresentable {
+  case v1
+  case v3
+  case v4
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public class var topMost: UIKit.UIViewController? {
+    get
+  }
+}
+@objc public enum LoginType : Swift.Int, Swift.RawRepresentable {
+  case email
+  case phone
+  case google
+  case facebook
+  case apple
+  case discord
+  case github
+  case twitch
+  case microsoft
+  case linkedin
+  case jwt
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc public class SupportAuthType : ObjectiveC.NSObject {
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc public static var all: SupportAuthType {
+    @objc get
+  }
+  @objc public static var google: SupportAuthType {
+    @objc get
+  }
+  @objc public static var facebook: SupportAuthType {
+    @objc get
+  }
+  @objc public static var apple: SupportAuthType {
+    @objc get
+  }
+  @objc public static var discord: SupportAuthType {
+    @objc get
+  }
+  @objc public static var github: SupportAuthType {
+    @objc get
+  }
+  @objc public static var twitch: SupportAuthType {
+    @objc get
+  }
+  @objc public static var microsoft: SupportAuthType {
+    @objc get
+  }
+  @objc public static var linkedin: SupportAuthType {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public class UserInfo : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let token: Swift.String
+  @objc final public let uuid: Swift.String
+  @objc final public let wallets: [WalletInfo]
+  @objc final public let id: Swift.Int
+  @objc final public let avatar: Swift.String?
+  @objc final public let createdAt: Swift.String?
+  @objc final public let updateAt: Swift.String?
+  @objc final public let email: Swift.String?
+  @objc final public let appleEmail: Swift.String?
+  @objc final public let appleId: Swift.String?
+  @objc final public let facebookEmail: Swift.String?
+  @objc final public let facebookId: Swift.String?
+  @objc final public let googleEmail: Swift.String?
+  @objc final public let googleId: Swift.String?
+  @objc final public let name: Swift.String?
+  @objc final public let phone: Swift.String?
+  @objc final public let discordId: Swift.String?
+  @objc final public let discordEmail: Swift.String?
+  @objc final public let githubId: Swift.String?
+  @objc final public let githubEmail: Swift.String?
+  @objc final public let twitchId: Swift.String?
+  @objc final public let twitchEmail: Swift.String?
+  @objc final public let microsoftId: Swift.String?
+  @objc final public let microsoftEmail: Swift.String?
+  @objc final public let linkedinId: Swift.String?
+  @objc final public let linkedinEmail: Swift.String?
+  @objc final public let thirdParty: ThirdPartyWarpper?
+  @objc public init(token: Swift.String, uuid: Swift.String, wallets: [WalletInfo], id: Swift.Int, avatar: Swift.String?, createdAt: Swift.String?, updateAt: Swift.String?, email: Swift.String?, appleEmail: Swift.String?, appleId: Swift.String?, facebookEmail: Swift.String?, facebookId: Swift.String?, googleEmail: Swift.String?, googleId: Swift.String?, name: Swift.String?, phone: Swift.String?, discordId: Swift.String?, discordEmail: Swift.String?, githubId: Swift.String?, githubEmail: Swift.String?, twitchId: Swift.String?, twitchEmail: Swift.String?, microsoftId: Swift.String?, microsoftEmail: Swift.String?, linkedinId: Swift.String?, linkedinEmail: Swift.String?, thirdParty: ThirdPartyWarpper?)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  public func jsonStringSnake() -> Swift.String?
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class WalletInfo : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let uuid: Swift.String
+  @objc final public let chainName: Swift.String
+  @objc final public let publicAddress: Swift.String
+  @objc public init(uuid: Swift.String, chainName: Swift.String, publicAddress: Swift.String)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class ThirdPartyWarpper : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let provider: Swift.String?
+  @objc final public let userInfo: ThirdPartyUserInfoWarpper?
+  @objc public init(provider: Swift.String?, userInfo: ThirdPartyUserInfoWarpper?)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class ThirdPartyUserInfoWarpper : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let id: Swift.String?
+  @objc final public let name: Swift.String?
+  @objc final public let email: Swift.String?
+  @objc final public let picture: Swift.String?
+  @objc public init(id: Swift.String?, name: Swift.String?, email: Swift.String?, picture: Swift.String?)
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+extension Swift.String {
+  public func urlEncoded() -> Swift.String
+  public func urlDecoded() -> Swift.String
+}
+extension SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsArrayBridge<[Self.T]> {
+    get
+  }
+}
+extension Foundation.Date : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsObjectBridge<Foundation.Date> {
+    get
+  }
+}
+extension Swift.String : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsStringBridge {
+    get
+  }
+}
+extension Swift.Int : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsIntBridge {
+    get
+  }
+}
+extension Swift.Double : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsDoubleBridge {
+    get
+  }
+}
+extension Swift.Bool : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsBoolBridge {
+    get
+  }
+}
+extension Foundation.Data : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsDataBridge {
+    get
+  }
+}
+extension Foundation.URL : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsUrlBridge {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsKeyedArchiverBridge<[Foundation.URL]> {
+    get
+  }
+}
+extension SwiftyUserDefaults.DefaultsSerializable where Self : Swift.Decodable, Self : Swift.Encodable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsCodableBridge<Self> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsCodableBridge<[Self]> {
+    get
+  }
+}
+extension SwiftyUserDefaults.DefaultsSerializable where Self : Swift.RawRepresentable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsRawRepresentableBridge<Self> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsRawRepresentableArrayBridge<[Self]> {
+    get
+  }
+}
+extension SwiftyUserDefaults.DefaultsSerializable where Self : Foundation.NSCoding {
+  public static var _defaults: SwiftyUserDefaults.DefaultsKeyedArchiverBridge<Self> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsKeyedArchiverBridge<[Self]> {
+    get
+  }
+}
+extension Swift.Dictionary : SwiftyUserDefaults.DefaultsSerializable where Key == Swift.String {
+  public typealias T = [Key : Value]
+  public typealias Bridge = SwiftyUserDefaults.DefaultsObjectBridge<Swift.Dictionary<Key, Value>.T>
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsArrayBridge<[Swift.Dictionary<Key, Value>.T]>
+  public static var _defaults: Swift.Dictionary<Swift.String, Value>.Bridge {
+    get
+  }
+  public static var _defaultsArray: Swift.Dictionary<Swift.String, Value>.ArrayBridge {
+    get
+  }
+}
+extension Swift.Array : SwiftyUserDefaults.DefaultsSerializable where Element : SwiftyUserDefaults.DefaultsSerializable {
+  public typealias T = [Element.T]
+  public typealias Bridge = Element.ArrayBridge
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsObjectBridge<[Swift.Array<Element>.T]>
+  public static var _defaults: Swift.Array<Element>.Bridge {
+    get
+  }
+  public static var _defaultsArray: Swift.Array<Element>.ArrayBridge {
+    get
+  }
+}
+public enum ParticleProvider {
+  public static func request(method: Swift.String, params: [Swift.Encodable]) -> RxSwift.Single<Foundation.Data?>
+}
+extension ParticleAuthModalStyle : Swift.Equatable {}
+extension ParticleAuthModalStyle : Swift.Hashable {}
+extension ParticleAuthModalStyle : Swift.RawRepresentable {}
+extension ParticleWebType : Swift.Equatable {}
+extension ParticleWebType : Swift.Hashable {}
+extension ParticleWebType : Swift.RawRepresentable {}
+extension EVMSignTypedDataVersion : Swift.Equatable {}
+extension EVMSignTypedDataVersion : Swift.Hashable {}
+extension LoginType : Swift.Equatable {}
+extension LoginType : Swift.Hashable {}

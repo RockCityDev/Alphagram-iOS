@@ -1,0 +1,11 @@
+framework module ParticleWalletConnect {
+  umbrella header "ParticleWalletConnect.h"
+
+  export *
+  module * { export * }
+}
+
+module ParticleWalletConnect.Swift {
+  header "ParticleWalletConnect-Swift.h"
+  requires objc
+}

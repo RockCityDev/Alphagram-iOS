@@ -1,0 +1,116 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ParticleWalletConnect
+import Alamofire
+import CryptoSwift
+import Foundation
+@_exported import ParticleWalletConnect
+import RxAlamofire
+import RxSwift
+import Swift
+import SwiftyUserDefaults
+import UIKit
+import WalletConnectSwift
+import _Concurrency
+extension WalletConnectSwift.Session : SwiftyUserDefaults.DefaultsSerializable, Swift.Equatable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsCodableBridge<WalletConnectSwift.Session> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsCodableBridge<[WalletConnectSwift.Session]> {
+    get
+  }
+  public static func == (lhs: WalletConnectSwift.Session, rhs: WalletConnectSwift.Session) -> Swift.Bool
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[WalletConnectSwift.Session]>
+  public typealias Bridge = SwiftyUserDefaults.DefaultsCodableBridge<WalletConnectSwift.Session>
+}
+public struct WalletMetaData {
+  public let name: Swift.String
+  public let icon: Foundation.URL
+  public let url: Foundation.URL
+  public let description: Swift.String?
+  public init(name: Swift.String, icon: Foundation.URL, url: Foundation.URL, description: Swift.String?)
+}
+public enum WCResult<Encodable> {
+  case success(Encodable)
+  case failure(WCResponseError)
+}
+public struct WCResponseError : Swift.Error {
+  public let code: Swift.Int?
+  public let message: Swift.String?
+  public var data: Swift.String?
+  public init(code: Swift.Int?, message: Swift.String?, data: Swift.String?)
+}
+public enum ParticleMethod : Swift.String {
+  case eth_sendTransaction
+  case eth_signTypedData
+  case eth_signTypedData_v1
+  case eth_signTypedData_v3
+  case eth_signTypedData_v4
+  case personal_sign
+  case eth_chainId
+  case eth_requestAccounts
+  case eth_accounts
+  case wallet_switchEthereumChain
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol ParticleWalletConnectDelegate : AnyObject {
+  func request(topic: Swift.String, method: Swift.String, params: [Swift.Encodable], completion: @escaping (WCResult<Foundation.Data?>) -> Swift.Void)
+  func didConnectSession(_ session: WalletConnectSwift.Session)
+  func didDisconnect(_ session: WalletConnectSwift.Session)
+  func shouldStartSession(_ session: WalletConnectSwift.Session, completion: @escaping (Swift.String, Swift.Int) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class ParticleWalletConnect {
+  public static let shared: ParticleWalletConnect
+  weak public var delegate: ParticleWalletConnectDelegate?
+  public static func initialize(_ walletMata: WalletMetaData)
+  public func setRpcUrl(_ rpcUrl: Swift.String)
+  public func connect(code: Swift.String)
+  public func disconnect(session: WalletConnectSwift.Session)
+  public func updateSession(_ session: WalletConnectSwift.Session, publicAddress: Swift.String, chainId: Swift.Int)
+  public func getAllSessions() -> [WalletConnectSwift.Session]
+  public func removeSession(by topic: Swift.String)
+  public func getSession(by topic: Swift.String) -> WalletConnectSwift.Session?
+  @objc deinit
+}
+extension ParticleWalletConnect : WalletConnectSwift.ServerDelegate {
+  public func server(_ server: WalletConnectSwift.Server, didFailToConnect url: WalletConnectSwift.WCURL)
+  public func server(_ server: WalletConnectSwift.Server, shouldStart session: WalletConnectSwift.Session, completion: @escaping (WalletConnectSwift.Session.WalletInfo) -> Swift.Void)
+  public func server(_ server: WalletConnectSwift.Server, didConnect session: WalletConnectSwift.Session)
+  public func server(_ server: WalletConnectSwift.Server, didDisconnect session: WalletConnectSwift.Session)
+  public func server(_ server: WalletConnectSwift.Server, didUpdate session: WalletConnectSwift.Session)
+}
+extension ParticleWalletConnect : WalletConnectSwift.RequestHandler {
+  public func canHandle(request: WalletConnectSwift.Request) -> Swift.Bool
+  public func handle(request: WalletConnectSwift.Request)
+}
+public struct Transaction : Swift.Codable {
+  public var from: Swift.String
+  public var to: Swift.String?
+  public var data: Swift.String
+  public var gas: Swift.String?
+  public var gasPrice: Swift.String?
+  public var value: Swift.String?
+  public var nonce: Swift.String?
+  public var type: Swift.String?
+  public var accessList: [Transaction.AccessListItem]?
+  public var chainId: Swift.String?
+  public var maxPriorityFeePerGas: Swift.String?
+  public var maxFeePerGas: Swift.String?
+  public struct AccessListItem : Swift.Codable {
+    public var address: Swift.String
+    public var storageKeys: [Swift.String]
+    public init(address: Swift.String, storageKeys: [Swift.String])
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public init(from: Swift.String, to: Swift.String?, data: Swift.String, gas: Swift.String?, gasPrice: Swift.String?, value: Swift.String?, nonce: Swift.String?, type: Swift.String?, accessList: [Transaction.AccessListItem]?, chainId: Swift.String?, maxPriorityFeePerGas: Swift.String?, maxFeePerGas: Swift.String?)
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension ParticleMethod : Swift.Equatable {}
+extension ParticleMethod : Swift.Hashable {}
+extension ParticleMethod : Swift.RawRepresentable {}

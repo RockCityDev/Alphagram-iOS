@@ -1,0 +1,8152 @@
+// Notifications
+"PUSH_MESSAGE_TEXT" = "%1$@|%2$@";
+"PUSH_MESSAGE_NOTEXT" = "%1$@|";
+"PUSH_MESSAGE_PHOTO" = "%1$@|";
+"PUSH_MESSAGE_PHOTO_SECRET" = "%1$@|";
+"PUSH_MESSAGE_VIDEO" = "%1$@|";
+"PUSH_MESSAGE_VIDEO_SECRET" = "%1$@|🔥 ";
+"PUSH_MESSAGE_ROUND" = "%1$@|";
+"PUSH_MESSAGE_CONTACT" = "%1$@|%2$@";
+"PUSH_MESSAGE_GEO" = "%1$@|📍 ";
+"PUSH_MESSAGE_GEOLIVE" = "%1$@|";
+"PUSH_MESSAGE_DOC" = "%1$@|📎 ";
+"PUSH_MESSAGE_AUDIO" = "%1$@|🎤 ";
+"PUSH_MESSAGE_GIF" = "%1$@|📹 GIF";
+"PUSH_ENCRYPTED_MESSAGE" = "%1$@";
+"PUSH_LOCKED_MESSAGE" = "%1$@";
+"PUSH_MESSAGE_SCREENSHOT" = "%1$@|!";
+"PUSH_ENCRYPTION_REQUEST" = "%1$@";
+"PUSH_ENCRYPTION_ACCEPT" = "%1$@";
+
+"PUSH_MESSAGE_POLL" = "%1$@|📊  \"%2$@\"";
+"PUSH_CHANNEL_MESSAGE_POLL" = "%1$@|📊  \"%2$@\"";
+"PUSH_PINNED_POLL" = "%1$@|";
+
+
+
+"PUSH_PINNED_QUIZ" = "%1$@| ";
+
+"PUSH_CHAT_MESSAGE_TEXT" = "%2$@|%1$@：%3$@";
+"PUSH_CHAT_MESSAGE_NOTEXT" = " %2$@|%1$@: ";
+"PUSH_CHAT_MESSAGE_PHOTO" = "%2$@|%1$@: 📷 ";
+"PUSH_CHAT_MESSAGE_VIDEO" = "%2$@|%1$@: 📹 ";
+"PUSH_CHAT_MESSAGE_ROUND" = "%2$@|%1$@: 📺 ";
+"PUSH_CHAT_MESSAGE_CONTACT" = "%2$@|%1$@%3$@";
+"PUSH_CHAT_MESSAGE_GEO" = "%2$@|%1$@ ";
+"PUSH_CHAT_MESSAGE_GEOLIVE" = "%2$@|%1$@: ";
+"PUSH_CHAT_MESSAGE_DOC" = "%2$@|%1$@: 📎 ";
+"PUSH_CHAT_MESSAGE_AUDIO" = "%2$@|%1$@: 🎤 ";
+"PUSH_CHAT_MESSAGE_GIF" = "%2$@|%1$@: 📹 GIF ";
+"PUSH_CHAT_CREATED" = "%2$@|%1$@ ";
+"PUSH_CHAT_TITLE_EDITED" = "%2$@|%1$@ ";
+"PUSH_CHAT_PHOTO_EDITED" = "%2$@|%1$@ ";
+
+"PUSH_CHAT_ADD_YOU" = "%2$@|%1$@ ";
+"PUSH_CHAT_DELETE_YOU" = "%2$@|%1$@ ";
+"PUSH_CHAT_DELETE_MEMBER" = "%2$@|%1$@  %3$@ ";
+"PUSH_CHAT_LEFT" = "%2$@|%1$@ ";
+
+
+"PUSH_MESSAGE_STICKER" = "%1$@|%2$@ ";
+"PUSH_CHAT_MESSAGE_STICKER" = "%2$@|%1$@  %3$@ ";
+
+"PUSH_CONTACT_JOINED" = "%1$@| Telegram ！";
+
+"PUSH_CHANNEL_MESSAGE_TEXT" = "%1$@|%2$@";
+"PUSH_CHANNEL_MESSAGE_NOTEXT" = "%1$@|";
+"PUSH_CHANNEL_MESSAGE_PHOTO" = "%1$@|";
+"PUSH_CHANNEL_MESSAGE_VIDEO" = "%1$@|📹 ";
+"PUSH_CHANNEL_MESSAGE_ROUND" = "%1$@|📺 ";
+"PUSH_CHANNEL_MESSAGE_DOC" = "%1$@|📎 ";
+"PUSH_CHANNEL_MESSAGE_STICKER" = "%1$@| %2$@ ";
+"PUSH_CHANNEL_MESSAGE_AUDIO" = "%1$@|🎤 ";
+"PUSH_CHANNEL_MESSAGE_CONTACT" = "%1$@|👤 %2$@";
+"PUSH_CHANNEL_MESSAGE_GEO" = "%1$@|📍 ";
+"PUSH_CHANNEL_MESSAGE_GEOLIVE" = "%1$@|";
+"PUSH_CHANNEL_MESSAGE_GIF" = "%1$@|📹 GIF ";
+
+"PUSH_MESSAGE_GAME" = "%1$@| %2$@";
+
+"PUSH_CHAT_MESSAGE_GAME" = "%2$@|%1$@  %3$@";
+
+"PUSH_MESSAGE_TEXT" = "%1$@|%2$@";
+"PUSH_MESSAGE_NOTEXT" = "%1$@|";
+"PUSH_MESSAGE_PHOTO" = "%1$@|";
+"PUSH_MESSAGE_PHOTO_SECRET" = "%1$@|";
+"PUSH_MESSAGE_VIDEO" = "%1$@|";
+"PUSH_MESSAGE_VIDEO_SECRET" = "%1$@|🔥 ";
+"PUSH_MESSAGE_SCREENSHOT" = "%1$@|!";
+"PUSH_MESSAGE_ROUND" = "%1$@|";
+"PUSH_MESSAGE_DOC" = "%1$@|📎 ";
+"PUSH_MESSAGE_STICKER" = "%1$@|%2$@ ";
+"PUSH_MESSAGE_AUDIO" = "%1$@|🎤 ";
+"PUSH_MESSAGE_CONTACT" = "%1$@|%2$@";
+"PUSH_MESSAGE_GEO" = "%1$@|📍 ";
+"PUSH_MESSAGE_GEOLIVE" = "%1$@|";
+"PUSH_MESSAGE_POLL" = "%1$@|📊  \"%2$@\"";
+
+"PUSH_MESSAGE_GIF" = "%1$@|📹 GIF";
+"PUSH_MESSAGE_GAME" = "%1$@| %2$@";
+
+
+
+"PUSH_MESSAGE_FWDS_TEXT_any" = " %d ";
+"PUSH_MESSAGE_PHOTO" = "%1$@|";
+
+"PUSH_MESSAGE_PHOTOS_TEXT_any" = " %d ";
+"PUSH_MESSAGE_VIDEO" = "%1$@|";
+
+"PUSH_MESSAGE_VIDEOS_TEXT_any" = " %d ";
+"PUSH_MESSAGE_ROUND" = "%1$@|";
+
+
+
+"PUSH_ALBUM" = "%1$@|📷📹 ";
+
+
+
+
+
+
+
+"PUSH_CHANNEL_MESSAGE_TEXT" = "%1$@|%2$@";
+"PUSH_CHANNEL_MESSAGE_NOTEXT" = "%1$@|";
+"PUSH_CHANNEL_MESSAGE_PHOTO" = "%1$@|";
+"PUSH_CHANNEL_MESSAGE_VIDEO" = "%1$@|📹 ";
+"PUSH_CHANNEL_MESSAGE_ROUND" = "%1$@|📺 ";
+"PUSH_CHANNEL_MESSAGE_DOC" = "%1$@|📎 ";
+"PUSH_CHANNEL_MESSAGE_STICKER" = "%1$@| %2$@ ";
+"PUSH_CHANNEL_MESSAGE_AUDIO" = "%1$@|🎤 ";
+"PUSH_CHANNEL_MESSAGE_CONTACT" = "%1$@|👤 %2$@";
+"PUSH_CHANNEL_MESSAGE_GEO" = "%1$@|📍 ";
+"PUSH_CHANNEL_MESSAGE_GEOLIVE" = "%1$@|";
+"PUSH_CHANNEL_MESSAGE_POLL" = "%1$@|📊  \"%2$@\"";
+
+"PUSH_CHANNEL_MESSAGE_GIF" = "%1$@|📹 GIF ";
+
+
+"PUSH_CHANNEL_MESSAGE_PHOTO" = "%1$@|";
+
+"PUSH_CHANNEL_MESSAGE_PHOTOS_TEXT_any" = " %d ";
+"PUSH_CHANNEL_MESSAGE_VIDEO" = "%1$@|📹 ";
+
+"PUSH_CHANNEL_MESSAGE_VIDEOS_TEXT_any" = " %d ";
+"PUSH_CHANNEL_MESSAGE_ROUND" = "%1$@|📺 ";
+
+
+
+
+
+
+
+"PUSH_CHAT_MESSAGE_TEXT" = "%2$@|%1$@：%3$@";
+"PUSH_CHAT_MESSAGE_NOTEXT" = " %2$@|%1$@: ";
+"PUSH_CHAT_MESSAGE_VIDEO" = "%2$@|%1$@: 📹 ";
+"PUSH_CHAT_MESSAGE_ROUND" = "%2$@|%1$@: 📺 ";
+"PUSH_CHAT_MESSAGE_DOC" = "%2$@|%1$@: 📎 ";
+"PUSH_CHAT_MESSAGE_STICKER" = "%2$@|%1$@  %3$@ ";
+"PUSH_CHAT_MESSAGE_AUDIO" = "%2$@|%1$@: 🎤 ";
+"PUSH_CHAT_MESSAGE_CONTACT" = "%2$@|%1$@%3$@";
+"PUSH_CHAT_MESSAGE_GEO" = "%2$@|%1$@ ";
+"PUSH_CHAT_MESSAGE_GEOLIVE" = "%2$@|%1$@: ";
+"PUSH_CHAT_MESSAGE_POLL" = "%2$@|%1$@: 📊   \"%3$@\"";
+
+"PUSH_CHAT_MESSAGE_GIF" = "%2$@|%1$@: 📹 GIF ";
+"PUSH_CHAT_MESSAGE_GAME" = "%2$@|%1$@  %3$@";
+"PUSH_CHAT_MESSAGE_INVOICE" = "%2$@|%1$@  %3$@ ";
+"PUSH_CHAT_CREATED" = "%2$@|%1$@ ";
+"PUSH_CHAT_TITLE_EDITED" = "%2$@|%1$@ edited the group\'s name";
+"PUSH_CHAT_PHOTO_EDITED" = "%2$@|%1$@ edited the group\'s photo";
+
+"PUSH_CHAT_ADD_YOU" = "%2$@|%1$@ ";
+"PUSH_CHAT_DELETE_MEMBER" = "%2$@|%1$@  %3$@ ";
+"PUSH_CHAT_DELETE_YOU" = "%2$@|%1$@ ";
+"PUSH_CHAT_LEFT" = "%2$@|%1$@ ";
+
+"PUSH_CHAT_JOINED" = "%2$@|%1$@ ";
+
+
+"PUSH_CHAT_MESSAGE_FWDS_TEXT_any" = "{author}  %d ";
+"PUSH_CHAT_MESSAGE_PHOTO" = "%2$@|%1$@: 📷 ";
+
+
+"PUSH_CHAT_MESSAGE_VIDEO" = "%2$@|%1$@: 📹 ";
+
+
+"PUSH_CHAT_MESSAGE_ROUND" = "%2$@|%1$@: 📺 ";
+"PUSH_CHAT_MESSAGE" = "%2$@|%1$@: ";
+
+
+"PUSH_CHAT_ALBUM" = "%2$@|%1$@: 📷📹 ";
+
+
+
+
+
+
+"PUSH_PINNED_TEXT" = "%1$@| “%2$@”";
+"PUSH_PINNED_NOTEXT" = "%1$@|📌 ";
+"PUSH_PINNED_PHOTO" = "%1$@|📌 ";
+"PUSH_PINNED_VIDEO" = "%1$@|📌 ";
+"PUSH_PINNED_ROUND" = "%1$@|📌 ";
+"PUSH_PINNED_DOC" = "%1$@|📌 ";
+"PUSH_PINNED_STICKER" = "%1$@| %2$@ ";
+"PUSH_PINNED_AUDIO" = "%1$@|📌 ";
+"PUSH_PINNED_CONTACT" = "%1$@|📌 : %2$@";
+"PUSH_PINNED_GEO" = "%1$@|📌 ";
+"PUSH_PINNED_GEOLIVE" = "%1$@|📌 ";
+"PUSH_PINNED_POLL" = "%1$@|";
+"PUSH_PINNED_QUIZ" = "%1$@| ";
+"PUSH_PINNED_GAME" = "%1$@|📌 ";
+"PUSH_PINNED_INVOICE" = "%1$@|";
+"PUSH_PINNED_GIF" = "%1$@|📌  GIF";
+
+"PUSH_CONTACT_JOINED" = "%1$@| Telegram ！";
+
+"PUSH_AUTH_UNKNOWN" = "| %1$@";
+"PUSH_AUTH_REGION" = "|： %1$@，： %2$@";
+
+
+"PUSH_VIDEO_CALL_REQUEST" = "%1$@| ！";
+"PUSH_PHONE_CALL_MISSED" = "%1$@|☎️ ";
+"PUSH_VIDEO_CALL_MISSED" = "%1$@| ";
+
+"PUSH_MESSAGE_GAME_SCORE" = "%1$@ %2$@%3$@";
+
+"PUSH_MESSAGE_CHANNEL_MESSAGE_GAME_SCORE" = "%1$@%2$@%3$@";
+
+
+"PUSH_CHAT_MESSAGE_GAME_SCORE" = "%1$@%2$@%3$@%4$@";
+
+
+
+
+"PUSH_REACT_PHOTO" = "%1$@|%2$@ ";
+"PUSH_REACT_VIDEO" = "%1$@|%2$@ ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"PUSH_REMINDER_TITLE" = "🗓 ";
+"PUSH_SENDER_YOU" = "📅 ";
+
+
+
+
+
+
+
+// Common
+"Common.OK" = "";
+"Common.Cancel" = "";
+"Common.Edit" = "";
+"Common.edit" = "";
+"Common.Done" = "";
+"Common.Next" = "";
+"Common.Delete" = "";
+"Common.Create" = "";
+"Common.Back" = "";
+"Common.Close" = "";
+"Common.Yes" = "";
+"Common.No" = "";
+"Common.TakePhotoOrVideo" = "";
+"Common.TakePhoto" = "";
+"Common.ChoosePhoto" = "";
+"Common.of" = "/";
+"Common.Search" = "";
+"Common.More" = "";
+"Common.Select" = "";
+"Items.NOfM" = "%2$@  %1$@";
+
+// State
+"State.Connecting" = "…";
+"State.connecting" = "";
+"State.ConnectingToProxy" = "…";
+"State.ConnectingToProxyInfo" = "";
+"State.Updating" = "…";
+"State.WaitingForNetwork" = "";
+
+"ChatState.Connecting" = "...";
+
+"ChatState.Updating" = "...";
+"ChatState.WaitingForNetwork" = "...";
+
+// Presence
+"Presence.online" = "";
+
+// Date
+"Month.GenJanuary" = "1";
+"Month.GenFebruary" = "2";
+"Month.GenMarch" = "3";
+"Month.GenApril" = "4";
+"Month.GenMay" = "5";
+"Month.GenJune" = "6";
+"Month.GenJuly" = "7";
+"Month.GenAugust" = "8";
+"Month.GenSeptember" = "9";
+"Month.GenOctober" = "10";
+"Month.GenNovember" = "11";
+"Month.GenDecember" = "12";
+"Month.ShortJanuary" = "1";
+"Month.ShortFebruary" = "2";
+"Month.ShortMarch" = "3";
+"Month.ShortApril" = "4";
+"Month.ShortMay" = "5";
+"Month.ShortJune" = "6";
+"Month.ShortJuly" = "7";
+"Month.ShortAugust" = "8";
+"Month.ShortSeptember" = "9";
+"Month.ShortOctober" = "10";
+"Month.ShortNovember" = "11";
+"Month.ShortDecember" = "12";
+"Weekday.ShortMonday" = "";
+"Weekday.ShortTuesday" = "";
+"Weekday.ShortWednesday" = "";
+"Weekday.ShortThursday" = "";
+"Weekday.ShortFriday" = "";
+"Weekday.ShortSaturday" = "";
+"Weekday.ShortSunday" = "";
+"Weekday.Today" = "";
+"Weekday.Yesterday" = "";
+
+"Calendar.ShortMon" = "";
+"Calendar.ShortTue" = "";
+"Calendar.ShortWed" = "";
+"Calendar.ShortThu" = "";
+"Calendar.ShortFri" = "";
+"Calendar.ShortSat" = "";
+"Calendar.ShortSun" = "";
+
+"Time.TodayAt" = " %@";
+"Time.YesterdayAt" = " %@";
+
+"LastSeen.JustNow" = "";
+ //three to ten
+ //one
+ //two
+ //three to ten
+ // more than ten
+"LastSeen.MinutesAgo_any" = " %@ "; // more than ten
+
+
+
+
+"LastSeen.HoursAgo_any" = " %@ ";
+
+
+"LastSeen.YesterdayAt" = " %@";
+"LastSeen.AtDate" = "%@";
+"LastSeen.TodayAt" = " %@";
+"LastSeen.Lately" = "";
+"LastSeen.WithinAWeek" = "";
+"LastSeen.WithinAMonth" = "";
+"LastSeen.ALongTimeAgo" = "";
+"LastSeen.Offline" = "";
+
+"Date.DialogDateFormat" = "{month} {day}";
+"Date.ChatDateHeader" = "%1$@ %2$@";
+"Date.ChatDateHeaderYear" = "%3$@  %1$@ %2$@";
+
+// Tour
+"Tour.Title1" = "Telegram";
+"Tour.Text1" = "****\n********";
+
+"Tour.Title2" = "";
+"Tour.Text2" = "**Telegram** \n";
+
+"Tour.Title3" = "";
+"Tour.Text3" = "**Telegram** \n";
+
+"Tour.Title4" = "";
+"Tour.Text4" = "**Telegram** \n";
+
+"Tour.Title5" = "";
+"Tour.Text5" = "**Telegram** \n。";
+
+"Tour.Title6" = "";
+"Tour.Text6" = "**Telegram** 、\n。";
+
+"Tour.StartButton" = "";
+
+// Login
+"Login.PhoneAndCountryHelp" = "。";
+"Login.CodeSentInternal" = " **Telegram** ";
+"Login.HaveNotReceivedCodeInternal" = "？";
+"Login.CodeSentSms" = "";
+"Login.Code" = "";
+"Login.WillCallYou" = "Telegram  %@ ";
+"Login.CallRequestState2" = " Telegram …";
+"Login.CallRequestState3" = "Telegram \n[？]";
+"Login.EmailNotConfiguredError" = "。";
+"Login.EmailCodeSubject" = "%@, no code";
+"Login.EmailCodeBody" = "My phone number is:\n%@\nI can't get an activation code for Telegram.";
+"Login.UnknownError" = "，";
+"Login.InvalidCodeError" = "，。";
+"Login.NetworkError" = "。";
+"Login.CodeExpiredError" = "，。";
+"Login.CodeFloodError" = "。。";
+"Login.InvalidPhoneError" = "，。";
+"Login.InvalidFirstNameError" = "，。";
+"Login.InvalidLastNameError" = "，。";
+
+"Login.InvalidPhoneEmailSubject" = ": %@";
+"Login.InvalidPhoneEmailBody" = ": %1$@\nTelegram，。\nApp: %2$@\nOS : %3$@\n: %4$@\nMNC: %5$@";
+
+"Login.PhoneBannedEmailSubject" = ": %@";
+
+
+
+
+
+
+"Login.PhoneTitle" = "";
+"Login.PhonePlaceholder" = "";
+"Login.CountryCode" = "";
+"Login.InvalidCountryCode" = "";
+
+"Login.InfoTitle" = "";
+"Login.InfoAvatarAdd" = "";
+"Login.InfoAvatarPhoto" = "";
+"Login.InfoFirstNamePlaceholder" = "";
+"Login.InfoLastNamePlaceholder" = "";
+"Login.InfoDeletePhoto" = "";
+"Login.InfoHelp" = "。";
+
+// Login.SelectCountry
+"Login.SelectCountry.Title" = "/";
+
+// Dialog List
+"DialogList.TabTitle" = "";
+"DialogList.Title" = "";
+"DialogList.SearchLabel" = "";
+"DialogList.SearchLabelCompact" = "";
+"DialogList.NoMessagesTitle" = "";
+"DialogList.NoMessagesText" = "，，。";
+"DialogList.SingleTypingSuffix" = "%@ ";
+"DialogList.SingleRecordingAudioSuffix" = "%@ ";
+"DialogList.SingleUploadingPhotoSuffix" = "%@ ";
+"DialogList.SingleUploadingVideoSuffix" = "%@ ";
+"DialogList.SingleRecordingVideoMessageSuffix" = "%@ ";
+"DialogList.SingleUploadingFileSuffix" = "%@ ";
+"DialogList.MultipleTypingSuffix" = "%d ";
+"DialogList.Typing" = "";
+"DialogList.ClearHistoryConfirmation" = "";
+"DialogList.DeleteConversationConfirmation" = "";
+"DialogList.AwaitingEncryption" = " %@ …";
+"DialogList.EncryptionRejected" = "";
+"DialogList.EncryptionProcessing" = "…";
+"DialogList.EncryptedChatStartedOutgoing" = "%@ 。";
+"DialogList.EncryptedChatStartedIncoming" = "%@ 。";
+
+// Compose
+"Compose.TokenListPlaceholder" = "？";
+"Compose.NewMessage" = "";
+"Compose.NewGroup" = "";
+"Compose.NewGroupTitle" = "";
+"Compose.NewEncryptedChat" = "";
+"Compose.NewEncryptedChatTitle" = "";
+"Compose.Create" = "";
+
+// Contacts
+"Contacts.TabTitle" = "";
+"Contacts.Title" = "";
+"Contacts.FailedToSendInvitesMessage" = "。";
+"Contacts.AccessDeniedError" = "Telegram ";
+"Contacts.AccessDeniedHelpLandscape" = " %@ 「 -  - 」，\n Telegram 。";
+"Contacts.AccessDeniedHelpPortrait" = " %@ 「 -  - 」， Telegram 。";
+"Contacts.AccessDeniedHelpON" = "";
+"Contacts.InviteToTelegram" = " Telegram";
+"Contacts.InviteFriends" = "";
+"Contacts.SelectAll" = "";
+
+// Conversation
+"Conversation.InputTextPlaceholder" = "";
+"Conversation.typing" = "";
+"Conversation.MessageDeliveryFailed" = "，“”。";
+"Conversation.MessageDialogEdit" = "";
+"Conversation.MessageDialogRetry" = "";
+"Conversation.MessageDialogRetryAll" = " %1$d ";
+"Conversation.MessageDialogDelete" = "";
+"Conversation.LinkDialogOpen" = "";
+"Conversation.LinkDialogCopy" = "";
+"Conversation.ForwardTitle" = "";
+"Conversation.ForwardChats" = "";
+"Conversation.ForwardContacts" = "";
+"Conversation.StatusKickedFromGroup" = "";
+"Conversation.StatusLeftGroup" = "";
+"Conversation.StatusTyping" = "";
+"Conversation.Call" = "";
+"Conversation.Mute" = "";
+"ChatList.Mute" = "";
+"Conversation.TitleMute" = "";
+"Conversation.Unmute" = "";
+"ChatList.Unmute" = "";
+"Conversation.TitleUnmute" = "";
+"Conversation.Edit" = "";
+"Conversation.Info" = "";
+"Conversation.Search" = "";
+"Conversation.Unblock" = "";
+"Conversation.ClearAll" = "";
+"Conversation.Location" = "";
+"Conversation.Contact" = "";
+"Conversation.BlockUser" = "";
+"Conversation.UnblockUser" = "";
+"Conversation.UnsupportedMedia" = " Telegram 。：https://telegram.org/update";
+"Conversation.EncryptionWaiting" = " %@ …";
+"Conversation.EncryptionProcessing" = "…";
+"Conversation.EmptyPlaceholder" = "…";
+"Conversation.EncryptedPlaceholderTitleIncoming" = "%@ 。";
+"Conversation.EncryptedPlaceholderTitleOutgoing" = " %@ 。";
+"Conversation.EncryptedDescriptionTitle" = "：";
+"Conversation.EncryptedDescription1" = "";
+"Conversation.EncryptedDescription2" = "";
+"Conversation.EncryptedDescription3" = "";
+"Conversation.EncryptedDescription4" = "";
+"Conversation.ContextMenuCopy" = "";
+"Conversation.ContextMenuDelete" = "";
+"Conversation.ContextMenuForward" = "";
+"Conversation.ContextMenuMore" = "";
+
+
+
+
+
+
+"Conversation.StatusMembers_any" = "%@ ";
+
+
+
+
+"Conversation.StatusOnline_any" = "%@ ";
+
+
+
+"Conversation.UnreadMessages" = "";
+
+// Notification
+"Notification.RenamedChat" = "%@ ";
+"Notification.RenamedChannel" = "";
+"Notification.ChangedGroupPhoto" = "%@ ";
+"Notification.RemovedGroupPhoto" = "%@ ";
+"Notification.JoinedChat" = "%@ ";
+"Notification.JoinedChannel" = "%@ ";
+"Notification.Invited" = "%@  %@";
+"Notification.InvitedMultiple" = "%@  %@";
+"Notification.LeftChat" = "%@ ";
+"Notification.LeftChannel" = "%@ ";
+"Notification.Kicked" = "%@  %@";
+"Notification.CreatedChat" = "%@ ";
+"Notification.CreatedChannel" = "";
+"Notification.CreatedGroup" = "";
+"Notification.CreatedChatWithTitle" = "%@ «%@»";
+"Notification.Joined" = "“%@” Telegram";
+"Notification.ChangedGroupName" = "%@ «%@»";
+"Notification.NewAuthDetected" = "%1$@，\n%3$@%2$@ %4$@ \n\n：%5$@\n：%6$@\n\n，「Telegram  -  - 」。\n\n，「Telegram  - 」「」。\n\n，\nTelegram ";
+"Notification.MessageLifetimeChanged" = "%1$@  %2$@";
+"Notification.MessageLifetimeChangedOutgoing" = " %1$@";
+"Notification.MessageLifetimeRemoved" = "%1$@ ";
+"Notification.MessageLifetimeRemovedOutgoing" = "";
+"Notification.MessageLifetime2s" = "2 ";
+"Notification.MessageLifetime5s" = "5 ";
+"Notification.MessageLifetime1m" = "1 ";
+"Notification.MessageLifetime1h" = "1 ";
+"Notification.MessageLifetime1d" = "1 ";
+"Notification.MessageLifetime1w" = "1 ";
+
+"Notification.Exceptions.AlwaysOn" = "";
+"Notification.Exceptions.AlwaysOff" = "";
+"Notification.Exceptions.MutedUntil" = "%@ ";
+
+"Notification.Exceptions.AddException" = "";
+"Notification.Exceptions.NewException" = "";
+"Notification.Exceptions.NewException.NotificationHeader" = "";
+"Notification.Exceptions.Sound" = "： %@";
+
+
+
+// Message
+"Message.Photo" = "";
+"Message.Video" = "";
+"Message.Location" = "";
+"Message.Contact" = "";
+"Message.File" = "";
+"Message.Sticker" = "";
+"Message.StickerText" = "\n%@ ";
+"Message.Audio" = "";
+"Message.ForwardedMessage" = "\n：%@";
+"Message.Animation" = "GIF ";
+
+
+// Conversation Profile
+"ConversationProfile.ErrorCreatingConversation" = "";
+"ConversationProfile.UnknownAddMemberError" = "，。。";
+"ConversationProfile.UsersTooMuchError" = "，。。";
+
+"ConversationProfile.LeaveDeleteAndExit" = "";
+"Group.LeaveGroup" = "";
+"Group.DeleteGroup" = "";
+
+"Conversation.Megabytes" = "%.1f MB";
+"Conversation.Kilobytes" = "%d KB";
+"Conversation.Bytes" = "%d B";
+"Conversation.ShareMyContactInfo" = "";
+"Conversation.AddContact" = "";
+"Conversation.SendMessage" = "";
+"Conversation.EncryptionCanceled" = "";
+"Conversation.DeleteManyMessages" = "";
+"Conversation.SlideToCancel" = "";
+"Conversation.ApplyLocalization" = "";
+"Conversation.OpenFile" = "";
+
+// Media Picker
+"MediaPicker.Send" = "";
+"SearchImages.Title" = "";
+"MediaPicker.CameraRoll" = "";
+"SearchImages.NoImagesFound" = "";
+
+// User Profile
+"Profile.CreateEncryptedChatError" = "。";
+
+"Profile.CreateNewContact" = "";
+"Profile.AddToExisting" = "";
+"Profile.EncryptionKey" = "";
+"Profile.MessageLifetimeForever" = "";
+"Profile.MessageLifetime2s" = "2 ";
+"Profile.MessageLifetime5s" = "5 ";
+"Profile.MessageLifetime1m" = "1 ";
+"Profile.MessageLifetime1h" = "1 ";
+"Profile.MessageLifetime1d" = "1 ";
+"Profile.MessageLifetime1w" = "1 ";
+"Profile.ShareContactButton" = "";
+
+// User Info
+"UserInfo.Title" = "";
+"UserInfo.FirstNamePlaceholder" = "";
+"UserInfo.LastNamePlaceholder" = "";
+"UserInfo.GenericPhoneLabel" = "";
+"UserInfo.SendMessage" = "";
+"UserInfo.AddContact" = "";
+"UserInfo.ShareContact" = "";
+"UserInfo.StartSecretChat" = "";
+"UserInfo.StartSecretChatConfirmation" = "%@？";
+"UserInfo.StartSecretChatStart" = "";
+"UserInfo.DeleteContact" = "";
+"UserInfo.CreateNewContact" = "";
+"UserInfo.AddToExisting" = "";
+"UserInfo.AddPhone" = "";
+"UserInfo.NotificationsEnabled" = "";
+"UserInfo.NotificationsDisabled" = "";
+"UserInfo.NotificationsEnable" = "";
+"UserInfo.NotificationsDisable" = "";
+"UserInfo.Invite" = " Telegram";
+
+// New Contact
+"NewContact.Title" = "";
+
+// Phone Label
+"PhoneLabel.Title" = "";
+
+// Secret Chat
+"SecretChat.Title" = "";
+
+// Group Info
+"GroupInfo.Title" = "";
+"GroupInfo.GroupNamePlaceholder" = "";
+
+"GroupInfo.SetGroupPhoto" = "";
+"GroupInfo.SetGroupPhotoStop" = "";
+"GroupInfo.SetGroupPhotoDelete" = "";
+"GroupInfo.Notifications" = "";
+"GroupInfo.Sound" = "";
+"GroupInfo.SetSound" = "";
+"GroupInfo.SharedMedia" = "";
+"GroupInfo.SharedMediaNone" = "";
+"GroupInfo.DeleteAndExit" = "";
+"GroupInfo.DeleteAndExitConfirmation" = "。";
+
+
+
+"GroupInfo.ParticipantCount_any" = "%@ ";
+
+
+"GroupInfo.AddParticipant" = "";
+"GroupInfo.AddParticipantTitle" = "";
+"GroupInfo.AddParticipantConfirmation" = "“%@”？";
+"GroupInfo.LeftStatus" = "";
+
+// Encryption Key
+"EncryptionKey.Title" = "";
+"EncryptionKey.Description" = "“%1$@”。\n\n“%2$@”，。\n\n telegram.org  FAQ";
+
+// Conversation media
+"ConversationMedia.Title" = "";
+
+// Preview
+"Preview.DeletePhoto" = "";
+"Preview.SaveToCameraRoll" = "";
+
+// Map
+"Map.ChooseLocationTitle" = "";
+"Map.Map" = "";
+"Map.Satellite" = "";
+"Map.Hybrid" = "";
+"Map.GetDirections" = "";
+"Map.OpenInGoogleMaps" = " Google ";
+
+// Web
+"Web.Error" = "";
+"Web.OpenExternal" = " Safari ";
+
+// Document
+"Document.TargetConfirmationFormat" = " ({size})  {target}？";
+
+// Dialog List
+"DialogList.You" = "";
+
+// Settings
+"Settings.SetProfilePhoto" = "";
+"Settings.Logout" = "";
+"Settings.Title" = "";
+"Settings.NotificationsAndSounds" = "";
+"Settings.ChatSettings" = "";
+"Settings.BlockedUsers" = "";
+"Settings.ChatBackground" = "";
+"Settings.Support" = "";
+"Settings.FAQ" = "Telegram ";
+"Settings.FAQ_URL" = "https://telegram.org/faq#general-questions";
+"Settings.FAQ_Intro" = "：Telegram 。，。\n\n“”：。";
+"Settings.FAQ_Button" = "";
+"Settings.SaveIncomingPhotos" = "";
+
+// Notifications and Sounds
+"Notifications.Title" = "";
+"Notifications.MessageNotifications" = "";
+"Notifications.MessageNotificationsAlert" = "";
+"Notifications.MessageNotificationsPreview" = "";
+"Notifications.MessageNotificationsSound" = "";
+"Notifications.MessageNotificationsHelp" = "。";
+"Notifications.MessageNotificationsExceptionsHelp" = "。";
+
+
+
+"Notifications.GroupNotifications" = "";
+"Notifications.GroupNotificationsAlert" = "";
+"Notifications.GroupNotificationsPreview" = "";
+"Notifications.GroupNotificationsSound" = "";
+"Notifications.GroupNotificationsHelp" = "。";
+"Notifications.GroupNotificationsExceptionsHelp" = "。";
+
+"Notifications.ChannelNotifications" = "";
+"Notifications.ChannelNotificationsAlert" = "";
+"Notifications.ChannelNotificationsPreview" = "";
+"Notifications.ChannelNotificationsSound" = "";
+"Notifications.ChannelNotificationsHelp" = "。";
+"Notifications.ChannelNotificationsExceptionsHelp" = "。";
+
+"Notifications.TextTone" = "";
+"Notifications.AlertTones" = "";
+"Notifications.ClassicTones" = "";
+
+"Notifications.InAppNotifications" = "";
+"Notifications.InAppNotificationsSounds" = "";
+"Notifications.InAppNotificationsVibrate" = "";
+"Notifications.InAppNotificationsPreview" = "";
+
+"Notifications.Reset" = "";
+"Notifications.ResetAllNotifications" = "";
+"Notifications.ResetAllNotificationsHelp" = "、。";
+
+// Chat Settings
+"ChatSettings.Title" = "";
+"ChatSettings.Appearance" = "";
+"ChatSettings.TextSize" = "";
+"ChatSettings.TextSizeUnits" = "";
+"ChatSettings.AutomaticPhotoDownload" = "";
+"ChatSettings.AutomaticAudioDownload" = "";
+"ChatSettings.PrivateChats" = "";
+"ChatSettings.Groups" = "";
+"ChatSettings.Cache" = "";
+
+// Usage
+"Cache.Title" = "";
+"Cache.ClearCache" = "";
+"Cache.KeepMedia" = "";
+"Cache.Help" = "，****。、。\n\n Telegram ，。";
+
+// Blocked Users
+"BlockedUsers.Title" = "";
+"BlockedUsers.SelectUserTitle" = "";
+"BlockedUsers.BlockUser" = "";
+"BlockedUsers.BlockTitle" = "";
+"BlockedUsers.LeavePrefix" = "";
+"BlockedUsers.Info" = "，。、。";
+"BlockedUsers.AddNew" = "…";
+"BlockedUsers.Unblock" = "";
+
+// Wallpaper
+"Wallpaper.Title" = "";
+"Wallpaper.PhotoLibrary" = "";
+"Wallpaper.Set" = "";
+"Wallpaper.Wallpaper" = "";
+
+"Notification.SecretChatMessageScreenshot" = "%@ ！";
+"Notification.SecretChatScreenshot" = "！";
+
+
+
+"Settings.LogoutConfirmationTitle" = "？";
+"Settings.LogoutConfirmationText" = "\n， Telegram。\n\n，。";
+
+"Login.PadPhoneHelp" = "\n Telegram。\n iPad SIM  — 。\n\n？\n{number}";
+"Login.PadPhoneHelpTitle" = "";
+
+"MessageTimer.Custom" = "";
+
+"MessageTimer.Forever" = "";
+
+
+
+
+"MessageTimer.Seconds_any" = "%@ ";
+
+
+
+
+
+"MessageTimer.Minutes_any" = "%@ ";
+
+
+
+
+
+"MessageTimer.Hours_any" = "%@ ";
+
+
+
+
+
+"MessageTimer.Days_any" = "%@ ";
+
+
+
+
+
+"MessageTimer.Weeks_any" = "%@ ";
+
+
+
+
+
+"MessageTimer.Months_any" = "%@ ";
+
+
+
+
+
+"MessageTimer.Years_any" = "%@ ";
+
+
+
+
+"MessageTimer.ShortSeconds_any" = "%@";
+
+
+
+
+
+"MessageTimer.ShortMinutes_any" = "%@";
+
+
+
+
+
+"MessageTimer.ShortHours_any" = "%@";
+
+
+
+
+
+"MessageTimer.ShortDays_any" = "%@";
+
+
+
+
+
+"MessageTimer.ShortWeeks_any" = "%@";
+
+
+
+
+"MessageTimer.ShortYears_any" = "%@";
+
+"Activity.UploadingPhoto" = "";
+"Activity.UploadingVideo" = "";
+"Activity.UploadingDocument" = "";
+"Activity.RecordingAudio" = "";
+"Activity.RecordingVideoMessage" = "";
+
+
+
+"Contacts.GlobalSearch" = "";
+"Profile.Username" = "";
+"Settings.Username" = "";
+"Settings.UsernameEmpty" = "";
+
+"Username.Title" = "";
+"Username.Placeholder" = "";
+"Username.Help" = " **Telegram** 。，，。\n\n **a–z**、**0–9** 。 **5** 。";
+"Username.InvalidTooShort" = " 5 。";
+"Username.InvalidStartsWithNumber" = "，。";
+"Username.InvalidCharacters" = " a-z、0-9 。";
+"Username.InvalidTaken" = "，。";
+
+"Username.CheckingUsername" = "…";
+"Username.UsernameIsAvailable" = "%@ 。";
+
+"WebSearch.Images" = "";
+"WebSearch.GIFs" = "GIF ";
+"WebSearch.RecentSectionTitle" = "";
+"WebSearch.RecentSectionClear" = "";
+
+"Settings.PrivacySettings" = "";
+
+
+
+
+"UserCount_any" = "%@ ";
+
+
+
+"PrivacySettings.Title" = "";
+
+"PrivacySettings.PrivacyTitle" = "";
+"PrivacySettings.LastSeen" = "";
+"PrivacySettings.LastSeenTitle" = "";
+"PrivacySettings.LastSeenEverybody" = "";
+"PrivacySettings.LastSeenContacts" = "";
+"PrivacySettings.LastSeenNobody" = "";
+
+"PrivacySettings.LastSeenEverybodyMinus" = " (-%@)";
+"PrivacySettings.LastSeenContactsPlus" = " (+%@)";
+"PrivacySettings.LastSeenContactsMinus" = " (-%@)";
+"PrivacySettings.LastSeenContactsMinusPlus" = " (-%@, +%@)";
+"PrivacySettings.LastSeenNobodyPlus" = " (+%@)";
+
+"PrivacySettings.SecurityTitle" = "";
+
+"PrivacySettings.DeleteAccountTitle" = "";
+"PrivacySettings.DeleteAccountIfAwayFor" = "";
+"PrivacySettings.DeleteAccountHelp" = "，——、。";
+
+"PrivacyLastSeenSettings.Title" = "";
+"PrivacyLastSeenSettings.CustomHelp" = "：，。（：、、）。";
+"PrivacyLastSeenSettings.AlwaysShareWith" = "";
+"PrivacyLastSeenSettings.NeverShareWith" = "";
+"PrivacyLastSeenSettings.CustomShareSettingsHelp" = "。";
+
+"PrivacyLastSeenSettings.CustomShareSettings.Delete" = "";
+"PrivacyLastSeenSettings.AlwaysShareWith.Title" = "";
+"PrivacyLastSeenSettings.AlwaysShareWith.Placeholder" = "…";
+"PrivacyLastSeenSettings.NeverShareWith.Title" = "";
+"PrivacyLastSeenSettings.NeverShareWith.Placeholder" = "…";
+"PrivacyLastSeenSettings.EmpryUsersPlaceholder" = "";
+
+
+
+"PrivacyLastSeenSettings.AddUsers_any" = " %@ ？";
+
+
+
+// Photo Editor
+"PhotoEditor.DiscardChanges" = "";
+
+"PhotoEditor.Original" = "";
+
+"PhotoEditor.CropReset" = "";
+"PhotoEditor.CropAuto" = "";
+"PhotoEditor.CropAspectRatioOriginal" = "";
+"PhotoEditor.CropAspectRatioSquare" = "";
+
+"PhotoEditor.EnhanceTool" = "";
+"PhotoEditor.ExposureTool" = "";
+"PhotoEditor.ContrastTool" = "";
+"PhotoEditor.WarmthTool" = "";
+"PhotoEditor.SaturationTool" = "";
+"PhotoEditor.HighlightsTool" = "";
+"PhotoEditor.ShadowsTool" = "";
+"PhotoEditor.VignetteTool" = "";
+"PhotoEditor.GrainTool" = "";
+"PhotoEditor.SharpenTool" = "";
+
+"PhotoEditor.BlurToolOff" = "";
+"PhotoEditor.BlurToolRadial" = "";
+"PhotoEditor.BlurToolLinear" = "";
+
+
+
+
+// Camera
+"Camera.PhotoMode" = "";
+"Camera.VideoMode" = "";
+"Camera.SquareMode" = "";
+"Camera.FlashOff" = "";
+"Camera.FlashOn" = "";
+"Camera.FlashAuto" = "";
+"Camera.Retake" = "";
+
+"Settings.PhoneNumber" = "";
+
+"PhoneNumberHelp.Help" = " Telegram 。（、、）。\n\n**：**  Telegram ****。";
+"PhoneNumberHelp.Alert" = " Telegram ， Telegram ，。";
+"PhoneNumberHelp.ChangeNumber" = "";
+
+"ChangePhoneNumberNumber.Title" = "";
+"ChangePhoneNumberNumber.NewNumber" = "";
+"ChangePhoneNumberNumber.Help" = "。";
+"ChangePhoneNumberNumber.NumberPlaceholder" = "";
+
+"ChangePhoneNumberCode.Code" = "";
+"ChangePhoneNumberCode.CodePlaceholder" = "";
+"ChangePhoneNumberCode.Help" = "";
+"ChangePhoneNumberCode.CallTimer" = "Telegram  %@ ";
+"ChangePhoneNumberCode.RequestingACall" = "…";
+"ChangePhoneNumberCode.Called" = "Telegram ";
+
+"LoginPassword.Title" = "";
+"LoginPassword.PasswordPlaceholder" = "";
+"LoginPassword.InvalidPasswordError" = "，。";
+"LoginPassword.FloodError" = "，。";
+"LoginPassword.ForgotPassword" = "？";
+"LoginPassword.PasswordHelp" = "。";
+"LoginPassword.ResetAccount" = "";
+
+
+
+
+"QuickSend.Photos_any" = " %@ ";
+
+
+
+"Share.Title" = "";
+
+
+
+"Forward.ConfirmMultipleFiles_any" = " %@  {target}？";
+
+
+
+"Notification.Reply" = "";
+"Notification.Mute1h" = " 1 ";
+"Notification.Mute1hMin" = " 1 ";
+"Conversation.ContextMenuShare" = "";
+
+
+"SharedMedia.TitleAll" = "";
+
+
+
+
+"SharedMedia.Photo_any" = "%@ ";
+
+
+
+
+
+
+"SharedMedia.Video_any" = "%@ ";
+
+
+
+
+
+
+"SharedMedia.File_any" = "%@ ";
+
+
+
+
+
+
+"SharedMedia.Generic_any" = "%@ ";
+
+
+
+"FileSize.B" = "%@ B";
+"FileSize.KB" = "%@ KB";
+"FileSize.MB" = "%@ MB";
+"FileSize.GB" = "%@ GB";
+
+"DownloadingStatus" = "：%@ / %@";
+
+"Time.MonthOfYear_m1" = "1%@";
+"Time.MonthOfYear_m2" = "2%@";
+"Time.MonthOfYear_m3" = "3%@";
+"Time.MonthOfYear_m4" = "4%@";
+"Time.MonthOfYear_m5" = "5%@";
+"Time.MonthOfYear_m6" = "6%@";
+"Time.MonthOfYear_m7" = "7%@";
+"Time.MonthOfYear_m8" = "8%@";
+"Time.MonthOfYear_m9" = "9%@";
+"Time.MonthOfYear_m10" = "10%@";
+"Time.MonthOfYear_m11" = "11%@";
+"Time.MonthOfYear_m12" = "12%@";
+
+"Time.PreciseDate_m1" = "%2$@1%1$@ %3$@";
+"Time.PreciseDate_m2" = "%2$@2%1$@ %3$@";
+"Time.PreciseDate_m3" = "%2$@3%1$@ %3$@";
+"Time.PreciseDate_m4" = "%2$@4%1$@ %3$@";
+"Time.PreciseDate_m5" = "%2$@5%1$@ %3$@";
+"Time.PreciseDate_m6" = "%2$@6%1$@ %3$@";
+"Time.PreciseDate_m7" = "%2$@7%1$@ %3$@";
+"Time.PreciseDate_m8" = "%2$@8%1$@ %3$@";
+"Time.PreciseDate_m9" = "%2$@9%1$@ %3$@";
+"Time.PreciseDate_m10" = "%2$@10%1$@ %3$@";
+"Time.PreciseDate_m11" = "%2$@11%1$@ %3$@";
+"Time.PreciseDate_m12" = "%2$@12%1$@ %3$@";
+
+"Time.MediumDate" = "%1$@  %2$@";
+
+
+
+
+
+
+
+
+
+
+
+"MuteFor.Hours_any" = " %@ ";
+
+
+
+
+
+
+"MuteFor.Days_any" = " %@ ";
+
+
+
+
+"MutedForTime.Minutes_any" = "%@ ";
+
+
+
+
+
+"MutedForTime.Days_any" = "%@ ";
+
+
+
+
+"MuteExpires.Minutes_any" = "%@ ";
+
+
+
+
+
+
+"MuteExpires.Hours_any" = "%@ ";
+
+
+
+
+
+
+"MuteExpires.Days_any" = "%@ ";
+
+
+
+"SharedMedia.EmptyTitle" = "";
+"SharedMedia.EmptyText" = "\n。";
+"SharedMedia.EmptyFilesText" = "1.5G，\n。";
+
+"ShareFileTip.Title" = "";
+"ShareFileTip.Text" = " **** 。\n\n， %@（）， **** 「Telegram」。";
+"ShareFileTip.CloseTip" = "";
+
+"DialogList.SearchSectionDialogs" = "";
+
+"DialogList.SearchSectionGlobal" = "";
+"DialogList.SearchSectionMessages" = "";
+
+"Username.LinkHint" = "：[\nhttps://t.me/%@]";
+"Username.LinkCopied" = "";
+
+
+
+
+"SharedMedia.DeleteItemsConfirmation_any" = " %@ ？";
+
+
+
+"PrivacySettings.Passcode" = "";
+"PasscodeSettings.Title" = "";
+"PasscodeSettings.TurnPasscodeOn" = "";
+"PasscodeSettings.TurnPasscodeOff" = "";
+"PasscodeSettings.ChangePasscode" = "";
+"PasscodeSettings.Help" = "，。 Telegram 。\n\n：， Telegram。。";
+"PasscodeSettings.UnlockWithTouchId" = " Touch ID ";
+"PasscodeSettings.SimplePasscode" = "";
+"PasscodeSettings.SimplePasscodeHelp" = "。";
+"PasscodeSettings.EncryptData" = "";
+"PasscodeSettings.EncryptDataHelp" = "，。， Telegram 。";
+
+"EnterPasscode.EnterTitle" = " Telegram ";
+"EnterPasscode.ChangeTitle" = "";
+"EnterPasscode.EnterPasscode" = " Telegram ";
+"EnterPasscode.EnterNewPasscodeNew" = "";
+"EnterPasscode.EnterNewPasscodeChange" = "";
+"EnterPasscode.RepeatNewPasscode" = "";
+"EnterPasscode.EnterCurrentPasscode" = "";
+"EnterPasscode.TouchId" = "";
+
+"DialogList.PasscodeLockHelp" = " Telegram";
+
+"PasscodeSettings.AutoLock" = "";
+"PasscodeSettings.AutoLock.Disabled" = "";
+"PasscodeSettings.AutoLock.IfAwayFor_1minute" = " 1 ";
+"PasscodeSettings.AutoLock.IfAwayFor_5minutes" = " 5 ";
+"PasscodeSettings.AutoLock.IfAwayFor_1hour" = " 1 ";
+"PasscodeSettings.AutoLock.IfAwayFor_5hours" = " 5 ";
+
+
+
+
+"PasscodeSettings.FailedAttempts_any" = " %@ ";
+
+
+"PasscodeSettings.TryAgainIn1Minute" = " 1 ";
+
+"AccessDenied.Title" = "";
+
+"AccessDenied.Contacts" = "Telegram 。\n\n“ >  > ” Telegram 。";
+
+"AccessDenied.VoiceMicrophone" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.VideoMicrophone" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.MicrophoneRestricted" = "Telegram 。\n\n「 -  -  - 」 Telegram 。";
+
+
+"AccessDenied.Camera" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.CameraRestricted" = "Telegram 。\n\n「 -  -  - 」 Telegram 。";
+
+"AccessDenied.CameraDisabled" = "。\n\n「 -  - 」「」。";
+
+"AccessDenied.PhotosAndVideos" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.SaveMedia" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.PhotosRestricted" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.LocationDenied" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.LocationDisabled" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.LocationTracking" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"AccessDenied.Settings" = "";
+
+"WebSearch.RecentClearConfirmation" = "“”？";
+
+"FeatureDisabled.Oops" = "";
+
+"Conversation.ContextMenuReply" = "";
+
+
+
+
+"ForwardedMessages_any" = "%@ ";
+
+
+
+
+
+
+"ForwardedFiles_any" = "%@ ";
+
+
+
+
+
+
+"ForwardedStickers_any" = "%@ ";
+
+
+
+
+
+
+"ForwardedPhotos_any" = "%@ ";
+
+
+
+
+
+
+"ForwardedVideos_any" = "%@ ";
+
+
+
+
+
+
+"ForwardedAudios_any" = "%@ ";
+
+
+
+
+
+
+"ForwardedLocations_any" = "%@ ";
+
+
+
+
+
+
+"ForwardedGifs_any" = "%@  GIF  ";
+
+
+
+
+
+
+"ForwardedContacts_any" = "%@ ";
+
+
+
+"ForwardedAuthors2" = "%@, %@";
+
+"PrivacySettings.TwoStepAuth" = "";
+"TwoStepAuth.Title" = "";
+"TwoStepAuth.SetPassword" = "";
+"TwoStepAuth.SetPasswordHelp" = "。，。";
+"TwoStepAuth.SetupPasswordTitle" = "";
+
+"TwoStepAuth.SetupHintTitle" = "";
+"TwoStepAuth.SetupHint" = "：";
+
+"TwoStepAuth.ChangePassword" = "";
+"TwoStepAuth.RemovePassword" = "";
+"TwoStepAuth.SetupEmail" = "";
+"TwoStepAuth.ChangeEmail" = "";
+"TwoStepAuth.PendingEmailHelp" = " %@ ，。";
+"TwoStepAuth.GenericHelp" = "。\n Telegram 。";
+
+"TwoStepAuth.ConfirmationTitle" = "";
+"TwoStepAuth.ConfirmationText" = "，。。";
+"TwoStepAuth.ConfirmationAbort" = "";
+
+"TwoStepAuth.SetupPasswordEnterPasswordNew" = "：";
+"TwoStepAuth.SetupPasswordEnterPasswordChange" = "：";
+"TwoStepAuth.SetupPasswordConfirmPassword" = "：";
+"TwoStepAuth.SetupPasswordConfirmFailed" = "，。";
+
+"TwoStepAuth.EnterPasswordTitle" = "";
+"TwoStepAuth.EnterPasswordPassword" = "";
+"TwoStepAuth.EnterPasswordHint" = "：%@";
+"TwoStepAuth.EnterPasswordHelp" = "，。";
+"TwoStepAuth.EnterPasswordInvalid" = "，。";
+"TwoStepAuth.EnterPasswordForgot" = "？";
+
+"TwoStepAuth.EmailTitle" = "";
+"TwoStepAuth.EmailSkip" = "";
+"TwoStepAuth.EmailSkipAlert" = "？\n\n， Telegram ，。";
+"TwoStepAuth.Email" = "";
+"TwoStepAuth.EmailPlaceholder" = "";
+"TwoStepAuth.EmailHelp" = "。。";
+"TwoStepAuth.EmailInvalid" = "，。";
+"TwoStepAuth.EmailSent" = "。";
+"TwoStepAuth.PasswordSet" = "。";
+"TwoStepAuth.PasswordRemoveConfirmation" = "？";
+"TwoStepAuth.EmailCodeExpired" = "，。";
+
+"TwoStepAuth.RecoveryUnavailable" = "，。";
+"TwoStepAuth.RecoveryFailed" = "。";
+"TwoStepAuth.ResetAccountHelp" = "，、。";
+"TwoStepAuth.ResetAccountConfirmation" = "，、。";
+
+"TwoStepAuth.RecoveryTitle" = "";
+"TwoStepAuth.RecoveryCode" = "";
+"TwoStepAuth.RecoveryCodeHelp" = "，。";
+"TwoStepAuth.RecoveryCodeInvalid" = "，。";
+"TwoStepAuth.RecoveryCodeExpired" = "。";
+"TwoStepAuth.RecoveryEmailUnavailable" = " %@ ？";
+
+"TwoStepAuth.FloodError" = "。。";
+
+"Conversation.FilePhotoOrVideo" = "";
+"Conversation.FileICloudDrive" = "iCloud Drive";
+"Conversation.FileDropbox" = "Dropbox";
+
+"Conversation.FileOpenIn" = "…";
+"Conversation.FileHowToText" = "， %@（）， ****  Telegram 。";
+
+"Map.LocationTitle" = "";
+"Map.OpenInMaps" = "";
+"Map.OpenInHereMaps" = " HERE Maps ";
+"Map.OpenInYandexMaps" = " Yandex Maps ";
+"Map.OpenInYandexNavigator" = " Yandex Navigator ";
+"Map.OpenIn" = "…";
+
+"Map.SendThisLocation" = "";
+"Map.SendMyCurrentLocation" = "";
+"Map.Locating" = "…";
+"Map.ChooseAPlace" = "";
+"Map.AccurateTo" = " %@";
+"Map.Search" = "";
+"Map.ShowPlaces" = "";
+"Map.LoadError" = "。。";
+"Map.LocatingError" = "";
+"Map.Unknown" = "";
+
+"Map.DistanceAway" = " %@";
+
+
+
+
+"Map.ETAMinutes_any" = "%@ ";
+
+
+
+
+
+"Map.ETAHours_any" = "%@ ";
+
+
+"ChangePhone.ErrorOccupied" = "（ %@ ） Telegram 。。";
+
+"AccessDenied.LocationTracking" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"PrivacySettings.AuthSessions" = "";
+"AuthSessions.Title" = "";
+"AuthSessions.CurrentSession" = "";
+"AuthSessions.TerminateOtherSessions" = "";
+"AuthSessions.TerminateOtherSessionsHelp" = "，。";
+"AuthSessions.TerminateSession" = "";
+"AuthSessions.OtherSessions" = "";
+"AuthSessions.EmptyTitle" = "";
+"AuthSessions.EmptyText" = "、 Telegram。。";
+"AuthSessions.AppUnofficial" = "（ID: %@）";
+
+"WebPreview.GettingLinkInfo" = "…";
+
+"Preview.OpenInInstagram" = " Instagram ";
+
+"MediaPicker.AddCaption" = "…";
+
+"GroupInfo.InviteByLink" = "";
+
+"GroupInfo.InviteLink.Title" = "";
+"GroupInfo.InviteLink.LinkSection" = "";
+"GroupInfo.InviteLink.Help" = " Telegram 。";
+"GroupInfo.InviteLink.CopyLink" = "";
+"GroupInfo.InviteLink.RevokeLink" = "";
+"GroupInfo.InviteLink.ShareLink" = "";
+"GroupInfo.InviteLink.RevokeAlert.Text" = "？，。";
+"GroupInfo.InviteLink.RevokeAlert.Revoke" = "";
+"GroupInfo.InviteLink.RevokeAlert.Success" = "，。";
+"GroupInfo.InviteLink.CopyAlert.Success" = "。";
+
+"UserInfo.ShareMyContactInfo" = "";
+
+"GroupInfo.InvitationLinkAcceptChannel" = "«%@»？";
+"GroupInfo.InvitationLinkDoesNotExist" = "，。";
+"GroupInfo.InvitationLinkGroupFull" = "，。";
+
+"Core.ServiceUserStatus" = "";
+
+"Notification.JoinedGroupByLink" = "%@ ";
+
+"ChatSettings.Other" = "";
+"ChatSettings.Stickers" = "";
+
+"StickerPacksSettings.Title" = "";
+"StickerPacksSettings.ShowStickersButton" = "「」";
+"StickerPacksSettings.ShowStickersButtonHelp" = "，「」。";
+
+"StickerPacksSettings.StickerPacksSection" = "";
+"StickerPacksSettings.ManagingHelp" = " @stickers 。\n\n，。";
+
+"StickerPack.BuiltinPackName" = "";
+
+
+
+"StickerPack.StickerCount_any" = "%@ ";
+
+
+
+
+
+
+"StickerPack.AddStickerCount_any" = " %@ ";
+
+
+
+"Conversation.ContextMenuStickerPackAdd" = "";
+"Conversation.ContextMenuStickerPackInfo" = "";
+
+
+
+"UserInfo.ShareBot" = "";
+"UserInfo.InviteBotToGroup" = "";
+"Profile.BotInfo" = "";
+
+"Target.SelectGroup" = "";
+"Target.InviteToGroupConfirmation" = "«%@»？";
+"Target.InviteToGroupErrorAlreadyInvited" = "。";
+"Bot.GenericBotStatus" = "";
+"Bot.GenericSupportStatus" = "";
+"Bot.DescriptionTitle" = "？";
+"Bot.GroupStatusReadsHistory" = "";
+"Bot.GroupStatusDoesNotReadHistory" = "";
+"Bot.Start" = "";
+"UserInfo.BotSettings" = "";
+"UserInfo.BotHelp" = "";
+
+"Contacts.SearchLabel" = "";
+"ChatSearch.SearchPlaceholder" = "";
+
+"WatchRemote.NotificationText" = " Apple Watch 。";
+"WatchRemote.AlertTitle" = " Apple Watch ";
+"WatchRemote.AlertText" = "？";
+"WatchRemote.AlertOpen" = "";
+
+"Conversation.SearchPlaceholder" = "";
+"Conversation.SearchNoResults" = "";
+
+"GroupInfo.AddUserLeftError" = "，，（）。";
+
+"DialogList.SearchSectionRecent" = "";
+
+"DialogList.DeleteBotConfirmation" = "";
+"DialogList.DeleteBotConversationConfirmation" = "";
+"Bot.Stop" = "";
+"Bot.Unblock" = "";
+
+"Login.PhoneNumberHelp" = "";
+"Login.EmailPhoneSubject" = " %@";
+"Login.EmailPhoneBody" = "I'm trying to use my mobile phone number: %@\nBut Telegram says it's invalid. Please help.\nAdditional Info: %@, %@.";
+
+
+"SharedMedia.EmptyLinksText" = "。";
+
+
+
+
+"SharedMedia.Link_any" = "%@ ";
+
+
+
+"Compose.NewChannel" = "";
+"GroupInfo.ChannelListNamePlaceholder" = "";
+
+"Channel.MessagePhotoUpdated" = "";
+"Channel.MessagePhotoRemoved" = "";
+"Channel.MessageTitleUpdated" = "«%@»";
+"Channel.TitleInfo" = "";
+
+"Channel.UpdatePhotoItem" = "";
+
+"Channel.LinkItem" = "";
+"Channel.Edit.AboutItem" = "";
+"Channel.Edit.LinkItem" = "";
+
+"Channel.Username.Title" = "";
+"Channel.Username.Help" = " **Telegram** 。，。\n\n **a-z**、**0-9** 。 **5** 。";
+"Channel.Username.LinkHint" = "：[\nhttps://t.me/%@]";
+"Channel.Username.InvalidTooShort" = " 5 。";
+"Channel.Username.InvalidStartsWithNumber" = "。";
+"Channel.Username.InvalidCharacters" = "，。";
+"Channel.Username.InvalidTaken" = "，。";
+"Channel.Username.CheckingUsername" = "…";
+"Channel.Username.UsernameIsAvailable" = "%@ 。";
+
+"Channel.LeaveChannel" = "";
+
+"Channel.About.Title" = "";
+
+"Channel.About.Placeholder" = "";
+"Channel.About.Help" = "。";
+"Group.About.Help" = "。";
+
+"Channel.Status" = "";
+"Group.Status" = "";
+
+
+
+"ChannelInfo.ConfirmLeave" = "";
+"Channel.JoinChannel" = "";
+"Forward.ChannelReadOnly" = "，。";
+
+"Channel.ErrorAccessDenied" = "，。";
+"Group.ErrorAccessDenied" = "，。";
+"CommentsGroup.ErrorAccessDenied" = "，，。";
+"Conversation.InputTextBroadcastPlaceholder" = "";
+
+"Channel.NotificationLoading" = "…";
+
+"Compose.ChannelTokenListPlaceholder" = "";
+"Compose.GroupTokenListPlaceholder" = "";
+
+"Compose.ChannelMembers" = "";
+
+"Channel.Setup.TypeHeader" = "";
+"Channel.Setup.TypePrivate" = "";
+"Channel.Setup.TypePublic" = "";
+"Channel.Setup.TypePublicHelp" = "，。";
+"Channel.Setup.TypePrivateHelp" = "。";
+
+"Channel.Setup.Title" = "";
+
+"Channel.Username.CreatePublicLinkHelp" = "， Telegram 。";
+"Channel.Username.CreatePrivateLinkHelp" = "。。";
+
+"Channel.Setup.PublicNoLink" = "，。\n\n，。";
+
+"Channel.Edit.PrivatePublicLinkAlert" = "：，。\n\n，。";
+
+"Channel.Info.Description" = "";
+
+"Channel.Info.Management" = "";
+"Channel.Info.Banned" = "";
+"Channel.Info.Members" = "";
+
+"Channel.Members.AddMembers" = "";
+"Channel.Members.AddMembersHelp" = "。";
+"Channel.Members.Title" = "";
+"Channel.BlackList.Title" = "";
+"Channel.Management.Title" = "";
+"Channel.Management.LabelCreator" = "";
+"Channel.Management.LabelEditor" = "";
+
+"Channel.Management.AddModerator" = "";
+"Channel.Management.AddModeratorHelp" = "。";
+
+"Channel.Members.InviteLink" = "";
+
+
+
+"Channel.Moderator.AccessLevelRevoke" = "";
+
+"Channel.Moderator.Title" = "";
+
+"Notification.ChannelInviter" = "%@ ";
+"Notification.ChannelInviterSelf" = "";
+
+"Notification.GroupInviter" = "%@ ";
+"Notification.GroupInviterSelf" = "";
+
+"ChannelInfo.DeleteChannel" = "";
+"ChannelInfo.DeleteChannelConfirmation" = "！。？";
+
+"ChannelInfo.ChannelForbidden" = "，«%@»。";
+"ChannelInfo.AddParticipantConfirmation" = "“%@”？";
+
+"PhotoEditor.FadeTool" = "";
+
+"PhotoEditor.ShadowsTint" = "";
+"PhotoEditor.HighlightsTint" = "";
+
+"PhotoEditor.CurvesAll" = "";
+"PhotoEditor.CurvesRed" = "";
+"PhotoEditor.CurvesGreen" = "";
+"PhotoEditor.CurvesBlue" = "";
+
+"Channel.ErrorAddBlocked" = "，，。";
+"Channel.ErrorAddTooMuch" = "， 200 。。";
+
+"ChannelIntro.Title" = "？";
+"ChannelIntro.Text" = "。";
+"ChannelIntro.CreateChannel" = "";
+
+"ShareMenu.Send" = "";
+
+"Conversation.ReportSpam" = "";
+"Conversation.ReportSpamAndLeave" = "";
+"Conversation.ReportSpamConfirmation" = "？";
+
+
+"SharedMedia.EmptyMusicText" = "。";
+
+"ChatSettings.AutoPlayAnimations" = " GIF ";
+
+"GroupInfo.ChatAdmins" = "";
+
+"ChatAdmins.Title" = "";
+"ChatAdmins.AllMembersAreAdmins" = "";
+"ChatAdmins.AllMembersAreAdminsOnHelp" = "、。";
+"ChatAdmins.AllMembersAreAdminsOffHelp" = "、。";
+"ChatAdmins.AdminLabel" = "";
+
+"Group.MessagePhotoUpdated" = "";
+"Group.MessagePhotoRemoved" = "";
+
+"Group.UpgradeNoticeHeader" = "";
+
+"Group.UpgradeNoticeText1" = "，：";
+"Group.UpgradeNoticeText2" = "•  {supergroup_member_limit} \n• ，\n• \n• ";
+"GroupInfo.UpgradeButton" = "";
+"Group.UpgradeConfirmation" = "：。。";
+
+
+
+"GroupInfo.DeactivatedStatus" = "";
+
+"Notification.RenamedGroup" = "";
+
+"Group.ErrorAddTooMuchBots" = "，。";
+"Group.ErrorAddTooMuchAdmins" = "，。";
+"Group.ErrorAddBlocked" = "，。";
+"Group.ErrorNotMutualContact" = "，。";
+
+"Conversation.SendMessageErrorFlood" = "，。";
+"Generic.ErrorMoreInfo" = "";
+
+"ChannelInfo.DeleteGroup" = "";
+"ChannelInfo.DeleteGroupConfirmation" = "！，。？";
+
+"ReportPeer.Report" = "";
+
+"ReportPeer.ReasonSpam" = "";
+"ReportPeer.ReasonViolence" = "";
+"ReportPeer.ReasonPornography" = "";
+"ReportPeer.ReasonChildAbuse" = "";
+"ReportPeer.ReasonOther" = "";
+
+"ReportPeer.AlertSuccess" = "！\n。";
+
+"Login.TermsOfServiceLabel" = "[]。";
+"Login.TermsOfServiceHeader" = "";
+
+"ReportPeer.ReasonOther.Placeholder" = "";
+"ReportPeer.ReasonOther.Title" = "";
+"ReportPeer.ReasonOther.Send" = "";
+
+"Group.Management.AddModeratorHelp" = "。";
+
+"Watch.AppName" = "Telegram";
+"Watch.Compose.AddContact" = "";
+"Watch.Compose.CreateMessage" = "";
+"Watch.Compose.CurrentLocation" = "";
+"Watch.Compose.Send" = "";
+"Watch.Contacts.NoResults" = "\n\n";
+"Watch.ChatList.NoConversationsTitle" = "";
+"Watch.ChatList.NoConversationsText" = "，\n「」\n";
+"Watch.ChatList.Compose" = "";
+
+"Watch.Conversation.Reply" = "";
+"Watch.Conversation.Unblock" = "";
+"Watch.Conversation.UserInfo" = "";
+"Watch.Conversation.GroupInfo" = "";
+"Watch.Bot.Restart" = "";
+
+"Watch.UserInfo.Title" = "";
+"Watch.UserInfo.Service" = "";
+
+"Watch.UserInfo.Block" = "";
+"Watch.UserInfo.Unblock" = "";
+
+
+
+"Watch.UserInfo.Mute_any" = " %@ ";
+
+
+"Watch.UserInfo.MuteTitle" = "";
+"Watch.UserInfo.Unmute" = "";
+
+"Watch.GroupInfo.Title" = "";
+"Watch.ChannelInfo.Title" = "";
+
+"Watch.Message.ForwardedFrom" = "";
+
+"Watch.Notification.Joined" = " Telegram";
+
+"Watch.MessageView.Title" = "";
+"Watch.MessageView.Forward" = "";
+"Watch.MessageView.Reply" = "";
+"Watch.MessageView.ViewOnPhone" = "";
+
+"Watch.PhotoView.Title" = "";
+
+"Watch.Stickers.Recents" = "";
+"Watch.Stickers.RecentPlaceholder" = "。";
+"Watch.Stickers.StickerPacks" = "";
+
+"Watch.Location.Current" = "";
+"Watch.Location.Access" = " Telegram ";
+
+"Watch.AuthRequired" = "， Telegram";
+
+"Watch.NoConnection" = "";
+"Watch.ConnectionDescription" = "";
+
+"Watch.Time.ShortTodayAt" = " %@";
+"Watch.Time.ShortYesterdayAt" = " %@";
+"Watch.Time.ShortWeekdayAt" = "%1$@ %2$@";
+"Watch.Time.ShortFullAt" = "%1$@ %2$@";
+
+"Watch.LastSeen.JustNow" = "";
+
+
+
+"Watch.LastSeen.MinutesAgo_any" = "%@ ";
+
+
+
+
+
+"Watch.LastSeen.HoursAgo_any" = "%@ ";
+
+
+"Watch.LastSeen.YesterdayAt" = " %@";
+"Watch.LastSeen.AtDate" = "%@";
+"Watch.LastSeen.Lately" = "";
+"Watch.LastSeen.WithinAWeek" = "";
+"Watch.LastSeen.WithinAMonth" = "";
+"Watch.LastSeen.ALongTimeAgo" = "";
+
+"Watch.Suggestion.OK" = "";
+"Watch.Suggestion.Thanks" = "！";
+"Watch.Suggestion.WhatsUp" = "？";
+"Watch.Suggestion.TalkLater" = "？";
+"Watch.Suggestion.CantTalk" = "…";
+"Watch.Suggestion.HoldOn" = "…";
+"Watch.Suggestion.BRB" = "";
+"Watch.Suggestion.OnMyWay" = "。";
+"Cache.Photos" = "";
+"Cache.Videos" = "";
+"Cache.Music" = "";
+"Cache.Files" = "";
+"Cache.Clear" = " (%@)";
+"Cache.ClearNone" = "";
+"Cache.ClearProgress" = "…";
+"Cache.ClearEmpty" = "";
+"Cache.ByPeerHeader" = "";
+"Cache.Indexing" = "Telegram 。\n。";
+
+"ExplicitContent.AlertTitle" = "";
+"ExplicitContent.AlertChannel" = "， App Store 。";
+
+"StickerSettings.ContextHide" = "";
+
+"Conversation.LinkDialogSave" = "";
+"Conversation.GifTooltip" = " GIF ";
+
+"AttachmentMenu.PhotoOrVideo" = "";
+"AttachmentMenu.File" = "";
+
+
+
+
+"AttachmentMenu.SendPhoto_any" = " %@ ";
+
+
+
+
+
+
+"AttachmentMenu.SendVideo_any" = " %@ ";
+
+
+
+
+
+
+"AttachmentMenu.SendGif_any" = " %@  GIF ";
+
+
+
+
+
+
+"AttachmentMenu.SendItem_any" = " %@ ";
+
+
+
+"AttachmentMenu.SendAsFile" = "";
+"AttachmentMenu.SendAsFiles" = "";
+
+"Conversation.Processing" = "…";
+
+"Conversation.MessageViaUser" = " %@";
+
+"CreateGroup.SoftUserLimitAlert" = "，，。";
+
+"Privacy.GroupsAndChannels" = "/";
+"Privacy.GroupsAndChannels.WhoCanAddMe" = "";
+"Privacy.GroupsAndChannels.CustomHelp" = "。";
+"Privacy.GroupsAndChannels.AlwaysAllow" = "";
+"Privacy.GroupsAndChannels.NeverAllow" = "";
+"Privacy.GroupsAndChannels.CustomShareHelp" = "。";
+
+"Privacy.GroupsAndChannels.AlwaysAllow.Title" = "";
+"Privacy.GroupsAndChannels.AlwaysAllow.Placeholder" = "…";
+"Privacy.GroupsAndChannels.NeverAllow.Title" = "";
+"Privacy.GroupsAndChannels.NeverAllow.Placeholder" = "…";
+
+"Privacy.GroupsAndChannels.InviteToGroupError" = "，“%@”，“%@”。";
+"Privacy.GroupsAndChannels.InviteToChannelError" = "，“%@”，“%@”。";
+"Privacy.GroupsAndChannels.InviteToChannelMultipleError" = "，，。";
+
+"ChannelMembers.WhoCanAddMembers" = "";
+"ChannelMembers.WhoCanAddMembers.AllMembers" = "";
+"ChannelMembers.WhoCanAddMembers.Admins" = "";
+"ChannelMembers.WhoCanAddMembersAllHelp" = "";
+"ChannelMembers.WhoCanAddMembersAdminsHelp" = "。";
+
+"ChannelMembers.GroupAdminsTitle" = "";
+"ChannelMembers.ChannelAdminsTitle" = "";
+"MusicPlayer.VoiceNote" = "";
+
+"PrivacyLastSeenSettings.WhoCanSeeMyTimestamp" = "";
+
+"PrivacyLastSeenSettings.GroupsAndChannelsHelp" = "/。";
+"MusicPlayer.VoiceNote" = "";
+
+"Watch.Microphone.Access" = " Telegram ";
+
+"Settings.AppleWatch" = "Apple Watch";
+"AppleWatch.Title" = "Apple Watch";
+"AppleWatch.ReplyPresets" = "";
+"AppleWatch.ReplyPresetsHelp" = "，，。";
+
+"KeyCommand.FocusOnInputField" = "";
+"KeyCommand.Find" = "";
+"KeyCommand.ScrollUp" = "";
+"KeyCommand.ScrollDown" = "";
+"KeyCommand.NewMessage" = "";
+"KeyCommand.JumpToPreviousChat" = "";
+"KeyCommand.JumpToNextChat" = "";
+"KeyCommand.JumpToPreviousUnreadChat" = "";
+"KeyCommand.JumpToNextUnreadChat" = "";
+"KeyCommand.SendMessage" = "";
+"KeyCommand.ChatInfo" = "";
+
+"Conversation.SecretLinkPreviewAlert" = "？， Telegram 。";
+"Conversation.SecretChatContextBotAlert" = "：。， @ （）。";
+
+"Map.OpenInWaze" = " Waze ";
+
+"ShareMenu.CopyShareLink" = "";
+
+"Channel.SignMessages" = "";
+"Channel.SignMessages.Help" = "。";
+
+"Channel.EditMessageErrorGeneric" = "，。";
+
+"Conversation.InputTextSilentBroadcastPlaceholder" = "";
+"Conversation.SilentBroadcastTooltipOn" = "";
+"Conversation.SilentBroadcastTooltipOff" = "";
+
+"Settings.About" = "";
+"GroupInfo.LabelAdmin" = "";
+
+"Conversation.Pin" = "";
+"Conversation.Unpin" = "";
+"Conversation.Report" = "";
+"Conversation.PinnedMessage" = "";
+"Conversation.PinnedPreviousMessage" = "";
+
+"Conversation.Moderate.Delete" = "";
+"Conversation.Moderate.Ban" = "";
+"Conversation.Moderate.Report" = "";
+"Conversation.Moderate.DeleteAllMessages" = "“%@”";
+
+"Group.Username.InvalidTooShort" = " 5 。";
+"Group.Username.InvalidStartsWithNumber" = "。";
+
+"Notification.PinnedTextMessage" = "%@ «%@»";
+"Notification.PinnedPhotoMessage" = "%@ ";
+"Notification.PinnedVideoMessage" = "%@ ";
+"Notification.PinnedRoundMessage" = "%@ ";
+"Notification.PinnedAudioMessage" = "%@ ";
+"Notification.PinnedDocumentMessage" = "%@ ";
+"Notification.PinnedAnimationMessage" = "%@  GIF ";
+"Notification.PinnedStickerMessage" = "%@ ";
+"Notification.PinnedLocationMessage" = "%@ ";
+"Notification.PinnedContactMessage" = "%@ ";
+"Notification.PinnedDeletedMessage" = "%@ ";
+"Notification.PinnedPollMessage" = "%@ ";
+"Notification.PinnedQuizMessage" = "%@";
+
+"Message.PinnedTextMessage" = "«%@»";
+"Message.PinnedPhotoMessage" = "";
+"Message.PinnedVideoMessage" = "";
+"Message.PinnedAudioMessage" = "";
+"Message.PinnedDocumentMessage" = "";
+"Message.PinnedAnimationMessage" = " GIF ";
+"Message.PinnedStickerMessage" = "";
+"Message.PinnedLocationMessage" = "";
+"Message.PinnedContactMessage" = "";
+"Message.PinnedGenericMessage" = "%@ ";
+
+"Notification.PinnedMessage" = "";
+
+"GroupInfo.ConvertToSupergroup" = "";
+
+"ConvertToSupergroup.Title" = "";
+"ConvertToSupergroup.HelpTitle" = "**：**";
+"ConvertToSupergroup.HelpText" = "• \n• \n• \n• ";
+
+"ConvertToSupergroup.Note" = "****：。";
+
+"GroupInfo.GroupType" = "";
+
+"Group.Setup.TypeHeader" = "";
+"Group.Setup.TypePublicHelp" = "、，。";
+"Group.Setup.TypePrivateHelp" = "。";
+
+"Group.Username.CreatePublicLinkHelp" = "， Telegram 。";
+"Group.Username.CreatePrivateLinkHelp" = "。。";
+
+"Conversation.PinMessageAlertGroup" = "？";
+"Conversation.PinMessageAlert.OnlyPin" = "";
+"Conversation.PinMessageAlert.PinAndNotifyMembers" = "";
+
+"Conversation.UnpinMessageAlert" = "？";
+
+"Settings.About.Title" = "";
+"Settings.About.Help" = "，：、。\n：23，。";
+
+"Profile.About" = "";
+
+"Conversation.StatusKickedFromChannel" = "";
+
+"Generic.OpenHiddenLinkAlert" = " %@ ？";
+
+"Resolve.ErrorNotFound" = "，。";
+
+"StickerPack.Share" = "";
+"StickerPack.Send" = "";
+
+
+
+
+"StickerPack.RemoveStickerCount_any" = " %@ ";
+
+
+
+"StickerPack.HideStickers" = "";
+"StickerPack.ShowStickers" = "";
+
+"ShareMenu.ShareTo" = "";
+"ShareMenu.SelectChats" = "";
+"ShareMenu.Comment" = "…";
+
+"MediaPicker.Videos" = "";
+
+"Coub.TapForSound" = "";
+
+"Preview.SaveGif" = " GIF ";
+"Preview.DeleteGif" = " GIF ";
+"Preview.CopyAddress" = "";
+
+"Conversation.ShareBotLocationConfirmationTitle" = "？";
+"Conversation.ShareBotLocationConfirmation" = "。";
+
+"Conversation.ShareBotContactConfirmationTitle" = "？";
+"Conversation.ShareBotContactConfirmation" = "，。";
+
+"Conversation.ShareInlineBotLocationConfirmation" = "，。";
+
+"StickerPack.ErrorNotFound" = "，。";
+
+"Camera.TapAndHoldForVideo" = "";
+
+"DialogList.RecentTitlePeople" = "";
+
+"Conversation.MessageEditedLabel" = "";
+"Conversation.EditingMessagePanelTitle" = "";
+
+"DialogList.Draft" = "";
+"Embed.PlayingInPIP" = "「」";
+
+"StickerPacksSettings.FeaturedPacks" = "";
+"FeaturedStickerPacks.Title" = "";
+
+"Invitation.JoinGroup" = "";
+
+
+
+"Invitation.Members_any" = "%@ ：";
+
+
+
+"StickerPacksSettings.ArchivedPacks" = "";
+"StickerPacksSettings.ArchivedPacks.Info" = " 200 。\n。";
+
+"Conversation.CloudStorageInfo.Title" = "";
+"Conversation.ClousStorageInfo.Description1" = "• ";
+"Conversation.ClousStorageInfo.Description2" = "• /";
+"Conversation.ClousStorageInfo.Description3" = "• ";
+"Conversation.ClousStorageInfo.Description4" = "• ";
+
+"Conversation.CloudStorage.ChatStatus" = "";
+
+"ArchivedPacksAlert.Title" = "。「」。";
+
+"StickerSettings.ContextInfo" = "，「」。";
+
+"Contacts.TopSection" = "";
+
+"Login.ResetAccountProtected.Title" = "";
+"Login.ResetAccountProtected.Text" = "（%@）；，。\n\n。";
+"Login.ResetAccountProtected.TimerTitle" = "，：";
+"Login.ResetAccountProtected.Reset" = "";
+"Login.ResetAccountProtected.LimitExceeded" = "， 7 。";
+
+"Login.CodeSentCall" = "。";
+
+"Login.WillSendSms" = "Telegram  %@ ";
+"Login.SmsRequestState2" = " Telegram …";
+"Login.SmsRequestState3" = "Telegram \n[？]";
+
+"CancelResetAccount.Title" = "";
+"CancelResetAccount.TextSMS" = "（%@） Telegram 。\n\n，。";
+
+"CancelResetAccount.Success" = "（%@） 。";
+
+
+"Paint.Clear" = "";
+"Paint.ClearConfirm" = "";
+"Paint.Delete" = "";
+"Paint.Edit" = "";
+"Paint.Duplicate" = "";
+"Paint.Stickers" = "";
+"Paint.RecentStickers" = "";
+"Paint.Masks" = "";
+
+"Paint.Outlined" = "";
+"Paint.Regular" = "";
+
+"MediaPicker.VideoMuteDescription" = "， GIF 。";
+
+
+"Group.Username.RemoveExistingUsernamesInfo" = "，。，。";
+
+
+
+
+"ServiceMessage.GameScoreExtended_any" = "{name} «{game}» %@ ";
+
+
+
+
+
+
+"ServiceMessage.GameScoreSelfExtended_any" = "«{game}» %@ ";
+
+
+
+
+
+
+"ServiceMessage.GameScoreSimple_any" = "{name}  %@ ";
+
+
+
+
+
+
+"ServiceMessage.GameScoreSelfSimple_any" = " %@ ";
+
+
+
+
+
+
+"Notification.GameScoreExtended_any" = "«{game}» %@ ";
+
+
+
+
+
+
+"Notification.GameScoreSelfExtended_any" = "«{game}» %@ ";
+
+
+
+
+
+
+"Notification.GameScoreSimple_any" = " %@ ";
+
+
+
+
+
+
+"Notification.GameScoreSelfSimple_any" = " %@ ";
+
+
+
+"Stickers.Install" = "";
+"Stickers.Installed" = "";
+
+"MaskStickerSettings.Title" = "";
+"MaskStickerSettings.Info" = "/——。";
+
+"StickerPack.Add" = "";
+
+
+
+"StickerPack.AddMaskCount_any" = " %@ ";
+
+
+
+
+
+
+"StickerPack.RemoveMaskCount_any" = " %@ ";
+
+
+
+"Conversation.BotInteractiveUrlAlert" = " %@  Telegram  ID（）？";
+"StickerPacksSettings.ArchivedMasks" = "";
+"StickerSettings.MaskContextInfo" = "，「」。";
+"StickerPacksSettings.ArchivedMasks.Info" = "You can have up to 200 sets of masks.
+Unused sets are archived when you add more.";
+
+"CloudStorage.Title" = "";
+
+"Widget.AuthRequired" = " Telegram";
+"Widget.NoUsers" = "，";
+
+
+
+"ShareMenu.CopyShareLinkGame" = "";
+
+"Message.PinnedGame" = "";
+"Message.AuthorPinnedGame" = "%@ ";
+
+"Target.ShareGameConfirmationPrivate" = "“%@”？";
+"Target.ShareGameConfirmationGroup" = "«%@»？";
+
+"Activity.PlayingGame" = "";
+"Activity.UploadingVideoMessage" = "";
+
+"DialogList.SinglePlayingGameSuffix" = "%@ ";
+
+"UserInfo.GroupsInCommon" = "";
+"Conversation.InstantPagePreview" = "";
+
+"StickerPack.ViewPack" = "";
+"InstantPage.AuthorAndDateTitle" = " %1$@ • %2$@";
+"InstantPage.FeedbackButton" = "";
+"Conversation.JumpToDate" = "";
+"Conversation.AddToReadingList" = "";
+
+"AccessDenied.CallMicrophone" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"Call.EncryptionKey.Title" = "";
+
+"Application.Name" = "Telegram";
+"DialogList.Pin" = "";
+"DialogList.Unpin" = "";
+"DialogList.PinLimitError" = "， %@ 。";
+"DialogList.UnknownPinLimitError" = "，。";
+
+"Conversation.DeleteMessagesForMe" = "";
+"Conversation.DeleteMessagesFor" = "“%@\"";
+"Conversation.DeleteMessagesForEveryone" = "";
+
+"NetworkUsageSettings.Title" = "";
+"NetworkUsageSettings.Cellular" = "";
+"NetworkUsageSettings.Wifi" = "Wi-Fi";
+
+"NetworkUsageSettings.GeneralDataSection" = "";
+"NetworkUsageSettings.MediaImageDataSection" = "";
+"NetworkUsageSettings.MediaVideoDataSection" = "";
+"NetworkUsageSettings.MediaAudioDataSection" = "";
+"NetworkUsageSettings.MediaDocumentDataSection" = "";
+"NetworkUsageSettings.TotalSection" = "";
+"NetworkUsageSettings.BytesSent" = "";
+"NetworkUsageSettings.BytesReceived" = "";
+
+"NetworkUsageSettings.ResetStats" = "";
+"NetworkUsageSettings.ResetStatsConfirmation" = "？";
+"NetworkUsageSettings.CellularUsageSince" = " %@ ";
+"NetworkUsageSettings.WifiUsageSince" = " %@  Wi-Fi ";
+
+"Settings.CallSettings" = "";
+
+"Calls.TabTitle" = "";
+"Calls.All" = "";
+"Calls.Missed" = "";
+
+"CallSettings.Title" = "";
+"CallSettings.RecentCalls" = "";
+"CallSettings.TabIcon" = "「」";
+"CallSettings.TabIconDescription" = "，「」。";
+"CallSettings.UseLessData" = "";
+"CallSettings.Never" = "";
+"CallSettings.OnMobile" = "";
+"CallSettings.Always" = "";
+"CallSettings.UseLessDataLongDescription" = "，，。";
+
+"Calls.CallTabTitle" = "「」";
+"Calls.CallTabDescription" = "「」。";
+"Calls.NotNow" = "";
+"Calls.AddTab" = "";
+"Calls.NewCall" = "";
+
+"Calls.RatingTitle" = " Telegram \n";
+"Calls.SubmitRating" = "";
+
+
+
+
+"Call.Seconds_any" = "%@ ";
+
+
+
+
+
+"Call.Minutes_any" = "%@ ";
+
+
+
+
+
+"Call.Hours_any" = "%@ ";
+
+
+
+
+
+"Call.Days_any" = "%@ ";
+
+
+
+
+
+
+
+"Call.ShortSeconds_any" = "%@ ";
+
+
+
+
+
+"Call.ShortMinutes_any" = "%@ ";
+
+
+
+"Notification.CallTimeFormat" = "%1$@（%2$@）"; // 1 - type, 2 - duration
+"Notification.CallOutgoing" = "";
+"Notification.VideoCallOutgoing" = "";
+"Notification.CallIncoming" = "";
+"Notification.VideoCallIncoming" = "";
+"Notification.CallMissed" = "";
+"Notification.VideoCallMissed" = "";
+"Notification.CallCanceled" = "";
+"Notification.VideoCallCanceled" = "";
+"Notification.CallOutgoingShort" = "";
+"Notification.CallIncomingShort" = "";
+"Notification.CallMissedShort" = "";
+"Notification.CallCanceledShort" = "";
+"Notification.CallFormat" = "%1$@, %2$@"; // 1 - time, 2 - duration
+
+"Call.ConnectionErrorTitle" = "";
+"Call.ConnectionErrorMessage" = "。";
+
+"Call.CallAgain" = "";
+
+"Login.PhoneFloodError" = "，。。";
+
+"Checkout.Title" = "";
+"Checkout.TotalAmount" = "";
+"Checkout.TotalPaidAmount" = "";
+"Checkout.PaymentMethod" = "";
+"Checkout.ShippingMethod" = "";
+"Checkout.ShippingAddress" = "";
+"Checkout.Name" = "";
+"Checkout.Email" = "";
+"Checkout.Phone" = "";
+"Checkout.PayPrice" = " %@";
+"Checkout.PayNone" = "";
+
+"Checkout.PaymentMethod.Title" = "";
+"Checkout.PaymentMethod.New" = "…";
+
+"Checkout.NewCard.Title" = "";
+"Checkout.NewCard.PaymentCard" = "";
+"Checkout.NewCard.SaveInfo" = "";
+"Checkout.NewCard.SaveInfoEnableHelp" = "。\n[]。";
+"Checkout.NewCard.SaveInfoHelp" = "。";
+"Checkout.NewCard.CardholderNameTitle" = "";
+"Checkout.NewCard.CardholderNamePlaceholder" = "";
+"Checkout.NewCard.PostcodeTitle" = "";
+"Checkout.NewCard.PostcodePlaceholder" = "";
+
+"Checkout.ShippingOption.Title" = "";
+
+"Checkout.ErrorProviderAccountInvalid" = "，。";
+"Checkout.ErrorProviderAccountTimeout" = "，。";
+"Checkout.ErrorInvoiceAlreadyPaid" = "。";
+
+"Checkout.ErrorGeneric" = "。。";
+"Checkout.ErrorPaymentFailed" = "。。";
+"Checkout.ErrorPrecheckoutFailed" = "。。";
+
+"CheckoutInfo.Title" = "";
+"CheckoutInfo.ShippingInfoTitle" = "";
+"CheckoutInfo.ShippingInfoAddress1" = " 1";
+"CheckoutInfo.ShippingInfoAddress1Placeholder" = "";
+"CheckoutInfo.ShippingInfoAddress2" = " 2";
+"CheckoutInfo.ShippingInfoAddress2Placeholder" = "";
+"CheckoutInfo.ShippingInfoState" = "/";
+"CheckoutInfo.ShippingInfoStatePlaceholder" = "/";
+"CheckoutInfo.ShippingInfoCity" = "";
+"CheckoutInfo.ShippingInfoCityPlaceholder" = "";
+"CheckoutInfo.ShippingInfoCountry" = "/";
+"CheckoutInfo.ShippingInfoCountryPlaceholder" = "/";
+"CheckoutInfo.ShippingInfoPostcode" = "";
+"CheckoutInfo.ShippingInfoPostcodePlaceholder" = "";
+"CheckoutInfo.ReceiverInfoTitle" = "";
+"CheckoutInfo.ReceiverInfoName" = "";
+"CheckoutInfo.ReceiverInfoNamePlaceholder" = "";
+"CheckoutInfo.ReceiverInfoEmail" = "";
+"CheckoutInfo.ReceiverInfoEmailPlaceholder" = "";
+"CheckoutInfo.ReceiverInfoPhone" = "";
+"CheckoutInfo.SaveInfo" = "";
+"CheckoutInfo.SaveInfoHelp" = "。";
+"CheckoutInfo.Pay" = "";
+
+"Checkout.Receipt.Title" = "";
+
+"Message.ReplyActionButtonShowReceipt" = "";
+"Message.InvoiceLabel" = "";
+
+"CheckoutInfo.ErrorShippingNotAvailable" = "。";
+"CheckoutInfo.ErrorPostcodeInvalid" = "。";
+"CheckoutInfo.ErrorStateInvalid" = "/。";
+"CheckoutInfo.ErrorCityInvalid" = "。";
+"CheckoutInfo.ErrorNameInvalid" = "。";
+"CheckoutInfo.ErrorEmailInvalid" = "。";
+"CheckoutInfo.ErrorPhoneInvalid" = "。";
+
+"Checkout.WebConfirmation.Title" = "";
+"Checkout.PasswordEntry.Title" = "";
+"Checkout.PasswordEntry.Pay" = "";
+"Checkout.PasswordEntry.Text" = "（%@）。，。";
+
+"Checkout.SavePasswordTimeout" = " %@？";
+"Checkout.SavePasswordTimeoutAndTouchId" = " %@ Touch ID ？";
+"Checkout.PayWithTouchId" = " Touch ID ";
+"Checkout.EnterPassword" = "";
+
+"Your_card_has_expired" = "。";
+
+/* Error when the card was declined by the credit card networks */
+"Your_card_was_declined" = "。";
+
+/* Error when the card's expiration month is not valid */
+"Your_cards_expiration_month_is_invalid" = "。";
+
+/* Error when the card's expiration year is not valid */
+"Your_cards_expiration_year_is_invalid" = "。";
+
+/* Error when the card number is not valid */
+"Your_cards_number_is_invalid" = "。";
+
+/* Error when the card's CVC is not valid */
+"Your_cards_security_code_is_invalid" = "。";
+
+"MESSAGE_INVOICE" = "%1$@  %2$@ ";
+"CHAT_MESSAGE_INVOICE" = "%1$@ «%2$@» %3$@ ";
+"PINNED_INVOICE" = "%1$@ ";
+
+"Message.PinnedInvoice" = "";
+
+"User.DeletedAccount" = "";
+
+"Settings.SaveEditedPhotos" = "";
+
+"Message.PaymentSent" = "： %@";
+"Notification.PaymentSent" = "«{title}»“{name}” {amount}";
+
+
+
+
+
+
+
+
+"Common.NotNow" = "";
+
+"Calls.RatingFeedback" = "…";
+
+"Call.StatusIncoming" = "Telegram …";
+"Call.IncomingVoiceCall" = "";
+"Call.IncomingVideoCall" = "";
+"Call.StatusRequesting" = "…";
+"Call.StatusWaiting" = "…";
+"Call.StatusRinging" = "…";
+"Call.StatusConnecting" = "…";
+"Call.StatusOngoing" = "Telegram  %@";
+"Call.StatusEnded" = "";
+"Call.StatusFailed" = "";
+"Call.StatusBusy" = "";
+"Call.Accept" = "";
+"Call.Decline" = "";
+
+"Call.StatusBar" = " %@";
+
+"Call.ParticipantVersionOutdatedError" = "%@ 。，。";
+"Call.ParticipantVideoVersionOutdatedError" = "%@ 。。";
+
+"Privacy.Calls" = "";
+
+"Privacy.Calls.WhoCanCallMe" = "";
+"Privacy.Calls.CustomHelp" = "。";
+"Privacy.Calls.AlwaysAllow" = "";
+"Privacy.Calls.NeverAllow" = "";
+"Privacy.Calls.CustomShareHelp" = "。";
+
+"Privacy.Calls.AlwaysAllow.Title" = "";
+"Privacy.Calls.AlwaysAllow.Placeholder" = "…";
+"Privacy.Calls.NeverAllow.Title" = "";
+"Privacy.Calls.NeverAllow.Placeholder" = "…";
+
+"PhotoEditor.QualityTool" = "";
+
+
+
+
+
+
+"Settings.SaveEditedPhotos" = "";
+
+"Calls.NoCallsPlaceholder" = "。";
+"Calls.NoMissedCallsPlacehoder" = "";
+
+"Call.CallInProgressTitle" = "";
+"Call.CallInProgressMessage" = "“%1$@”“%2$@”？";
+"Call.CallInProgressVoiceChatMessage" = "%1$@ %2$@?";
+
+"Call.ExternalCallInProgressMessage" = "。";
+
+"Call.VoiceChatInProgressTitle" = "";
+
+
+
+"Call.VoiceChatInProgressCallMessage" = " %1$@  %2$@?";
+
+
+"Call.Message" = "";
+
+"UserInfo.TapToCall" = "";
+"Call.GroupFormat" = "%1$@（%2$@）";
+
+"NetworkUsageSettings.CallDataSection" = "";
+
+"Call.PrivacyErrorMessage" = "，“%@”。";
+
+"Notification.CallBack" = "";
+
+"Call.AudioRouteSpeaker" = "";
+"Call.AudioRouteHeadphones" = "";
+"Call.AudioRouteHide" = "";
+
+"Call.PhoneCallInProgressMessage" = " Telegram 。";
+"Call.RecordingDisabledMessage" = "。";
+
+"Call.EmojiDescription" = "“%@” emoji ， 100%% 。";
+
+"Message.VideoMessage" = "";
+
+"Conversation.HoldForAudio" = "，。";
+"Conversation.HoldForVideo" = "，。";
+
+"UserInfo.TelegramCall" = "Telegram ";
+"UserInfo.PhoneCall" = "";
+
+"SharedMedia.CategoryMedia" = "";
+"SharedMedia.CategoryDocs" = "";
+"SharedMedia.CategoryLinks" = "";
+"SharedMedia.CategoryOther" = "";
+
+"AccessDenied.VideoMessageCamera" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+"AccessDenied.VideoMessageMicrophone" = "Telegram 。\n\n「 -  - 」 Telegram 。";
+
+"ChatSettings.AutomaticVideoMessageDownload" = "";
+
+
+
+
+"ForwardedVideoMessages_any" = "%@ ";
+
+
+
+"Conversation.DiscardVoiceMessageTitle" = "";
+"Conversation.DiscardVoiceMessageDescription" = "\n？";
+"Conversation.DiscardVoiceMessageAction" = "";
+
+"Message.ForwardedMessageShort" = "\n%@";
+
+"Checkout.LiabilityAlertTitle" = "";
+
+"Settings.AppLanguage" = "";
+"Settings.AppLanguage.Unofficial" = "";
+
+"InstantPage.AutoNightTheme" = "";
+
+"Privacy.PaymentsTitle" = "";
+"Privacy.PaymentsClearInfo" = "";
+"Privacy.PaymentsClearInfoHelp" = "。：Telegram 。";
+"Privacy.PaymentsClear.PaymentInfo" = "";
+"Privacy.PaymentsClear.ShippingInfo" = "";
+
+"Channel.EditAdmin.PermissionsHeader" = "？";
+"Channel.EditAdmin.PermissionChangeInfo" = "";
+"Group.EditAdmin.PermissionChangeInfo" = "";
+"Channel.EditAdmin.PermissionPostMessages" = "";
+"Channel.EditAdmin.PermissionEditMessages" = "";
+"Channel.EditAdmin.PermissionDeleteMessages" = "";
+"Channel.EditAdmin.PermissionBanUsers" = "";
+"Channel.EditAdmin.PermissionInviteSubscribers" = "";
+"Channel.EditAdmin.PermissionInviteMembers" = "";
+"Channel.EditAdmin.PermissionInviteViaLink" = "";
+"Channel.EditAdmin.PermissionPinMessages" = "";
+"Channel.EditAdmin.PermissionAddAdmins" = "";
+
+"Channel.EditAdmin.PermissinAddAdminOn" = "，（）。";
+"Channel.EditAdmin.PermissinAddAdminOff" = "。";
+
+"Login.ContinueWithLocalization" = "（）";
+"Localization.LanguageName" = "";
+"Localization.ChooseLanguage" = "";
+"Localization.EnglishLanguageName" = "";
+"Localization.LanguageOther" = "";
+"Localization.LanguageCustom" = "";
+
+"Channel.BanUser.Title" = "";
+"Channel.BanUser.PermissionsHeader" = "";
+"Channel.BanUser.PermissionReadMessages" = "";
+"Channel.BanUser.PermissionSendMessages" = "";
+"Channel.BanUser.PermissionSendMedia" = "";
+"Channel.BanUser.PermissionSendStickersAndGifs" = " GIF ";
+"Channel.BanUser.PermissionEmbedLinks" = "";
+"Channel.BanUser.PermissionSendPolls" = "";
+"Channel.BanUser.PermissionChangeGroupInfo" = "";
+"Channel.BanUser.PermissionAddMembers" = "";
+"Channel.BanUser.Unban" = "";
+
+"Channel.BanUser.BlockFor" = "";
+
+"Channel.BanList.BlockedTitle" = "";
+"Channel.BanList.RestrictedTitle" = "";
+
+"Group.Info.AdminLog" = "";
+"Channel.AdminLog.InfoPanelTitle" = "？";
+"Channel.AdminLog.InfoPanelAlertTitle" = "？";
+"Channel.AdminLog.InfoPanelAlertText" = " 48 /。";
+
+
+"Channel.AdminLog.BanReadMessages" = "";
+"Channel.AdminLog.BanSendMessages" = "";
+"Channel.AdminLog.BanSendMedia" = "";
+"Channel.AdminLog.BanSendStickersAndGifs" = "";
+"Channel.AdminLog.BanEmbedLinks" = "";
+"Channel.AdminLog.MessageRestricted" = "%@ “%@(%@)”";
+"Channel.AdminLog.MessageAdmin" = "%@ “%@(%@)”";
+"Channel.AdminLog.ChangeInfo" = "";
+"Channel.AdminLog.PinMessages" = "";
+"Channel.AdminLog.AddMembers" = "";
+"Channel.AdminLog.SendPolls" = "";
+
+"Channel.AdminLog.CanChangeInfo" = "";
+"Channel.AdminLog.CanSendMessages" = "";
+"Channel.AdminLog.CanDeleteMessages" = "";
+"Channel.AdminLog.CanBanUsers" = "";
+"Channel.AdminLog.CanInviteUsers" = "";
+"Channel.AdminLog.CanPinMessages" = "";
+"Channel.AdminLog.CanAddAdmins" = "";
+"Channel.AdminLog.CanBeAnonymous" = "";
+"Channel.AdminLog.CanEditMessages" = "";
+"Channel.AdminLog.CanManageCalls" = "";
+"Channel.AdminLog.CanManageLiveStreams" = "";
+
+"Channel.AdminLog.MessageToggleInvitesOn" = "%@ ";
+"Channel.AdminLog.MessageToggleInvitesOff" = "%@ ";
+
+"Channel.AdminLog.MessageUnpinned" = "%@ ";
+
+"Channel.AdminLog.MessageToggleSignaturesOn" = "%@ ";
+"Channel.AdminLog.MessageToggleSignaturesOff" = "%@ ";
+
+"Channel.AdminLog.MessageChangedGroupUsername" = "%@ ：";
+"Channel.AdminLog.MessageChangedChannelUsername" = "%@ ：";
+"Channel.AdminLog.MessageRemovedGroupUsername" = "%@ ";
+"Channel.AdminLog.MessageRemovedChannelUsername" = "%@ ";
+
+"Channel.AdminLog.MessageChangedGroupAbout" = "%@ ";
+"Channel.AdminLog.MessageChangedChannelAbout" = "%@ ";
+
+"Channel.AdminLog.MessageEdited" = "%@ ";
+"Channel.AdminLog.CaptionEdited" = "%@ ：";
+"Channel.AdminLog.MessageDeleted" = "%@ ：";
+"Channel.AdminLog.MessagePinned" = "%@ ";
+
+
+"Channel.AdminLog.MessageInvitedName" = " %1$@";
+"Channel.AdminLog.MessageInvitedNameUsername" = "“%1$@(%2$@)”";
+"Channel.AdminLog.MessageKickedName" = "“%1$@”";
+"Channel.AdminLog.MessageKickedNameUsername" = "“%1$@(%2$@)”";
+"Channel.AdminLog.MessageUnkickedName" = "“%1$@”";
+"Channel.AdminLog.MessageUnkickedNameUsername" = "“%1$@”（%2$@）";
+"Channel.AdminLog.MessageRestrictedName" = "“%1$@”";
+"Channel.AdminLog.MessageRestrictedNameUsername" = "“%1$@(%2$@)”";
+"Channel.AdminLog.MessagePromotedName" = "“%1$@”";
+"Channel.AdminLog.MessagePromotedNameUsername" = "“%1$@(%2$@)”";
+"Channel.AdminLog.MessageRestrictedUntil" = " %@";
+"Channel.AdminLog.MessageRestrictedForever" = "";
+"Channel.AdminLog.MessageRestrictedNewSetting" = "%@";
+
+"Channel.AdminLog.MessagePreviousMessage" = "";
+"Channel.AdminLog.MessagePreviousCaption" = "";
+"Channel.AdminLog.MessagePreviousLink" = "";
+"Channel.AdminLog.MessagePreviousDescription" = "";
+
+"Contacts.MemberSearchSectionTitleGroup" = "";
+
+"Channel.AdminLog.TitleAllEvents" = "";
+"Channel.AdminLog.TitleSelectedEvents" = "";
+"Channel.AdminLogFilter.Title" = "";
+"Channel.AdminLogFilter.EventsTitle" = "";
+"Channel.AdminLogFilter.EventsAll" = "";
+"Channel.AdminLogFilter.EventsRestrictions" = "";
+"Channel.AdminLogFilter.EventsAdmins" = "";
+"Channel.AdminLogFilter.EventsNewMembers" = "";
+"Channel.AdminLogFilter.EventsInfo" = "";
+"Channel.AdminLogFilter.ChannelEventsInfo" = "";
+"Channel.AdminLogFilter.EventsDeletedMessages" = "";
+"Channel.AdminLogFilter.EventsEditedMessages" = "";
+"Channel.AdminLogFilter.EventsPinned" = "";
+"Channel.AdminLogFilter.EventsLeaving" = "";
+"Channel.AdminLogFilter.EventsCalls" = "";
+"Channel.AdminLogFilter.EventsLiveStreams" = "";
+"Channel.AdminLogFilter.EventsInviteLinks" = "";
+"Channel.AdminLogFilter.AdminsTitle" = "";
+"Channel.AdminLogFilter.AdminsAll" = "";
+
+"Group.ErrorSendRestrictedStickers" = "，。";
+"Group.ErrorSendRestrictedMedia" = "，。";
+
+"SharedMedia.ViewInChat" = "";
+
+"Channel.Info.BlackList" = "";
+
+"Channel.Management.PromotedBy" = " %@ ";
+"DialogList.LanguageTooltip" = "";
+
+"Contacts.PhoneNumber" = "";
+"Contacts.AddPhoneNumber" = " %@";
+"Contacts.ShareTelegram" = " Telegram";
+
+"Conversation.ViewChannel" = "";
+"Conversation.ViewGroup" = "";
+
+
+"GroupInfo.ActionPromote" = "";
+"GroupInfo.ActionRestrict" = "";
+
+"Conversation.RestrictedTextTimed" = "  %@ 。";
+"Conversation.RestrictedText" = "。";
+"Conversation.DefaultRestrictedText" = "。";
+
+"Conversation.RestrictedInlineTimed" = " %@ 。";
+"Conversation.RestrictedInline" = "。";
+"Conversation.DefaultRestrictedInline" = "。";
+
+"Conversation.RestrictedMediaTimed" = " %@ 。";
+"Conversation.RestrictedMedia" = "。";
+"Conversation.DefaultRestrictedMedia" = "。";
+
+"Conversation.RestrictedStickersTimed" = " %@ 。";
+"Conversation.RestrictedStickers" = "。";
+"Conversation.DefaultRestrictedStickers" = "。";
+
+"ChatSettings.ConnectionType.Title" = "";
+"ChatSettings.ConnectionType.UseProxy" = "";
+"ChatSettings.ConnectionType.UseSocks5" = "SOCKS5";
+
+"SocksProxySetup.Title" = "";
+
+"SocksProxySetup.TypeNone" = "";
+"SocksProxySetup.TypeSocks" = "SOCKS5";
+
+"SocksProxySetup.Connection" = "";
+"SocksProxySetup.Hostname" = "";
+"SocksProxySetup.Port" = "";
+
+"SocksProxySetup.Credentials" = "（）";
+"SocksProxySetup.Username" = "";
+"SocksProxySetup.Password" = "";
+
+"Channel.AdminLog.EmptyTitle" = "";
+"Channel.AdminLog.EmptyText" = " 48 /。";
+"Group.AdminLog.EmptyText" = " 48 ，/。";
+"Broadcast.AdminLog.EmptyText" = " 48 ，。";
+
+"Channel.AdminLog.EmptyFilterTitle" = "";
+"Channel.AdminLog.EmptyFilterQueryText" = "“%@”。";
+"Channel.AdminLog.EmptyFilterText" = "。";
+
+"Channel.AdminLog.EmptyMessageText" = "";
+
+"Camera.Title" = "";
+
+"Channel.Members.AddAdminErrorNotAMember" = "，。，。";
+
+"Channel.Members.AddAdminErrorBlacklisted" = "，。，。";
+
+"Channel.Members.AddBannedErrorAdmin" = "，。，。";
+
+"Group.Members.AddMemberBotErrorNotAllowed" = "，。";
+
+"Privacy.Calls.P2P" = "";
+"Privacy.Calls.P2PHelp" = "， Telegram  IP ，。";
+
+"Privacy.Calls.Integration" = "iOS ";
+"Privacy.Calls.IntegrationHelp" = "iOS  Telegram /。 iCloud ， Apple。";
+
+"Call.ReportPlaceholder" = "？";
+"Call.ReportIncludeLog" = "";
+"Call.ReportIncludeLogDescription" = "，。";
+"Call.ReportSkip" = "";
+"Call.ReportSend" = "";
+
+"Channel.EditAdmin.CannotEdit" = "。";
+"Call.RateCall" = "";
+"Call.ShareStats" = "";
+
+"Settings.ApplyProxyAlert" = "？\n：%1$@\n：%2$@\n\n「 - 」。";
+"Settings.ApplyProxyAlertCredentials" = "？\n：%1$@\n：%2$@\n：%3$@\n：%4$@\n\n「 - 」。";
+"Settings.ApplyProxyAlertEnable" = "";
+
+"Channel.Management.RestrictedBy" = " %@ ";
+
+"Stickers.FrequentlyUsed" = "";
+
+
+
+
+"Contacts.ImportersCount_any" = "%@  Telegram ";
+
+
+
+"Conversation.ContextMenuBan" = "";
+
+"SocksProxySetup.UseForCalls" = "";
+"SocksProxySetup.UseForCallsHelp" = "。";
+
+"InviteText.URL" = "https://telegram.org/dl";
+"InviteText.SingleContact" = "， Telegram 。！：%@";
+
+
+
+"InviteText.ContactsCountText_any" = "， %@  Telegram 。！：{url}";
+
+
+
+"Invite.LargeRecipientsCountWarning" = "，。";
+
+"Contacts.InviteSearchLabel" = "";
+
+"Message.ImageExpired" = "";
+"Message.VideoExpired" = "";
+
+"SecretImage.Title" = "";
+"SecretVideo.Title" = "";
+"SecretGif.Title" = " GIF";
+"SecretTimer.ImageDescription" = "，。";
+"SecretTimer.VideoDescription" = "，。";
+
+"PhotoEditor.TiltShift" = "";
+
+"Notification.SecretChatMessageScreenshotSelf" = "！";
+
+"Settings.AboutEmpty" = "";
+
+"SecretImage.NotViewedYet" = "%@ ";
+"SecretVideo.NotViewedYet" = "%@ ";
+"SecretGIF.NotViewedYet" = "%@  GIF ";
+
+"UserInfo.About.Placeholder" = "";
+
+"Call.StatusNoAnswer" = "";
+
+"Conversation.SearchByName.Prefix" = "：";
+"Conversation.SearchByName.Placeholder" = "";
+
+"Login.PhoneBannedError" = "。";
+
+"Clipboard.SendPhoto" = "";
+
+"HashtagSearch.AllChats" = "";
+
+"Stickers.AddToFavorites" = "";
+"Stickers.RemoveFromFavorites" = "";
+
+"Channel.Info.Stickers" = "";
+"Channel.Stickers.Placeholder" = "";
+"Channel.Stickers.YourStickers" = "";
+
+"Stickers.FavoriteStickers" = "";
+"Stickers.GroupStickers" = "";
+"Stickers.GroupChooseStickerPack" = "";
+"Stickers.GroupStickersHelp" = "，。";
+
+"Channel.AdminLog.MessageChangedGroupStickerPack" = "%@ ";
+"Channel.AdminLog.MessageRemovedGroupStickerPack" = "%@ ";
+
+"Conversation.ContextMenuCopyLink" = "";
+
+"Channel.Stickers.Searching" = "…";
+"Channel.Stickers.NotFound" = "";
+"Channel.Stickers.NotFoundHelp" = "，";
+"Channel.Stickers.CreateYourOwn" = " @stickers 。";
+
+"MediaPicker.TimerTooltip" = "";
+
+"UserInfo.BlockConfirmation" = " %@ ？";
+
+"FastTwoStepSetup.Title" = "";
+"FastTwoStepSetup.PasswordSection" = "";
+"FastTwoStepSetup.PasswordPlaceholder" = "";
+"FastTwoStepSetup.PasswordConfirmationPlaceholder" = "";
+"FastTwoStepSetup.PasswordHelp" = "。。";
+"FastTwoStepSetup.EmailSection" = "";
+"FastTwoStepSetup.EmailPlaceholder" = "";
+"FastTwoStepSetup.EmailHelp" = "。。";
+
+"Conversation.ViewMessage" = "";
+"Conversation.ViewPost" = "";
+
+"GroupInfo.GroupHistory" = "";
+"GroupInfo.GroupHistoryVisible" = "";
+"GroupInfo.GroupHistoryHidden" = "";
+
+"Group.Setup.HistoryTitle" = "";
+"Group.Setup.HistoryHeader" = "";
+"Group.Setup.HistoryVisible" = "";
+"Group.Setup.HistoryHidden" = "";
+
+"Group.Setup.HistoryVisibleHelp" = "。";
+"Group.Setup.HistoryHiddenHelp" = "。";
+"Group.Setup.BasicHistoryHiddenHelp" = " 100 。";
+
+
+"Channel.AdminLog.MessageGroupPreHistoryVisible" = "%@ ";
+"Channel.AdminLog.MessageGroupPreHistoryHidden" = "%@ ";
+
+"Map.PullUpForPlaces" = "";
+"Map.ShareLiveLocation" = "…";
+"Map.ShareLiveLocationHelp" = "";
+"Map.StopLiveLocation" = "";
+"Map.Directions" = "";
+"Map.DirectionsDriveEta" = "%@";
+"Map.Location" = "";
+"Map.YouAreHere" = "";
+"Map.LiveLocationShowAll" = "";
+
+"Map.LiveLocationTitle" = "";
+"Map.LiveLocationPrivateDescription" = "“%@”。";
+"Map.LiveLocationGroupDescription" = "。";
+"Map.LiveLocationFor15Minutes" = "15 ";
+"Map.LiveLocationFor1Hour" = "1 ";
+"Map.LiveLocationFor8Hours" = "8 ";
+"Map.LiveLocationShortHour" = "%@";
+
+"Message.LiveLocation" = "";
+"Conversation.LiveLocation" = "";
+
+"Conversation.LiveLocationYou" = "";
+"Conversation.LiveLocationYouAnd" = "** %@";
+
+
+
+"Conversation.LiveLocationMembersCount_any" = " %@ ";
+
+
+
+"Conversation.Admin" = "";
+
+"LiveLocationUpdated.JustNow" = "";
+ //three to ten
+ //one
+ //two
+ //three to ten
+ // more than ten
+"LiveLocationUpdated.MinutesAgo_any" = " %@ "; // more than ten
+"LiveLocationUpdated.TodayAt" = "：%@";
+
+
+
+
+
+"LiveLocation.MenuChatsCount_any" = " %@ 。";
+
+
+"LiveLocation.MenuStopAll" = "";
+
+"DialogList.LiveLocationSharingTo" = " %@ ";
+
+
+
+"DialogList.LiveLocationChatsCount_any" = " %@ ";
+
+
+
+"Notification.PinnedLiveLocationMessage" = "%@ ";
+"Message.PinnedLiveLocationMessage" = "";
+
+"NotificationSettings.ContactJoined" = "";
+
+"AccessDenied.LocationAlwaysDenied" = "， Telegram 。\n\n「 -  - 」 Telegram “”。";
+
+"UserInfo.UnblockConfirmation" = "“%@”？";
+
+"Login.BannedPhoneSubject" = "Banned phone number: %@";
+"Login.BannedPhoneBody" = "I'm trying to use my mobile phone number: %@\nBut Telegram says it's banned. Please help.";
+
+"Conversation.StopLiveLocation" = "";
+
+"Settings.SavedMessages" = "";
+"Conversation.SavedMessages" = "";
+"DialogList.SavedMessages" = "";
+
+"MediaPicker.TapToUngroupDescription" = "";
+"MediaPicker.GroupDescription" = "";
+"MediaPicker.UngroupDescription" = "";
+
+"EditProfile.Title" = "";
+"EditProfile.NameAndPhotoHelp" = "，。";
+
+"Settings.SetUsername" = "";
+
+"DialogList.SearchSubtitleFormat" = "%1$@，%2$@";
+
+"Media.ShareThisPhoto" = "";
+
+
+
+"Media.SharePhoto_any" = " %@ ";
+
+
+
+"Media.ShareThisVideo" = "";
+
+
+
+"Media.ShareVideo_any" = " %@ ";
+
+
+
+
+
+
+"Media.ShareItem_any" = " %@ ";
+
+
+
+"Settings.ViewPhoto" = "";
+
+"DialogList.SavedMessagesTooltip" = "「」";
+
+"PasscodeSettings.UnlockWithFaceId" = " Face ID ";
+"Checkout.SavePasswordTimeoutAndFaceId" = " %@ Face ID ？";
+"Checkout.PayWithFaceId" = " Face ID ";
+
+
+
+
+
+
+"Conversation.StatusSubscribers_any" = "%@ ";
+
+"DialogList.SavedMessagesHelp" = "";
+
+"PrivacySettings.PasscodeAndTouchId" = " & Touch ID";
+"PrivacySettings.PasscodeAndFaceId" = " & Face ID";
+
+"TwoStepAuth.AdditionalPassword" = "";
+
+"PasscodeSettings.HelpTop" = "，。 Telegram 。";
+"PasscodeSettings.HelpBottom" = "：， Telegram。。";
+
+"Channel.Setup.TypePublicHelp" = "，。";
+"Channel.Setup.TypePrivateHelp" = "。";
+"Group.Username.InvalidTooShort" = " 5 。";
+"Group.Username.InvalidStartsWithNumber" = "。";
+"Group.Username.CreatePublicLinkHelp" = "， Telegram 。";
+"Channel.TypeSetup.Title" = "";
+
+"Group.Setup.TypePrivate" = "";
+"Group.Setup.TypePublic" = "";
+
+"Channel.Info.Subscribers" = "";
+"Channel.Subscribers.Title" = "";
+"Conversation.InfoGroup" = "";
+
+"Privacy.PaymentsClearInfoDoneHelp" = "";
+
+"InfoPlist.NSContactsUsageDescription" = "，Telegram  Telegram 。";
+"InfoPlist.NSLocationWhenInUseUsageDescription" = "Telegram 。";
+"InfoPlist.NSCameraUsageDescription" = "，。";
+"InfoPlist.NSPhotoLibraryUsageDescription" = "/。";
+"InfoPlist.NSPhotoLibraryAddUsageDescription" = "/。";
+"InfoPlist.NSMicrophoneUsageDescription" = "/，。";
+"InfoPlist.NSSiriUsageDescription" = " Siri 。";
+"InfoPlist.NSLocationAlwaysAndWhenInUseUsageDescription" = "，Telegram 。";
+"InfoPlist.NSLocationAlwaysUsageDescription" = "，Telegram 。 Apple Watch 。";
+"InfoPlist.NSLocationWhenInUseUsageDescription" = "Telegram 。";
+"InfoPlist.NSFaceIDUsageDescription" = " Face ID 。";
+
+"Privacy.Calls.P2PNever" = "";
+"Privacy.Calls.P2PContacts" = "";
+"Privacy.Calls.P2PAlways" = "";
+
+"ChatSettings.AutoDownloadTitle" = "";
+"ChatSettings.AutoDownloadEnabled" = "";
+"ChatSettings.AutoDownloadPhotos" = "";
+"ChatSettings.AutoDownloadVideos" = "";
+"ChatSettings.AutoDownloadDocuments" = "";
+"ChatSettings.AutoDownloadVoiceMessages" = "";
+"ChatSettings.AutoDownloadVideoMessages" = "";
+"ChatSettings.AutoDownloadReset" = "";
+
+"AutoDownloadSettings.Title" = "";
+
+"AutoDownloadSettings.PhotosTitle" = "";
+"AutoDownloadSettings.VideosTitle" = "";
+"AutoDownloadSettings.DocumentsTitle" = "";
+"AutoDownloadSettings.VoiceMessagesTitle" = "";
+"AutoDownloadSettings.VideoMessagesTitle" = "";
+
+"AutoDownloadSettings.Cellular" = "";
+"AutoDownloadSettings.WiFi" = "WI-FI";
+"AutoDownloadSettings.Contacts" = "";
+"AutoDownloadSettings.PrivateChats" = "";
+"AutoDownloadSettings.GroupChats" = "";
+"AutoDownloadSettings.Channels" = "";
+"AutoDownloadSettings.LimitBySize" = "";
+"AutoDownloadSettings.UpTo" = " %@";
+"AutoDownloadSettings.Unlimited" = "";
+
+"AutoDownloadSettings.Reset" = "";
+"AutoDownloadSettings.ResetHelp" = "";
+
+"SaveIncomingPhotosSettings.Title" = "";
+"SaveIncomingPhotosSettings.From" = "";
+
+"Channel.AdminLog.ChannelEmptyText" = " 48 /。";
+"Channel.AdminLogFilter.EventsNewSubscribers" = "";
+"Channel.AdminLogFilter.EventsLeavingSubscribers" = "";
+
+"Conversation.ClearPrivateHistory" = " Telegram ，。";
+"Conversation.ClearGroupHistory" = " Telegram ，。";
+"Conversation.ClearSecretHistory" = "，。";
+"Conversation.ClearSelfHistory" = " Telegram ，。";
+
+"MediaPicker.LivePhotoDescription" = "Live Photo ， GIF 。";
+
+"Settings.Appearance" = "";
+"Appearance.Title" = "";
+"Appearance.Preview" = "";
+"Appearance.ColorTheme" = "";
+"Appearance.ThemeDayClassic" = "";
+"Appearance.ThemeDay" = "";
+"Appearance.ThemeNight" = "";
+"Appearance.ThemeNightBlue" = "";
+"Appearance.PreviewReplyAuthor" = "";
+"Appearance.PreviewReplyText" = "！👋";
+"Appearance.PreviewIncomingText" = "？";
+"Appearance.PreviewOutgoingText" = " 😎";
+"Appearance.AccentColor" = "";
+"Appearance.PickAccentColor" = "";
+
+"Appearance.AutoNightTheme" = "";
+"Appearance.AutoNightThemeDisabled" = "";
+
+"AutoNightTheme.Title" = "";
+"AutoNightTheme.Disabled" = "";
+"AutoNightTheme.Scheduled" = "";
+"AutoNightTheme.Automatic" = "";
+
+"AutoNightTheme.ScheduleSection" = "";
+"AutoNightTheme.UseSunsetSunrise" = "/";
+"AutoNightTheme.ScheduledFrom" = "";
+"AutoNightTheme.ScheduledTo" = "";
+
+"AutoNightTheme.UpdateLocation" = "";
+"AutoNightTheme.LocationHelp" = "/。，。\n\n：%@\n：%@";
+"AutoNightTheme.NotAvailable" = "";
+
+"AutoNightTheme.AutomaticSection" = "";
+"AutoNightTheme.AutomaticHelp" = " %@%% 。“”，。";
+
+"AutoNightTheme.PreferredTheme" = "";
+
+"AuthSessions.Sessions" = "";
+"AuthSessions.LoggedIn" = "";
+"AuthSessions.LogOutApplications" = "";
+"AuthSessions.LogOutApplicationsHelp" = " Telegram 。";
+"AuthSessions.LoggedInWithTelegram" = " Telegram ";
+"AuthSessions.LogOut" = "";
+"AuthSessions.Message" = " %@ 。";
+
+"Conversation.ContextMenuReport" = "";
+
+"Stickers.Search" = "";
+"Stickers.NoStickersFound" = "";
+
+"Camera.Discard" = "";
+
+"Stickers.SuggestStickers" = " emoji ";
+"Stickers.SuggestAll" = "";
+"Stickers.SuggestAdded" = "";
+"Stickers.SuggestNone" = "";
+
+"Settings.Proxy" = "";
+"Settings.ProxyDisabled" = "";
+"Settings.ProxyConnecting" = "…";
+"Settings.ProxyConnected" = "";
+
+"SocksProxySetup.UseProxy" = "";
+"SocksProxySetup.SavedProxies" = "";
+"SocksProxySetup.AddProxy" = "";
+"SocksProxySetup.SaveProxy" = "";
+"SocksProxySetup.ConnectAndSave" = "";
+"SocksProxySetup.AddProxyTitle" = "";
+"SocksProxySetup.ProxyDetailsTitle" = "";
+"SocksProxySetup.ProxyStatusChecking" = "…";
+"SocksProxySetup.ProxyStatusPing" = "Ping: %@ ";
+"SocksProxySetup.ProxyStatusUnavailable" = "";
+"SocksProxySetup.ProxyStatusConnecting" = "";
+"SocksProxySetup.ProxyStatusConnected" = "";
+
+"SocksProxySetup.ProxyType" = "";
+"SocksProxySetup.ProxySocks5" = "SOCKS5";
+"SocksProxySetup.ProxyTelegram" = "MTProto";
+"SocksProxySetup.HostnamePlaceholder" = "";
+"SocksProxySetup.PortPlaceholder" = "";
+"SocksProxySetup.UsernamePlaceholder" = "";
+"SocksProxySetup.PasswordPlaceholder" = "";
+"SocksProxySetup.Secret" = "";
+"SocksProxySetup.SecretPlaceholder" = "";
+"SocksProxySetup.RequiredCredentials" = "";
+
+"SocksProxySetup.Connecting" = "…";
+"SocksProxySetup.FailedToConnect" = "";
+
+"SocksProxySetup.ProxyEnabled" = "\n";
+
+"DialogList.AdLabel" = "";
+"DialogList.AdNoticeAlert" = "。， Telegram 。";
+"SocksProxySetup.AdNoticeHelp" = "。 Telegram 。";
+
+"SocksProxySetup.ShareProxyList" = "";
+
+"Privacy.SecretChatsTitle" = "";
+"Privacy.SecretChatsLinkPreviews" = "";
+"Privacy.SecretChatsLinkPreviewsHelp" = " Telegram ，。";
+
+"Privacy.ContactsTitle" = "";
+"Privacy.ContactsSync" = "";
+"Privacy.ContactsSyncHelp" = "。";
+"Privacy.ContactsReset" = "";
+"Privacy.ContactsResetConfirmation" = " Telegram 。\n“”，。";
+
+"Login.TermsOfServiceDecline" = "";
+"Login.TermsOfServiceAgree" = "";
+
+"Login.TermsOfService.ProceedBot" = " %@。";
+
+"Login.TermsOfServiceSignupDecline" = "， Telegram。\n\n，。Telegram 。 「」 （：）。\n\n Telegram ，。";
+
+"UserInfo.BotPrivacy" = "\n";
+
+"PrivacyPolicy.Title" = "";
+"PrivacyPolicy.Decline" = "";
+"PrivacyPolicy.Accept" = "";
+
+"PrivacyPolicy.AgeVerificationTitle" = "";
+"PrivacyPolicy.AgeVerificationMessage" = " %@ 。";
+"PrivacyPolicy.AgeVerificationAgree" = "";
+
+"PrivacyPolicy.DeclineTitle" = "";
+"PrivacyPolicy.DeclineMessage" = "，。，。Telegram 。「」（：）。\n\n Telegram ，。";
+"PrivacyPolicy.DeclineDeclineAndDelete" = "";
+
+"PrivacyPolicy.DeclineLastWarning" = "， Telegram  Telegram 。\n\n：，，，。（， Telegram ，「 -  Telegram 」 。）";
+"PrivacyPolicy.DeclineDeleteNow" = "";
+
+"Settings.Passport" = "Telegram ";
+
+"Passport.Title" = "";
+
+"Passport.RequestHeader" = "%@ 。";
+
+"Passport.InfoTitle" = "Telegram ？";
+"Passport.InfoText" = " Telegram ， 。\n\n、。 Telegram 。";
+"Passport.InfoLearnMore" = "";
+"Passport.InfoFAQ_URL" = "https://telegram.org/faq#passport";
+
+"Passport.PassportInformation" = "";
+"Passport.RequestedInformation" = "";
+"Passport.FieldIdentity" = "";
+"Passport.FieldIdentityDetailsHelp" = "";
+"Passport.FieldIdentityUploadHelp" = "";
+"Passport.FieldIdentitySelfieHelp" = "";
+"Passport.FieldAddress" = "";
+"Passport.FieldAddressHelp" = "";
+"Passport.FieldAddressUploadHelp" = "";
+"Passport.FieldPhone" = "";
+"Passport.FieldPhoneHelp" = "";
+"Passport.FieldEmail" = "";
+"Passport.FieldEmailHelp" = "";
+"Passport.PrivacyPolicy" = " [%1$@ ] @%2$@ 。";
+"Passport.AcceptHelp" = " %1$@。， %2$@ 。";
+"Passport.Authorize" = "";
+
+"Passport.DeletePassport" = " Telegram ";
+"Passport.DeletePassportConfirmation" = " Telegram ？。";
+
+"Passport.PasswordHelp" = " Telegram \n";
+"Passport.PasswordPlaceholder" = "";
+"Passport.InvalidPasswordError" = "，。";
+"Passport.FloodError" = "。。";
+"Passport.UpdateRequiredError" = "， Telegram ，。  Telegram。";
+
+"Passport.ForgottenPassword" = "";
+"Passport.PasswordReset" = " Telegram 。，。";
+
+"Passport.PasswordDescription" = "。\n\n Telegram 。";
+"Passport.PasswordCreate" = "";
+"Passport.PasswordCompleteSetup" = "";
+"Passport.PasswordNext" = "";
+
+"Passport.DeletePersonalDetails" = "";
+"Passport.DeletePersonalDetailsConfirmation" = "？";
+
+"Passport.DeleteAddress" = "";
+"Passport.DeleteAddressConfirmation" = "？";
+
+"Passport.DeleteDocument" = "";
+"Passport.DeleteDocumentConfirmation" = "？。";
+
+
+"Passport.Scans.Upload" = "";
+"Passport.Scans.UploadNew" = "";
+"Passport.Scans.ScanIndex" = " %@";
+
+"Passport.Identity.TypePersonalDetails" = "";
+"Passport.Identity.TypePassport" = "";
+"Passport.Identity.TypePassportUploadScan" = "";
+"Passport.Identity.TypeInternalPassport" = "（Internal Passport）";
+"Passport.Identity.TypeInternalPassportUploadScan" = "（Internal Passport）";
+"Passport.Identity.TypeIdentityCard" = "";
+"Passport.Identity.TypeIdentityCardUploadScan" = "";
+"Passport.Identity.TypeDriversLicense" = "";
+"Passport.Identity.TypeDriversLicenseUploadScan" = "";
+
+"Passport.Identity.AddPersonalDetails" = "";
+"Passport.Identity.AddPassport" = "";
+"Passport.Identity.AddInternalPassport" = "（Internal Passport）";
+"Passport.Identity.AddIdentityCard" = "";
+"Passport.Identity.AddDriversLicense" = "";
+
+"Passport.Identity.EditPersonalDetails" = "";
+"Passport.Identity.EditPassport" = "";
+"Passport.Identity.EditInternalPassport" = "（Internal Passport）";
+"Passport.Identity.EditIdentityCard" = "";
+"Passport.Identity.EditDriversLicense" = "";
+
+"Passport.Identity.DocumentDetails" = "";
+"Passport.Identity.Name" = "";
+"Passport.Identity.NamePlaceholder" = "";
+"Passport.Identity.MiddleName" = "";
+"Passport.Identity.MiddleNamePlaceholder" = "";
+"Passport.Identity.Surname" = "";
+"Passport.Identity.SurnamePlaceholder" = "";
+"Passport.Identity.DateOfBirth" = "";
+"Passport.Identity.DateOfBirthPlaceholder" = "";
+"Passport.Identity.Gender" = "";
+"Passport.Identity.GenderPlaceholder" = "";
+"Passport.Identity.GenderMale" = "";
+"Passport.Identity.GenderFemale" = "";
+"Passport.Identity.Country" = "";
+"Passport.Identity.CountryPlaceholder" = "";
+"Passport.Identity.ResidenceCountry" = "";
+"Passport.Identity.ResidenceCountryPlaceholder" = "";
+"Passport.Identity.DocumentNumber" = " #";
+"Passport.Identity.DocumentNumberPlaceholder" = "";
+"Passport.Identity.IssueDate" = "";
+"Passport.Identity.IssueDatePlaceholder" = "";
+"Passport.Identity.ExpiryDate" = "";
+"Passport.Identity.ExpiryDatePlaceholder" = "";
+"Passport.Identity.ExpiryDateNone" = "";
+"Passport.Identity.DoesNotExpire" = "";
+
+"Passport.Identity.FilesTitle" = "";
+"Passport.Identity.ScansHelp" = "、、、、、。";
+"Passport.Identity.FilesView" = "";
+"Passport.Identity.FilesUploadNew" = "";
+"Passport.Identity.MainPage" = "";
+"Passport.Identity.MainPageHelp" = "";
+"Passport.Identity.FrontSide" = "";
+"Passport.Identity.FrontSideHelp" = "";
+"Passport.Identity.ReverseSide" = "";
+"Passport.Identity.ReverseSideHelp" = "";
+"Passport.Identity.Selfie" = "";
+"Passport.Identity.SelfieHelp" = "";
+"Passport.Identity.Translation" = "";
+"Passport.Identity.TranslationHelp" = "";
+
+"Passport.Address.TypeResidentialAddress" = "";
+"Passport.Address.TypePassportRegistration" = "";
+"Passport.Address.TypeUtilityBill" = "";
+"Passport.Address.TypeBankStatement" = "";
+"Passport.Address.TypeRentalAgreement" = "";
+"Passport.Address.TypeTemporaryRegistration" = "";
+
+"Passport.Address.AddResidentialAddress" = "";
+"Passport.Address.AddPassportRegistration" = "";
+"Passport.Address.AddUtilityBill" = "";
+"Passport.Address.AddBankStatement" = "";
+"Passport.Address.AddRentalAgreement" = "";
+"Passport.Address.AddTemporaryRegistration" = "";
+
+"Passport.Address.EditResidentialAddress" = "";
+"Passport.Address.EditPassportRegistration" = "";
+"Passport.Address.EditUtilityBill" = "";
+"Passport.Address.EditBankStatement" = "";
+"Passport.Address.EditRentalAgreement" = "";
+"Passport.Address.EditTemporaryRegistration" = "";
+
+"Passport.Address.Address" = "";
+"Passport.Address.Street" = "";
+"Passport.Address.Street1Placeholder" = "";
+"Passport.Address.Street2Placeholder" = "，，，，";
+"Passport.Address.Postcode" = "";
+"Passport.Address.PostcodePlaceholder" = "";
+"Passport.Address.City" = "";
+"Passport.Address.CityPlaceholder" = "";
+"Passport.Address.Region" = "";
+"Passport.Address.RegionPlaceholder" = "//";
+"Passport.Address.Country" = "";
+"Passport.Address.CountryPlaceholder" = "";
+
+"Passport.Address.ScansHelp" = "、、///logo， 3 。";
+
+"Passport.Phone.Title" = "";
+"Passport.Phone.UseTelegramNumber" = " %@";
+"Passport.Phone.UseTelegramNumberHelp" = " Telegram 。";
+"Passport.Phone.EnterOtherNumber" = "";
+"Passport.Phone.Help" = "：。";
+"Passport.Phone.Delete" = "";
+
+"Passport.Email.Title" = "";
+"Passport.Email.UseTelegramEmail" = " %@";
+"Passport.Email.UseTelegramEmailHelp" = " Telegram 。";
+"Passport.Email.EnterOtherEmail" = "";
+"Passport.Email.EmailPlaceholder" = "";
+"Passport.Email.Help" = "：。";
+"Passport.Email.Delete" = "";
+"Passport.Email.CodeHelp" = " %@ ";
+
+"Notification.PassportValuesSentMessage" = "%1$@ ：%2$@";
+"Notification.PassportValuePersonalDetails" = "";
+"Notification.PassportValueProofOfIdentity" = "";
+"Notification.PassportValueAddress" = "";
+"Notification.PassportValueProofOfAddress" = "";
+"Notification.PassportValuePhone" = "";
+"Notification.PassportValueEmail" = "";
+
+"FastTwoStepSetup.HintSection" = "";
+"FastTwoStepSetup.HintPlaceholder" = "";
+"FastTwoStepSetup.HintHelp" = "。";
+
+"Passport.DiscardMessageTitle" = "";
+"Passport.DiscardMessageDescription" = "？";
+"Passport.DiscardMessageAction" = "";
+
+"Passport.ScanPassport" = "";
+"Passport.ScanPassportHelp" = "。";
+
+"TwoStepAuth.PasswordRemovePassportConfirmation" = "？\n\n！ Telegram ！";
+
+"Application.Update" = "";
+
+"Conversation.EditingMessagePanelMedia" = "";
+"Conversation.EditingMessageMediaChange" = "";
+"Conversation.EditingMessageMediaEditCurrentPhoto" = "";
+"Conversation.EditingMessageMediaEditCurrentVideo" = "";
+
+"Conversation.InputTextCaptionPlaceholder" = "";
+
+"Conversation.ViewContactDetails" = "";
+
+"DialogList.Read" = "";
+"DialogList.Unread" = "";
+
+"ContactInfo.Title" = "";
+"ContactInfo.PhoneLabelHome" = "";
+"ContactInfo.PhoneLabelWork" = "";
+"ContactInfo.PhoneLabelMobile" = "";
+"ContactInfo.PhoneLabelMain" = "";
+"ContactInfo.PhoneLabelHomeFax" = "";
+"ContactInfo.PhoneLabelWorkFax" = "";
+"ContactInfo.PhoneLabelPager" = "";
+"ContactInfo.PhoneLabelOther" = "";
+"ContactInfo.URLLabelHomepage" = "";
+"ContactInfo.BirthdayLabel" = "";
+"ContactInfo.Job" = "";
+
+"UserInfo.NotificationsDefault" = "";
+"UserInfo.NotificationsDefaultSound" = "（%@）";
+
+"DialogList.ProxyConnectionIssuesTooltip" = "。\n。";
+
+"Conversation.TapAndHoldToRecord" = "";
+
+"Privacy.TopPeers" = "";
+"Privacy.TopPeersHelp" = "。";
+"Privacy.TopPeersWarning" = "。";
+"Privacy.TopPeersDelete" = "";
+
+"Conversation.EditingCaptionPanelTitle" = "";
+
+"Passport.CorrectErrors" = "。";
+
+"Passport.NotLoggedInMessage" = " Telegram 。";
+
+"Update.Title" = "Telegram ";
+"Update.AppVersion" = "Telegram %@";
+"Update.UpdateApp" = " Telegram";
+"Update.Skip" = "";
+
+"ReportPeer.ReasonCopyright" = "";
+
+"PrivacySettings.DataSettings" = "";
+"PrivacySettings.DataSettingsHelp" = " Telegram ， Telegram 。";
+
+"PrivateDataSettings.Title" = "";
+"Privacy.ChatsTitle" = "";
+"Privacy.DeleteDrafts" = "";
+
+"UserInfo.NotificationsDefaultEnabled" = "（）";
+"UserInfo.NotificationsDefaultDisabled" = "（）";
+
+"Notifications.MessageNotificationsExceptions" = "";
+"Notifications.GroupNotificationsExceptions" = "";
+
+"Notifications.ExceptionsNone" = "";
+
+
+
+"Notifications.Exceptions_any" = "%@ ";
+
+
+
+
+
+
+"Notifications.ExceptionMuteExpires.Minutes_any" = " %@ ";
+
+
+
+
+
+
+"Notifications.ExceptionMuteExpires.Hours_any" = " %@ ";
+
+
+
+
+
+
+"Notifications.ExceptionMuteExpires.Days_any" = " %@ ";
+
+
+
+"Notifications.ExceptionsTitle" = "";
+"Notifications.ExceptionsChangeSound" = "（%@）";
+"Notifications.ExceptionsDefaultSound" = "";
+"Notifications.ExceptionsMuted" = "";
+"Notifications.ExceptionsUnmuted" = "";
+"Notifications.AddExceptionTitle" = "";
+
+"Notifications.ExceptionsMessagePlaceholder" = "。";
+"Notifications.ExceptionsGroupPlaceholder" = "/。";
+
+"Passport.Identity.LatinNameHelp" = "";
+"Passport.Identity.NativeNameTitle" = "%@";
+"Passport.Identity.NativeNameGenericTitle" = "";
+"Passport.Identity.NativeNameHelp" = "。";
+"Passport.Identity.NativeNameGenericHelp" = "（%@）。";
+
+"Passport.Identity.Translations" = "";
+"Passport.Identity.TranslationsHelp" = "。";
+"Passport.FieldIdentityTranslationHelp" = "";
+"Passport.FieldAddressTranslationHelp" = "";
+
+"Passport.FieldOneOf.Or" = "%1$@%2$@";
+"Passport.Identity.UploadOneOfScan" = "%@";
+"Passport.Address.UploadOneOfScan" = "%@";
+
+"Passport.Address.TypeUtilityBillUploadScan" = "";
+"Passport.Address.TypeBankStatementUploadScan" = "";
+"Passport.Address.TypeRentalAgreementUploadScan" = "";
+"Passport.Address.TypePassportRegistrationUploadScan" = "";
+"Passport.Address.TypeTemporaryRegistrationUploadScan" = "";
+
+"Passport.Identity.OneOfTypePassport" = "";
+"Passport.Identity.OneOfTypeInternalPassport" = "（Internal Passport）";
+"Passport.Identity.OneOfTypeIdentityCard" = "";
+"Passport.Identity.OneOfTypeDriversLicense" = "";
+
+"Passport.Address.OneOfTypePassportRegistration" = "";
+"Passport.Address.OneOfTypeUtilityBill" = "";
+"Passport.Address.OneOfTypeBankStatement" = "";
+"Passport.Address.OneOfTypeRentalAgreement" = "";
+"Passport.Address.OneOfTypeTemporaryRegistration" = "";
+
+"Passport.FieldOneOf.Delimeter" = "、";
+"Passport.FieldOneOf.FinalDelimeter" = "";
+
+
+
+
+
+
+
+
+"NotificationsSound.None" = "";
+"NotificationsSound.Note" = "";
+"NotificationsSound.Aurora" = "";
+"NotificationsSound.Bamboo" = "";
+"NotificationsSound.Chord" = "";
+"NotificationsSound.Circles" = "";
+"NotificationsSound.Complete" = "";
+"NotificationsSound.Hello" = "";
+"NotificationsSound.Input" = "";
+"NotificationsSound.Keys" = "";
+"NotificationsSound.Popcorn" = "";
+"NotificationsSound.Pulse" = "";
+"NotificationsSound.Synth" = "";
+
+"NotificationsSound.Tritone" = "";
+"NotificationsSound.Tremolo" = "";
+"NotificationsSound.Alert" = "";
+"NotificationsSound.Bell" = "";
+"NotificationsSound.Calypso" = "";
+"NotificationsSound.Chime" = "";
+"NotificationsSound.Glass" = "";
+"NotificationsSound.Telegraph" = "";
+
+"Settings.CopyPhoneNumber" = "";
+"Settings.CopyUsername" = "";
+
+"Passport.Language.ar" = "";
+"Passport.Language.az" = "";
+"Passport.Language.bg" = "";
+"Passport.Language.bn" = "";
+"Passport.Language.cs" = "";
+"Passport.Language.da" = "";
+"Passport.Language.de" = "";
+"Passport.Language.dv" = "";
+"Passport.Language.dz" = "";
+"Passport.Language.el" = "";
+"Passport.Language.en" = "";
+"Passport.Language.es" = "";
+"Passport.Language.et" = "";
+"Passport.Language.fa" = "";
+"Passport.Language.fr" = "";
+"Passport.Language.he" = "";
+"Passport.Language.hr" = "";
+"Passport.Language.hu" = "";
+"Passport.Language.hy" = "";
+"Passport.Language.id" = "";
+"Passport.Language.is" = "";
+"Passport.Language.it" = "";
+"Passport.Language.ja" = "";
+"Passport.Language.ka" = "";
+"Passport.Language.km" = "";
+"Passport.Language.ko" = "";
+"Passport.Language.lo" = "";
+"Passport.Language.lt" = "";
+"Passport.Language.lv" = "";
+"Passport.Language.mk" = "";
+"Passport.Language.mn" = "";
+"Passport.Language.ms" = "";
+"Passport.Language.my" = "";
+"Passport.Language.ne" = "";
+"Passport.Language.nl" = "";
+"Passport.Language.pl" = "";
+"Passport.Language.pt" = "";
+"Passport.Language.ro" = "";
+"Passport.Language.ru" = "";
+"Passport.Language.sk" = "";
+"Passport.Language.sl" = "";
+"Passport.Language.th" = "";
+"Passport.Language.tk" = "";
+"Passport.Language.tr" = "";
+"Passport.Language.uk" = "";
+"Passport.Language.uz" = "";
+"Passport.Language.vi" = "";
+
+"Conversation.EmptyGifPanelPlaceholder" = " GIF 。\n @gif 。";
+"DialogList.MultipleTyping" = "%@  %@";
+"Contacts.NotRegisteredSection" = "";
+
+"SocksProxySetup.PasteFromClipboard" = "";
+
+"Share.AuthTitle" = " Telegram";
+"Share.AuthDescription" = " Telegram 。";
+
+"Notifications.DisplayNamesOnLockScreen" = "";
+"Notifications.DisplayNamesOnLockScreenInfoWithLink" = "。，“”“”“” [iOS > ].";
+
+"Notifications.Badge" = "";
+"Notifications.Badge.IncludeMutedChats" = "";
+"Notifications.Badge.IncludePublicGroups" = "";
+"Notifications.Badge.IncludeChannels" = "";
+"Notifications.Badge.CountUnreadMessages" = "";
+"Notifications.Badge.CountUnreadMessages.InfoOff" = "。";
+"Notifications.Badge.CountUnreadMessages.InfoOn" = "。";
+
+"Appearance.ReduceMotion" = "";
+"Appearance.ReduceMotionInfo" = "。";
+
+"Appearance.Animations" = "";
+
+"Weekday.Monday" = "";
+"Weekday.Tuesday" = "";
+"Weekday.Wednesday" = "";
+"Weekday.Thursday" = "";
+"Weekday.Friday" = "";
+"Weekday.Saturday" = "";
+"Weekday.Sunday" = "";
+
+"Watch.Message.Call" = "";
+"Watch.Message.Game" = "";
+"Watch.Message.Invoice" = "";
+"Watch.Message.Poll" = "";
+
+
+
+
+"AuthSessions.IncompleteAttempts" = "";
+"AuthSessions.IncompleteAttemptsInfo" = "。，。";
+
+"AuthSessions.Terminate" = "";
+
+"ApplyLanguage.ChangeLanguageAlreadyActive" = "（%1$@）。";
+"ApplyLanguage.ChangeLanguageTitle" = "？";
+"ApplyLanguage.ChangeLanguageUnofficialText" = "（%2$@%）（**%1$@**）。\n\n。 []()。\n\n“”。";
+"ApplyLanguage.ChangeLanguageOfficialText" = " (**%1$@**)。\n\n。 []()。\n\n“”。";
+"ApplyLanguage.ChangeLanguageAction" = "";
+"ApplyLanguage.ApplyLanguageAction" = "";
+"ApplyLanguage.UnsufficientDataTitle" = "";
+"ApplyLanguage.UnsufficientDataText" = "， (%1$@) Telegram iOS。 []()。";
+"ApplyLanguage.LanguageNotSupportedError" = "，。";
+"ApplyLanguage.ApplySuccess" = "";
+
+"TextFormat.Bold" = "";
+"TextFormat.Italic" = "";
+"TextFormat.Monospace" = "";
+
+"TwoStepAuth.SetupPasswordTitle" = "";
+"TwoStepAuth.SetupPasswordDescription" = "。";
+"TwoStepAuth.ChangePassword" = "";
+"TwoStepAuth.ChangePasswordDescription" = "。";
+"TwoStepAuth.ReEnterPasswordTitle" = "";
+"TwoStepAuth.ReEnterPasswordDescription" = "";
+"TwoStepAuth.AddHintTitle" = "";
+"TwoStepAuth.AddHintDescription" = "。";
+"TwoStepAuth.HintPlaceholder" = "";
+"TwoStepAuth.RecoveryEmailTitle" = "";
+"TwoStepAuth.RecoveryEmailAddDescription" = "。。";
+"TwoStepAuth.RecoveryEmailChangeDescription" = "。 。";
+"TwoStepAuth.ChangeEmail" = "";
+"TwoStepAuth.ConfirmEmailDescription" = "%1$@";
+"TwoStepAuth.ConfirmEmailCodePlaceholder" = "";
+"TwoStepAuth.ConfirmEmailResendCode" = "";
+
+"TwoStepAuth.SetupPendingEmail" = " %@ 。\n\n，。。";
+"TwoStepAuth.SetupResendEmailCode" = "";
+"TwoStepAuth.SetupResendEmailCodeAlert" = "。 。，。";
+"TwoStepAuth.EnterEmailCode" = "";
+
+"TwoStepAuth.EnabledSuccess" = "。";
+"TwoStepAuth.DisableSuccess" = "。";
+"TwoStepAuth.PasswordChangeSuccess" = "。";
+"TwoStepAuth.EmailAddSuccess" = "。";
+"TwoStepAuth.EmailChangeSuccess" = "。";
+
+"Conversation.SendMessageErrorGroupRestricted" = "，。";
+
+"InstantPage.TapToOpenLink" = "：";
+"InstantPage.RelatedArticleAuthorAndDateTitle" = "%1$@ • %2$@";
+
+"AuthCode.Alert" = " %@。 Telegram 。\n\n。";
+"Login.CheckOtherSessionMessages" = "Telegram";
+"Login.SendCodeViaSms" = "";
+"Login.SendCodeViaCall" = "";
+"Login.SendCodeViaFlashCall" = "";
+"Login.CancelPhoneVerification" = "？";
+"Login.CancelPhoneVerificationStop" = "";
+"Login.CancelPhoneVerificationContinue" = "";
+"Login.CodeExpired" = "，。";
+"Login.CancelSignUpConfirmation" = "？";
+
+"Passcode.AppLockedAlert" = "Telegram\n";
+
+"ChatList.ReadAll" = "";
+"ChatList.Read" = "";
+
+
+
+"ChatList.DeleteConfirmation_any" = " %@ ";
+
+
+
+"Username.TooManyPublicUsernamesError" = "，。";
+"Group.Username.RevokeExistingUsernamesInfo" = "，。";
+"Channel.Username.RevokeExistingUsernamesInfo" = "，。";
+
+"InstantPage.Reference" = "";
+
+"Permissions.Skip" = "";
+
+"Permissions.ContactsTitle.v0" = "";
+
+"Permissions.ContactsAllow.v0" = "";
+"Permissions.ContactsAllowInSettings.v0" = "";
+
+"Permissions.NotificationsTitle.v0" = "";
+"Permissions.NotificationsText.v0" = "。";
+"Permissions.NotificationsUnreachableText.v0" = " **** 。";
+"Permissions.NotificationsAllow.v0" = "";
+"Permissions.NotificationsAllowInSettings.v0" = "“”";
+
+"Permissions.CellularDataTitle.v0" = "";
+"Permissions.CellularDataText.v0" = "，Telegram。 “”>“”。";
+"Permissions.CellularDataAllowInSettings.v0" = "\"\"";
+
+"Permissions.SiriTitle.v0" = " Siri";
+"Permissions.SiriText.v0" = "Siri。";
+
+"Permissions.SiriAllowInSettings.v0" = "\"\"";
+
+"Permissions.PrivacyPolicy" = "";
+
+"Contacts.PermissionsTitle" = "";
+"Contacts.PermissionsText" = " Telegram ，";
+"Contacts.PermissionsAllow" = "";
+"Contacts.PermissionsAllowInSettings" = "";
+"Contacts.PermissionsSuppressWarningTitle" = "？";
+"Contacts.PermissionsSuppressWarningText" = "Telegram 。 “”。";
+"Contacts.PermissionsKeepDisabled" = "";
+"Contacts.PermissionsEnable" = "";
+
+"Notifications.PermissionsTitle" = "";
+"Notifications.PermissionsText" = "。";
+"Notifications.PermissionsUnreachableTitle" = "";
+"Notifications.PermissionsUnreachableText" = "，****。";
+"Notifications.PermissionsAllow" = "";
+"Notifications.PermissionsAllowInSettings" = "\"\"";
+"Notifications.PermissionsOpenSettings" = "";
+"Notifications.PermissionsSuppressWarningTitle" = "？";
+
+"Notifications.PermissionsKeepDisabled" = "";
+"Notifications.PermissionsEnable" = "";
+
+"ChatSettings.DownloadInBackground" = "";
+"ChatSettings.DownloadInBackgroundInfo" = "。";
+
+"Cache.ServiceFiles" = "";
+
+"SharedMedia.SearchNoResults" = "";
+"SharedMedia.SearchNoResultsDescription" = "“%@”。\n。";
+
+"MessagePoll.LabelAnonymous" = "";
+"MessagePoll.LabelClosed" = "";
+"MessagePoll.NoVotes" = "";
+
+
+
+
+
+"MessagePoll.VotedCount_any" = "%@ ";
+"AttachmentMenu.Poll" = "";
+"Conversation.PinnedPoll" = "";
+"Conversation.PinnedQuiz" = "";
+
+"CreatePoll.Title" = "";
+"CreatePoll.Create" = "";
+"CreatePoll.TextHeader" = "";
+"CreatePoll.TextPlaceholder" = "";
+"CreatePoll.OptionsHeader" = "";
+"CreatePoll.OptionPlaceholder" = "";
+"CreatePoll.AddOption" = "";
+
+
+
+
+
+
+"CreatePoll.AddMoreOptions_any" = " %@ 。";
+"CreatePoll.AllOptionsAdded" = "。";
+
+"CreatePoll.CancelConfirmation" = "？";
+
+
+
+
+"ForwardedPolls_any" = "\n %@ ";
+
+
+
+"Conversation.UnvotePoll" = "";
+"Conversation.StopPoll" = "";
+"Conversation.StopPollConfirmationTitle" = "，。 。";
+"Conversation.StopPollConfirmation" = "";
+
+"AttachmentMenu.WebSearch" = "";
+
+
+
+
+
+
+"Contacts.SortBy" = "：";
+"Contacts.SortByName" = "";
+"Contacts.SortByPresence" = "";
+"Contacts.SortedByName" = "";
+"Contacts.SortedByPresence" = "";
+
+"NotificationSettings.ContactJoinedInfo" = " Telegram 。";
+
+"GroupInfo.Permissions" = "";
+"GroupInfo.Permissions.Title" = "";
+"GroupInfo.Permissions.SectionTitle" = "?";
+"GroupInfo.Permissions.Removed" = "";
+"GroupInfo.Permissions.Exceptions" = "";
+"GroupInfo.Permissions.AddException" = "";
+"GroupInfo.Permissions.SearchPlaceholder" = "";
+
+"GroupInfo.Administrators" = "";
+
+
+"GroupPermission.NoSendMessages" = "";
+"GroupPermission.NoSendMedia" = "";
+"GroupPermission.NoSendGifs" = " GIF ";
+"GroupPermission.NoSendPolls" = "";
+"GroupPermission.NoSendLinks" = "";
+"GroupPermission.NoChangeInfo" = "";
+"GroupPermission.NoAddMembers" = "";
+"GroupPermission.NoPinMessages" = "";
+
+"GroupPermission.Title" = "";
+"GroupPermission.NewTitle" = "";
+"GroupPermission.SectionTitle" = "";
+"GroupPermission.Duration" = "";
+"GroupPermission.AddedInfo" = " %1$@ %2$@ ";
+"GroupPermission.Delete" = "";
+"GroupPermission.ApplyAlertText" = "%@ 。\n？";
+"GroupPermission.ApplyAlertAction" = "";
+"GroupPermission.AddSuccess" = "";
+"GroupPermission.NotAvailableInPublicGroups" = "。";
+"GroupPermission.AddMembersNotAvailable" = "。";
+
+
+
+"GroupPermission.EditingDisabled" = "。";
+
+
+"Channel.Management.RemovedBy" = " %@ ";
+
+"GroupRemoved.Title" = "";
+"GroupRemoved.Remove" = "";
+"GroupRemoved.RemoveInfo" = "。";
+"ChannelRemoved.RemoveInfo" = "。";
+"GroupRemoved.UsersSectionTitle" = "";
+"GroupRemoved.ViewUserInfo" = "";
+"GroupRemoved.AddToGroup" = "";
+"GroupRemoved.DeleteUser" = "";
+
+"EmptyGroupInfo.Title" = "";
+"EmptyGroupInfo.Subtitle" = "：";
+"EmptyGroupInfo.Line1" = " 20 ";
+"EmptyGroupInfo.Line2" = "";
+"EmptyGroupInfo.Line3" = "，：t.me/title";
+"EmptyGroupInfo.Line4" = "";
+
+"WallpaperPreview.Title" = "";
+"WallpaperPreview.PreviewTopText" = "”“。";
+"WallpaperPreview.PreviewBottomText" = "";
+
+"WallpaperPreview.SwipeTopText" = "";
+"WallpaperPreview.SwipeBottomText" = "“”";
+"WallpaperPreview.SwipeColorsTopText" = "";
+"WallpaperPreview.SwipeColorsBottomText" = "，";
+"WallpaperPreview.CustomColorTopText" = "";
+"WallpaperPreview.CustomColorBottomText" = "";
+"WallpaperPreview.CropTopText" = "";
+"WallpaperPreview.CropBottomText" = "，";
+"WallpaperPreview.Motion" = "";
+"WallpaperPreview.Blurred" = "";
+"WallpaperPreview.Pattern" = "";
+
+"Wallpaper.Search" = "";
+"Wallpaper.SearchShort" = "";
+"Wallpaper.SetColor" = "";
+"Wallpaper.SetCustomBackground" = "";
+
+
+
+
+
+"Wallpaper.DeleteConfirmation_any" = " %@ ";
+
+
+
+"WallpaperColors.Title" = "";
+"WallpaperColors.SetCustomColor" = "";
+
+"WallpaperSearch.ColorTitle" = "";
+"WallpaperSearch.Recent" = "";
+"WallpaperSearch.ColorPrefix" = "：";
+"WallpaperSearch.ColorBlue" = "";
+"WallpaperSearch.ColorRed" = "";
+"WallpaperSearch.ColorOrange" = "";
+"WallpaperSearch.ColorYellow" = "";
+"WallpaperSearch.ColorGreen" = "";
+"WallpaperSearch.ColorTeal" = "";
+"WallpaperSearch.ColorPurple" = "";
+"WallpaperSearch.ColorPink" = "";
+"WallpaperSearch.ColorBrown" = "";
+"WallpaperSearch.ColorBlack" = "";
+"WallpaperSearch.ColorGray" = "";
+"WallpaperSearch.ColorWhite" = "";
+
+"Channel.AdminLog.DefaultRestrictionsUpdated" = "";
+"Channel.AdminLog.PollStopped" = "%@ ";
+
+"ChatList.DeleteChat" = "";
+"ChatList.DeleteChatConfirmation" = " %@ ？";
+"ChatList.DeleteSecretChatConfirmation" = " %@ ？";
+"ChatList.LeaveGroupConfirmation" = " %@ ？";
+"ChatList.DeleteAndLeaveGroupConfirmation" = "%@？";
+"ChatList.DeleteSavedMessagesConfirmation" = "？";
+
+"Undo.Undo" = "";
+"Undo.ChatDeleted" = "";
+"Undo.ChatCleared" = "";
+"Undo.ChatClearedForBothSides" = "";
+
+"Undo.SecretChatDeleted" = "";
+"Undo.LeftChannel" = "";
+"Undo.LeftGroup" = "";
+"Undo.DeletedChannel" = "";
+"Undo.DeletedGroup" = "";
+
+"AccessDenied.Wallpapers" = "Telegram 。\n\n【->->】 Telegram 。";
+
+
+"Conversation.ViewBackground" = "";
+
+
+"SocksProxySetup.ShareQRCode" = "";
+"SocksProxySetup.ShareLink" = "";
+
+"CallFeedback.Title" = "";
+"CallFeedback.WhatWentWrong" = "？";
+"CallFeedback.ReasonEcho" = "";
+"CallFeedback.ReasonNoise" = "";
+"CallFeedback.ReasonInterruption" = "";
+"CallFeedback.ReasonDistortedSpeech" = "";
+"CallFeedback.ReasonSilentLocal" = "";
+"CallFeedback.ReasonSilentRemote" = "";
+"CallFeedback.ReasonDropped" = "";
+"CallFeedback.VideoReasonDistorted" = "";
+"CallFeedback.VideoReasonLowQuality" = "";
+"CallFeedback.AddComment" = "（）";
+"CallFeedback.IncludeLogs" = "";
+
+"CallFeedback.Send" = "";
+"CallFeedback.Success" = "";
+
+"Settings.AddAccount" = "";
+"WebSearch.SearchNoResults" = "";
+"WebSearch.SearchNoResultsDescription" = "\"%@\"。\n。";
+
+"WallpaperPreview.PatternIntensity" = "";
+
+"Message.Wallpaper" = "";
+
+"Wallpaper.ResetWallpapers" = "";
+"Wallpaper.ResetWallpapersInfo" = "。";
+"Wallpaper.ResetWallpapersConfirmation" = "";
+
+"Proxy.TooltipUnavailable" = "，。";
+
+"SocksProxySetup.Status" = "";
+"Login.PhoneNumberAlreadyAuthorized" = "。";
+
+"Login.PhoneNumberAlreadyAuthorizedSwitch" = "";
+
+"Call.AnsweringWithAccount" = "%@";
+
+"AutoDownloadSettings.CellularTitle" = "";
+"AutoDownloadSettings.WifiTitle" = "";
+"AutoDownloadSettings.AutoDownload" = "";
+"AutoDownloadSettings.MediaTypes" = "";
+"AutoDownloadSettings.Photos" = "";
+"AutoDownloadSettings.Videos" = "";
+"AutoDownloadSettings.Files" = "";
+"AutoDownloadSettings.VoiceMessagesInfo" = "，。";
+"AutoDownloadSettings.ResetSettings" = "";
+"AutoDownloadSettings.AutodownloadPhotos" = "";
+"AutoDownloadSettings.AutodownloadVideos" = " ";
+"AutoDownloadSettings.AutodownloadFiles" = "";
+"AutoDownloadSettings.MaxVideoSize" = "";
+"AutoDownloadSettings.MaxFileSize" = "";
+"AutoDownloadSettings.DataUsage" = "";
+"AutoDownloadSettings.DataUsageLow" = "";
+"AutoDownloadSettings.DataUsageMedium" = "";
+"AutoDownloadSettings.DataUsageHigh" = "";
+"AutoDownloadSettings.DataUsageCustom" = "";
+"AutoDownloadSettings.OnForAll" = "";
+"AutoDownloadSettings.OnFor" = "%@";
+"AutoDownloadSettings.TypeContacts" = "";
+"AutoDownloadSettings.TypePrivateChats" = "";
+"AutoDownloadSettings.TypeGroupChats" = "";
+"AutoDownloadSettings.TypeChannels" = "";
+"AutoDownloadSettings.UpToForAll" = " %@";
+"AutoDownloadSettings.UpToFor" = " %@  %@";
+"AutoDownloadSettings.OffForAll" = "";
+"AutoDownloadSettings.Delimeter" = "、";
+"AutoDownloadSettings.LastDelimeter" = "";
+"AutoDownloadSettings.PreloadVideo" = "";
+"AutoDownloadSettings.PreloadVideoInfo" = " %@ 。";
+
+"ChatSettings.AutoDownloadUsingCellular" = "";
+"ChatSettings.AutoDownloadUsingWiFi" = "Wi-Fi";
+"ChatSettings.AutoPlayTitle" = "";
+"ChatSettings.AutoPlayGifs" = "GIF  ";
+"ChatSettings.AutoPlayVideos" = "";
+
+"ChatSettings.AutoDownloadSettings.TypePhoto" = "";
+"ChatSettings.AutoDownloadSettings.TypeVideo" = " (%@)";
+"ChatSettings.AutoDownloadSettings.TypeMedia" = " (%@)";
+"ChatSettings.AutoDownloadSettings.TypeFile" = " (%@)";
+"ChatSettings.AutoDownloadSettings.OffForAll" = "";
+"ChatSettings.AutoDownloadSettings.Delimeter" = "，";
+
+"LogoutOptions.Title" = "";
+"LogoutOptions.AlternativeOptionsSection" = "";
+"LogoutOptions.AddAccountTitle" = "";
+"LogoutOptions.AddAccountText" = " Telegram 。";
+"LogoutOptions.SetPasscodeTitle" = "";
+"LogoutOptions.SetPasscodeText" = "。";
+"LogoutOptions.ClearCacheTitle" = "";
+"LogoutOptions.ClearCacheText" = "；。";
+"LogoutOptions.ChangePhoneNumberTitle" = "";
+"LogoutOptions.ChangePhoneNumberText" = "、。";
+"LogoutOptions.ContactSupportTitle" = "";
+"LogoutOptions.ContactSupportText" = "；。";
+"LogoutOptions.LogOut" = "";
+"LogoutOptions.LogOutInfo" = "。";
+
+
+
+"ChannelInfo.Stats" = "";
+
+"Conversation.PressVolumeButtonForSound" = "";
+
+
+
+
+"ChatList.SelectedChats_any" = "%@ ";
+
+
+
+"NotificationSettings.ShowNotificationsFromAccountsSection" = "";
+"NotificationSettings.ShowNotificationsAllAccounts" = "";
+
+
+
+"Gif.Search" = " GIF";
+"Gif.NoGifsFound" = " GIF";
+
+
+"Privacy.ProfilePhoto" = "";
+"Privacy.Forwards" = "";
+
+"Privacy.ProfilePhoto.WhoCanSeeMyPhoto" = "";
+"Privacy.ProfilePhoto.CustomHelp" = "。";
+"Privacy.ProfilePhoto.AlwaysShareWith.Title" = "";
+"Privacy.ProfilePhoto.NeverShareWith.Title" = "";
+
+"Privacy.Forwards.WhoCanForward" = "，";
+"Privacy.Forwards.CustomHelp" = "，。";
+"Privacy.Forwards.AlwaysAllow.Title" = "";
+"Privacy.Forwards.NeverAllow.Title" = "";
+
+"Conversation.ContextMenuCancelSending" = "";
+
+"Conversation.ForwardAuthorHiddenTooltip" = "";
+
+"Privacy.Forwards.Preview" = "";
+"Privacy.Forwards.PreviewMessageText" = "Reinhardt，。";
+"Privacy.Forwards.AlwaysLink" = "";
+"Privacy.Forwards.LinkIfAllowed" = "";
+"Privacy.Forwards.NeverLink" = "";
+
+
+
+
+
+
+
+"Settings.Search" = "";
+
+"SettingsSearch.FAQ" = "";
+
+
+"SettingsSearch.Synonyms.EditProfile.Bio" = " ";
+
+
+"SettingsSearch.Synonyms.EditProfile.AddAccount" = "，。 。";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"SettingsSearch.Synonyms.Privacy.TwoStepAuth" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+"SettingsSearch.Synonyms.Data.Storage.Title" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+"SettingsSearch.Synonyms.Proxy.Title" = "SOCKS5\nMTProto";
+
+
+
+
+
+"SettingsSearch.Synonyms.Appearance.ChatBackground" = "";
+
+
+
+
+
+"SettingsSearch.Synonyms.Appearance.Animations" = "";
+
+
+
+
+"SettingsSearch.Synonyms.Watch" = "Apple Watch";
+"SettingsSearch.Synonyms.Support" = "";
+
+
+"ChatList.DeleteForCurrentUser" = "";
+"ChatList.DeleteForEveryone" = "%@";
+"ChatList.DeleteForEveryoneConfirmationTitle" = "！";
+"ChatList.DeleteForEveryoneConfirmationText" = " **  ** 。";
+"ChatList.DeleteForEveryoneConfirmationAction" = "";
+"ChatList.DeleteForAllMembers" = "";
+"ChatList.DeleteForAllSubscribers" = "";
+
+
+
+"ChatList.DeleteSavedMessagesConfirmationTitle" = "！";
+"ChatList.DeleteSavedMessagesConfirmationText" = " **  ** 。";
+"ChatList.DeleteSavedMessagesConfirmationAction" = "";
+
+"ChatList.ClearChatConfirmation" = "%@？";
+
+"Settings.CheckPhoneNumberTitle" = "%@？";
+
+"Settings.KeepPhoneNumber" = " %@";
+"Settings.ChangePhoneNumber" = "";
+"Settings.CheckPhoneNumberFAQAnchor" = "";
+
+"Undo.ChatDeletedForBothSides" = "";
+
+"AppUpgrade.Running" = "Optimizing Telegram...
+This may take a while, depending on the size of the database. Please keep the app open until the process is finished.
+
+Sorry for the inconvenience.";
+
+"Call.Mute" = "";
+"Call.Camera" = "";
+"Call.Flip" = "";
+"Call.End" = "";
+"Call.Speaker" = "";
+
+"MemberSearch.BotSection" = "";
+
+"Conversation.PrivateMessageLinkCopied" = "。";
+"Conversation.ErrorInaccessibleMessage" = "，。 。";
+
+"Stickers.ClearRecent" = "";
+
+"Appearance.Other" = "";
+"Appearance.LargeEmoji" = " Emoji";
+
+"ChatList.ArchiveAction" = "";
+"ChatList.UnarchiveAction" = "";
+"ChatList.HideAction" = "";
+"ChatList.UnhideAction" = "";
+
+"ChatList.UndoArchiveTitle" = "";
+"ChatList.UndoArchiveMultipleTitle" = "";
+"ChatList.UndoArchiveText1" = "。";
+"ChatList.UndoArchiveHiddenTitle" = "";
+"ChatList.UndoArchiveHiddenText" = "。";
+"ChatList.UndoArchiveRevealedTitle" = "。";
+"ChatList.UndoArchiveRevealedText" = "。";
+"ChatList.ArchivedChatsTitle" = "";
+
+"PasscodeSettings.PasscodeOptions" = "";
+"PasscodeSettings.DoNotMatch" = "，。";
+
+"Conversation.PrivateChannelTooltip" = "";
+
+"PasscodeSettings.PasscodeOptions" = "";
+"PasscodeSettings.AlphanumericCode" = "";
+"PasscodeSettings.4DigitCode" = "4";
+"PasscodeSettings.6DigitCode" = "6";
+
+
+
+
+
+"ArchivedChats.IntroTitle1" = "";
+"ArchivedChats.IntroText1" = "，";
+"ArchivedChats.IntroTitle2" = "";
+"ArchivedChats.IntroText2" = "，。";
+"ArchivedChats.IntroTitle3" = "";
+"ArchivedChats.IntroText3" = "";
+
+"UserInfo.ScamUserWarning" = "⚠️ ：。，。";
+
+
+"GroupInfo.ScamGroupWarning" = "⚠️ :。，。";
+
+"Privacy.AddNewPeer" = "";
+"PrivacyPhoneNumberSettings.WhoCanSeeMyPhoneNumber" = "";
+
+"PrivacyPhoneNumberSettings.CustomDisabledHelp" = "Telegram。";
+
+"PrivacyPhoneNumberSettings.DiscoveryHeader" = "";
+
+"Privacy.PhoneNumber" = "";
+"PrivacySettings.PhoneNumber" = "";
+"Contacts.SearchUsersAndGroupsLabel" = "";
+
+"PrivacySettings.PasscodeOff" = "";
+"PrivacySettings.PasscodeOn" = "";
+
+"UserInfo.BlockConfirmationTitle" = " %@  Telegram ？";
+"UserInfo.BlockActionTitle" = "%@";
+"ReportSpam.DeleteThisChat" = "";
+
+"PrivacySettings.BlockedPeersEmpty" = "";
+
+"Channel.DiscussionGroup" = "";
+"Group.LinkedChannel" = "";
+"Channel.DiscussionGroupAdd" = "";
+"Channel.DiscussionGroupInfo" = "。";
+"Channel.DiscussionGroup.Header" = "。";
+"Channel.DiscussionGroup.HeaderSet" = " %@ 。";
+"Channel.DiscussionGroup.HeaderGroupSet" = " %@ 。";
+"Channel.DiscussionGroup.HeaderLabel" = "";
+"Channel.DiscussionGroup.Create" = "";
+"Channel.DiscussionGroup.PrivateGroup" = "";
+"Channel.DiscussionGroup.PrivateChannel" = "";
+"Channel.DiscussionGroup.Info" = "。";
+"Channel.DiscussionGroup.LinkGroup" = "";
+"Channel.DiscussionGroup.UnlinkGroup" = "";
+"Channel.DiscussionGroup.UnlinkChannel" = "";
+"Channel.DiscussionGroup.PublicChannelLink" = " %1$@  %2$@ ？";
+"Channel.DiscussionGroup.PrivateChannelLink" = " %1$@  %2$@ ？\n\n。";
+"Channel.DiscussionGroup.MakeHistoryPublic" = "：，。。";
+"Channel.DiscussionGroup.MakeHistoryPublicProceed" = "";
+
+"Channel.DiscussionGroup.SearchPlaceholder" = "";
+
+"Channel.AdminLog.MessageChangedLinkedGroup" = "%1$@  %2$@ 。";
+"Channel.AdminLog.MessageChangedLinkedChannel" = "%1$@  %2$@ 。";
+"Channel.AdminLog.MessageChangedUnlinkedGroup" = "%1$@  %2$@";
+"Channel.AdminLog.MessageChangedUnlinkedChannel" = "%1$@  %2$@";
+
+"Conversation.OpenBotLinkTitle" = "";
+"Conversation.OpenBotLinkText" = "？\n**%@**";
+"Conversation.OpenBotLinkLogin" = " %2$@  %1$@";
+"Conversation.OpenBotLinkAllowMessages" = " **%@** ";
+"Conversation.OpenBotLinkOpen" = "";
+
+"TextFormat.Link" = "";
+"TextFormat.Strikethrough" = "";
+"TextFormat.Underline" = "";
+
+"TextFormat.AddLinkTitle" = "";
+"TextFormat.AddLinkText" = "“%@”";
+"TextFormat.AddLinkPlaceholder" = "";
+
+"Channel.AddBotErrorHaveRights" = "，。";
+"Channel.AddBotAsAdmin" = "";
+"Channel.AddBotErrorNoRights" = "。";
+
+"Appearance.AppIcon" = "App ";
+"Appearance.AppIconDefault" = "";
+"Appearance.AppIconDefaultX" = " X";
+"Appearance.AppIconClassic" = "";
+"Appearance.AppIconClassicX" = " X";
+"Appearance.AppIconFilled" = "";
+"Appearance.AppIconFilledX" = " X";
+"Appearance.AppIconNew1" = "";
+"Appearance.AppIconNew2" = "";
+
+"Appearance.ThemeCarouselClassic" = "";
+"Appearance.ThemeCarouselDay" = "";
+"Appearance.ThemeCarouselNightBlue" = "";
+"Appearance.ThemeCarouselNight" = "";
+
+"Notification.Exceptions.DeleteAll" = "";
+"Notification.Exceptions.DeleteAllConfirmation" = "？";
+"Notification.Exceptions.Add" = "";
+"Exceptions.AddToExceptions" = "";
+
+"Notification.Exceptions.NewException.MessagePreviewHeader" = "";
+"Notification.Exceptions.PreviewAlwaysOn" = "";
+"Notification.Exceptions.PreviewAlwaysOff" = "";
+"Notification.Exceptions.RemoveFromExceptions" = "";
+
+"Conversation.BlockUser" = "";
+"Conversation.ShareMyPhoneNumber" = "";
+
+"Conversation.AddToContacts" = "";
+"Conversation.AddNameToContacts" = " %@ ";
+
+"AddContact.ContactWillBeSharedAfterMutual" = " %1$@ ，。";
+"AddContact.SharedContactException" = "";
+"AddContact.SharedContactExceptionInfo" = " %@ 。";
+"AddContact.StatusSuccess" = "%@ ";
+
+
+"Group.EditAdmin.TransferOwnership" = "";
+
+
+"OwnershipTransfer.SecurityCheck" = "";
+"OwnershipTransfer.SecurityRequirements" = "：\n\n•  ****  **7** 。\n\n•  **24 ** 。";
+"OwnershipTransfer.ComeBackLater" = "。";
+"OwnershipTransfer.SetupTwoStepAuth" = "";
+
+"Channel.OwnershipTransfer.Title" = "";
+
+"Group.OwnershipTransfer.Title" = "";
+
+"Channel.OwnershipTransfer.ChangeOwner" = "";
+
+
+"Group.OwnershipTransfer.ErrorLocatedGroupsTooMuch" = "，。 。";
+
+
+
+
+"Group.OwnershipTransfer.ErrorPrivacyRestricted" = "，，。";
+"Channel.OwnershipTransfer.ErrorPrivacyRestricted" = "，，。";
+
+"Channel.OwnershipTransfer.EnterPassword" = "";
+"Channel.OwnershipTransfer.EnterPasswordText" = "。";
+"Channel.OwnershipTransfer.PasswordPlaceholder" = "";
+
+"Channel.OwnershipTransfer.TransferCompleted" = "**%1$@**  **%2$@** ";
+
+"Contacts.AddPeopleNearby" = "";
+
+"PeopleNearby.Title" = "";
+"PeopleNearby.Description" = "。";
+"PeopleNearby.Users" = "";
+"PeopleNearby.UsersEmpty" = "。。。";
+"PeopleNearby.Groups" = "";
+"PeopleNearby.CreateGroup" = "";
+"PeopleNearby.NoMembers" = "";
+
+"Channel.Management.LabelOwner" = "";
+"Channel.Management.LabelAdministrator" = "";
+"ContactInfo.PhoneNumberHidden" = "";
+
+
+
+"Group.Location.Title" = "";
+"Group.Location.ChangeLocation" = "";
+"Group.Location.Info" = "“”。";
+
+"Channel.AdminLog.MessageTransferedName" = " %1$@";
+"Channel.AdminLog.MessageTransferedNameUsername" = " %1$@ (%2$@)";
+
+
+
+"Map.SetThisLocation" = "";
+
+"Permissions.PeopleNearbyTitle.v0" = "";
+"Permissions.PeopleNearbyText.v0" = "，。\n\n。";
+"Permissions.PeopleNearbyAllow.v0" = "";
+"Permissions.PeopleNearbyAllowInSettings.v0" = "";
+
+"Conversation.ReportGroupLocation" = "？";
+"ReportGroupLocation.Title" = "";
+"ReportGroupLocation.Text" = " Telegram 。";
+"ReportGroupLocation.Report" = "";
+
+"LocalGroup.Title" = "\n";
+"LocalGroup.Text" = "(、、、、)\"\"。";
+"LocalGroup.ButtonTitle" = "";
+"LocalGroup.IrrelevantWarning" = "，。";
+
+"GroupInfo.Location" = "";
+
+
+
+"Group.PublicLink.Title" = "";
+"Group.PublicLink.Placeholder" = "";
+"Group.PublicLink.Info" = "， Telegram 。\n\n **a-z**， **0-9** ， **5** 。";
+
+
+
+"GroupInfo.LabelOwner" = "";
+
+
+
+
+
+"CreateGroup.ChannelsTooMuch" = "，，。";
+"Join.ChannelsTooMuch" = "，，。";
+"Invite.ChannelsTooMuch" = "，，。";
+
+
+
+
+
+
+
+
+"StickerPacksSettings.AnimatedStickers" = "";
+
+"GroupInfo.Permissions.SlowmodeHeader" = "";
+"GroupInfo.Permissions.SlowmodeInfo" = "。";
+"Channel.AdminLog.DisabledSlowmode" = "%@ ";
+"Channel.AdminLog.SetSlowmode" = "%1$@  %2$@";
+
+
+
+"Chat.SlowmodeTooltip" = "，%@。";
+
+"Chat.AttachmentLimitReached" = "";
+
+"Chat.AttachmentMultipleFilesDisabled" = "，。";
+"Chat.AttachmentMultipleForwardDisabled" = "，。";
+
+
+"Chat.SlowmodeSendError" = "。";
+
+
+"Conversation.Owner" = "";
+
+"Group.EditAdmin.RankTitle" = "";
+"Group.EditAdmin.RankInfo" = " %@";
+"Group.EditAdmin.RankOwnerPlaceholder" = "";
+"Group.EditAdmin.RankAdminPlaceholder" = "";
+
+"Conversation.SendMessage.SendSilently" = "";
+"Conversation.SendMessage.ScheduleMessage" = "";
+
+"Appearance.ThemeCarouselTintedNight" = "";
+"Appearance.ThemeCarouselNewNight" = "";
+
+"Channel.AdminLog.MessageRankName" = " %1$@ ：%2$@";
+"Channel.AdminLog.MessageRankUsername" = " %1$@ (%2$@)  %3$@";
+"Channel.AdminLog.MessageRank" = "：\n%1$@";
+
+
+"VoiceOver.Recording.StopAndPreview" = "";
+"VoiceOver.Media.PlaybackRate" = "";
+
+
+"VoiceOver.Media.PlaybackRateChange" = "";
+"VoiceOver.Media.PlaybackStop" = "";
+
+
+
+"VoiceOver.Navigation.Search" = "";
+"VoiceOver.Navigation.ProxySettings" = "";
+
+"VoiceOver.AttachMedia" = "";
+
+
+"VoiceOver.Chat.RecordModeVoiceMessageInfo" = "。 ，。 。";
+
+"VoiceOver.Chat.RecordModeVideoMessageInfo" = "。 ，。 。";
+
+
+
+"VoiceOver.Chat.Reply" = "";
+"VoiceOver.Chat.ReplyToYourMessage" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"VoiceOver.Chat.YourFile" = "";
+"VoiceOver.Chat.StickerFrom" = " %@ ";
+"VoiceOver.Chat.Sticker" = "";
+"VoiceOver.Chat.YourSticker" = "";
+"VoiceOver.Chat.AnimatedStickerFrom" = " %@ ";
+"VoiceOver.Chat.AnimatedSticker" = "";
+"VoiceOver.Chat.YourAnimatedSticker" = "";
+"VoiceOver.Chat.ContactFrom" = "%@ ";
+"VoiceOver.Chat.Contact" = "";
+
+"VoiceOver.Chat.ContactPhoneNumberCount_any" = "%@ ";
+
+
+"VoiceOver.Chat.ContactEmailCount_any" = "%@ ";
+
+
+"VoiceOver.Chat.YourContact" = "";
+
+
+
+
+
+
+"VoiceOver.Chat.PollVotes_any" = " %@ ";
+"VoiceOver.Chat.PollNoVotes" = "";
+
+
+
+
+
+
+
+
+"VoiceOver.Chat.PlayHint" = "";
+"VoiceOver.Chat.OpenHint" = "";
+"VoiceOver.Chat.OpenLinkHint" = "";
+
+
+
+
+
+
+
+
+"VoiceOver.MessageContextReply" = "";
+
+
+"VoiceOver.Keyboard" = "";
+"VoiceOver.Stickers" = "";
+"VoiceOver.ScheduledMessages" = "";
+"VoiceOver.BotCommands" = "";
+"VoiceOver.BotKeyboard" = "";
+
+
+"VoiceOver.SelfDestructTimerOn" = "： %@";
+"VoiceOver.SelfDestructTimerOff" = "";
+
+
+
+"Conversation.ScheduleMessage.Title" = "";
+"Conversation.ScheduleMessage.SendToday" = "  %@ ";
+"Conversation.ScheduleMessage.SendTomorrow" = " %@ ";
+"Conversation.ScheduleMessage.SendOn" = "%@ %@ ";
+
+"Conversation.SetReminder.Title" = "";
+"Conversation.SetReminder.RemindToday" = " %@ ";
+"Conversation.SetReminder.RemindTomorrow" = " %@ ";
+"Conversation.SetReminder.RemindOn" = " %@ %@ ";
+
+"ScheduledMessages.Title" = "";
+"ScheduledMessages.RemindersTitle" = "";
+"ScheduledMessages.ScheduledDate" = " %@";
+"ScheduledMessages.ScheduledToday" = "";
+"ScheduledMessages.SendNow" = "";
+"ScheduledMessages.EditTime" = "";
+"ScheduledMessages.ClearAll" = "";
+"ScheduledMessages.ClearAllConfirmation" = "";
+"ScheduledMessages.Delete" = "";
+
+"ScheduledMessages.EmptyPlaceholder" = "。。。";
+"ScheduledMessages.BotActionUnavailable" = "。";
+"ScheduledMessages.PollUnavailable" = "。";
+
+
+"Conversation.SendMessage.SetReminder" = "";
+
+
+
+
+"Conversation.SelectedMessages_any" = " %@ ";
+
+
+
+"AccentColor.Title" = "";
+
+"Appearance.ThemePreview.ChatList.1.Name" = "";
+"Appearance.ThemePreview.ChatList.1.Text" = "。 😊 ❤️ 😱";
+"Appearance.ThemePreview.ChatList.2.Name" = "";
+"Appearance.ThemePreview.ChatList.2.Text" = "👋";
+"Appearance.ThemePreview.ChatList.3.Name" = "";
+"Appearance.ThemePreview.ChatList.3.AuthorName" = " ";
+"Appearance.ThemePreview.ChatList.3.Text" = "2500！！";
+"Appearance.ThemePreview.ChatList.4.Name" = "";
+
+"Appearance.ThemePreview.ChatList.5.Name" = "";
+
+"Appearance.ThemePreview.ChatList.6.Name" = "";
+
+"Appearance.ThemePreview.ChatList.7.Name" = "Jennie Alpha";
+"Appearance.ThemePreview.ChatList.7.Text" = "🖼 ";
+
+"Appearance.ThemePreview.Chat.1.Text" = "？🤔";
+"Appearance.ThemePreview.Chat.2.ReplyName" = "·";
+"Appearance.ThemePreview.Chat.2.Text" = " ，，。";
+"Appearance.ThemePreview.Chat.3.Text" = "？。 😯";
+
+
+"Appearance.ThemePreview.Chat.4.Text" = "， 😎";
+
+"Appearance.ThemePreview.Chat.6.Text" = "，？";
+
+
+"GroupInfo.Permissions.SlowmodeValue.Off" = "";
+
+
+
+"Appearance.CreateTheme" = "";
+"Appearance.EditTheme" = "";
+"Appearance.ShareTheme" = "";
+"Appearance.RemoveTheme" = "";
+"Appearance.RemoveThemeConfirmation" = "";
+
+"Conversation.Theme" = "";
+"Conversation.ViewTheme" = "";
+
+"Message.Theme" = "";
+
+"EditTheme.CreateTitle" = "";
+"EditTheme.EditTitle" = "";
+"EditTheme.Title" = "";
+"EditTheme.ShortLink" = "";
+"EditTheme.Preview" = "";
+"EditTheme.UploadNewTheme" = "……";
+"EditTheme.UploadEditedTheme" = "……";
+"EditTheme.ThemeTemplateAlertTitle" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+"EditTheme.Create.Preview.IncomingReplyName" = "Bob";
+"EditTheme.Create.Preview.IncomingReplyText" = "？";
+"EditTheme.Create.Preview.IncomingText" = "";
+"EditTheme.Create.Preview.OutgoingText" = "";
+
+"EditTheme.Expand.Preview.IncomingReplyName" = "Bob";
+"EditTheme.Expand.Preview.IncomingReplyText" = "？";
+"EditTheme.Expand.Preview.IncomingText" = "";
+"EditTheme.Expand.Preview.OutgoingText" = "";
+
+"EditTheme.Edit.Preview.IncomingReplyName" = "";
+"EditTheme.Edit.Preview.IncomingReplyText" = "？";
+"EditTheme.Edit.Preview.IncomingText" = "";
+"EditTheme.Edit.Preview.OutgoingText" = "";
+
+"EditTheme.ErrorLinkTaken" = "，。";
+"EditTheme.ErrorInvalidCharacters" = "，。";
+
+
+"Theme.ErrorNotFound" = "，。";
+"Theme.Unsupported" = "，。";
+
+
+
+
+"Theme.UsersCount_any" = "%@ ";
+
+
+
+
+
+"ChatList.Context.MarkAllAsRead" = "";
+"ChatList.Context.HideArchive" = "";
+"ChatList.Context.UnhideArchive" = "";
+"ChatList.Context.RemoveFromRecents" = "";
+"ChatList.Context.AddToContacts" = "";
+"ChatList.Context.MarkAsRead" = "";
+"ChatList.Context.MarkAsUnread" = "";
+
+
+"ChatList.Context.Pin" = "";
+"ChatList.Context.Unpin" = "";
+"ChatList.Context.Mute" = "";
+"ChatList.Context.Unmute" = "";
+"ChatList.Context.JoinChannel" = "";
+"ChatList.Context.JoinChat" = "";
+"ChatList.Context.Delete" = "";
+
+"ContactList.Context.SendMessage" = "";
+"ContactList.Context.StartSecretChat" = "";
+"ContactList.Context.Call" = "";
+"ContactList.Context.VideoCall" = "";
+
+
+
+"Settings.Context.Logout" = "";
+
+
+
+
+"ChatSearch.ResultsTooltip" = "。";
+
+"Conversation.ClearCache" = "";
+
+
+"ClearCache.FreeSpace" = "";
+"ClearCache.Success" = "**%@**  %@!";
+
+
+"Conversation.ScheduleMessage.SendWhenOnline" = "";
+"ScheduledMessages.ScheduledOnline" = "";
+
+"Conversation.SwipeToReplyHintTitle" = "";
+"Conversation.SwipeToReplyHintText" = "。";
+
+"TwoFactorSetup.Intro.Title" = "";
+
+"TwoFactorSetup.Intro.Action" = "";
+
+"TwoFactorSetup.Password.Title" = "";
+"TwoFactorSetup.Password.PlaceholderPassword" = "";
+"TwoFactorSetup.Password.PlaceholderConfirmPassword" = "";
+"TwoFactorSetup.Password.Action" = "";
+
+"TwoFactorSetup.Email.Title" = "";
+
+"TwoFactorSetup.Email.Placeholder" = "";
+"TwoFactorSetup.Email.Action" = "";
+"TwoFactorSetup.Email.SkipAction" = "";
+
+
+"TwoFactorSetup.Email.SkipConfirmationSkip" = "";
+
+"TwoFactorSetup.EmailVerification.Title" = "";
+
+"TwoFactorSetup.EmailVerification.Placeholder" = "";
+"TwoFactorSetup.EmailVerification.Action" = "";
+"TwoFactorSetup.EmailVerification.ChangeAction" = "";
+"TwoFactorSetup.EmailVerification.ResendAction" = "";
+
+"TwoFactorSetup.Hint.Title" = "";
+"TwoFactorSetup.Hint.Text" = "";
+"TwoFactorSetup.Hint.Placeholder" = "（）";
+"TwoFactorSetup.Hint.Action" = "";
+"TwoFactorSetup.Hint.SkipAction" = "";
+
+"TwoFactorSetup.Done.Title" = "！";
+
+"TwoFactorSetup.Done.Action" = "";
+
+"AutoNightTheme.System" = "";
+
+"ChatSettings.OpenLinksIn" = "";
+"SettingsSearch.Synonyms.ChatSettings.OpenLinksIn" = "";
+
+"WebBrowser.Title" = "";
+"WebBrowser.DefaultBrowser" = "";
+"WebBrowser.InAppSafari" = "Safari";
+
+"Widget.ApplicationLocked" = " App ";
+
+
+
+
+"ClearCache.StorageCache" = "Telegram ";
+"ClearCache.StorageServiceFiles" = "Telegram ";
+"ClearCache.StorageOtherApps" = " App";
+"ClearCache.StorageFree" = "";
+"ClearCache.ClearCache" = "Telegram";
+"ClearCache.Clear" = "";
+"ClearCache.Forever" = "";
+
+
+"ChatList.DeletedChats_any" = "\n %@ ";
+
+"Appearance.ColorThemeNight" = "-";
+
+"UserInfo.StartSecretChatConfirmation" = "%@？";
+"UserInfo.StartSecretChatStart" = "";
+
+
+
+
+
+
+"GroupInfo.ShowMoreMembers_any" = "（%@）";
+
+"ContactInfo.Note" = "";
+
+"Group.Location.CreateInThisPlace" = "";
+
+
+"Theme.Colors.Background" = "";
+"Theme.Colors.Messages" = "";
+
+
+
+"ChatSettings.IntentsSettings" = "";
+"IntentsSettings.Title" = "";
+"IntentsSettings.MainAccount" = "";
+
+"IntentsSettings.SuggestedChats" = "";
+"IntentsSettings.SuggestedChatsContacts" = "";
+"IntentsSettings.SuggestedChatsSavedMessages" = "";
+"IntentsSettings.SuggestedChatsPrivateChats" = "";
+"IntentsSettings.SuggestedChatsGroups" = "";
+
+
+"IntentsSettings.SuggestBy" = "";
+"IntentsSettings.SuggestByAll" = "";
+"IntentsSettings.SuggestByShare" = "";
+"IntentsSettings.ResetAll" = "";
+"IntentsSettings.Reset" = "";
+
+
+
+"Appearance.TextSizeSetting" = "";
+"Appearance.TextSize.Automatic" = "";
+"Appearance.TextSize.Title" = "";
+"Appearance.TextSize.UseSystem" = "";
+"Appearance.TextSize.Apply" = "";
+
+
+
+"Settings.Devices" = "";
+"Settings.AddDevice" = "";
+"AuthSessions.DevicesTitle" = "";
+"AuthSessions.AddDevice" = "";
+"AuthSessions.AddDevice.ScanInfo" = "。";
+"AuthSessions.AddDevice.ScanTitle" = "";
+"AuthSessions.AddDevice.InvalidQRCode" = "";
+"AuthSessions.AddDeviceIntro.Title" = "";
+"AuthSessions.AddDeviceIntro.Text1" = " [desktop.telegram.org]()  Telegram ";
+"AuthSessions.AddDeviceIntro.Text2" = " Telegram ";
+"AuthSessions.AddDeviceIntro.Text3" = "";
+"AuthSessions.AddDeviceIntro.Action" = "";
+"AuthSessions.AddedDeviceTitle" = "";
+"AuthSessions.AddedDeviceTerminate" = "";
+
+"Map.SendThisPlace" = "";
+
+
+
+
+
+
+
+"Map.SearchNoResultsDescription" = " %@ ，。";
+
+"ChatList.Search.ShowMore" = "";
+"ChatList.Search.ShowLess" = "";
+
+"AuthSessions.OtherDevices" = " Telegram  iPhone、iPad、Android、macOS、Windows  Linux。[]()";
+
+"MediaPlayer.UnknownArtist" = "";
+"MediaPlayer.UnknownTrack" = "";
+
+
+
+
+"Contacts.InviteContacts_any" = " %@ ";
+
+
+
+"Theme.Context.ChangeColors" = "";
+
+"EditTheme.ChangeColors" = "";
+
+
+
+"AuthSessions.AddDevice.UrlLoginHint" = " Telegram 。\n\n Telegram， ****>****>**** 。";
+
+"Appearance.RemoveThemeColor" = "";
+
+
+"WallpaperPreview.PatternTitle" = "";
+
+"WallpaperPreview.PatternPaternApply" = "";
+
+"ChatContextMenu.TextSelectionTip" = "，。";
+
+"OldChannels.Title" = "";
+"OldChannels.NoticeTitle" = "";
+"OldChannels.NoticeText" = "，。\n。";
+
+"OldChannels.NoticeUpgradeText" = "，。\n，。";
+"OldChannels.ChannelsHeader" = "";
+
+"OldChannels.Leave_any" = "%@";
+
+"OldChannels.ChannelFormat" = "，";
+"OldChannels.GroupEmptyFormat" = "，";
+
+"OldChannels.GroupFormat_any" = "%@  ";
+
+
+"OldChannels.InactiveWeek_any" = "%@";
+
+
+"OldChannels.InactiveMonth_any" = "%@";
+
+
+"OldChannels.InactiveYear_any" = "%@";
+
+"PrivacySettings.WebSessions" = "";
+
+"Appearance.ShareThemeColor" = "";
+
+"Theme.ThemeChanged" = "。";
+
+
+"StickerPackActionInfo.AddedTitle" = "";
+"StickerPackActionInfo.AddedText" = "%@ 。";
+"StickerPackActionInfo.RemovedTitle" = "";
+"StickerPackActionInfo.ArchivedTitle" = "";
+"StickerPackActionInfo.RemovedText" = "%@";
+
+"Conversation.ContextMenuCancelEditing" = "";
+
+"Map.NoPlacesNearby" = "，";
+
+"CreatePoll.QuizTitle" = "";
+"CreatePoll.QuizOptionsHeader" = "";
+"CreatePoll.Anonymous" = "";
+"CreatePoll.MultipleChoice" = "";
+
+"CreatePoll.Quiz" = "";
+"CreatePoll.QuizInfo" = "，。";
+"CreatePoll.QuizTip" = "";
+
+"MessagePoll.LabelPoll" = "";
+"MessagePoll.LabelAnonymousQuiz" = "";
+"MessagePoll.LabelQuiz" = "";
+"MessagePoll.SubmitVote" = "";
+"MessagePoll.ViewResults" = "";
+"MessagePoll.QuizNoUsers" = "";
+
+
+
+
+
+"MessagePoll.QuizCount_any" = "%@ ";
+
+"PollResults.Title" = "";
+"PollResults.Collapse" = "";
+
+"PollResults.ShowMore_any" = " (%@) ";
+
+"Conversation.StopQuiz" = "";
+"Conversation.StopQuizConfirmationTitle" = "，。，。";
+"Conversation.StopQuizConfirmation" = "";
+
+
+"Forward.ErrorPublicPollDisabledInChannels" = "，。";
+"Forward.ErrorPublicQuizDisabledInChannels" = "，。";
+
+"Map.PlacesInThisArea" = "";
+
+"Appearance.BubbleCornersSetting" = "";
+"Appearance.BubbleCorners.Title" = "";
+
+"Appearance.BubbleCorners.Apply" = "";
+
+"Conversation.LiveLocationYouAndOther" = "****  %@";
+
+"PeopleNearby.MakeVisible" = "";
+"PeopleNearby.MakeInvisible" = "";
+
+
+
+
+
+
+"PeopleNearby.ShowMorePeople_any" = " %@ ";
+
+"PeopleNearby.VisibleUntil" = "%@";
+
+"PeopleNearby.MakeVisibleTitle" = "";
+"PeopleNearby.MakeVisibleDescription" = "。 ，。 。\n\n。";
+
+"PeopleNearby.DiscoverDescription" = "。";
+
+"Time.TomorrowAt" = "%@";
+
+"PeerInfo.ButtonMessage" = "";
+"PeerInfo.ButtonDiscuss" = "";
+"PeerInfo.ButtonCall" = "";
+"PeerInfo.ButtonVideoCall" = "";
+"PeerInfo.ButtonMute" = "";
+"PeerInfo.ButtonUnmute" = "";
+"PeerInfo.ButtonMore" = "";
+"PeerInfo.ButtonAddMember" = "";
+"PeerInfo.ButtonSearch" = "";
+"PeerInfo.ButtonLeave" = "";
+
+"PeerInfo.PaneMedia" = "";
+"PeerInfo.PaneFiles" = "";
+"PeerInfo.PaneLinks" = "";
+"PeerInfo.PaneVoiceAndVideo" = "";
+"PeerInfo.PaneAudio" = "";
+"PeerInfo.PaneGroups" = "";
+"PeerInfo.PaneMembers" = "";
+"PeerInfo.PaneGifs" = "GIF";
+
+"PeerInfo.AddToContacts" = "";
+
+"PeerInfo.BioExpand" = "";
+
+
+
+"ChatList.EmptyChatList" = " 。";
+"ChatList.EmptyChatListFilterTitle" = "";
+"ChatList.EmptyChatListFilterText" = "";
+
+"ChatList.EmptyChatListNewMessage" = "";
+"ChatList.EmptyChatListEditFilter" = "";
+
+"ChatListFilter.AddChatsTitle" = "";
+
+"Stats.Overview" = "";
+"Stats.Followers" = "";
+"Stats.EnabledNotifications" = "";
+"Stats.ViewsPerPost" = "";
+"Stats.SharesPerPost" = "";
+
+"Stats.GrowthTitle" = "";
+"Stats.FollowersTitle" = "";
+"Stats.NotificationsTitle" = "";
+"Stats.InteractionsTitle" = "";
+"Stats.InstantViewInteractionsTitle" = "";
+"Stats.ViewsBySourceTitle" = "";
+"Stats.ViewsByHoursTitle" = " (UTC)";
+"Stats.FollowersBySourceTitle" = "";
+"Stats.LanguagesTitle" = "";
+"Stats.PostsTitle" = "**  **";
+
+
+
+
+
+
+"Stats.MessageViews_any" = "%@ ";
+
+
+
+
+
+
+"Stats.MessageForwards_any" = "%@ ";
+
+"Stats.LoadingTitle" = "";
+"Stats.LoadingText" = "，";
+
+"Stats.ZoomOut" = "";
+"Stats.Total" = "";
+
+
+
+
+
+
+"InstantPage.Views_any" = "%@ ";
+"InstantPage.FeedbackButtonShort" = "？";
+
+"ChatList.EditFolder" = "";
+"ChatList.AddChatsToFolder" = "";
+"ChatList.RemoveFolderConfirmation" = "，。";
+"ChatList.RemoveFolderAction" = "";
+"ChatList.RemoveFolder" = "";
+"ChatList.ReorderTabs" = "";
+"ChatList.TabIconFoldersTooltipNonEmptyFolders" = "“”";
+
+"ChatList.AddFolder" = "";
+"ChatList.EditFolders" = "";
+"ChatList.FolderAllChats" = "";
+"ChatList.Tabs.AllChats" = "";
+"ChatList.Tabs.All" = "";
+"Settings.ChatFolders" = "";
+"ChatList.ChatTypesSection" = "";
+"ChatList.PeerTypeNonContact" = "";
+"ChatList.PeerTypeContact" = "";
+"ChatList.PeerTypeBot" = "";
+"ChatList.PeerTypeGroup" = "";
+"ChatList.PeerTypeChannel" = "";
+"ChatListFolderSettings.Info" = "，";
+
+"ChatListFolderSettings.Title" = "";
+"ChatListFolderSettings.FoldersSection" = "";
+"ChatListFolderSettings.NewFolder" = "";
+"ChatListFolderSettings.EditFoldersInfo" = "“”";
+"ChatListFolderSettings.RecommendedFoldersSection" = "";
+"ChatListFolderSettings.RecommendedNewFolder" = "";
+
+"ChatListFolder.TitleCreate" = "";
+"ChatListFolder.TitleEdit" = "";
+"ChatListFolder.CategoryContacts" = "";
+"ChatListFolder.CategoryNonContacts" = "";
+"ChatListFolder.CategoryBots" = "";
+"ChatListFolder.CategoryGroups" = "";
+"ChatListFolder.CategoryChannels" = "";
+"ChatListFolder.CategoryMuted" = "";
+"ChatListFolder.CategoryRead" = "";
+"ChatListFolder.CategoryArchived" = "";
+"ChatListFolder.NameSectionHeader" = "";
+"ChatListFolder.NamePlaceholder" = "";
+"ChatListFolder.IncludedSectionHeader" = "";
+"ChatListFolder.AddChats" = "";
+"ChatListFolder.IncludeSectionInfo" = "。";
+"ChatListFolder.ExcludedSectionHeader" = "";
+"ChatListFolder.ExcludeSectionInfo" = "。";
+"ChatListFolder.NameNonMuted" = "";
+"ChatListFolder.NameUnread" = "";
+"ChatListFolder.NameChannels" = "";
+"ChatListFolder.NameContacts" = "";
+"ChatListFolder.NameNonContacts" = "";
+"ChatListFolder.NameBots" = "";
+"ChatListFolder.NameGroups" = "";
+"ChatListFolder.DiscardConfirmation" = "，？";
+"ChatListFolder.DiscardDiscard" = "";
+"ChatListFolder.DiscardCancel" = "";
+"ChatListFolder.IncludeChatsTitle" = "";
+"ChatListFolder.ExcludeChatsTitle" = "";
+
+"ChatListFolderSettings.AddRecommended" = "";
+
+
+
+
+
+
+"ChatListFilter.ShowMoreChats_any" = "%@";
+
+"MuteFor.Forever" = "";
+
+"Conversation.Dice.u1F3B2" = " **:dice:** Emoji 。";
+
+"Conversation.SendDice" = "";
+
+"Conversation.ContextMenuDiscuss" = "";
+
+"CreatePoll.ExplanationHeader" = "";
+"CreatePoll.Explanation" = "（）";
+"CreatePoll.ExplanationInfo" = "，。";
+
+"FeaturedStickers.OtherSection" = "";
+
+"ChatList.GenericPsaAlert" = "。";
+"ChatList.PsaAlert.covid" = "。：https://telegram.org/blog/coronavirus";
+"ChatList.GenericPsaLabel" = "";
+"ChatList.PsaLabel.covid" = "";
+"Chat.GenericPsaTooltip" = "";
+"Chat.PsaTooltip.covid" = "。：https://telegram.org/blog/coronavirus";
+
+"Message.GenericForwardedPsa" = "\n： %@";
+"Message.ForwardedPsa.covid" = "\n：%@";
+
+"Channel.AboutItem" = "";
+"PeerInfo.GroupAboutItem" = "";
+
+"Widget.ApplicationStartRequired" = " App ";
+
+"ChatList.Context.AddToFolder" = "...";
+"ChatList.Context.RemoveFromFolder" = "";
+"ChatList.Context.Back" = "";
+"ChatList.AddedToFolderTooltip" = "%1$@  %2$@";
+"ChatList.RemovedFromFolderTooltip" = "%1$@  %2$@";
+
+"OwnershipTransfer.Transfer" = "";
+
+"TwoStepAuth.Disable" = "";
+
+"Chat.Gifs.TrendingSectionHeader" = "";
+"Chat.Gifs.SavedSectionHeader" = " GIF ";
+
+"Paint.Framed" = "";
+
+"Media.SendingOptionsTooltip" = "。";
+"Media.SendWithTimer" = "";
+
+"Conversation.Timer.Title" = "";
+"Conversation.Timer.Send" = "";
+
+"Paint.Pen" = "";
+"Paint.Marker" = "";
+"Paint.Neon" = "";
+"Paint.Arrow" = "";
+
+"Conversation.NoticeInvitedByInChannel" = "%@ ";
+"Conversation.NoticeInvitedByInGroup" = "%@ ";
+
+
+"ChatList.MessagePhotos_any" = "%@ ";
+
+"ChatList.MessageVideos_any" = "%@ ";
+
+"Conversation.PrivateChannelTimeLimitedAlertTitle" = "";
+"Conversation.PrivateChannelTimeLimitedAlertText" = "。。";
+"Conversation.PrivateChannelTimeLimitedAlertJoin" = "";
+
+"KeyCommand.SearchInChat" = "";
+
+"PhotoEditor.SkinTool" = "";
+"PhotoEditor.BlurToolPortrait" = "";
+"PhotoEditor.SelectCoverFrame" = "";
+
+"Conversation.PeerNearbyTitle" = "%1$@  %2$@";
+"Conversation.PeerNearbyText" = "。";
+"Conversation.PeerNearbyDistance" = "%1$@  %2$@";
+
+"ProfilePhoto.MainPhoto" = "";
+"ProfilePhoto.SetMainPhoto" = "";
+
+"ProfilePhoto.MainVideo" = "";
+"ProfilePhoto.SetMainVideo" = "";
+
+"Stats.GroupOverview" = "";
+"Stats.GroupMembers" = "";
+"Stats.GroupMessages" = "";
+"Stats.GroupViewers" = "";
+"Stats.GroupPosters" = "";
+
+"Stats.GroupGrowthTitle" = "";
+"Stats.GroupMembersTitle" = "";
+"Stats.GroupNewMembersBySourceTitle" = "";
+"Stats.GroupLanguagesTitle" = "";
+"Stats.GroupMessagesTitle" = "";
+"Stats.GroupActionsTitle" = "";
+"Stats.GroupTopHoursTitle" = "";
+"Stats.GroupTopWeekdaysTitle" = "";
+"Stats.GroupTopPostersTitle" = "";
+"Stats.GroupTopAdminsTitle" = "";
+"Stats.GroupTopInvitersTitle" = "";
+
+
+
+
+
+
+"Stats.GroupTopPosterMessages_any" = "%@ ";
+
+
+
+
+
+
+"Stats.GroupTopPosterChars_any" = " %@ ";
+
+"Stats.GroupTopPoster.History" = "";
+"Stats.GroupTopPoster.Promote" = "";
+
+
+
+
+
+
+"Stats.GroupTopAdminDeletions_any" = "%@ ";
+
+
+
+
+
+
+"Stats.GroupTopAdminKicks_any" = "%@ ";
+
+
+
+
+
+
+"Stats.GroupTopAdminBans_any" = "%@ ";
+
+"Stats.GroupTopAdmin.Actions" = "";
+"Stats.GroupTopAdmin.Promote" = "";
+
+
+
+
+
+
+"Stats.GroupTopInviterInvites_any" = "%@ ";
+
+"Stats.GroupTopInviter.History" = "";
+"Stats.GroupTopInviter.Promote" = "";
+
+"PrivacySettings.AutoArchiveTitle" = "";
+"PrivacySettings.AutoArchive" = "";
+"PrivacySettings.AutoArchiveInfo" = "、。";
+
+"Call.RemoteVideoPaused" = "%@ ";
+
+"Settings.SetProfilePhotoOrVideo" = "";
+"Settings.SetNewProfilePhotoOrVideo" = "";
+"Settings.ViewVideo" = "";
+"Settings.RemoveVideo" = "";
+
+"Conversation.Unarchive" = "";
+"Conversation.UnarchiveDone" = "。";
+
+"ChatList.AutoarchiveSuggestion.Title" = "?";
+"ChatList.AutoarchiveSuggestion.Text" = "。********？";
+"ChatList.AutoarchiveSuggestion.OpenSettings" = "";
+
+"SettingsSearch.Synonyms.ChatSettings.IntentsSettings" = "Siri ";
+
+
+
+
+
+
+"Stats.GroupShowMoreTopPosters_any" = "%@";
+
+
+
+
+
+
+"Stats.GroupShowMoreTopAdmins_any" = "%@";
+
+
+
+
+
+
+"Stats.GroupShowMoreTopInviters_any" = "  %@ ";
+
+"Settings.AddAnotherAccount" = "";
+"Settings.AddAnotherAccount.Help" = "。";
+
+"ProfilePhoto.OpenGallery" = "";
+"ProfilePhoto.SearchWeb" = "";
+"ProfilePhoto.OpenInEditor" = "";
+
+"Settings.EditAccount" = "";
+"Settings.EditPhoto" = "";
+"Settings.EditVideo" = "";
+"Settings.CancelUpload" = "";
+
+"Settings.FrequentlyAskedQuestions" = "";
+
+"Notification.ChangedGroupVideo" = "%@ ";
+"Group.MessageVideoUpdated" = "";
+"Channel.MessageVideoUpdated" = "";
+
+"Conversation.Dice.u1F3C0" = "。";
+"Conversation.Dice.u26BD" = "，。";
+
+
+
+"EditProfile.NameAndPhotoOrVideoHelp" = "。";
+
+"Settings.RemoveConfirmation" = "";
+
+"Conversation.ContextMenuOpenProfile" = "";
+"Conversation.ContextMenuSendMessage" = "";
+"Conversation.ContextMenuMention" = "";
+
+"Conversation.ContextMenuOpenChannelProfile" = "";
+"Conversation.ContextMenuOpenChannel" = "";
+
+"Cache.KeepMediaHelp" = "，，。";
+
+
+"Cache.MaximumCacheSize" = "";
+"Cache.NoLimit" = "";
+"Cache.MaximumCacheSizeHelp" = "。\n\n，。";
+
+"Stats.MessageTitle" = "";
+"Stats.MessageOverview" = "";
+"Stats.MessageInteractionsTitle" = "";
+"Stats.MessagePublicForwardsTitle" = "";
+
+"Call.CameraTooltip" = "";
+"Call.CameraOrScreenTooltip" = "";
+"Call.CameraConfirmationText" = "?";
+"Call.CameraConfirmationConfirm" = "";
+
+"Call.YourMicrophoneOff" = "";
+"Call.MicrophoneOff" = "%@'";
+"Call.CameraOff" = "%@' ";
+"Call.BatteryLow" = "%@'";
+
+"Call.Audio" = "";
+"Call.AudioRouteMute" = "";
+
+"AccessDenied.VideoCallCamera" = "Telegram 。\n  >>   Telegram 。";
+
+
+
+"ChatList.Search.FilterChats" = "";
+"ChatList.Search.FilterMedia" = "";
+"ChatList.Search.FilterLinks" = "";
+"ChatList.Search.FilterFiles" = "";
+"ChatList.Search.FilterMusic" = "";
+"ChatList.Search.FilterVoice" = "";
+
+"ChatList.Search.NoResults" = "";
+"ChatList.Search.NoResultsQueryDescription" = "%@，。";
+"ChatList.Search.NoResultsDescription" = "，";
+
+"ChatList.Search.NoResultsFilter" = "";
+"ChatList.Search.NoResultsFitlerMedia" = "";
+"ChatList.Search.NoResultsFitlerLinks" = "。";
+"ChatList.Search.NoResultsFitlerFiles" = "";
+"ChatList.Search.NoResultsFitlerMusic" = "";
+"ChatList.Search.NoResultsFitlerVoice" = "";
+
+
+
+
+
+
+
+
+"Conversation.InputTextAnonymousPlaceholder" = "";
+
+"DialogList.Replies" = "";
+
+
+"Conversation.ContextViewReplies_any" = "%@ ";
+"Conversation.ContextViewThread" = "";
+
+"Conversation.ViewReply" = "";
+
+
+"Conversation.MessageViewComments_any" = "[%@]";
+"Conversation.MessageViewCommentsFormat" = "%1$@ %2$@";
+
+"Conversation.TitleCommentsEmpty" = "";
+
+"Conversation.TitleComments_any" = "[%@]";
+"Conversation.TitleCommentsFormat" = "%1$@ %2$@";
+
+"Conversation.TitleRepliesEmpty" = "";
+
+"Conversation.TitleReplies_any" = "[%@]";
+"Conversation.TitleRepliesFormat" = "%1$@ %2$@";
+
+"Conversation.MessageLeaveComment" = "";
+"Conversation.MessageLeaveCommentShort" = "";
+
+"Conversation.DiscussionNotStarted" = "...";
+"Conversation.DiscussionStarted" = "";
+
+"Conversation.InputTextPlaceholderReply" = "";
+"Conversation.InputTextPlaceholderComment" = "";
+
+"Conversation.TitleNoComments" = "";
+
+"Conversation.ContextMenuBlock" = "";
+
+"Replies.BlockAndDeleteRepliesActionTitle" = "";
+
+
+"Channel.CommentsGroup.HeaderSet" = "%@ 。";
+"Channel.CommentsGroup.HeaderGroupSet" = " %@ 。";
+
+"RepliesChat.DescriptionText" = "。";
+
+"Channel.DiscussionMessageUnavailable" = "，。";
+
+"Conversation.ContextViewStats" = "";
+
+
+"ChatList.MessageMusic_any" = "%@ ";
+
+"Conversation.PinOlderMessageAlertTitle" = "";
+"Conversation.PinOlderMessageAlertText" = "，？";
+"Conversation.PinMessageAlertPin" = "";
+
+"Conversation.ContextMenuSelect" = "";
+
+
+
+
+
+
+"Conversation.ContextMenuSelectAll_any" = " %@ ";
+
+"Conversation.Dice.u1F3B0" = " emoji 。";
+
+"Notification.ProximityReached" = "%1$@  %3$@ %2$@";
+"Notification.ProximityReachedYou" = "%1$@  %2$@ ";
+"Notification.ProximityYouReached" = " %2$@  %1$@ ";
+
+"Location.ProximityNotification.Title" = "";
+"Location.ProximityNotification.Notify" = " %@ ";
+
+"Location.ProximityNotification.AlreadyClose" = "%@";
+"Location.ProximityNotification.DistanceKM" = "";
+"Location.ProximityNotification.DistanceM" = "";
+"Location.ProximityNotification.DistanceMI" = "";
+
+"Location.ProximityTip" = " %@ ";
+"Location.ProximityGroupTip" = "";
+
+
+"ChatList.MessageFiles_any" = "%@ ";
+
+
+"Chat.TitlePinnedMessages_any" = "%@ ";
+
+"Chat.PanelHidePinnedMessages" = "";
+"Chat.PanelUnpinAllMessages" = "";
+
+
+"Chat.MessagesUnpinned_any" = "%@ ";
+
+"Chat.PinnedMessagesHiddenTitle" = "";
+
+
+"OpenFile.PotentiallyDangerousContentAlert" = "\nIP。？";
+"OpenFile.Proceed" = "";
+
+"Chat.PinnedListPreview.ShowAllMessages" = "";
+"Chat.PinnedListPreview.UnpinAllMessages" = "";
+"Chat.PinnedListPreview.HidePinnedMessages" = "";
+
+"Conversation.PinMessagesForMe" = "";
+"Conversation.PinMessagesFor" = "%@";
+
+"Location.LiveLocationRequired.Title" = "";
+"Location.LiveLocationRequired.Description" = "。";
+"Location.LiveLocationRequired.ShareLocation" = "";
+
+"Location.ProximityAlertSetTitle" = "";
+
+"Location.ProximityAlertSetTextGroup" = "%@";
+"Location.ProximityAlertCancelled" = "";
+
+"Stats.Message.Views" = "";
+"Stats.Message.PublicShares" = "";
+"Stats.Message.PrivateShares" = "";
+
+
+
+
+
+"Conversation.TextCopied" = "";
+
+"Media.LimitedAccessTitle" = "";
+"Media.LimitedAccessText" = " Telegram 。";
+"Media.LimitedAccessManage" = "";
+"Media.LimitedAccessSelectMore" = "……";
+"Media.LimitedAccessChangeSettings" = "";
+
+"VoiceChat.StatusSpeaking" = "";
+"VoiceChat.StatusSpeakingVolume" = "%@ ";
+"VoiceChat.StatusListening" = "";
+"VoiceChat.StatusInvited" = "";
+
+"VoiceChat.Connecting" = "……";
+"VoiceChat.Reconnecting" = "……";
+
+"VoiceChat.Unmute" = "";
+"VoiceChat.UnmuteHelp" = "";
+"VoiceChat.Live" = "";
+"VoiceChat.Mute" = "";
+"VoiceChat.Muted" = "";
+"VoiceChat.MutedHelp" = "";
+
+"VoiceChat.Audio" = "";
+"VoiceChat.Leave" = "";
+
+"VoiceChat.SpeakPermissionEveryone" = "";
+"VoiceChat.SpeakPermissionAdmin" = "";
+"VoiceChat.Share" = "";
+"VoiceChat.EndVoiceChat" = "";
+"VoiceChat.EndLiveStream" = "";
+
+"VoiceChat.CopyInviteLink" = "";
+"VoiceChat.InviteLinkCopiedText" = "";
+
+"VoiceChat.UnmutePeer" = "";
+"VoiceChat.MutePeer" = "";
+"VoiceChat.RemovePeer" = "";
+"VoiceChat.RemovePeerConfirmation" = "%@?";
+"VoiceChat.RemovePeerRemove" = "";
+
+"VoiceChat.PanelJoin" = "";
+"VoiceChat.Title" = "";
+"VoiceChatChannel.Title" = "";
+
+
+
+
+
+
+
+
+"VoiceChat.RemovedPeerText" = " %@ ";
+
+
+
+"Notification.LiveStreamEnded" = " (%@)";
+
+
+"VoiceChat.Panel.TapToJoin" = "";
+
+
+
+
+
+"VoiceChat.Panel.Members_any" = "%@ ";
+
+
+
+
+
+
+
+"VoiceChat.Status.MembersFormat" = "%1$@ %2$@";
+
+"ChannelInfo.CreateVoiceChat" = "";
+"ChannelInfo.CreateLiveStream" = "";
+
+"VoiceChat.AnonymousDisabledAlertText" = "，";
+
+"VoiceChat.ChatFullAlertText" = "，。";
+
+
+"VoiceChat.EndConfirmationTitle" = "";
+
+"VoiceChat.EndConfirmationText" = "？";
+
+"VoiceChat.EndConfirmationEnd" = "";
+
+
+
+"VoiceChat.InviteMemberToGroupFirstAdd" = "";
+
+
+"LiveStream.CreateNewVoiceChatText" = "。？";
+
+"VoiceChat.CreateNewVoiceChatStartNow" = "";
+"VoiceChat.CreateNewVoiceChatSchedule" = "";
+
+"PUSH_CHAT_VOICECHAT_START" = "%2$@|%1$@  ";
+
+
+
+
+"PUSH_CHAT_LIVESTREAM_START" = "%2$@%1$@ ";
+
+"PUSH_CHAT_LIVESTREAM_INVITE_YOU" = "%2$@%1$@ ";
+"PUSH_CHAT_LIVESTREAM_END" = "%2$@%1$@";
+
+
+
+"VoiceOver.Common.SwitchHint" = "";
+"VoiceOver.Common.On" = "";
+"VoiceOver.Common.Off" = "";
+
+
+
+
+
+
+"VoiceOver.Chat.MessagesSelected_any" = "%@ ";
+
+"Channel.AdminLog.StartedVoiceChat" = "%1$@ ";
+"Channel.AdminLog.StartedLiveStream" = "%1$@ ";
+"Channel.AdminLog.EndedVoiceChat" = "%1$@ ";
+"Channel.AdminLog.EndedLiveStream" = "%1$@";
+
+"Channel.AdminLog.UnmutedMutedParticipant" = "%1$@  %2$@ ";
+"Channel.AdminLog.AllowedNewMembersToSpeak" = "%1$@ ";
+"Channel.AdminLog.MutedNewMembers" = "%1$@ ";
+
+"Group.GroupMembersHeader" = "";
+
+
+
+
+
+"CallList.RecentCallsHeader" = "";
+
+
+"LiveStream.PeerJoinedText" = "%@ ";
+
+"VoiceChat.StartRecording" = "";
+"LiveStream.StartRecording" = "";
+"VoiceChat.StopRecording" = "";
+
+
+"LiveStream.StartRecordingTitle" = "";
+
+
+"VoiceChat.StartRecordingStart" = "";
+
+
+
+
+"VoiceChat.RecordingTitlePlaceholderVideo" = "（）";
+"VoiceChat.RecordingStarted" = "";
+"LiveStream.RecordingStarted" = "";
+
+"LiveStream.RecordingInProgress" = "";
+
+"VoiceChat.StopRecordingTitle" = "？";
+"VoiceChat.StopRecordingStop" = "";
+
+
+
+"VoiceChat.StatusMutedForYou" = "";
+
+
+"VoiceOver.DismissContextMenu" = "";
+
+
+
+"Call.VoiceOver.VoiceCallIncoming" = "";
+"Call.VoiceOver.VideoCallIncoming" = "";
+"Call.VoiceOver.VoiceCallMissed" = "";
+"Call.VoiceOver.VideoCallMissed" = "";
+"Call.VoiceOver.VoiceCallCanceled" = "";
+"Call.VoiceOver.VideoCallCanceled" = "";
+
+"VoiceChat.UnmuteForMe" = "";
+
+
+"PeerInfo.ButtonVoiceChat" = "";
+"PeerInfo.ButtonLiveStream" = "";
+"VoiceChat.OpenChat" = "";
+
+"GroupInfo.InviteLinks" = "";
+
+"InviteLink.Title" = "";
+"InviteLink.PermanentLink" = "";
+"InviteLink.PublicLink" = "";
+"InviteLink.Share" = "";
+"InviteLink.PeopleJoinedNone" = "";
+
+
+
+
+"InviteLink.PeopleJoined_any" = "%@  ";
+
+"InviteLink.CreatePrivateLinkHelpChannel" = "Telegram。";
+"InviteLink.Manage" = "";
+
+"InviteLink.PeopleJoinedShortNoneExpired" = "";
+"InviteLink.PeopleJoinedShortNone" = "";
+
+
+
+
+"InviteLink.PeopleJoinedShort_any" = "%@ ";
+
+
+
+
+
+"InviteLink.PeopleCanJoin_any" = "%@ ";
+
+
+
+
+
+"InviteLink.PeopleRemaining_any" = "  %@  ";
+
+"InviteLink.Expired" = "";
+"InviteLink.UsageLimitReached" = "";
+"InviteLink.Revoked" = "";
+
+"InviteLink.AdditionalLinks" = "";
+"InviteLink.Create" = "";
+
+
+
+
+
+"InviteLink.ContextCopy" = "";
+"InviteLink.ContextEdit" = "";
+"InviteLink.ContextGetQRCode" = "";
+"InviteLink.ContextShare" = "";
+"InviteLink.ContextRevoke" = "";
+"InviteLink.ContextDelete" = "";
+
+"InviteLink.Create.Title" = "";
+"InviteLink.Create.EditTitle" = "";
+
+"InviteLink.Create.TimeLimit" = "";
+"InviteLink.Create.TimeLimitExpiryDate" = "";
+"InviteLink.Create.TimeLimitExpiryDateNever" = "";
+"InviteLink.Create.TimeLimitExpiryTime" = "";
+"InviteLink.Create.TimeLimitInfo" = "。";
+"InviteLink.Create.TimeLimitNoLimit" = "";
+
+"InviteLink.Create.UsersLimit" = "";
+"InviteLink.Create.UsersLimitNumberOfUsers" = "";
+"InviteLink.Create.UsersLimitNumberOfUsersUnlimited" = "";
+
+"InviteLink.Create.UsersLimitNoLimit" = "";
+
+"InviteLink.Create.Revoke" = "";
+
+"InviteLink.QRCode.Title" = "";
+"InviteLink.QRCode.Info" = "Telegram 。";
+
+"InviteLink.QRCode.Share" = "";
+
+"InviteLink.InviteLink" = "";
+"InviteLink.ExpiredLink" = "";
+"InviteLink.ExpiredLinkStatus" = "";
+"InviteLink.CreatedBy" = "";
+
+"InviteLink.ReactivateLink" = "";
+
+
+"InviteLink.DeleteLinkAlert.Action" = "";
+
+"InviteLink.DeleteAllRevokedLinksAlert.Text" = "。";
+"InviteLink.DeleteAllRevokedLinksAlert.Action" = "";
+
+"InviteLink.ExpiresIn" = "%@";
+
+"InviteLink.InviteLinkCopiedText" = "";
+
+
+
+
+
+
+
+
+
+"InviteLink.InviteLinks_any" = "%@ ";
+
+"InviteLink.InviteLinkRevoked" = "。";
+
+"Conversation.ChecksTooltip.Delivered" = "";
+"Conversation.ChecksTooltip.Read" = "";
+
+"DialogList.MultipleTypingPair" = "%@  %@ ";
+
+"Common.Save" = "";
+
+
+
+
+
+
+
+
+
+
+"Group.ErrorAdminsTooMuch" = "，。";
+"Channel.ErrorAdminsTooMuch" = "，。";
+
+"Conversation.AddMembers" = "";
+
+
+
+"Conversation.GreetingText" = "。";
+
+"CallList.DeleteAllForMe" = "";
+"CallList.DeleteAllForEveryone" = "";
+"Conversation.ImportProgress" = "... %@ %";
+
+"Conversation.AudioRateTooltipSpeedUp" = "。";
+"Conversation.AudioRateTooltipNormal" = "。";
+
+"ChatImport.Title" = "";
+
+"ChatImport.SelectionErrorGroupGeneric" = "，。";
+
+
+
+"ChatImport.SelectionConfirmationAlertImportAction" = "";
+
+
+"ChatImport.CreateGroupAlertImportAction" = "";
+
+
+
+
+
+
+
+"ChatImportActivity.Title" = "";
+"ChatImportActivity.OpenApp" = " Telegram";
+"ChatImportActivity.Retry" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"VoiceOver.Chat.UnreadMessages_any" = "%@ ";
+
+
+
+
+
+
+
+"VoiceOver.Chat.Profile" = "";
+"VoiceOver.Chat.GroupInfo" = "";
+"VoiceOver.Chat.ChannelInfo" = "";
+
+"Conversation.ForwardTooltip.Chat.One" = " %@";
+"Conversation.ForwardTooltip.Chat.Many" = " **%@**";
+"Conversation.ForwardTooltip.TwoChats.One" = " %@  %@";
+
+
+
+
+
+
+
+
+
+"Channel.AdminLog.RevokedInviteLink" = "%1$@  %2$@";
+"Channel.AdminLog.EditedInviteLink" = "%1$@ %2$@";
+
+
+
+
+"GroupInfo.Permissions.BroadcastTitle" = "";
+"GroupInfo.Permissions.BroadcastConvert" = "";
+"GroupInfo.Permissions.BroadcastConvertInfo" = "%@，。";
+
+"GroupInfo.GroupHistoryShort" = "";
+
+"PeerInfo.CustomizeNotifications" = "";
+
+"Conversation.ContextMenuSpeak" = "";
+
+"Conversation.SelectMessages" = "";
+"Conversation.ReportMessages" = "";
+
+
+
+"Report.Report" = "";
+"Report.Succeed" = "Telegram。！";
+
+"Conversation.AutoremoveRemainingTime" = " %@ ";
+
+
+
+"PeerInfo.AutoremoveMessages" = "";
+"PeerInfo.AutoremoveMessagesDisabled" = "";
+
+
+"Conversation.AutoremoveOff" = "。";
+
+"PeerInfo.ReportProfilePhoto" = "";
+
+
+"Channel.AdminLog.CanInviteUsersViaLink" = "";
+
+"BroadcastGroups.IntroTitle" = "";
+"BroadcastGroups.IntroText" = "• 。\n\n• 。\n\n• 。";
+"BroadcastGroups.Convert" = "";
+"BroadcastGroups.Cancel" = "";
+
+"BroadcastGroups.ConfirmationAlert.Title" = "？";
+
+"BroadcastGroups.ConfirmationAlert.Convert" = "";
+
+"BroadcastGroups.Success" = " %@ 。";
+
+"BroadcastGroups.LimitAlert.Title" = "";
+"BroadcastGroups.LimitAlert.Text" = " **%@** 。\n\n **** 。\n？";
+"BroadcastGroups.LimitAlert.LearnMore" = "";
+
+
+"VoiceOver.AuthSessions.CurrentSession" = "";
+
+"Channel.AdminLog.MessageChangedAutoremoveTimeoutSet" = "%1$@  %2$@";
+
+
+
+
+"Group.Info.Members" = "";
+
+"Group.Members.Title" = "";
+"Group.Members.AddMembers" = "";
+"Group.Members.AddMembersHelp" = "。";
+
+
+"Conversation.DeleteAllMessagesInChat" = "  %@  ？";
+
+"InviteLinks.InviteLinkExpired" = "。";
+
+"Conversation.AutoremoveTimerSetUserYou" = " %1$@";
+
+"Conversation.AutoremoveTimerRemovedUserYou" = "";
+
+
+
+"Conversation.AutoremoveTimerSetChannel" = " %1$@ ";
+"Conversation.AutoremoveTimerRemovedChannel" = "";
+
+"AutoremoveSetup.Title" = "";
+
+
+
+"AutoremoveSetup.TimerValueNever" = "";
+"AutoremoveSetup.TimerValueAfter" = "%@ ";
+
+"Conversation.ClearChannel" = "";
+
+
+"Conversation.AutoremoveActionEnable" = "";
+"Conversation.AutoremoveActionEdit" = "";
+
+"Widget.ChatsGalleryTitle" = "";
+
+"Widget.ShortcutsGalleryTitle" = "";
+
+
+"Widget.MessageAutoremoveTimerUpdated" = "";
+
+
+
+"Widget.UpdatedTodayAt" = " {}";
+"Widget.UpdatedAt" = " {}";
+
+"Intents.ErrorLockedTitle" = "";
+
+
+
+
+
+
+
+
+
+"Notification.Exceptions.MessagePreviewAlwaysOn" = "";
+"Notification.Exceptions.MessagePreviewAlwaysOff" = "";
+
+"Channel.Setup.LinkTypePublic" = "";
+"Channel.Setup.LinkTypePrivate" = "";
+
+
+
+"Conversation.UsersTooMuchError" = "，。";
+
+"Conversation.UploadFileTooLarge" = "，2GB。\n\n，2GB。";
+
+
+
+"Message.ScamAccount" = "";
+
+
+
+
+
+
+
+
+
+
+"Contacts.VoiceOver.AddContact" = "";
+
+"VoiceChat.SelectAccount" = "";
+"VoiceChat.DisplayAs" = "...";
+"VoiceChat.DisplayAsInfo" = "。";
+"VoiceChat.DisplayAsInfoGroup" = "。";
+
+
+"VoiceChat.PersonalAccount" = "";
+"VoiceChat.EditTitle" = "";
+"LiveStream.EditTitle" = "";
+"VoiceChat.EditPermissions" = "";
+
+"VoiceChat.OpenChannel" = "";
+
+
+"LiveStream.EditTitleText" = "、";
+
+"LiveStream.EditTitleSuccess" = " **%@** 。";
+"VoiceChat.EditTitleRemoveSuccess" = "。";
+"LiveStream.EditTitleRemoveSuccess" = "。";
+
+"VoiceChat.InviteLink.Speaker" = "";
+"VoiceChat.InviteLink.Listener" = "";
+"VoiceChat.InviteLink.CopySpeakerLink" = "";
+
+
+
+
+
+
+
+"VoiceChat.InviteLink.InviteSpeakers_any" = "[%@] ";
+
+
+
+
+
+
+
+
+"Conversation.CancelForwardTitle" = "";
+
+"Conversation.CancelForwardCancelForward" = "";
+"Conversation.CancelForwardSelectChat" = "";
+
+"StickerPacks.ActionDelete" = "";
+"StickerPacks.ActionArchive" = "";
+"StickerPacks.ActionShare" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"VoiceChat.StatusWantsToSpeak" = "";
+
+"VoiceChat.AskedToSpeak" = "";
+
+
+"VoiceChat.YouCanNowSpeak" = "。";
+
+"VoiceChat.UserCanNowSpeak" = "%@ ";
+
+"VoiceChat.MutedByAdmin" = "";
+"VoiceChat.MutedByAdminHelp" = "";
+"Invitation.JoinVoiceChatAsSpeaker" = "";
+"Invitation.JoinVoiceChatAsListener" = "";
+
+"VoiceChat.CancelSpeakRequest" = "";
+
+
+
+
+
+"Notification.VoiceChatStartedChannel" = "";
+
+
+"Conversation.MessageCopied" = "";
+"Conversation.LinkCopied" = "";
+"Conversation.TextCopied" = "";
+"Conversation.ImageCopied" = "";
+"Conversation.HashtagCopied" = "";
+"Conversation.PhoneCopied" = "";
+"Conversation.EmailCopied" = "";
+"Conversation.UsernameCopied" = "";
+
+"Conversation.PrivateMessageLinkCopiedLong" = "。。";
+
+"Conversation.StickerAddedToFavorites" = "";
+
+
+
+
+"Conversation.VoiceChat" = "";
+"Conversation.LiveStream" = "";
+
+"Conversation.JoinVoiceChatAsSpeaker" = "";
+"Conversation.JoinVoiceChatAsListener" = "";
+
+
+
+
+"LiveStream.LeaveVoiceChat" = "";
+"VoiceChat.LeaveAndEndVoiceChat" = "";
+
+"VoiceChat.LeaveAndCancelVoiceChat" = "";
+"LiveStream.LeaveAndCancelVoiceChat" = "";
+
+"VoiceChat.ForwardTooltip.Chat" = " %@";
+"VoiceChat.ForwardTooltip.TwoChats" = " %@  %@";
+
+
+"GroupRemoved.ViewChannelInfo" = "";
+
+"UserInfo.ContactForwardTooltip.Chat.One" = " **%@**";
+"UserInfo.ContactForwardTooltip.TwoChats.One" = " **%@**  **%@**";
+"UserInfo.ContactForwardTooltip.ManyChats.One" = " **%@**   %@  ";
+"UserInfo.ContactForwardTooltip.SavedMessages.One" = " ****";
+
+"UserInfo.LinkForwardTooltip.Chat.One" = " **%@**";
+
+
+"UserInfo.LinkForwardTooltip.SavedMessages.One" = " ****";
+
+"VoiceChat.You" = "";
+"VoiceChat.ChangePhoto" = "";
+"VoiceChat.EditBio" = "";
+"VoiceChat.EditBioTitle" = "";
+"VoiceChat.EditBioText" = "，、。";
+"VoiceChat.EditBioPlaceholder" = "";
+"VoiceChat.EditBioSave" = "";
+"VoiceChat.EditBioSuccess" = "。";
+
+
+
+
+
+
+
+
+
+"VoiceChat.SendPublicLinkSend" = "";
+
+"VoiceChat.TapToAddPhotoOrBio" = "";
+
+"VoiceChat.TapToAddBio" = "";
+
+
+"VoiceChat.AddPhoto" = "";
+"VoiceChat.AddBio" = "";
+"VoiceChat.ChangeName" = "";
+"VoiceChat.ChangeNameTitle" = "";
+"VoiceChat.EditNameSuccess" = "。";
+
+"VoiceChat.Video" = "";
+
+"VoiceChat.PinVideo" = "";
+
+
+"Notification.VoiceChatScheduledChannel" = " %@";
+"Notification.LiveStreamScheduled" = " %@ ";
+
+
+"Notification.VoiceChatScheduledTodayChannel" = " %@";
+
+
+
+
+
+
+
+"VoiceChat.StartsIn" = "";
+"VoiceChat.LateBy" = "";
+
+"VoiceChat.StatusStartsIn" = " %@";
+"VoiceChat.StatusLateBy" = "%@";
+
+"VoiceChat.Scheduled" = "";
+
+"VoiceChat.StartNow" = "";
+"VoiceChat.SetReminder" = "";
+"VoiceChat.CancelReminder" = "";
+
+"VoiceChat.ShareShort" = "";
+"VoiceChat.TapToEditTitle" = "";
+
+"ChannelInfo.ScheduleVoiceChat" = "";
+"ChannelInfo.ScheduleLiveStream" = "";
+
+"ScheduleVoiceChat.Title" = "";
+"ScheduleLiveStream.Title" = "";
+"ScheduleVoiceChat.GroupText" = "， %@ 。";
+
+
+"ScheduleVoiceChat.ScheduleToday" = " %@ ";
+"ScheduleVoiceChat.ScheduleTomorrow" = " %@ ";
+"ScheduleVoiceChat.ScheduleOn" = " %@ %@";
+
+"Conversation.ScheduledVoiceChat" = "";
+"Conversation.ScheduledLiveStream" = "";
+
+
+"Conversation.ScheduledLiveStreamStartsOn" = "%@";
+"Conversation.ScheduledVoiceChatStartsOnShort" = "%@";
+
+
+"Conversation.ScheduledVoiceChatStartsTodayShort" = " %@ ";
+
+"Conversation.ScheduledLiveStreamStartsTomorrow" = "%@";
+"Conversation.ScheduledVoiceChatStartsTomorrowShort" = " %@ ";
+
+"VoiceChat.CancelVoiceChat" = "";
+"VoiceChat.CancelLiveStream" = "";
+
+"LiveStream.CancelConfirmationTitle" = "";
+"VoiceChat.CancelConfirmationText" = "？";
+"LiveStream.CancelConfirmationText" = "？";
+"VoiceChat.CancelConfirmationEnd" = "";
+
+
+
+
+"ScheduledIn.Seconds_any" = "%@ ";
+
+
+
+
+
+"ScheduledIn.Minutes_any" = "%@ ";
+
+
+
+
+
+"ScheduledIn.Hours_any" = "%@ ";
+
+
+
+
+
+"ScheduledIn.Days_any" = "%@ ";
+
+
+
+
+
+"ScheduledIn.Weeks_any" = "%@ ";
+
+
+
+
+
+"ScheduledIn.Months_any" = "%@ ";
+
+
+
+
+
+"ScheduledIn.Years_any" = "%@ ";
+
+
+
+
+"Checkout.OptionalTipItem" = "（）";
+"Checkout.TipItem" = "";
+
+
+"VoiceChat.ReminderNotify" = "。";
+
+
+
+"Privacy.ContactsReset.ContactsDeleted" = "。";
+
+"Privacy.DeleteDrafts.DraftsDeleted" = "。";
+
+"Privacy.PaymentsClear.PaymentInfoCleared" = "。";
+
+
+
+"Settings.Tips" = "Telegram ";
+"Settings.TipsUsername" = "Telegram ";
+
+
+
+
+"VoiceChat.VideoPreviewTitle" = "";
+
+"VoiceChat.VideoPreviewShareCamera" = "";
+"VoiceChat.VideoPreviewShareScreen" = "";
+
+
+
+
+
+"VoiceChat.ShareScreen" = "";
+"VoiceChat.StopScreenSharing" = "";
+"VoiceChat.ParticipantIsSpeaking" = "%1$@";
+
+"WallpaperPreview.WallpaperColors" = "";
+
+
+
+"VoiceChat.ContextAudio" = "";
+
+"VoiceChat.VideoPaused" = "";
+
+"VoiceChat.StopScreenSharingShort" = "";
+
+
+
+"VoiceChat.NoiseSuppression" = "";
+"VoiceChat.NoiseSuppressionEnabled" = "";
+"VoiceChat.NoiseSuppressionDisabled" = "";
+
+"VoiceChat.Unpin" = "";
+
+
+
+
+
+
+
+
+
+"ImportStickerPack.CreateStickerSet" = "";
+
+
+
+
+"ImportStickerPack.ChooseName" = "";
+"ImportStickerPack.ChooseNameDescription" = "";
+"ImportStickerPack.NamePlaceholder" = "";
+
+
+
+
+"ImportStickerPack.LinkTaken" = "， 。";
+
+"ImportStickerPack.ImportingStickers" = "";
+"ImportStickerPack.Of" = "%1$@ / %2$@ ";
+
+"ImportStickerPack.Create" = "";
+
+
+
+"Conversation.InputMenu" = "";
+
+
+
+
+"Settings.KeepPassword" = "，";
+
+
+"TwoFactorSetup.PasswordRecovery.Title" = "";
+"TwoFactorSetup.PasswordRecovery.Text" = "，。";
+"TwoFactorSetup.PasswordRecovery.PlaceholderPassword" = "";
+"TwoFactorSetup.PasswordRecovery.PlaceholderConfirmPassword" = "";
+
+"TwoFactorSetup.PasswordRecovery.Skip" = "";
+"TwoFactorSetup.PasswordRecovery.SkipAlertTitle" = "！";
+
+"TwoFactorSetup.PasswordRecovery.SkipAlertAction" = "";
+
+
+"TwoStepAuth.RecoveryUnavailableResetText" = "， 7 。";
+"TwoStepAuth.RecoveryEmailResetText" = "，， 7 。";
+
+
+
+"TwoStepAuth.ResetAction" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"TwoFactorRemember.Text" = "？ ";
+
+
+"TwoFactorRemember.CheckPassword" = "";
+"TwoFactorRemember.WrongPassword" = "";
+"TwoFactorRemember.Done.Title" = "！";
+"TwoFactorRemember.Done.Text" = "。 ";
+"TwoFactorRemember.Done.Action" = "";
+
+"VoiceChat.VideoPreviewPhoneScreen" = "";
+"VoiceChat.VideoPreviewTabletScreen" = "";
+"VoiceChat.VideoPreviewFrontCamera" = "";
+"VoiceChat.VideoPreviewBackCamera" = "";
+"VoiceChat.VideoPreviewContinue" = "";
+"VoiceChat.VideoPreviewShareScreenInfo" = "\n";
+
+
+"Gallery.ImageSaved" = "";
+
+
+
+
+"Gallery.SaveImage" = "";
+"Gallery.SaveVideo" = "";
+
+"VoiceChat.VideoParticipantsLimitExceededExtended" = " %@，。";
+
+"PlaybackSpeed.Title" = "";
+"PlaybackSpeed.Normal" = "";
+
+"Chat.NextChannelSameLocationSwipeProgress" = "";
+"Chat.NextChannelSameLocationSwipeAction" = " ";
+
+"Chat.NextChannelFolderSwipeAction" = " %@ ";
+
+
+
+
+
+"Conversation.ForwardOptions.Text" = "%2$@%1$@？";
+"Conversation.ForwardOptions.TextPersonal" = " %2$@  %1$@ ？";
+"Conversation.ForwardOptions.ShowOptions" = "";
+
+
+
+
+
+"Conversation.ForwardOptions.HideSendersNames" = "";
+"Conversation.ForwardOptions.ShowSendersNames" = "";
+
+
+
+
+
+"Conversation.ForwardOptions.SendMessage" = "";
+"Conversation.ForwardOptions.SendMessages" = "";
+
+"Conversation.ForwardOptions.TapForOptions" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Conversation.ForwardOptions.ForwardTitle_any" = " %@ ";
+
+
+
+
+
+
+"Conversation.ForwardOptions.Title_any" = "%@ ";
+
+
+
+
+
+
+
+
+
+
+"Activity.ChoosingSticker" = "";
+"DialogList.SingleChoosingStickerSuffix" = "%@";
+
+"Activity.TappingInteractiveEmoji" = "%@";
+
+"WallpaperPreview.Animate" = "";
+
+
+
+
+
+
+
+
+
+
+
+"UserInfo.ChangeColors" = "";
+
+"Conversation.Theme.Title" = "";
+"Conversation.Theme.Subtitle" = " %@ ";
+"Conversation.Theme.Apply" = "";
+"Conversation.Theme.NoTheme" = "";
+"Conversation.Theme.Reset" = "";
+"Conversation.Theme.DontSetTheme" = "";
+"Conversation.Theme.SwitchToDark" = "";
+"Conversation.Theme.SwitchToLight" = "\n";
+"Conversation.Theme.PreviewDark" = " %@ ";
+
+"Conversation.Theme.DismissAlert" = "？";
+"Conversation.Theme.DismissAlertApply" = "";
+
+"Notification.ChangedTheme" = "%1$@  %2$@";
+
+
+
+"Notification.YouDisabledTheme" = "";
+
+"Notification.ChannelChangedTheme" = "%1$@";
+"Notification.ChannelDisabledTheme" = "";
+
+"Appstore.Cloud" = "****\n、。";
+"Appstore.Cloud.Profile" = "****\n23，，。";
+"Appstore.Creative" = "****\n、、GIF、";
+
+"Appstore.Creative.Chat.Name" = "****";
+"Appstore.Fast" = "****\n、、。";
+"Appstore.Fast.Chat1" = "**-**\n。";
+"Appstore.Fast.Chat2" = "****\n。";
+"Appstore.Fast.Chat3" = "****\n \n2500！WOO!";
+"Appstore.Fast.Chat4" = "**Veronica**\nTable for four, 2 PM. Be there.";
+
+"Appstore.Fast.Chat6" = "**Little Sister**\nDon't tell mom yet, but I got the job! I'm going to ROME!";
+"Appstore.Fast.Chat7" = "**James**\nCheck these out";
+"Appstore.Fast.Chat8" = "**Study Group**\nEmma\nSticker";
+"Appstore.Fast.Chat9" = "****";
+
+"Appstore.Free.Chat.Name" = "****";
+"Appstore.Open" = "****\n、，。";
+"Appstore.Powerful" = "****\n*";
+"Appstore.Powerful.Chat" = "****\n！\n\n\n\n****\n？\n****\n？\n！\n\n****\n\n";
+"Appstore.Private" = "****\n\n。";
+"Appstore.Private.Chat" = "****\n。";
+"Appstore.Private.Chat.Name" = "**Beatrice**";
+"Appstore.Public" = "****\n、、。";
+"Appstore.Public.Chat1" = "****\n。，。";
+
+"Appstore.Public.Chat3" = "****\n （COVID-19）";
+
+"Appstore.Secure" = "****\n。";
+"Appstore.Secure.Chat" = "****\n？\n**You**!\n**You**，。\n**You**\n！！！\n****\n！";
+"Appstore.Secure.Chat.Name" = "****";
+
+"Conversation.ReplyMessagePanelTitle" = " %@";
+
+"Channel.AdminLog.MessageChangedThemeSet" = "%1$@%2$@";
+"Channel.AdminLog.MessageChangedThemeRemove" = "%1$@ ";
+
+
+
+
+
+
+
+
+
+
+"Message.RecommendedLabel" = "";
+
+"Stickers.Favorites" = "";
+"Stickers.Recent" = "";
+
+"Stickers.Gifs" = "GIF ";
+"Stickers.Trending" = "";
+"Stickers.Settings" = "";
+
+"Gif.Emotion.Angry" = "";
+"Gif.Emotion.Surprised" = "";
+"Gif.Emotion.Joy" = "";
+"Gif.Emotion.Kiss" = "";
+"Gif.Emotion.Hearts" = "";
+"Gif.Emotion.ThumbsUp" = "";
+"Gif.Emotion.ThumbsDown" = "";
+"Gif.Emotion.RollEyes" = "";
+"Gif.Emotion.Cool" = "";
+
+
+
+
+
+"Conversation.ContextMenuSeen_any" = "%@ ";
+
+"Conversation.ContextMenuListened_any" = "%@ ";
+
+"Conversation.ContextMenuWatched_any" = "%@ ";
+
+"Conversation.ContextMenuNoViews" = "";
+"Conversation.ContextMenuNobodyListened" = "";
+"Conversation.ContextMenuNobodyWatched" = "";
+
+"VideoChat.RecordingSaved" = " ****。";
+"LiveStream.RecordingSaved" = " ****。";
+
+
+
+
+
+
+"Activity.EnjoyingAnimations" = " %@";
+
+"Conversation.InteractiveEmojiSyncTip" = " %@ ，。";
+
+"Contacts.Search.NoResults" = "";
+
+
+
+
+
+
+
+"LiveStream.Listening.Members_any" = "%@ ";
+
+
+
+
+
+
+"LiveStream.Watching.Members_any" = "%@ ";
+
+"VoiceChat.RecordTitle" = "";
+"LiveStream.RecordTitle" = "";
+"VoiceChat.RecordVideoAndAudio" = "";
+"VoiceChat.RecordOnlyAudio" = "";
+"VoiceChat.RecordPortrait" = "";
+"VoiceChat.RecordLandscape" = "";
+"VoiceChat.RecordStartRecording" = "";
+
+
+"MediaPicker.KeepHeic" = "HEIC";
+"MediaPicker.ConvertToJpeg" = "JPEG";
+
+
+
+"InviteLink.Create.RequestApproval" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"MemberRequests.RequestToJoinGroup" = "";
+
+
+"MemberRequests.RequestToJoinDescriptionGroup" = "。";
+"MemberRequests.RequestToJoinDescriptionChannel" = "。";
+
+
+
+
+
+"Notification.JoinedChannelByRequestYou" = "";
+"Notification.JoinedGroupByRequestYou" = "。";
+
+
+
+
+
+
+
+
+
+
+
+
+"Channel.AdminLog.JoinedViaRequest" = "%1$@%2$@，%3$@";
+
+
+
+
+
+
+
+
+
+
+
+
+"Time.JustNow" = "";
+ //three to ten
+ //one
+ //two
+ //three to ten
+ // more than ten
+"Time.MinutesAgo_any" = "%@ "; // more than ten
+
+
+
+
+"Time.HoursAgo_any" = "%@ ";
+
+
+
+
+"Stickers.ShowMore" = "";
+
+
+
+
+
+"Notifications.PrivateChatsTitle" = "";
+
+
+
+
+
+
+
+
+"Notifications.CategoryExceptions_any" = "%@ ";
+
+"Notifications.DeleteAllExceptions" = "";
+
+
+
+
+
+
+
+
+"AuthSessions.View.Application" = "";
+
+
+
+
+
+
+"MessageCalendar.Title" = "";
+
+
+
+
+
+
+
+
+
+
+"SharedMedia.GifCount_any" = "%@ GIF";
+
+
+
+
+
+
+
+"SharedMedia.LinkCount_any" = "%@ ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Themes.BuildOwn" = "";
+
+
+
+"Chat.JumpToDate" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"AuthSessions.View.AcceptTitle" = "";
+
+"AuthSessions.View.AcceptIncomingCalls" = "";
+
+
+
+
+
+
+
+
+
+"AuthSessions.AddDevice.ScanInstallInfo" = " [getdesktop.telegram.org](desktop)  [web.telegram.org](web) ";
+
+
+
+"ChatList.ClearSearchHistory" = "？";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Login.ShortCallTitle" = "：";
+
+
+
+
+
+"Contacts.AddContact" = "";
+
+
+
+
+
+
+
+
+
+"TextFormat.Spoiler" = "";
+
+
+
+
+
+
+
+
+"Localization.ShowTranslate" = "“”";
+"Localization.ShowTranslateInfo" = "“”。";
+
+"Localization.DoNotTranslateInfo" = "“”。";
+"Localization.DoNotTranslateManyInfo" = "“”。";
+
+
+
+
+"Channel.AdminLog.AllowedReactionsUpdated" = "%1$@ : %2$@";
+
+
+
+
+
+
+"AccessDenied.QrCode" = "Telegram。\n >  > ， Telegram  ON。";
+
+
+
+
+"PeerInfo.AllowedReactions.Title" = "";
+
+
+
+"PeerInfo.AllowedReactions.ReactionListHeader" = "";
+
+"PeerInfo.Reactions" = "";
+
+
+"Settings.QuickReactionSetup.NavigationTitle" = "";
+"Settings.QuickReactionSetup.Title" = "";
+"Settings.QuickReactionSetup.DemoHeader" = "";
+
+"Settings.QuickReactionSetup.ReactionListHeader" = "";
+
+
+
+
+"Chat.ContextReactionCount_any" = "%@ ";
+
+"Chat.OutgoingContextReactionCount_any" = "%@ ";
+
+
+"Contacts.Sort" = "";
+"Contacts.Sort.ByName" = "";
+"Contacts.Sort.ByLastSeen" = "";
+
+
+
+
+"Share.ShareAsLink" = "";
+"Share.ShareAsImage" = "";
+
+"Share.MessagePreview" = "";
+"Share.ShareMessage" = "";
+
+"Conversation.UserSendMessage" = "";
+
+"Conversation.CopyProtectionForwardingDisabledBot" = "";
+"Conversation.CopyProtectionSavingDisabledBot" = "";
+
+"Channel.ChannelSubscribersHeader" = "";
+
+
+"Channel.Members.Other" = "";
+
+"Group.Members.Contacts" = "";
+"Group.Members.Other" = "";
+
+"Conversation.ReadAllReactions" = "";
+
+
+
+
+
+"Attachment.Camera" = "";
+
+
+
+
+
+
+"Attachment.SelectFromGallery" = "";
+"Attachment.SelectFromFiles" = "";
+
+
+
+
+
+
+
+
+
+
+"Attachment.SendAsFile" = "";
+
+
+
+
+
+
+"Attachment.MessagesPreview" = "";
+
+
+
+
+"Attachment.RecentlySentFiles" = "";
+
+"ReportPeer.ReasonIllegalDrugs" = "";
+"ReportPeer.ReasonPersonalDetails" = "";
+
+
+"Attachment.FilesSearchPlaceholder" = "";
+
+
+
+
+"Attachment.LimitedMediaAccessText" = " Telegram 。";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"DownloadList.DownloadedHeader" = "";
+
+"DownloadList.ResumeAll" = "";
+"DownloadList.Clear" = "";
+"DownloadList.OptionManageDeviceStorage" = "";
+
+
+
+
+
+
+"DownloadList.RemoveFileAlertTitle_any" = "%@";
+
+
+"DownloadList.RemoveFileAlertRemove" = "";
+
+
+
+
+
+
+"LiveStream.NoViewers" = "";
+
+
+
+
+
+
+"LiveStream.ViewCredentials" = "";
+
+
+
+
+
+"Attachment.LocationAccessText" = "。";
+
+"Attachment.CancelSelectionAlertText" = "？";
+"Attachment.CancelSelectionAlertYes" = "";
+"Attachment.CancelSelectionAlertNo" = "";
+
+
+
+
+
+
+
+"CreateExternalStream.StreamKey" = "";
+
+"CreateExternalStream.StartStreaming" = "";
+
+"Translate.Title" = "";
+
+"Translate.ChangeLanguage" = "";
+"Translate.More" = "";
+"Translate.Languages.Title" = "";
+"Translate.Languages.Original" = "";
+"Translate.Languages.Translation" = "";
+
+
+
+
+"Bot.AddToChat.Title" = "";
+"Bot.AddToChat.MyChannels" = "";
+"Bot.AddToChat.MyGroups" = "";
+"Bot.AddToChat.OtherGroups" = "";
+
+
+
+"Bot.AddToChat.Add.AddAsAdmin" = "";
+"Bot.AddToChat.Add.AddAsMember" = "";
+
+"Bot.AddToChat.Add.AdminAlertTitle" = "？";
+"Bot.AddToChat.Add.AdminAlertTextGroup" = " **%@** ？";
+
+"Bot.AddToChat.Add.AdminAlertAdd" = "";
+
+
+
+
+"Bot.AddToChat.Add.MemberAlertAdd" = "";
+
+"PeerInfo.ButtonStop" = "";
+
+
+
+
+
+
+
+
+"WebApp.AddToAttachmentAdd" = "";
+
+
+
+
+"WebApp.OpenWebViewAlertTitle" = "";
+"WebApp.OpenWebViewAlertText" = "**%@** 。\n\n **IP ** 。";
+
+"WebApp.MessagePreview" = "";
+"WebApp.Send" = "";
+
+"WebApp.RemoveConfirmationTitle" = "";
+"WebApp.RemoveConfirmationText" = " **%@** ？";
+
+
+
+
+
+
+
+
+
+"Notifications.UploadError.TooLarge.Title" = "";
+
+"Notifications.UploadError.TooLong.Title" = "";
+"Notifications.UploadError.TooLong.Text" = " %@。";
+
+
+
+
+
+
+
+
+"Conversation.Mute.SetupTitle" = "...";
+
+
+"PeerInfo.EnableSound" = "";
+"PeerInfo.DisableSound" = "";
+"PeerInfo.MuteFor" = "";
+"PeerInfo.MuteForever" = "";
+"PeerInfo.MuteForCustom" = "...";
+"PeerInfo.NotificationsCustomize" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+"PeerInfo.TooltipUnmuted" = "。";
+
+
+
+
+
+
+
+"PeerInfo.AlertLeaveAction" = "";
+"PeerInfo.LeaveGroupTitle" = "";
+
+
+
+
+
+
+
+
+"PeerInfo.DeleteChannelTitle" = "";
+
+
+"Chat.SaveForNotifications" = "";
+
+
+
+
+
+
+
+
+"Gallery.GifSaved" = "GIF ";
+
+
+
+
+
+
+
+
+
+
+
+
+"StickerPack.Share" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+"Premium.AppIcons.Proceed" = "";
+
+
+
+
+
+"Chat.MultipleTypingPair" = "%@  %@";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Premium.LimitReached" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Premium.MaxPinsFinalText" = "， **%@** 。。";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Premium.Title" = "";
+
+
+"Premium.PersonalTitle" = "[%@]() Telegram Premium \n";
+
+
+
+
+
+"Premium.DoubledLimits" = "";
+
+
+"Premium.UploadSize" = "4 GB ";
+"Premium.UploadSizeInfo" = " 2 GB  4 GB，。";
+
+
+
+
+
+
+
+"Premium.NoAds" = "";
+"Premium.NoAdsInfo" = "Telegram。";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Premium.Avatar" = "";
+
+
+"Premium.AppIcon" = "Telegram ";
+
+
+
+
+
+
+
+"Premium.AboutTitle" = "Telegram";
+
+
+
+
+"Conversation.CopyProtectionSavingDisabledSecret" = "";
+"Conversation.CopyProtectionForwardingDisabledSecret" = "";
+
+"Settings.Terms_URL" = "https://telegram.org/tos";
+"Settings.PrivacyPolicy_URL" = "https://telegram.org/privacy";
+
+
+
+
+
+
+
+
+
+
+"Premium.Limits.Title" = "";
+
+
+
+
+
+"Premium.Limits.Bio" = "";
+"Premium.Limits.Captions" = "";
+
+
+
+
+
+"Premium.Limits.PinnedChatsInfo" = "10";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Message.AudioTranscription.ErrorEmpty" = "。";
+
+
+"WebApp.SelectChat" = "";
+
+"Premium.Purchase.ErrorUnknown" = "，。";
+"Premium.Purchase.ErrorNetwork" = "。";
+
+
+
+
+"Premium.Restore.ErrorUnknown" = "，。";
+
+
+
+
+
+
+
+"Appearance.AppIconPremium" = "";
+"Appearance.AppIconBlack" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"PeerInfo.GiftPremium" = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"Privacy.VoiceMessages.Tooltip" = " [Telegram Premium]() 。";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new from translations.telegram.org */
+
+"AUTH_REGION" = " %1$@，：%2$@";
+"AUTH_UNKNOWN_SEPARATED" = "| %1$@";
+"Appearance.Publish" = "";
+"Appearance.TextSize" = "";
+"CHANNEL_MESSAGES" = "%1$@  %2$@ ";
+"CHANNEL_MESSAGE_AUDIO" = "%1$@ ";
+"CHANNEL_MESSAGE_AUDIO_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_CONTACT" = "%1$@ ";
+"CHANNEL_MESSAGE_CONTACT_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_DOC" = "%1$@ ";
+"CHANNEL_MESSAGE_GAME" = "%1$@  %2$@";
+"CHANNEL_MESSAGE_GEO" = "%1$@ ";
+"CHANNEL_MESSAGE_GEOLIVE" = "%1$@ ";
+"CHANNEL_MESSAGE_GEOLIVE_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_GEO_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_GIF" = "%1$@  GIF ";
+"CHANNEL_MESSAGE_GIF_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_NOTEXT" = "%1$@ ";
+"CHANNEL_MESSAGE_NOTEXT_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_PHOTO" = "%1$@ ";
+"CHANNEL_MESSAGE_PHOTOS" = "%1$@  %2$@ ";
+"CHANNEL_MESSAGE_PHOTO_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_POLL_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_ROUND" = "%1$@ ";
+"CHANNEL_MESSAGE_ROUND_SEPARATED" = "%1$@|";
+"CHANNEL_MESSAGE_STICKER" = "%1$@  %2$@ ";
+"CHANNEL_MESSAGE_STICKER_SEPARATED" = "%1$@| %2$@ ";
+"CHANNEL_MESSAGE_TEXT" = "%1$@：%2$@";
+"CHANNEL_MESSAGE_TEXT_SEPARATED" = "%1$@|%2$@";
+"CHANNEL_MESSAGE_VIDEO" = "%1$@ ";
+"CHANNEL_MESSAGE_VIDEO_SEPARATED" = "%1$@|";
+"CHAT_ADD_MEMBER" = "%1$@  %3$@ «%2$@»";
+"CHAT_ADD_YOU" = "%1$@ «%2$@»";
+"CHAT_ADD_YOU_SEPARATED" = "%2$@|%1$@ ";
+"CHAT_CREATED" = "%1$@ «%2$@»";
+"CHAT_DELETE_MEMBER" = "%1$@  %3$@ «%2$@»";
+"CHAT_DELETE_YOU" = "%1$@ «%2$@»";
+"CHAT_LEFT" = "%1$@ «%2$@»";
+"CHAT_LEFT_SEPARATED" = "%2$@|%1$@ ";
+"CHAT_MESSAGES" = "%1$@  %3$@ «%2$@»";
+"CHAT_MESSAGE_AUDIO" = "%1$@ «%2$@»";
+"CHAT_MESSAGE_CONTACT" = "%1$@ «%2$@»";
+"CHAT_MESSAGE_CONTACT_SEPARATED" = "%2$@|%1$@ ";
+"CHAT_MESSAGE_DOC" = "%1$@ «%2$@»";
+"CHAT_MESSAGE_FWDS" = "%1$@  %3$@ «%2$@»";
+"CHAT_MESSAGE_GAME" = "%1$@ «%2$@» %3$@";
+"CHAT_MESSAGE_GEO" = "%1$@ «%2$@»";
+"CHAT_MESSAGE_GEOLIVE" = "%1$@  %2$@ ";
+"CHAT_MESSAGE_GEOLIVE_SEPARATED" = "%2$@|%1$@ ";
+"CHAT_MESSAGE_GIF" = "%1$@  GIF «%2$@»";
+"CHAT_MESSAGE_GIF_SEPARATED" = "%2$@|%1$@ ";
+"CHAT_MESSAGE_NOTEXT" = "%1$@ «%2$@»";
+"CHAT_MESSAGE_PHOTO" = "%1$@ «%2$@»";
+"CHAT_MESSAGE_PHOTOS" = "%1$@  %3$@ «%2$@»";
+"CHAT_MESSAGE_ROUND" = "%1$@ «%2$@»";
+"CHAT_MESSAGE_STICKER" = "%1$@  %3$@ «%2$@»";
+"CHAT_MESSAGE_TEXT" = "%1$@@%2$@：%3$@";
+"CHAT_MESSAGE_TEXT_SEPARATED" = "%2$@|%1$@：%3$@";
+"CHAT_MESSAGE_VIDEO" = "%1$@ «%2$@»";
+"CHAT_PHOTO_EDITED" = "%1$@ «%2$@»";
+"CHAT_RETURNED" = "%1$@ «%2$@»";
+"CHAT_TITLE_EDITED" = "%1$@ «%2$@»";
+"CHAT_VOICECHAT_INVITE_YOU" = "%1$@  ";
+"CONTACT_JOINED" = "“%1$@” Telegram！";
+"Calendar.ShortMonday" = "";
+"Channel.AdminLog.BanSendGifs" = " GIF ";
+"Channel.AdminLog.BanSendStickers" = "";
+"Channel.AdminLog.CanChangeInviteLink" = "";
+"Channel.EditAdmin.PermissionInviteUsers" = "";
+"Chat.AttachmentLimitExceeded" = "，。";
+"ChatList.PsaLabel.psa" = "";
+"Checkout.LiabilityAlert" = " Telegram  %1$@ 。 %2$@ 。\n\n %1$@ 。Telegram ，。， %1$@ 。";
+"Conversation.Dice." = "。";
+"Conversation.JoinVoiceChat" = "";
+"ENCRYPTED_MESSAGE" = " %1$@";
+"ENCRYPTION_ACCEPT" = " %1$@";
+"ENCRYPTION_REQUEST" = " %1$@";
+"ForwardedAuthorsOthers_any" = "%@  %@ ";
+"ForwardedDices_any" = "%@ ";
+"Invitation.JoinVoiceChat" = "";
+"InviteText.ContactsCount_any" = "， %@  Telegram 。！：%@";
+"LOCKED_MESSAGE" = " %1$@";
+"Login.CallRequestState1" = "Telegram  %d:%.2d ";
+"Login.PRIVACY_URL" = "https://telegram.org/privacy";
+"Login.SmsRequestState1" = "Telegram  %d:%.2d ";
+"MESSAGES" = "%1$@  %2$@ ";
+"MESSAGE_AUDIO" = "%1$@ ";
+"MESSAGE_AUDIO_SEPARATED" = "%1$@";
+"MESSAGE_CONTACT" = "%1$@ ";
+"MESSAGE_CONTACT_SEPARATED" = "%1$@|";
+"MESSAGE_DOC" = "%1$@ ";
+"MESSAGE_DOC_SEPARATED" = "%1$@|";
+"MESSAGE_FWDS" = "%1$@  %2$@ ";
+"MESSAGE_GAME" = "%1$@  %2$@";
+"MESSAGE_GAME_SEPARATED" = "%1$@| %2$@ ";
+"MESSAGE_GEO" = "%1$@ ";
+"MESSAGE_GEOLIVE" = "%1$@ ";
+"MESSAGE_GEOLIVE_SEPARATED" = "%1$@|";
+"MESSAGE_GEO_SEPARATED" = "%1$@|";
+"MESSAGE_GIF" = "%1$@  GIF ";
+"MESSAGE_GIF_SEPARATED" = "%1$@|GIF";
+"MESSAGE_INVOICE_SEPARATED" = "%1$@| %2$@ ";
+"MESSAGE_NOTEXT" = "%1$@ ";
+"MESSAGE_NOTEXT_SEPARATED" = "%1$@|";
+"MESSAGE_PHOTO" = "%1$@ ";
+"MESSAGE_PHOTOS" = "%1$@  %2$@ ";
+"MESSAGE_PHOTOS_SEPARATED" = "%1$@| %2$@ ";
+"MESSAGE_PHOTO_SECRET" = "%1$@ ";
+"MESSAGE_PHOTO_SECRET_SEPARATED" = "%1$@|";
+"MESSAGE_PHOTO_SEPARATED" = "%1$@|";
+"MESSAGE_POLL_SEPARATED" = "%1$@|";
+"MESSAGE_ROUND" = "%1$@ ";
+"MESSAGE_ROUND_SEPARATED" = "%1$@|";
+"MESSAGE_SCREENSHOT" = "%1$@ ！";
+"MESSAGE_SCREENSHOT_SEPARATED" = "%1$@";
+"MESSAGE_STICKER" = "%1$@  %2$@ ";
+"MESSAGE_STICKER_SEPARATED" = "%1$@| %2$@ ";
+"MESSAGE_TEXT" = "%1$@：%2$@";
+"MESSAGE_TEXT_SEPARATED" = "%1$@|%2$@";
+"MESSAGE_VIDEO" = "%1$@ ";
+"MESSAGE_VIDEO_SECRET" = "%1$@ ";
+"MESSAGE_VIDEO_SECRET_SEPARATED" = "%1$@|";
+"MESSAGE_VIDEO_SEPARATED" = "%1$@|";
+"Message.ForwardedPsa.psa" = "： %@";
+"Message.PinnedPollMessage" = "";
+"NEW_MESSAGE_FWDS_SEPARATED_any" = "%1$@| %2$d ";
+"NEW_MESSAGE_PHOTOS_SEPARATED_any" = "%1$@| %2$d ";
+"Notification.ChannelMigratedFrom" = "";
+"Notifications.DisplayNamesOnLockScreenInfo" = "。， iOS  > Telegram > ， ”“  ”“  ”“。";
+"PHONE_CALL_MISSED" = " %1$@ ";
+"PHONE_CALL_MISSED_SEPARATED" = "%1$@|";
+"PHONE_CALL_REQUEST" = "%1$@ …";
+"PINNED_AUDIO" = "%1$@ ";
+"PINNED_AUDIO_SEPARATED" = "%1$@|";
+"PINNED_CONTACT" = "%1$@ ";
+"PINNED_CONTACT_SEPARATED" = "%1$@|";
+"PINNED_DOC" = "%1$@ ";
+"PINNED_GAME" = "%1$@ ";
+"PINNED_GEO" = "%1$@ ";
+"PINNED_GEOLIVE" = "%1$@ ";
+"PINNED_GEOLIVE_SEPARATED" = "%1$@|";
+"PINNED_GEO_SEPARATED" = "%1$@|";
+"PINNED_GIF" = "%1$@  GIF ";
+"PINNED_GIF_SEPARATED" = "%1$@| GIF";
+"PINNED_INVOICE_SEPARATED" = "%1$@|";
+"PINNED_NOTEXT" = "%1$@ ";
+"PINNED_PHOTO" = "%1$@ ";
+"PINNED_POLL" = "%1$@ ";
+"PINNED_POLL_SEPARATED" = "%1$@";
+"PINNED_ROUND" = "%1$@ ";
+"PINNED_ROUND_SEPARATED" = "%1$@|";
+"PINNED_STICKER" = "%1$@  %2$@ ";
+"PINNED_TEXT" = "%1$@ «%2$@»";
+"PINNED_VIDEO" = "%1$@ ";
+"PUSH_CHANNEL_MESSAGE_DOCS" = "%1$@| %2$d ";
+"PUSH_CHANNEL_MESSAGE_FWDS_any" = "%1$@| %2$d ";
+"PUSH_CHANNEL_MESSAGE_PHOTOS_any" = "%1$@| %2$d ";
+"PUSH_CHANNEL_MESSAGE_ROUNDS_any" = "%1$@|📺 %2$d ";
+"PUSH_CHANNEL_MESSAGE_VIDEOS_any" = "%1$@|📹 %2$d ";
+"PUSH_CHAT_MESSAGE_DOCS" = "%2$@|%1$@  %3$d ";
+"PUSH_CHAT_MESSAGE_DOCS_FIX1_any" = "%2$@|%1$@  %3$d ";
+"PUSH_CHAT_MESSAGE_PHOTOS_any" = "%2$@|%1$@: 📷 %3$d";
+"PUSH_CHAT_MESSAGE_ROUNDS_any" = "%2$@|%1$@: 📺 %3$d ";
+"PUSH_CHAT_MESSAGE_VIDEOS_any" = "%2$@|%1$@: 📹 %3$d";
+"PUSH_MESSAGES_any" = "%1$@|📷📹 ";
+"PUSH_MESSAGE_DOCS" = "%1$@| %2$d ";
+"PUSH_MESSAGE_FWDS_any" = "%1$@| %2$d ";
+"PUSH_MESSAGE_PHOTOS_any" = "%1$@| %2$d ";
+"PUSH_MESSAGE_ROUNDS_any" = "%1$@| %2$d ";
+"PUSH_MESSAGE_VIDEOS_any" = "%1$@| %2$d ";
+"Passport.Scans" = "";
+"PassportKit.Button.GetTelegramAlertInstall" = "";
+"PassportKit.Button.GetTelegramAlertMessage" = " Telegram  Telegram ";
+"PassportKit.Button.GetTelegramAlertNotNow" = "";
+"PassportKit.Button.GetTelegramAlertTitle" = " Telegram";
+"PassportKit.Button.Title" = " Telegram ";
+"Peer.DeletedUser" = "";
+"ScheduleVoiceChatChannel.Title" = "";
+"Settings.EditProfileMedia" = "";
+"SocksProxySetup.UseSocks5" = " SOCKS5 ";
+"StickerPacksSettings.ArchivedMasks.Info" = " 200 。\n。";
+"Undo.MessagesDeleted" = "";
+"Updated.TodayAt" = " %@";
+"Updated.YesterdayAt" = " %@";
+"VoiceChat.EditTitleTitle" = "";
+"VoiceChat.InvitePeer" = "";
+"VoiceChat.Panel.MembersSpeaking_any" = "%@ ";
+"VoiceChat.UserInvited" = "**%@**";
+

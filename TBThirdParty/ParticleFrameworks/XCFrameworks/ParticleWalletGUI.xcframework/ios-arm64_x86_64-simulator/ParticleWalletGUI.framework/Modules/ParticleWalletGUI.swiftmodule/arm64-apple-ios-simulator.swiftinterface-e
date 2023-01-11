@@ -1,0 +1,261 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ParticleWalletGUI
+import AVFoundation
+import Alamofire
+import Combine
+import ConnectCommon
+import ConnectEVMAdapter
+import ConnectPhantomAdapter
+import ConnectSolanaAdapter
+import ConnectWalletConnectAdapter
+import CryptoSwift
+import Foundation
+import GLTFSceneKit
+import GRDB
+import JXPagingView
+import JXSegmentedView
+import MJRefresh
+import ParticleAuthService
+import ParticleConnect
+import ParticleNetworkBase
+import ParticleWalletAPI
+import ParticleWalletConnect
+@_exported import ParticleWalletGUI
+import RxAlamofire
+import RxCocoa
+import RxRelay
+import RxSwift
+import SDWebImage
+import SDWebImageWebPCoder
+import SafariServices
+import SceneKit
+import SkeletonView
+import SnapKit
+import Swift
+import SwiftMessages
+import SwiftyJSON
+import SwiftyUserDefaults
+import Then
+import UIKit
+import WalletConnectSwift
+import _Concurrency
+public enum Language : Swift.String {
+  case unspecified
+  case en
+  case zh_Hans
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class ParticleWalletGUI : ObjectiveC.NSObject {
+  @objc public static let sdkVersion: Swift.String
+  @objc public static func enablePay(_ enable: Swift.Bool = true)
+  @objc public static func getEnablePay() -> Swift.Bool
+  @objc public static func enableSwap(_ enable: Swift.Bool = true)
+  @objc public static func getEnableSwap() -> Swift.Bool
+  @objc public static func showTestNetwork(_ isShowTestNetwork: Swift.Bool = false)
+  @objc public static func showManageWallet(_ isShowManageWallet: Swift.Bool = true)
+  @objc public static func supportWalletConnect(_ isSupportWalletConnect: Swift.Bool = true)
+  @objc public static func supportChain(_ chainArray: [ParticleNetworkBase.ParticleNetwork.Chain] = ParticleNetwork.Chain.allCases)
+  public static func switchWallet(walletType: ConnectCommon.WalletType, publicAddress: Swift.String) -> Swift.Bool
+  public static func setLanguage(_ language: Language)
+  @objc public static func setInterfaceStyle(_ style: UIKit.UIUserInterfaceStyle)
+  public static func handleWalletConnectUrl(_ url: Foundation.URL, withScheme scheme: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol SwapQuoteResultPresentation {
+  var fromTokenAmount: ParticleNetworkBase.BInt { get }
+  var toTokenAmount: ParticleNetworkBase.BInt { get }
+  var gasLimit: ParticleNetworkBase.BInt { get }
+  var totalFees: ParticleNetworkBase.BInt { get }
+  var minimumSol: ParticleNetworkBase.BInt { get }
+  var priceImpactPct: Swift.Double { get }
+}
+extension SolanaChain.SolanaSwapQuoteResult : SwapQuoteResultPresentation {
+  public var fromTokenAmount: ParticleNetworkBase.BInt {
+    get
+  }
+  public var toTokenAmount: ParticleNetworkBase.BInt {
+    get
+  }
+  public var gasLimit: ParticleNetworkBase.BInt {
+    get
+  }
+  public var totalFees: ParticleNetworkBase.BInt {
+    get
+  }
+  public var minimumSol: ParticleNetworkBase.BInt {
+    get
+  }
+}
+extension EVMChain.EVMSwapQuoteResult : SwapQuoteResultPresentation {
+  public var priceImpactPct: Swift.Double {
+    get
+  }
+  public var gasLimit: ParticleNetworkBase.BInt {
+    get
+  }
+  public var totalFees: ParticleNetworkBase.BInt {
+    get
+  }
+  public var minimumSol: ParticleNetworkBase.BInt {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PNRouter : ObjectiveC.NSObject {
+  @objc deinit
+}
+extension PNRouter {
+  @objc public enum Display : Swift.Int {
+    case token
+    case nft
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public static func navigatorWallet(display: PNRouter.Display = .token, hiddenBackButton: Swift.Bool = false, animated: Swift.Bool = true)
+  @objc public static func navigatorTokenReceive(tokenReceiveConfig: TokenReceiveConfig? = nil)
+  @objc public static func navigatorTokenSend(tokenSendConfig: TokenSendConfig? = nil)
+  @objc public static func navigatorTokenTransactionRecords(tokenTransactionRecordsConfig: TokenTransactionRecordsConfig? = nil)
+  @objc public static func navigatroNFTSend(nftSendConfig: NFTSendConfig)
+  @objc public static func navigatorNFTDetails(nftDetailsConfig: NFTDetailsConfig)
+  @objc public static func navigatorPay()
+  public static func navigatorBuy(walletAddress: Swift.String? = nil, network: OpenBuyNetwork? = nil, cryptoCoin: Swift.String? = nil, fiatCoin: Swift.String? = nil, fiatAmt: Swift.Int? = nil)
+  public static func navigatorImportSolanaPrivateKey() -> RxSwift.Single<(ConnectCommon.WalletType, ConnectCommon.Account?)>
+  public static func navigatorImportEvmPrivateKey() -> RxSwift.Single<(ConnectCommon.WalletType, ConnectCommon.Account?)>
+  @objc public static func navigatorSwap(swapConfig: SwapConfig? = nil)
+  public static func navigatorLoginList(supportTypes: [LoginListSupportType] = LoginListSupportType.allCases) -> RxSwift.Single<(ConnectCommon.WalletType, ConnectCommon.Account?)>
+}
+@objc public class TokenReceiveConfig : ObjectiveC.NSObject {
+  final public let tokenAddress: Swift.String?
+  @objc public init(tokenAddress: Swift.String?)
+  @objc deinit
+}
+@objc public class TokenSendConfig : ObjectiveC.NSObject {
+  final public let tokenAddress: Swift.String?
+  final public let toAddress: Swift.String?
+  final public let amount: ParticleNetworkBase.BInt?
+  public init(tokenAddress: Swift.String?, toAddress: Swift.String? = nil, amount: ParticleNetworkBase.BInt? = nil)
+  @objc public init(tokenAddress: Swift.String?, toAddress: Swift.String? = nil, amountString: Swift.String? = nil)
+  @objc deinit
+}
+@objc public class TokenTransactionRecordsConfig : ObjectiveC.NSObject {
+  final public let tokenAddress: Swift.String
+  @objc public init(tokenAddress: Swift.String)
+  @objc deinit
+}
+@objc public class NFTDetailsConfig : ObjectiveC.NSObject {
+  final public let address: Swift.String
+  final public let tokenId: Swift.String
+  @objc public init(address: Swift.String, tokenId: Swift.String)
+  @objc deinit
+}
+@objc public class NFTSendConfig : ObjectiveC.NSObject {
+  final public let address: Swift.String
+  final public let toAddress: Swift.String?
+  final public let tokenId: Swift.String
+  @objc public init(address: Swift.String, toAddress: Swift.String?, tokenId: Swift.String)
+  @objc deinit
+}
+@objc public class SwapConfig : ObjectiveC.NSObject {
+  final public let fromTokenAddress: Swift.String?
+  final public let toTokenAddress: Swift.String?
+  final public let fromTokenAmount: ParticleNetworkBase.BInt?
+  public init(fromTokenAddress: Swift.String? = nil, toTokenAddress: Swift.String? = nil, fromTokenAmount: ParticleNetworkBase.BInt? = nil)
+  public init(fromTokenAddress: Swift.String? = nil, toTokenAddress: Swift.String? = nil, fromTokenAmountString: Swift.String? = nil)
+  @objc deinit
+}
+@objc public enum RouterPath : Swift.Int, Swift.RawRepresentable {
+  case wallet
+  case tokenReceive
+  case tokenSend
+  case tokenTransactionRecords
+  case nftDetails
+  case nftSend
+  case pay
+  case newWallet
+  case selectWalletConnect
+  case importPrivateKey
+  case swap
+  case loginList
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+@objc public enum OpenBuyNetwork : Swift.Int, Swift.RawRepresentable {
+  case solana
+  case ethereum
+  case binanceSmartChain
+  case avalanche
+  case polygon
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+extension JXPagingListContainerView : JXSegmentedView.JXSegmentedViewListContainer {
+}
+extension ConnectCommon.WalletType : SwiftyUserDefaults.DefaultsSerializable {
+  public static var _defaults: SwiftyUserDefaults.DefaultsCodableBridge<ConnectCommon.WalletType> {
+    get
+  }
+  public static var _defaultsArray: SwiftyUserDefaults.DefaultsCodableBridge<[ConnectCommon.WalletType]> {
+    get
+  }
+  public typealias ArrayBridge = SwiftyUserDefaults.DefaultsCodableBridge<[ConnectCommon.WalletType]>
+  public typealias Bridge = SwiftyUserDefaults.DefaultsCodableBridge<ConnectCommon.WalletType>
+}
+extension UIKit.UITextView : UIKit.NSTextStorageDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func textStorage(_ textStorage: UIKit.NSTextStorage, didProcessEditing editedMask: UIKit.NSTextStorage.EditActions, range editedRange: Foundation.NSRange, changeInLength delta: Swift.Int)
+}
+public enum LoginListSupportType : Swift.CaseIterable {
+  case email
+  case phone
+  case google
+  case facebook
+  case apple
+  case discord
+  case github
+  case twitch
+  case microsoft
+  case linkedin
+  case privateKey
+  case metamask
+  case rainbow
+  case trust
+  case imtoken
+  case bitkeep
+  case walletConnect
+  case phantom
+  case gnosis
+  public static func == (a: LoginListSupportType, b: LoginListSupportType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [LoginListSupportType]
+  public static var allCases: [LoginListSupportType] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Language : Swift.Equatable {}
+extension Language : Swift.Hashable {}
+extension Language : Swift.RawRepresentable {}
+extension PNRouter.Display : Swift.Equatable {}
+extension PNRouter.Display : Swift.Hashable {}
+extension PNRouter.Display : Swift.RawRepresentable {}
+extension RouterPath : Swift.Equatable {}
+extension RouterPath : Swift.Hashable {}
+extension OpenBuyNetwork : Swift.Equatable {}
+extension OpenBuyNetwork : Swift.Hashable {}
+extension LoginListSupportType : Swift.Equatable {}
+extension LoginListSupportType : Swift.Hashable {}

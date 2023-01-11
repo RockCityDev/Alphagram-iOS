@@ -1,0 +1,228 @@
+
+
+
+
+
+
+
+import Foundation
+
+
+
+
+extension LayerType: ClassFamily {
+  static var discriminator: Discriminator = .type
+
+  func getType() -> AnyObject.Type {
+    switch self {
+    case .precomp:
+      return PreCompLayerModel.self
+    case .solid:
+      return SolidLayerModel.self
+    case .image:
+      return ImageLayerModel.self
+    case .null:
+      return LayerModel.self
+    case .shape:
+      return ShapeLayerModel.self
+    case .text:
+      return TextLayerModel.self
+    }
+  }
+}
+
+
+
+public enum LayerType: Int, Codable {
+  case precomp
+  case solid
+  case image
+  case null
+  case shape
+  case text
+
+  public init(from decoder: Decoder) throws {
+    self = try LayerType(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .null
+  }
+}
+
+
+
+public enum MatteType: Int, Codable {
+  case none
+  case add
+  case invert
+  case unknown
+}
+
+
+
+public enum BlendMode: Int, Codable {
+  case normal
+  case multiply
+  case screen
+  case overlay
+  case darken
+  case lighten
+  case colorDodge
+  case colorBurn
+  case hardLight
+  case softLight
+  case difference
+  case exclusion
+  case hue
+  case saturation
+  case color
+  case luminosity
+}
+
+
+
+
+class LayerModel: Codable, DictionaryInitializable {
+
+  
+
+  required init(from decoder: Decoder) throws {
+    let container = try decoder.container(keyedBy: LayerModel.CodingKeys.self)
+    name = try container.decodeIfPresent(String.self, forKey: .name) ?? "Layer"
+    index = try container.decodeIfPresent(Int.self, forKey: .index) ?? .random(in: Int.min...Int.max)
+    type = try container.decode(LayerType.self, forKey: .type)
+    coordinateSpace = try container.decodeIfPresent(CoordinateSpace.self, forKey: .coordinateSpace) ?? .type2d
+    inFrame = try container.decode(Double.self, forKey: .inFrame)
+    outFrame = try container.decode(Double.self, forKey: .outFrame)
+    startTime = try container.decode(Double.self, forKey: .startTime)
+    transform = try container.decode(Transform.self, forKey: .transform)
+    parent = try container.decodeIfPresent(Int.self, forKey: .parent)
+    blendMode = try container.decodeIfPresent(BlendMode.self, forKey: .blendMode) ?? .normal
+    masks = try container.decodeIfPresent([Mask].self, forKey: .masks)
+    timeStretch = try container.decodeIfPresent(Double.self, forKey: .timeStretch) ?? 1
+    matte = try container.decodeIfPresent(MatteType.self, forKey: .matte)
+    hidden = try container.decodeIfPresent(Bool.self, forKey: .hidden) ?? false
+  }
+
+  required init(dictionary: [String: Any]) throws {
+    name = (try? dictionary.value(for: CodingKeys.name)) ?? "Layer"
+    index = try dictionary.value(for: CodingKeys.index) ?? .random(in: Int.min...Int.max)
+    type = LayerType(rawValue: try dictionary.value(for: CodingKeys.type)) ?? .null
+    if
+      let coordinateSpaceRawValue = dictionary[CodingKeys.coordinateSpace.rawValue] as? Int,
+      let coordinateSpace = CoordinateSpace(rawValue: coordinateSpaceRawValue)
+    {
+      self.coordinateSpace = coordinateSpace
+    } else {
+      coordinateSpace = .type2d
+    }
+    inFrame = try dictionary.value(for: CodingKeys.inFrame)
+    outFrame = try dictionary.value(for: CodingKeys.outFrame)
+    startTime = try dictionary.value(for: CodingKeys.startTime)
+    transform = try Transform(dictionary: try dictionary.value(for: CodingKeys.transform))
+    parent = try? dictionary.value(for: CodingKeys.parent)
+    if
+      let blendModeRawValue = dictionary[CodingKeys.blendMode.rawValue] as? Int,
+      let blendMode = BlendMode(rawValue: blendModeRawValue)
+    {
+      self.blendMode = blendMode
+    } else {
+      blendMode = .normal
+    }
+    if let maskDictionaries = dictionary[CodingKeys.masks.rawValue] as? [[String: Any]] {
+      masks = try maskDictionaries.map({ try Mask(dictionary: $0) })
+    } else {
+      masks = nil
+    }
+    timeStretch = (try? dictionary.value(for: CodingKeys.timeStretch)) ?? 1
+    if let matteRawValue = dictionary[CodingKeys.matte.rawValue] as? Int {
+      matte = MatteType(rawValue: matteRawValue)
+    } else {
+      matte = nil
+    }
+    hidden = (try? dictionary.value(for: CodingKeys.hidden)) ?? false
+  }
+
+  
+
+  
+  let name: String
+
+  
+  let index: Int
+
+  
+  let type: LayerType
+
+  
+  let coordinateSpace: CoordinateSpace
+
+  
+  let inFrame: Double
+  
+  let outFrame: Double
+
+  
+  let startTime: Double
+
+  
+  let transform: Transform
+
+  
+  let parent: Int?
+
+  
+  let blendMode: BlendMode
+
+  
+  let masks: [Mask]?
+
+  
+  let timeStretch: Double
+
+  
+  let matte: MatteType?
+
+  let hidden: Bool
+
+  
+
+  fileprivate enum CodingKeys: String, CodingKey {
+    case name = "nm"
+    case index = "ind"
+    case type = "ty"
+    case coordinateSpace = "ddd"
+    case inFrame = "ip"
+    case outFrame = "op"
+    case startTime = "st"
+    case transform = "ks"
+    case parent
+    case blendMode = "bm"
+    case masks = "masksProperties"
+    case timeStretch = "sr"
+    case matte = "tt"
+    case hidden = "hd"
+  }
+}
+
+extension Array where Element == LayerModel {
+
+  static func fromDictionaries(_ dictionaries: [[String: Any]]) throws -> [LayerModel] {
+    try dictionaries.compactMap { dictionary in
+      let layerType = dictionary[LayerModel.CodingKeys.type.rawValue] as? Int
+      switch LayerType(rawValue: layerType ?? LayerType.null.rawValue) {
+      case .precomp:
+        return try PreCompLayerModel(dictionary: dictionary)
+      case .solid:
+        return try SolidLayerModel(dictionary: dictionary)
+      case .image:
+        return try ImageLayerModel(dictionary: dictionary)
+      case .null:
+        return try LayerModel(dictionary: dictionary)
+      case .shape:
+        return try ShapeLayerModel(dictionary: dictionary)
+      case .text:
+        return try TextLayerModel(dictionary: dictionary)
+      case .none:
+        return nil
+      }
+    }
+  }
+}

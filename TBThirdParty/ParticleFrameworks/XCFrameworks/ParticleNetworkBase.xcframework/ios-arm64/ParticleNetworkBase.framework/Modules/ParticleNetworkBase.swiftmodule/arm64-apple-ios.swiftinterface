@@ -1,0 +1,925 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ParticleNetworkBase
+import CryptoSwift
+import Foundation
+import Swift
+import _Concurrency
+extension ParticleNetwork {
+  public struct ResponseError : Swift.Codable, Swift.Equatable, Swift.Error {
+    public let code: Swift.Int?
+    public let message: Swift.String?
+    public var data: Swift.String?
+    public init(code: Swift.Int?, message: Swift.String?, data: Swift.String? = nil)
+    public enum CodingKeys : Swift.String, Swift.CodingKey {
+      case code, message, data
+      public init?(rawValue: Swift.String)
+      public init?(stringValue: Swift.String)
+      public init?(intValue: Swift.Int)
+      public typealias RawValue = Swift.String
+      public var intValue: Swift.Int? {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+      public var stringValue: Swift.String {
+        get
+      }
+    }
+    public init(from decoder: Swift.Decoder) throws
+    public var description: Swift.String {
+      get
+    }
+    public static let userCancel: ParticleNetwork.ResponseError
+    public static func == (a: ParticleNetwork.ResponseError, b: ParticleNetwork.ResponseError) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+public typealias Limbs = [Swift.UInt64]
+public typealias Limb = Swift.UInt64
+public typealias Digits = [Swift.UInt64]
+public typealias Digit = Swift.UInt64
+public typealias Bytes = [Swift.UInt8]
+public typealias Byte = Swift.UInt8
+precedencegroup ExponentiationPrecedence {
+  associativity: left
+  higherThan: MultiplicationPrecedence
+  lowerThan: BitwiseShiftPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+public struct BInt : Swift.SignedNumeric, Swift.BinaryInteger, Swift.ExpressibleByFloatLiteral, Swift.Codable {
+  public typealias Magnitude = BInt
+  public var magnitude: BInt {
+    get
+  }
+  public typealias Words = [Swift.UInt]
+  public var words: BInt.Words {
+    get
+  }
+  public var size: Swift.Int {
+    get
+  }
+  public var sizeDescription: Swift.String {
+    get
+  }
+  public init(_ z: Swift.Int)
+  public init(_ n: Swift.UInt)
+  public init?(_ number: Swift.String, radix: Swift.Int = 10)
+  public init(floatLiteral value: Swift.Double)
+  public init(integerLiteral value: Swift.Int)
+  public init?<T>(exactly source: T) where T : Swift.BinaryInteger
+  public init<T>(_ source: T) where T : Swift.BinaryFloatingPoint
+  public init<T>(_ source: T) where T : Swift.BinaryInteger
+  public init<T>(clamping source: T) where T : Swift.BinaryInteger
+  public init?<T>(exactly source: T) where T : Swift.BinaryFloatingPoint
+  public init<T>(truncatingIfNeeded source: T) where T : Swift.BinaryInteger
+  public init(bytes: Bytes)
+  public var description: Swift.String {
+    get
+  }
+  public func asString(radix: Swift.Int) -> Swift.String
+  public func asInt() -> Swift.Int?
+  public var rawValue: (sign: Swift.Bool, limbs: [Swift.UInt64]) {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public static var isSigned: Swift.Bool {
+    get
+  }
+  public var bitWidth: Swift.Int {
+    get
+  }
+  public func signum() -> BInt
+  public var trailingZeroBitCount: Swift.Int {
+    get
+  }
+  public func getBytes() -> Bytes
+  public static func << <T>(lhs: BInt, rhs: T) -> BInt where T : Swift.BinaryInteger
+  public static func <<= <T>(lhs: inout BInt, rhs: T) where T : Swift.BinaryInteger
+  public static func >> <T>(lhs: BInt, rhs: T) -> BInt where T : Swift.BinaryInteger
+  public static func >>= <T>(lhs: inout BInt, rhs: T) where T : Swift.BinaryInteger
+  public static func & (lhs: BInt, rhs: BInt) -> BInt
+  public static func &= (lhs: inout BInt, rhs: BInt)
+  public static func | (lhs: BInt, rhs: BInt) -> BInt
+  public static func |= (lhs: inout BInt, rhs: BInt)
+  public static func ^ (lhs: BInt, rhs: BInt) -> BInt
+  public static func ^= (lhs: inout BInt, rhs: BInt)
+  prefix public static func ~ (x: BInt) -> BInt
+  prefix public static func + (x: BInt) -> BInt
+  public static func += (lhs: inout BInt, rhs: BInt)
+  public static func + (lhs: BInt, rhs: BInt) -> BInt
+  public static func + (lhs: Swift.Int, rhs: BInt) -> BInt
+  public static func + (lhs: BInt, rhs: Swift.Int) -> BInt
+  public static func += (lhs: inout Swift.Int, rhs: BInt)
+  public static func += (lhs: inout BInt, rhs: Swift.Int)
+  public mutating func negate()
+  prefix public static func - (n: BInt) -> BInt
+  public static func - (lhs: BInt, rhs: BInt) -> BInt
+  public static func - (lhs: Swift.Int, rhs: BInt) -> BInt
+  public static func - (lhs: BInt, rhs: Swift.Int) -> BInt
+  public static func -= (lhs: inout BInt, rhs: BInt)
+  public static func -= (lhs: inout Swift.Int, rhs: BInt)
+  public static func -= (lhs: inout BInt, rhs: Swift.Int)
+  public static func * (lhs: BInt, rhs: BInt) -> BInt
+  public static func * (lhs: Swift.Int, rhs: BInt) -> BInt
+  public static func * (lhs: BInt, rhs: Swift.Int) -> BInt
+  public static func *= (lhs: inout BInt, rhs: BInt)
+  public static func *= (lhs: inout Swift.Int, rhs: BInt)
+  public static func *= (lhs: inout BInt, rhs: Swift.Int)
+  public static func ** (lhs: BInt, rhs: Swift.Int) -> BInt
+  public static func ** (lhs: BInt, rhs: BInt) -> BInt
+  public func factorial() -> BInt
+  public func quotientAndRemainder(dividingBy rhs: BInt) -> (quotient: BInt, remainder: BInt)
+  public static func / (lhs: BInt, rhs: BInt) -> BInt
+  public static func /= (lhs: inout BInt, rhs: BInt)
+  public static func % (lhs: BInt, rhs: BInt) -> BInt
+  public static func %= (lhs: inout BInt, rhs: BInt)
+  public static func == (lhs: BInt, rhs: BInt) -> Swift.Bool
+  public static func < (lhs: BInt, rhs: BInt) -> Swift.Bool
+  public static func > (lhs: BInt, rhs: BInt) -> Swift.Bool
+  public static func <= (lhs: BInt, rhs: BInt) -> Swift.Bool
+  public static func >= (lhs: BInt, rhs: BInt) -> Swift.Bool
+  public typealias FloatLiteralType = Swift.Double
+  public typealias IntegerLiteralType = Swift.Int
+  public typealias Stride = Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BDouble : Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.CustomStringConvertible, Swift.SignedNumeric, Swift.Comparable, Swift.Hashable, Swift.Codable {
+  public var sign: Swift.Bool {
+    get
+  }
+  public var numerator: Limbs {
+    get
+  }
+  public var denominator: Limbs {
+    get
+  }
+  public typealias Magnitude = Swift.Double
+  public var magnitude: Swift.Double
+  public init?<T>(exactly source: T) where T : Swift.BinaryInteger
+  public init(_ src: BInt)
+  public init(sign: Swift.Bool, numerator: Limbs, denominator: Limbs)
+  public init(_ numerator: BInt, over denominator: BInt)
+  public init(_ numerator: Swift.Int, over denominator: Swift.Int)
+  public init?(_ numerator: Swift.String, over denominator: Swift.String)
+  public init?(_ nStr: Swift.String)
+  public init?(_ nStr: Swift.String, radix: Swift.Int)
+  public init(_ z: Swift.Int)
+  public init(_ d: Swift.Double)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public var description: Swift.String {
+    get
+  }
+  public var fractionDescription: Swift.String {
+    get
+  }
+  public static var precision: Swift.Int {
+    get
+    set
+  }
+  public var precision: Swift.Int {
+    get
+    set
+  }
+  public var decimalDescription: Swift.String {
+    get
+  }
+  public func decimalExpansion(precisionAfterDecimalPoint precision: Swift.Int, rounded: Swift.Bool = true) -> Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
+  public var size: Swift.Int {
+    get
+  }
+  public var sizeDescription: Swift.String {
+    get
+  }
+  public func rawData() -> (sign: Swift.Bool, numerator: [Swift.UInt64], denominator: [Swift.UInt64])
+  public func isPositive() -> Swift.Bool
+  public func isNegative() -> Swift.Bool
+  public func isZero() -> Swift.Bool
+  public mutating func minimize()
+  public func rounded() -> BInt
+  public func nthroot(_ root: Swift.Int) -> BDouble
+  public func squareRoot() -> BDouble
+  public static func + (lhs: BDouble, rhs: BDouble) -> BDouble
+  public static func + (lhs: BDouble, rhs: Swift.Double) -> BDouble
+  public static func + (lhs: Swift.Double, rhs: BDouble) -> BDouble
+  public static func + (lhs: BDouble, rhs: BInt) -> BDouble
+  public static func + (lhs: BInt, rhs: BDouble) -> BDouble
+  public static func += (lhs: inout BDouble, rhs: BDouble)
+  public static func += (lhs: inout BDouble, rhs: Swift.Double)
+  public mutating func negate()
+  prefix public static func - (n: BDouble) -> BDouble
+  public static func - (lhs: BDouble, rhs: BDouble) -> BDouble
+  public static func - (lhs: BDouble, rhs: Swift.Double) -> BDouble
+  public static func - (lhs: Swift.Double, rhs: BDouble) -> BDouble
+  public static func - (lhs: BDouble, rhs: BInt) -> BDouble
+  public static func -= (lhs: inout BDouble, rhs: BDouble)
+  public static func -= (lhs: inout BDouble, rhs: Swift.Double)
+  public static func * (lhs: BDouble, rhs: BDouble) -> BDouble
+  public static func * (lhs: BDouble, rhs: Swift.Double) -> BDouble
+  public static func * (lhs: Swift.Double, rhs: BDouble) -> BDouble
+  public static func * (lhs: BDouble, rhs: BInt) -> BDouble
+  public static func * (lhs: BInt, rhs: BDouble) -> BDouble
+  public static func *= (lhs: inout BDouble, rhs: BDouble)
+  public static func *= (lhs: inout BDouble, rhs: Swift.Double)
+  public static func ** (base: BDouble, exponent: Swift.Int) -> BDouble
+  public static func ** (base: BDouble, exponent: BInt) -> BDouble
+  public static func ** (base: BDouble, exponent: BDouble) -> BDouble
+  public static func / (lhs: BDouble, rhs: BDouble) -> BDouble
+  public static func / (lhs: BDouble, rhs: Swift.Double) -> BDouble
+  public static func / (lhs: BDouble, rhs: BInt) -> BDouble
+  public static func / (lhs: Swift.Double, rhs: BDouble) -> BDouble
+  public static func % (lhs: BDouble, rhs: BDouble) -> BDouble
+  public static func % (lhs: BDouble, rhs: Swift.Double) -> BDouble
+  public static func % (lhs: Swift.Double, rhs: BDouble) -> BDouble
+  public static func nearlyEqual(_ lhs: BDouble, _ rhs: BDouble, epsilon: Swift.Double = 0.00001) -> Swift.Bool
+  public static func == (lhs: BDouble, rhs: BDouble) -> Swift.Bool
+  public static func == (lhs: BDouble, rhs: Swift.Double) -> Swift.Bool
+  public static func == (lhs: Swift.Double, rhs: BDouble) -> Swift.Bool
+  public static func != (lhs: BDouble, rhs: BDouble) -> Swift.Bool
+  public static func != (lhs: BDouble, rhs: Swift.Double) -> Swift.Bool
+  public static func != (lhs: Swift.Double, rhs: BDouble) -> Swift.Bool
+  public static func < (lhs: BDouble, rhs: BDouble) -> Swift.Bool
+  public static func < (lhs: BDouble, rhs: Swift.Double) -> Swift.Bool
+  public static func < (lhs: Swift.Double, rhs: BDouble) -> Swift.Bool
+  public static func > (lhs: BDouble, rhs: BDouble) -> Swift.Bool
+  public static func > (lhs: BDouble, rhs: Swift.Double) -> Swift.Bool
+  public static func > (lhs: Swift.Double, rhs: BDouble) -> Swift.Bool
+  public static func <= (lhs: BDouble, rhs: BDouble) -> Swift.Bool
+  public static func <= (lhs: BDouble, rhs: Swift.Double) -> Swift.Bool
+  public static func <= (lhs: Swift.Double, rhs: BDouble) -> Swift.Bool
+  public static func >= (lhs: BDouble, rhs: BDouble) -> Swift.Bool
+  public static func >= (lhs: BDouble, rhs: Swift.Double) -> Swift.Bool
+  public static func >= (lhs: Swift.Double, rhs: BDouble) -> Swift.Bool
+  public typealias FloatLiteralType = Swift.Double
+  public typealias IntegerLiteralType = Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public func abs(_ x: BDouble) -> BDouble
+public func floor(_ base: BDouble) -> BInt
+public func ceil(_ base: BDouble) -> BInt
+public func pow(_ base: BDouble, _ exp: Swift.Int) -> BDouble
+public func pow(_ base: BDouble, _ exp: BInt) -> BDouble
+public func pow(_ base: BDouble, _ exp: BDouble) -> BDouble
+public func min(_ lhs: BDouble, _ rhs: BDouble) -> BDouble
+public func max(_ lhs: BDouble, _ rhs: BDouble) -> BDouble
+public func mod(_ lhs: BDouble, _ rhs: BDouble) -> BDouble
+public protocol TxDataCodable : Swift.Decodable, Swift.Encodable {
+  func serialize() throws -> Swift.String
+  init?(_ hexString: Swift.String) throws
+}
+extension TxDataCodable {
+  public func serialize() throws -> Swift.String
+  public init?(_ hexString: Swift.String) throws
+}
+@objc public enum Action : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+  case normal
+  case speedup
+  case cancel
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public enum GasLevel : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+  case none = 0
+  case custom
+  case low
+  case medium
+  case high
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc final public class FeeMarketEIP1559TxData : ObjectiveC.NSObject, Swift.Codable, TxDataCodable {
+  final public let maxPriorityFeePerGas: Swift.String
+  final public let maxFeePerGas: Swift.String
+  final public let nonce: Swift.String
+  final public let gasLimit: Swift.String
+  final public let from: Swift.String
+  final public let to: Swift.String?
+  final public let value: Swift.String
+  final public let data: Swift.String
+  final public let chainId: Swift.String
+  final public let type: Swift.String
+  final public let v: Swift.String?
+  final public let r: Swift.String?
+  final public let s: Swift.String?
+  final public let action: Swift.String
+  final public let gasLevel: Swift.String?
+  @objc public init(maxPriorityFeePerGas: Swift.String, maxFeePerGas: Swift.String, nonce: Swift.String = "0x0", gasLimit: Swift.String, from: Swift.String, to: Swift.String?, value: Swift.String, data: Swift.String, chainId: Swift.String, v: Swift.String? = nil, r: Swift.String? = nil, s: Swift.String? = nil, action: Action = Action.normal, gasLevel: GasLevel = GasLevel.none)
+  @objc final public func serialize() throws -> Swift.String
+  @objc public init(_ hexString: Swift.String) throws
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class AccessListEIP2930TxData : ObjectiveC.NSObject, Swift.Codable, TxDataCodable {
+  final public let gasPrice: Swift.String
+  final public let accessList: AccessList?
+  final public let nonce: Swift.String
+  final public let gasLimit: Swift.String
+  final public let from: Swift.String
+  final public let to: Swift.String?
+  final public let value: Swift.String
+  final public let data: Swift.String
+  final public let chainId: Swift.String
+  final public let type: Swift.String
+  final public let v: Swift.String?
+  final public let r: Swift.String?
+  final public let s: Swift.String?
+  final public let action: Swift.String
+  final public let gasLevel: Swift.String?
+  @objc public init(gasPrice: Swift.String, accessList: AccessList?, nonce: Swift.String = "0x0", gasLimit: Swift.String, from: Swift.String, to: Swift.String?, value: Swift.String, data: Swift.String, chainId: Swift.String, v: Swift.String? = nil, r: Swift.String? = nil, s: Swift.String? = nil, action: Action = .normal, gasLevel: GasLevel = .none)
+  @objc final public func serialize() throws -> Swift.String
+  @objc public init(_ hexString: Swift.String) throws
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public class AccessList : ObjectiveC.NSObject, Swift.Codable {
+  @objc public init(address: Swift.String, storageKeys: [Swift.String])
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc final public class TxData : ObjectiveC.NSObject, Swift.Codable, TxDataCodable {
+  final public let gasPrice: Swift.String
+  final public let nonce: Swift.String
+  final public let gasLimit: Swift.String
+  final public let from: Swift.String
+  final public let to: Swift.String?
+  final public let value: Swift.String
+  final public let data: Swift.String
+  final public let chainId: Swift.String
+  final public let type: Swift.String
+  final public let v: Swift.String?
+  final public let r: Swift.String?
+  final public let s: Swift.String?
+  final public let action: Swift.String
+  final public let gasLevel: Swift.String?
+  @objc public init(gasPrice: Swift.String, nonce: Swift.String = "0x0", gasLimit: Swift.String, from: Swift.String, to: Swift.String?, value: Swift.String, data: Swift.String, chainId: Swift.String, v: Swift.String? = nil, r: Swift.String? = nil, s: Swift.String? = nil, action: Action = .normal, gasLevel: GasLevel = .none)
+  @objc final public func serialize() throws -> Swift.String
+  @objc public init(_ hexString: Swift.String) throws
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class ParticleNetwork : ObjectiveC.NSObject {
+  @objc public static let sdkVersion: Swift.String
+  @objc public static func initialize(config: ParticleNetworkConfiguration)
+  @objc public static func getChainInfo() -> ParticleNetwork.ChainInfo
+  @objc public static func getDevEnv() -> ParticleNetwork.DevEnvironment
+  @objc public static func setChainInfo(_ chainInfo: ParticleNetwork.ChainInfo)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class ParticleNetworkConfiguration : ObjectiveC.NSObject {
+  @objc public init(chainInfo: ParticleNetwork.ChainInfo, devEnv: ParticleNetwork.DevEnvironment)
+  @objc deinit
+}
+@objc extension ParticleNetwork {
+  @_hasMissingDesignatedInitializers @objc public class Chain : ObjectiveC.NSObject, Swift.Codable {
+    public static var allCases: [ParticleNetwork.Chain] {
+      get
+    }
+    @objc public static var solana: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var ethereum: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var bsc: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var polygon: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var avalanche: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var fantom: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var arbitrum: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var moonbeam: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var moonriver: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var heco: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var aurora: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var harmony: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var kcc: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var optimism: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var platON: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public static var custom: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+    public var symbol: Swift.String {
+      get
+    }
+    @objc deinit
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ChainInfo : ObjectiveC.NSObject, Swift.Codable {
+    @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+    @objc public static func solana(_ network: ParticleNetwork.SolanaNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func ethereum(_ network: ParticleNetwork.EthereumNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func bsc(_ network: ParticleNetwork.BscNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func polygon(_ network: ParticleNetwork.PolygonNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func avalanche(_ network: ParticleNetwork.AvalancheNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func arbitrum(_ network: ParticleNetwork.ArbitrumNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func fantom(_ network: ParticleNetwork.FantomNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func moonbeam(_ network: ParticleNetwork.MoonbeamNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func moonriver(_ network: ParticleNetwork.MoonriverNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func heco(_ network: ParticleNetwork.HecoNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func harmony(_ network: ParticleNetwork.HarmonyNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func aurora(_ network: ParticleNetwork.AuroraNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func kcc(_ network: ParticleNetwork.KccNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func optimism(_ network: ParticleNetwork.OptimismNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func platON(_ network: ParticleNetwork.PlatONNetwork) -> ParticleNetwork.ChainInfo
+    @objc public static func customEvmNetwork(fullName: Swift.String, network: Swift.String, chainId: Swift.Int, explorePath: Swift.String, symbol: Swift.String, isSupportEIP1159: Swift.Bool = true) -> ParticleNetwork.ChainInfo
+    @objc public var path: Swift.String {
+      @objc get
+    }
+    @objc public var chain: ParticleNetwork.Chain {
+      @objc get
+    }
+    @objc public var name: Swift.String {
+      @objc get
+    }
+    @objc public var chainId: Swift.Int {
+      @objc get
+    }
+    @objc public var network: Swift.String {
+      @objc get
+    }
+    @objc public var nativeSymbol: Swift.String {
+      @objc get
+    }
+    @objc public var explorePath: Swift.String {
+      @objc get
+    }
+    @objc public var isSupportEIP1559: Swift.Bool {
+      @objc get
+    }
+    @objc public var isSupportSwap: Swift.Bool {
+      @objc get
+    }
+    @objc deinit
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
+  }
+  @objc public enum SolanaNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    case devnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum EthereumNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case goerli
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum BscNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum PolygonNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case mumbai
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum AvalancheNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum FantomNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum ArbitrumNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case goerli
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum MoonbeamNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum MoonriverNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum HecoNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum AuroraNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum HarmonyNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum KccNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum OptimismNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case goerli
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum PlatONNetwork : Swift.Int, Swift.RawRepresentable, Swift.Codable {
+    case mainnet
+    case testnet
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+    public var chainId: Swift.Int {
+      get
+    }
+    public var explorePath: Swift.String {
+      get
+    }
+  }
+  @objc public enum DevEnvironment : Swift.Int {
+    case debug
+    case staging
+    case production
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+extension ParticleNetwork.ChainInfo {
+  public var rpcUrl: Swift.String {
+    get
+  }
+}
+extension ParticleNetwork {
+  public static func searchChainInfo(by chainId: Swift.Int) -> ParticleNetwork.ChainInfo?
+}
+public enum Constant {
+  public enum Regex {
+    public static let base58PublicKey: Swift.String
+    public static let base58String: Swift.String
+    public static let evmAddress: Swift.String
+    public static let hexString: Swift.String
+    public static let email: Swift.String
+    public static let phoneNumber: Swift.String
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Constants : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Regexs : ObjectiveC.NSObject {
+    @objc public class func base58PublicKey() -> Swift.String
+    @objc public class func base58String() -> Swift.String
+    @objc public class func evmAddress() -> Swift.String
+    @objc public class func hexString() -> Swift.String
+    @objc public class func email() -> Swift.String
+    @objc public class func phoneNumber() -> Swift.String
+    @objc deinit
+  }
+  @objc deinit
+}
+extension Swift.String {
+  public var isAlphanumeric: Swift.Bool {
+    get
+  }
+  public var isNumber: Swift.Bool {
+    get
+  }
+  public func isValidAddress() -> Swift.Bool
+  public func isValidMessage() -> Swift.Bool
+  public func isValidEmail() -> Swift.Bool
+  public func isValidPhoneNumber() -> Swift.Bool
+}
+extension Swift.String {
+  public func isValidSolanaAddress() -> Swift.Bool
+  public func isValidEVMAddress() -> Swift.Bool
+  public func isValidBase58String() -> Swift.Bool
+  public func isValidHexString() -> Swift.Bool
+}
+extension Swift.Array where Element : Swift.Equatable {
+  public mutating func appendIfNotExist(_ el: Element?)
+  public mutating func appendOrReplace(_ el: Element?)
+}
+extension BInt {
+  public func toHexString() -> Swift.String
+}
+extension Swift.Int {
+  public func toHexString() -> Swift.String
+}
+extension Swift.String {
+  public func toBInt() -> BInt
+}
+extension Swift.String {
+  public func toChecksumAddress() -> Swift.String
+}
+public enum LogEvent : Swift.String {
+  case error
+  case response
+  case webAuth
+  case authService
+  case walletService
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers open class Logger {
+  open class func log(message: Any, event: LogEvent, tag: Swift.String, fileName: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function, apiMethod: Swift.String? = nil)
+  public class func activeLog(data: Foundation.Data)
+  public struct ActiveObject : Swift.Encodable {
+    public enum CodingKeys : Swift.String, Swift.CodingKey {
+      case loginType
+      case chainId
+      case identity
+      case walletAddress
+      case action
+      case userInfo
+      public init?(rawValue: Swift.String)
+      public init?(stringValue: Swift.String)
+      public init?(intValue: Swift.Int)
+      public typealias RawValue = Swift.String
+      public var intValue: Swift.Int? {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+      public var stringValue: Swift.String {
+        get
+      }
+    }
+    public init(activeLoginType: Logger.ActiveLoginType, identity: Swift.String, walletAddress: Swift.String, activeActionType: Logger.ActiveActionType, userInfo: Swift.String?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum ActiveActionType : Swift.String {
+    case login
+    case open
+    case openWallet
+    case sign
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum ActiveLoginType : Swift.String {
+    case particle
+    case private_key
+    case metamask
+    case rainbow
+    case trust
+    case imToken
+    case bitKeep
+    case phantom
+    case other
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @objc deinit
+}
+extension ParticleNetwork.ResponseError.CodingKeys : Swift.Equatable {}
+extension ParticleNetwork.ResponseError.CodingKeys : Swift.Hashable {}
+extension ParticleNetwork.ResponseError.CodingKeys : Swift.RawRepresentable {}
+extension Action : Swift.Equatable {}
+extension Action : Swift.Hashable {}
+extension GasLevel : Swift.Equatable {}
+extension GasLevel : Swift.Hashable {}
+extension ParticleNetwork.SolanaNetwork : Swift.Equatable {}
+extension ParticleNetwork.SolanaNetwork : Swift.Hashable {}
+extension ParticleNetwork.EthereumNetwork : Swift.Equatable {}
+extension ParticleNetwork.EthereumNetwork : Swift.Hashable {}
+extension ParticleNetwork.BscNetwork : Swift.Equatable {}
+extension ParticleNetwork.BscNetwork : Swift.Hashable {}
+extension ParticleNetwork.PolygonNetwork : Swift.Equatable {}
+extension ParticleNetwork.PolygonNetwork : Swift.Hashable {}
+extension ParticleNetwork.AvalancheNetwork : Swift.Equatable {}
+extension ParticleNetwork.AvalancheNetwork : Swift.Hashable {}
+extension ParticleNetwork.FantomNetwork : Swift.Equatable {}
+extension ParticleNetwork.FantomNetwork : Swift.Hashable {}
+extension ParticleNetwork.ArbitrumNetwork : Swift.Equatable {}
+extension ParticleNetwork.ArbitrumNetwork : Swift.Hashable {}
+extension ParticleNetwork.MoonbeamNetwork : Swift.Equatable {}
+extension ParticleNetwork.MoonbeamNetwork : Swift.Hashable {}
+extension ParticleNetwork.MoonriverNetwork : Swift.Equatable {}
+extension ParticleNetwork.MoonriverNetwork : Swift.Hashable {}
+extension ParticleNetwork.HecoNetwork : Swift.Equatable {}
+extension ParticleNetwork.HecoNetwork : Swift.Hashable {}
+extension ParticleNetwork.AuroraNetwork : Swift.Equatable {}
+extension ParticleNetwork.AuroraNetwork : Swift.Hashable {}
+extension ParticleNetwork.HarmonyNetwork : Swift.Equatable {}
+extension ParticleNetwork.HarmonyNetwork : Swift.Hashable {}
+extension ParticleNetwork.KccNetwork : Swift.Equatable {}
+extension ParticleNetwork.KccNetwork : Swift.Hashable {}
+extension ParticleNetwork.OptimismNetwork : Swift.Equatable {}
+extension ParticleNetwork.OptimismNetwork : Swift.Hashable {}
+extension ParticleNetwork.PlatONNetwork : Swift.Equatable {}
+extension ParticleNetwork.PlatONNetwork : Swift.Hashable {}
+extension ParticleNetwork.DevEnvironment : Swift.Equatable {}
+extension ParticleNetwork.DevEnvironment : Swift.Hashable {}
+extension ParticleNetwork.DevEnvironment : Swift.RawRepresentable {}
+extension LogEvent : Swift.Equatable {}
+extension LogEvent : Swift.Hashable {}
+extension LogEvent : Swift.RawRepresentable {}
+extension Logger.ActiveObject.CodingKeys : Swift.Equatable {}
+extension Logger.ActiveObject.CodingKeys : Swift.Hashable {}
+extension Logger.ActiveObject.CodingKeys : Swift.RawRepresentable {}
+extension Logger.ActiveActionType : Swift.Equatable {}
+extension Logger.ActiveActionType : Swift.Hashable {}
+extension Logger.ActiveActionType : Swift.RawRepresentable {}
+extension Logger.ActiveLoginType : Swift.Equatable {}
+extension Logger.ActiveLoginType : Swift.Hashable {}
+extension Logger.ActiveLoginType : Swift.RawRepresentable {}

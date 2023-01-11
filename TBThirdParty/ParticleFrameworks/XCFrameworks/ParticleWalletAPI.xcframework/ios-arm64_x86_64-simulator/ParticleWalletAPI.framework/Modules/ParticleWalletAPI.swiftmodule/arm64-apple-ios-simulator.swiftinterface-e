@@ -1,0 +1,1783 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ParticleWalletAPI
+import Alamofire
+import CryptoSwift
+import Foundation
+import GRDB
+import ParticleNetworkBase
+@_exported import ParticleWalletAPI
+import RxAlamofire
+import RxCocoa
+import RxSwift
+import Swift
+import SwiftyJSON
+import SwiftyUserDefaults
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class ParticleWalletAPI : ObjectiveC.NSObject {
+  @objc public static let sdkVersion: Swift.String
+  @objc public static func getSolanaService() -> ParticleWalletAPI.SolanaChain
+  @objc public static func getEvmService() -> ParticleWalletAPI.EVMChain
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ParticleWalletAPI.ParticleWalletAPI {
+  public static func getToken(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, mintAddress: Swift.String, complete: (ParticleWalletAPI.TokenModel?) -> Swift.Void) throws
+  public static func getTokenInfo(chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, mintAddress: Swift.String, complete: (ParticleWalletAPI.TokenInfo?) -> Swift.Void) throws
+  public static func getNFT(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, mintAddress: Swift.String, tokenId: Swift.String, complete: (ParticleWalletAPI.NFTModel?) -> Swift.Void) throws
+  public static func getSolanaTransaction(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, signature: Swift.String, complete: (ParticleWalletAPI.SolanaTransactionModel?) -> Swift.Void) throws
+  public static func getEVMTransaction(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, hashString: Swift.String, complete: (ParticleWalletAPI.EVMTransactionModel?) -> Swift.Void) throws
+  public static func updateTokens(_ tokens: inout [ParticleWalletAPI.TokenModel]) throws
+  public static func updateNFTs(_ nfts: inout [ParticleWalletAPI.NFTModel]) throws
+  public static func updateSolanaTransactions(_ transactions: inout [ParticleWalletAPI.SolanaTransactionModel]) throws
+  public static func updateEVMTransactions(_ transactions: inout [ParticleWalletAPI.EVMTransactionModel]) throws
+  public static func getLasteatSolanaTransaction(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, complete: (ParticleWalletAPI.SolanaTransactionModel?) -> Swift.Void) throws
+  public static func getLasteatSolanaTransaction(address: Swift.String, mintAddress: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, complete: (ParticleWalletAPI.SolanaTransactionModel?) -> Swift.Void) throws
+  public static func getNative(address: Swift.String, complete: (ParticleWalletAPI.TokenModel?) -> Swift.Void) throws
+  public static func getTokens(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, complete: ([ParticleWalletAPI.TokenModel]) -> Swift.Void) throws
+  public static func getSolanaTransactions(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, complete: ([ParticleWalletAPI.SolanaTransactionModel]) -> Swift.Void) throws
+  public static func getEVMTransactions(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, complete: ([ParticleWalletAPI.EVMTransactionModel]) -> Swift.Void) throws
+  public static func getNFTs(address: Swift.String, chainInfo: ParticleNetworkBase.ParticleNetwork.ChainInfo, complete: ([ParticleWalletAPI.NFTModel]) -> Swift.Void) throws
+}
+public protocol GeneralChainService {
+  func getTokenList() -> RxSwift.Single<[ParticleWalletAPI.TokenInfo]>
+  func getPrice(by addresses: [Swift.String], currencies: [Swift.String]) -> RxSwift.Single<[ParticleWalletAPI.TokenPrice]>
+  func getTokensAndNFTs(by address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  func getTokensAndNFTsFromDB(by address: Swift.String) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  func getTokensByTokenAddresses(address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<[ParticleWalletAPI.TokenModel]>
+  func addCustomTokens(address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<[ParticleWalletAPI.TokenModel]>
+}
+@_inheritsConvenienceInitializers @objc public class GeneralChain : ObjectiveC.NSObject {
+  public func getTokenList() -> RxSwift.Single<[ParticleWalletAPI.TokenInfo]>
+  @objc public func getTokenList(successHandler: @escaping (([ParticleWalletAPI.TokenInfo]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getPrice(by addresses: [Swift.String], currencies: [Swift.String]) -> RxSwift.Single<[ParticleWalletAPI.TokenPrice]>
+  @objc public func getPrice(by addresses: [Swift.String], currencies: [Swift.String], successHandler: @escaping (([ParticleWalletAPI.TokenPrice]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTokensOnly(address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  public func getTokensAndNFTs(by address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  @objc public func getTokensAndNFTs(by address: Swift.String, tokenAddresses: [Swift.String] = [], successHandler: @escaping ((ParticleWalletAPI.TokenResult) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTokensByTokenAddresses(address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<[ParticleWalletAPI.TokenModel]>
+  @objc public func getTokensByTokenAddresses(address: Swift.String, tokenAddresses: [Swift.String], successHandler: @escaping (([ParticleWalletAPI.TokenModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTokensAndNFTsFromDB(by address: Swift.String) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  @objc public func getTokensAndNFTsFromDB(by address: Swift.String, successHandler: @escaping ((ParticleWalletAPI.TokenResult) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func addCustomTokens(address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<[ParticleWalletAPI.TokenModel]>
+  @objc public func addCustomTokens(address: Swift.String, tokenAddresses: [Swift.String], successHandler: @escaping (([ParticleWalletAPI.TokenModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol NFTPresentation {
+  var namePresent: Swift.String { get }
+  var descriptionString: Swift.String { get }
+  var artistRoyalties: Swift.String { get }
+  var website: Swift.String { get }
+  var animationUrl: Swift.String { get }
+  var imageUrl: Swift.String { get }
+  var attributesModels: [ParticleWalletAPI.AttributeModel] { get }
+}
+@objc public class NFTModel : ObjectiveC.NSObject, Swift.Encodable, Swift.Decodable {
+  final public let address: Swift.String
+  final public let chainName: Swift.String
+  final public let chainId: Swift.Int
+  final public let mintAddress: Swift.String
+  final public let image: Swift.String
+  final public let symbol: Swift.String
+  final public let name: Swift.String
+  final public let sellerFeeBasisPoints: Swift.Int
+  final public let descriptionString: Swift.String
+  final public let externalUrl: Swift.String
+  final public let animationUrl: Swift.String
+  final public let data: Swift.String
+  public var updateAt: Swift.Double
+  final public let isSemiFungible: Swift.Bool
+  final public let tokenId: Swift.String
+  final public let tokenBalance: ParticleNetworkBase.BInt
+  public init(address: Swift.String, chainName: Swift.String, chainId: Swift.Int, mintAddress: Swift.String, image: Swift.String, symbol: Swift.String, name: Swift.String, sellerFeeBasisPoints: Swift.Int, descriptionString: Swift.String, externalUrl: Swift.String, animationUrl: Swift.String, data: Swift.String, updateAt: Swift.Double, isSemiFungible: Swift.Bool, tokenId: Swift.String, tokenBalance: ParticleNetworkBase.BInt)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case address, chainName, chainId, mintAddress, image, symbol, name, sellerFeeBasisPoints, descriptionString, externalUrl, animationUrl, data, updateAt, isSemiFungible, tokenId, tokenBalance
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+extension ParticleWalletAPI.NFTModel : GRDB.FetchableRecord, GRDB.MutablePersistableRecord {
+}
+extension ParticleWalletAPI.NFTModel : ParticleWalletAPI.NFTPresentation {
+  public var artistRoyalties: Swift.String {
+    get
+  }
+  public var website: Swift.String {
+    get
+  }
+  public var imageUrl: Swift.String {
+    get
+  }
+  public var namePresent: Swift.String {
+    get
+  }
+  public var attributesModels: [ParticleWalletAPI.AttributeModel] {
+    get
+  }
+}
+@objc public class SolanaTransactionModel : ObjectiveC.NSObject, Swift.Encodable, Swift.Decodable {
+  final public let address: Swift.String
+  final public let chainName: Swift.String
+  final public let chainId: Swift.Int
+  final public let type: ParticleWalletAPI.SolanaTransactionType
+  final public let lamportsChange: ParticleNetworkBase.BInt
+  final public let lamportsFee: ParticleNetworkBase.BInt
+  final public let signature: Swift.String
+  final public let blockTime: Swift.Int
+  final public let status: ParticleWalletAPI.TransactionStatus
+  public var data: ParticleWalletAPI.SolanaTransactionModel.TransactionData?
+  public init(address: Swift.String, chainName: Swift.String, chainId: Swift.Int, type: ParticleWalletAPI.SolanaTransactionType, lamportsChange: ParticleNetworkBase.BInt, lamportsFee: ParticleNetworkBase.BInt, signature: Swift.String, blockTime: Swift.Int, status: ParticleWalletAPI.TransactionStatus, data: ParticleWalletAPI.SolanaTransactionModel.TransactionData?)
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case address, chainName, chainId, type, lamportsChange, lamportsFee, signature, blockTime, status, data
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public class TransactionData : Swift.Decodable, Swift.Encodable, GRDB.DatabaseValueConvertible {
+    final public let lamportsTransfered: ParticleNetworkBase.BInt
+    final public let sender: Swift.String
+    final public let receiver: Swift.String
+    final public let name: Swift.String
+    final public let symbol: Swift.String
+    final public let image: Swift.String
+    final public let mint: Swift.String
+    final public let decimals: ParticleWalletAPI.Decimals
+    final public let amountTransfered: ParticleNetworkBase.BInt
+    final public let senderAssociatedTokenAddress: Swift.String
+    final public let receiverAssociatedTokenAddress: Swift.String
+    public init(lamportsTransfered: ParticleNetworkBase.BInt, sender: Swift.String, receiver: Swift.String)
+    public init(name: Swift.String, symbol: Swift.String, image: Swift.String, mint: Swift.String, decimals: ParticleWalletAPI.Decimals, amountTransfered: ParticleNetworkBase.BInt, sender: Swift.String, receiver: Swift.String, senderAssociatedTokenAddress: Swift.String, receiverAssociatedTokenAddress: Swift.String)
+    @objc deinit
+    public func encode(to encoder: Swift.Encoder) throws
+    required public init(from decoder: Swift.Decoder) throws
+  }
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+extension ParticleWalletAPI.SolanaTransactionModel : GRDB.FetchableRecord, GRDB.MutablePersistableRecord {
+}
+extension ParticleWalletAPI.SolanaTransactionModel : ParticleWalletAPI.TransactionPresentation {
+  public var nonce: ParticleNetworkBase.BInt {
+    get
+  }
+  public var transactionType: Swift.String {
+    get
+  }
+  public var interactionType: ParticleWalletAPI.TransactionInteractionType {
+    get
+  }
+  public var uiAmount: Swift.Double {
+    get
+  }
+  public var dateString: Swift.String {
+    get
+  }
+  public var transactonFeeUiAmount: Swift.Double {
+    get
+  }
+  public var from: Swift.String {
+    get
+  }
+  public var to: Swift.String {
+    get
+  }
+  public var symbolPresent: Swift.String {
+    get
+  }
+  public var isNative: Swift.Bool {
+    get
+  }
+  public var timestamp: Swift.Int {
+    get
+  }
+  public var mintAddress: Swift.String? {
+    get
+  }
+}
+public struct Request : Swift.Encodable {
+  public init(method: Swift.String, params: [Swift.Encodable], id: Swift.String = UUID().uuidString, jsonrpc: Swift.String = "2.0")
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct EncodableWrapper : Swift.Encodable {
+  public init(wrapped: Swift.Encodable)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public typealias Decimals = Swift.UInt8
+public struct EnhancedWrapper : Swift.Decodable {
+  public let chainId: Swift.Int?
+  public let data: SwiftyJSON.JSON
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Response<T> : Swift.Decodable where T : Swift.Decodable {
+  public let chainId: Swift.Int?
+  public let jsonrpc: Swift.String
+  public let id: Swift.String?
+  public let result: T?
+  public var error: ParticleNetworkBase.ParticleNetwork.ResponseError?
+  public let method: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case chainId, jsonrpc, id, result, error, method
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol EVMClientProtocol {
+  func web3_clientVersion() -> RxSwift.Single<Swift.String>
+  func web3_sha3(data: Swift.String) -> RxSwift.Single<Swift.String>
+  func net_version() -> RxSwift.Single<ParticleNetworkBase.BInt>
+  func eth_protocolVersion() -> RxSwift.Single<Swift.Int>
+  func eth_syncing() -> RxSwift.Single<Swift.Bool>
+  func eth_mining() -> RxSwift.Single<Swift.Bool>
+  func eth_gasPrice() -> RxSwift.Single<ParticleNetworkBase.BInt>
+  func eth_blockNumber() -> RxSwift.Single<ParticleNetworkBase.BInt>
+  func eth_chainId() -> RxSwift.Single<Swift.Int>
+  func eth_getBalance(address: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<ParticleNetworkBase.BInt>
+  func eth_getStorageAt(address: Swift.String, position: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.String>
+  func eth_getTransactionCount(address: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<ParticleNetworkBase.BInt>
+  func eth_getBlockTransactionCount(byHash txHash: Swift.String) -> RxSwift.Single<Swift.Int>
+  func eth_getBlockTransactionCount(byNumber block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.Int>
+  func eth_getUncleCount(byBlockHash txHash: Swift.String) -> RxSwift.Single<Swift.Int>
+  func eth_getUncleCount(byBlockNumber block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.Int>
+  func eth_getCode(address: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.String>
+  func eth_call(callParams: ParticleWalletAPI.CallParams, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.String>
+  func eth_estimateGas(callParams: ParticleWalletAPI.CallParams, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<ParticleNetworkBase.BInt>
+  func eth_getBlock(byHash txHash: Swift.String, fullTransactions: Swift.Bool) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+  func eth_getBlockByNumber(_ block: ParticleWalletAPI.EVMBlock, fullTransactions: Swift.Bool) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+  func eth_getTransaction(byHash txHash: Swift.String) -> RxSwift.Single<ParticleWalletAPI.EthereumTransaction>
+  func eth_getTransaction(byBlockHash txHash: Swift.String, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumTransaction>
+  func eth_getTransaction(byBlockNumber block: ParticleWalletAPI.EVMBlock, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumTransaction>
+  func eth_getTransactionReceipt(txHash: Swift.String) -> RxSwift.Single<ParticleWalletAPI.EthereumTransactionReceipt>
+  func eth_getUncle(byBlockHash txHash: Swift.String, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+  func eth_getUncle(byBlockNumber block: ParticleWalletAPI.EVMBlock, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+  func eth_getLogs(addresses: [Swift.String]?, topics: [Swift.String?]?, fromBlock: ParticleWalletAPI.EVMBlock?, toBlock: ParticleWalletAPI.EVMBlock?) -> RxSwift.Single<[ParticleWalletAPI.EthereumLog]>
+}
+public enum EVMBlock : Swift.Hashable {
+  case latest
+  case earliest
+  case pending
+  case number(ParticleNetworkBase.BInt)
+  public var stringValue: Swift.String {
+    get
+  }
+  public var intValue: ParticleNetworkBase.BInt? {
+    get
+  }
+  public init(rawValue: ParticleNetworkBase.BInt)
+  public init(rawValue: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: ParticleWalletAPI.EVMBlock, b: ParticleWalletAPI.EVMBlock) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension ParticleWalletAPI.EVMBlock : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct EthereumTransaction : Swift.Codable, Swift.Equatable {
+  public var blockHash: Swift.String?
+  public var blockNumber: ParticleWalletAPI.EVMBlock?
+  public var from: Swift.String?
+  public var gas: ParticleNetworkBase.BInt?
+  public var gasPrice: ParticleNetworkBase.BInt?
+  public var hash: Swift.String?
+  public var input: Swift.String?
+  public var nonce: Swift.Int?
+  public var to: Swift.String
+  public var transactionIndex: ParticleNetworkBase.BInt?
+  public var value: ParticleNetworkBase.BInt?
+  public var v: Swift.String?
+  public var r: Swift.String?
+  public var s: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: ParticleWalletAPI.EthereumTransaction, b: ParticleWalletAPI.EthereumTransaction) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum EthereumTransactionReceiptStatus : Swift.Int, Swift.Codable {
+  case success
+  case failure
+  case notProcessed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct EthereumLog : Swift.Equatable, Swift.Codable {
+  public let logIndex: ParticleNetworkBase.BInt?
+  public let transactionIndex: ParticleNetworkBase.BInt?
+  public let transactionHash: Swift.String?
+  public let blockHash: Swift.String?
+  public let blockNumber: ParticleWalletAPI.EVMBlock
+  public let address: Swift.String
+  public var data: Swift.String
+  public var topics: [Swift.String]
+  public let removed: Swift.Bool?
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: ParticleWalletAPI.EthereumLog, b: ParticleWalletAPI.EthereumLog) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct EthereumTransactionReceipt : Swift.Codable {
+  public var transactionHash: Swift.String
+  public var transactionIndex: ParticleNetworkBase.BInt
+  public var blockHash: Swift.String
+  public var blockNumber: ParticleNetworkBase.BInt
+  public var gasUsed: ParticleNetworkBase.BInt
+  public var contractAddress: Swift.String?
+  public var logs: [ParticleWalletAPI.EthereumLog]
+  public var status: ParticleWalletAPI.EthereumTransactionReceiptStatus
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct EthereumBlockInfo : Swift.Equatable, Swift.Codable {
+  public var number: ParticleWalletAPI.EVMBlock
+  public var hash: Swift.String
+  public var parentHash: Swift.String
+  public var nonce: Swift.String?
+  public var sha3Uncles: Swift.String
+  public var logsBloom: Swift.String
+  public var transactionsRoot: Swift.String
+  public var stateRoot: Swift.String
+  public var receiptsRoot: Swift.String
+  public var miner: Swift.String?
+  public var difficulty: ParticleNetworkBase.BInt
+  public var totalDifficulty: ParticleNetworkBase.BInt
+  public var extraData: Swift.String
+  public var size: ParticleNetworkBase.BInt
+  public var gasLimit: ParticleNetworkBase.BInt
+  public var gasUsed: ParticleNetworkBase.BInt
+  public var timestamp: ParticleNetworkBase.BInt
+  public var transactions: [ParticleWalletAPI.TransactionInBlock]
+  public var uncles: [Swift.String]
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: ParticleWalletAPI.EthereumBlockInfo, b: ParticleWalletAPI.EthereumBlockInfo) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum TransactionInBlock : Swift.Codable, Swift.Equatable {
+  public static func == (lhs: ParticleWalletAPI.TransactionInBlock, rhs: ParticleWalletAPI.TransactionInBlock) -> Swift.Bool
+  case hash(Swift.String)
+  case transaction(ParticleWalletAPI.EthereumTransaction)
+  case null
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum Topics : Swift.Encodable {
+  case plain([Swift.String?])
+  case composed([[Swift.String]?])
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct AttributeModel {
+  public let name: Swift.String
+  public let value: Swift.String
+}
+public protocol SolanaClientProtocol {
+  func getAccountInfo(address: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<ParticleWalletAPI.AccountBufferInfo>
+  func getBalance(address: Swift.String, configuration: ParticleWalletAPI.GetBalanceConfiguration?) -> RxSwift.Single<ParticleWalletAPI.Lamports>
+  func getBlock(slot: ParticleWalletAPI.Lamports, configuration: ParticleWalletAPI.GetBlockConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaBlockInfo>
+  func getBlockHeight(configuration: ParticleWalletAPI.GetBlockConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  func getBlockProduction(configuration: ParticleWalletAPI.GetBlockProductionConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaBlockProduction>
+  func getBlockCommitment(block: Swift.UInt64) -> RxSwift.Single<ParticleWalletAPI.BlockCommitment>
+  func getBlocks(startSlot: Swift.UInt64, endSlot: Swift.UInt64?, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<[Swift.UInt64]>
+  func getBlocksWithLimit(startSlot: Swift.UInt64, limit: Swift.UInt64, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<[Swift.UInt64]>
+  func getBlockTime(block: Swift.UInt64) -> RxSwift.Single<Swift.UInt64>
+  func getClusterNodes() -> RxSwift.Single<[ParticleWalletAPI.SolanaClusterNode]>
+  func getEpochInfo(configuration: ParticleWalletAPI.GetEpochConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaEpochInfo>
+  func getEpochSchedule() -> RxSwift.Single<ParticleWalletAPI.SolanaEpochSchedule>
+  func getFeeForMessage(message: Swift.String, configuration: ParticleWalletAPI.GetFeeForMessageConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  func getFirstAvailableBlock() -> RxSwift.Single<Swift.UInt64>
+  func getGenesisHash() -> RxSwift.Single<Swift.String>
+  func getHealth() -> RxSwift.Single<Swift.String>
+  func getHighestSnapshotSlot() -> RxSwift.Single<ParticleWalletAPI.SolanaSnapShotSlot>
+  func getIdentity() -> RxSwift.Single<Swift.String>
+  func getInflationGovernor(configuration: ParticleWalletAPI.GetInflationGovernorConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaInflationGovernor>
+  func getInflationRate() -> RxSwift.Single<ParticleWalletAPI.SolanaInflationRate>
+  func getInflationReward(addresses: [Swift.String], configuration: ParticleWalletAPI.GetInflationRewardConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaInflationReward?]>
+  func getLargestAccounts(configuration: ParticleWalletAPI.GetLargestAccountsConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaLargestAccount]>
+  func getLatestBlockhash(configuration: ParticleWalletAPI.GetLatestBlockhashConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaBlockhash>
+  func getLeaderSchedule(epoch: Swift.UInt64?, configuration: ParticleWalletAPI.GetLeaderScheduleConfiguration?) -> RxSwift.Single<[Swift.String : [Swift.UInt64]]>
+  func getMaxRetransmitSlot() -> RxSwift.Single<Swift.UInt64>
+  func getMaxShredInsertSlot() -> RxSwift.Single<Swift.UInt64>
+  func getMinimumBalanceForRentExemption(length: Swift.UInt32, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<Swift.UInt64>
+  func getMultipleAccounts(addresses: [Swift.String], configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.AccountBufferInfo]>
+  func getProgramAccounts(address: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaProgramAccount]>
+  func getRecentPerformanceSamples(limit: Swift.UInt32?) -> RxSwift.Single<[ParticleWalletAPI.SolanaPerformance]>
+  func getSignaturesForAddress(address: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaSignature]>
+  func getSignatureStatuses(signatures: [Swift.String], searchTransactionHistory: Swift.Bool?) -> RxSwift.Single<[ParticleWalletAPI.SolanaSignatureStatus?]>
+  func getSlot(configuration: ParticleWalletAPI.GetSlotConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  func getSlotLeader(configuration: ParticleWalletAPI.GetSlotConfiguration?) -> RxSwift.Single<Swift.String>
+  func getSlotLeaders(startSlot: Swift.UInt64, limit: Swift.UInt64) -> RxSwift.Single<[Swift.String]>
+  func getStakeActivation(address: Swift.String, configuration: ParticleWalletAPI.GetStakeActivationConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaStakeActivation>
+  func getStakeMinimumDelegation(commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<Swift.UInt64>
+  func getSupply(configuration: ParticleWalletAPI.GetSupplyConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaSupply>
+  func getTokenAccountBalance(address: Swift.String, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<ParticleWalletAPI.SolanaTokenAmount>
+  func getTokenAccountsByDelegate(address: Swift.String, mint: Swift.String?, programId: Swift.String?, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaProgramAccount]>
+  func getTokenAccountsByOwner(address: Swift.String, mint: Swift.String?, programId: Swift.String?, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaProgramAccount]>
+  func getTokenLargestAccounts(address: Swift.String, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<[ParticleWalletAPI.SolanaTokenAccount]>
+  func getTokenSupply(address: Swift.String, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<ParticleWalletAPI.SolanaTokenAmount>
+  func getTransaction(signature: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaTransactionDetails>
+  func getTransactionCount(configuration: ParticleWalletAPI.GetTransactionCountConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  func getVersion() -> RxSwift.Single<ParticleWalletAPI.SolanaVersion>
+  func getVoteAccounts(configuration: ParticleWalletAPI.GetVoteAccountsConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaVoteAccounts>
+  func isBlockhashValid(_ blockhash: Swift.String, configuration: ParticleWalletAPI.IsBlockhashValidConfiguration?) -> RxSwift.Single<Swift.Bool>
+  func minimumLedgerSlot() -> RxSwift.Single<Swift.UInt64>
+  func requestAirdrop(address: Swift.String, lamports: ParticleWalletAPI.Lamports, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<Swift.String>
+  func sendTransaction(transaction: Swift.String, configuration: ParticleWalletAPI.SendTransactionConfiguration?) -> RxSwift.Single<Swift.String>
+  func simulateTransaction(transaction: Swift.String, configuration: ParticleWalletAPI.SimulateTransactionConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaSimulateTransaction>
+}
+public typealias Lamports = Swift.UInt64
+public struct AccountBufferInfo : Swift.Codable {
+  public let lamports: ParticleWalletAPI.Lamports
+  public let owner: Swift.String
+  public let data: SwiftyJSON.JSON
+  public let executable: Swift.Bool
+  public let rentEpoch: Swift.UInt64
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum Commitment : Swift.String, Swift.Codable {
+  case processed
+  case confirmed
+  case finalized
+  case recent
+  case single
+  case singleGossip
+  case root
+  case max
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct GetBalanceConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetEpochConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetFeeForMessageConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetInflationRewardConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let epoch: Swift.UInt64?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, epoch: Swift.UInt64?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetStakeActivationConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let epoch: Swift.UInt64?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, epoch: Swift.UInt64?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetLargestAccountsConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let filter: Swift.String?
+  public init?(commitment: ParticleWalletAPI.Commitment?, filter: Swift.String?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetLatestBlockhashConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct IsBlockhashValidConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetLeaderScheduleConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let identity: Swift.String?
+  public init?(commitment: ParticleWalletAPI.Commitment?, identity: Swift.String?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SendTransactionConfiguration : Swift.Codable {
+  public let skipPreflight: Swift.Bool
+  public let preflightCommitment: ParticleWalletAPI.Commitment?
+  public let encoding: Swift.String?
+  public let maxRetries: Swift.Int
+  public let minContextSlot: Swift.UInt64?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SimulateTransactionConfiguration : Swift.Codable {
+  public let sigVerify: Swift.Bool
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let encoding: Swift.String?
+  public let replaceRecentBlockhash: Swift.Bool?
+  public let accounts: ParticleWalletAPI.SimulateTransactionConfiguration.Accounts?
+  public let minContextSlot: Swift.UInt64?
+  public struct Accounts : Swift.Codable {
+    public let encoding: Swift.String?
+    public let addresses: [Swift.String]
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetSupplyConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let excludeNonCirculatingAccountsList: Swift.Bool?
+  public init?(commitment: ParticleWalletAPI.Commitment?, excludeNonCirculatingAccountsList: Swift.Bool?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetTransactionCountConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetBlockProductionConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let identity: Swift.String?
+  public let range: ParticleWalletAPI.GetBlockProductionConfiguration.Range?
+  public struct Range : Swift.Codable {
+    public let firstSlot: Swift.UInt64
+    public let lastSlot: Swift.UInt64?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetSlotConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let minContextSlot: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, minContextSlot: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaBlockProduction : Swift.Codable {
+  public let byIdentity: [Swift.String : [Swift.Int]]
+  public let range: ParticleWalletAPI.GetBlockProductionConfiguration.Range
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetVoteAccountsConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let votePubkey: Swift.String?
+  public let keepUnstakedDelinquents: Swift.Bool?
+  public let delinquentSlotDistance: Swift.UInt64?
+  public init?(commitment: ParticleWalletAPI.Commitment?, votePubkey: Swift.String?, keepUnstakedDelinquents: Swift.Bool?, delinquentSlotDistance: Swift.UInt64?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetInflationGovernorConfiguration : Swift.Codable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public init?(commitment: ParticleWalletAPI.Commitment?)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetBlockConfiguration : Swift.Codable {
+  public let encoding: Swift.String?
+  public let transactionDetails: Swift.String?
+  public let reward: Swift.Bool?
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let maxSupportedTransacionVersion: Swift.Double?
+  public init?(encoding: Swift.String? = nil, transactionDetails: Swift.String? = nil, reward: Swift.Bool? = nil, commitment: ParticleWalletAPI.Commitment? = nil, maxSupportedTransacionVersion: Swift.Double? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RequestConfiguration : Swift.Encodable {
+  public let commitment: ParticleWalletAPI.Commitment?
+  public let encoding: Swift.String?
+  public let dataSlice: ParticleWalletAPI.DataSlice?
+  public let filters: [[Swift.String : ParticleWalletAPI.EncodableWrapper]]?
+  public let limit: Swift.Int?
+  public let before: Swift.String?
+  public let until: Swift.String?
+  public init?(commitment: ParticleWalletAPI.Commitment? = nil, encoding: Swift.String? = nil, dataSlice: ParticleWalletAPI.DataSlice? = nil, filters: [[Swift.String : ParticleWalletAPI.EncodableWrapper]]? = nil, limit: Swift.Int? = nil, before: Swift.String? = nil, until: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct DataSlice : Swift.Codable {
+  public let offset: Swift.Int
+  public let length: Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaBlockInfo : Swift.Codable {
+  public let blockhash: Swift.String
+  public let previousBlockhash: Swift.String
+  public let parentSlot: ParticleWalletAPI.Lamports
+  public let transactions: [ParticleWalletAPI.SolanaBlockTransaction]
+  public let signatures: [Swift.String]?
+  public let rewards: [ParticleWalletAPI.SolanaReward]?
+  public let blockTime: Swift.Int?
+  public let blockHeight: ParticleWalletAPI.Lamports?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaBlockTransaction : Swift.Codable {
+  public let meta: ParticleWalletAPI.SolanaTransactionMeta
+  public let version: ParticleWalletAPI.SolanaTransactionVersion?
+  public let transaction: ParticleWalletAPI.SolanaTransaction
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTransactionDetails : Swift.Codable {
+  public let slot: Swift.UInt64
+  public let blockTime: Swift.Int64?
+  public let meta: ParticleWalletAPI.SolanaTransactionMeta
+  public let version: ParticleWalletAPI.SolanaTransactionVersion?
+  public let transaction: ParticleWalletAPI.SolanaTransaction
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTransaction : Swift.Codable {
+  public let signatures: [Swift.String]
+  public let message: ParticleWalletAPI.SolanaTransactionMessage
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTransactionMessage : Swift.Codable {
+  public let accountKeys: [Swift.String]
+  public let header: ParticleWalletAPI.SolanaTransactionMessageHeader
+  public let recentBlockhash: Swift.String
+  public let instructions: [ParticleWalletAPI.SolanaProgramInstruction]
+  public let addressTableLookups: [ParticleWalletAPI.SolanaTransactionMessageAddressTableLookups]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTransactionMessageHeader : Swift.Codable {
+  public let numRequiredSignatures: Swift.Int
+  public let numReadonlySignedAccounts: Swift.Int
+  public let numReadonlyUnsignedAccounts: Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTransactionMeta : Swift.Codable {
+  public let err: SwiftyJSON.JSON?
+  public let fee: ParticleWalletAPI.Lamports
+  public let preBalances: [ParticleWalletAPI.Lamports]
+  public let postBalances: [ParticleWalletAPI.Lamports]
+  public let innerInstructions: [ParticleWalletAPI.SolanaInnerInstruction]?
+  public let preTokenBalances: [ParticleWalletAPI.SolanaTokenBalance]
+  public let postTokenBalances: [ParticleWalletAPI.SolanaTokenBalance]
+  public let logMessages: [Swift.String]?
+  public let rewards: [ParticleWalletAPI.SolanaReward]?
+  public let loadedAddresses: ParticleWalletAPI.SolanaLoadedAddresses?
+  public let returnData: ParticleWalletAPI.SolanaReturnData?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaInnerInstruction : Swift.Codable {
+  public let index: Swift.Int
+  public let instructions: [ParticleWalletAPI.SolanaProgramInstruction]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaProgramInstruction : Swift.Codable {
+  public let programIdIndex: Swift.Int
+  public let accounts: [Swift.Int]
+  public let data: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTokenBalance : Swift.Codable {
+  public let accountIndex: Swift.Int
+  public let mint: Swift.String
+  public let owner: Swift.String?
+  public let programId: Swift.String?
+  public let uiTokenAmount: ParticleWalletAPI.SolanaTokenAmount
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTokenAmount : Swift.Codable {
+  public let amount: Swift.UInt64
+  public let decimals: ParticleWalletAPI.Decimals
+  public let uiAmount: Swift.Double?
+  public let uiAmountString: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct SolanaReward : Swift.Codable {
+  public let pubkey: Swift.String
+  public let lamports: ParticleWalletAPI.Lamports
+  public let postBalance: ParticleWalletAPI.Lamports
+  public let rewardType: ParticleWalletAPI.SolanaRewardType?
+  public let commission: Swift.UInt8?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum SolanaRewardType : Swift.String, Swift.Codable {
+  case fee
+  case rent
+  case voting
+  case staking
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SolanaLoadedAddresses : Swift.Codable {
+  public let writable: [Swift.String]
+  public let readonly: [Swift.String]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaReturnData : Swift.Codable {
+  public let programId: Swift.String
+  public let data: SwiftyJSON.JSON
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum SolanaTransactionVersion : Swift.Codable {
+  case legacy
+  case number(Swift.Int)
+  case null
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct SolanaTransactionMessageAddressTableLookups : Swift.Codable {
+  public let accountKey: Swift.String
+  public let writableIndexes: [Swift.Int]
+  public let readonlyIndexes: [Swift.Int]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaClusterNode : Swift.Codable {
+  public let pubkey: Swift.String
+  public let gossip: Swift.String?
+  public let tpu: Swift.String?
+  public let rpc: Swift.String?
+  public let version: Swift.String?
+  public let featureSet: Swift.UInt32?
+  public let shredVersion: Swift.UInt16?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaEpochInfo : Swift.Codable {
+  public let absoluteSlot: Swift.UInt64
+  public let blockHeight: Swift.UInt64
+  public let epoch: Swift.UInt64
+  public let slotIndex: Swift.UInt64
+  public let slotsInEpoch: Swift.UInt64
+  public let transactionCount: Swift.UInt64?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaEpochSchedule : Swift.Codable {
+  public let slotsPerEpoch: Swift.UInt64
+  public let leaderScheduleSlotOffset: Swift.UInt64
+  public let warmup: Swift.Bool
+  public let firstNormalEpoch: Swift.UInt64
+  public let firstNormalSlot: Swift.UInt64
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaSnapShotSlot : Swift.Codable {
+  public let full: Swift.UInt64
+  public let incremental: Swift.UInt64?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaInflationGovernor : Swift.Codable {
+  public let initial: Swift.Double
+  public let terminal: Swift.Double
+  public let taper: Swift.Double
+  public let foundation: Swift.Double
+  public let foundationTerm: Swift.Double
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaInflationRate : Swift.Codable {
+  public let total: Swift.Double
+  public let validator: Swift.Double
+  public let foundation: Swift.Double
+  public let epoch: Swift.UInt64
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaInflationReward : Swift.Codable {
+  public let epoch: Swift.UInt64
+  public let effectiveSlot: Swift.UInt64
+  public let amount: Swift.UInt64
+  public let postBalance: Swift.UInt64
+  public let commission: Swift.UInt8
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaLargestAccount : Swift.Codable {
+  public let address: Swift.String
+  public let lamports: ParticleWalletAPI.Lamports
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaBlockhash : Swift.Codable {
+  public let blockhash: Swift.String
+  public let lastValidBlockHeight: Swift.UInt64
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaProgramAccount : Swift.Codable {
+  public let account: ParticleWalletAPI.AccountBufferInfo
+  public let pubkey: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaPerformance : Swift.Codable {
+  public let slot: Swift.UInt64
+  public let numTransactions: Swift.UInt64
+  public let numSlots: Swift.UInt64
+  public let samplePeriodSecs: Swift.UInt16
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaSignature : Swift.Codable {
+  public let signature: Swift.String
+  public let slot: Swift.UInt64
+  public let err: SwiftyJSON.JSON?
+  public let memo: Swift.String?
+  public let blockTime: Swift.UInt64?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaSignatureStatus : Swift.Codable {
+  public let slot: Swift.UInt64
+  public let confirmations: Swift.UInt32?
+  public let err: SwiftyJSON.JSON?
+  public let confirmationStatus: ParticleWalletAPI.Commitment?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaStakeActivation : Swift.Codable {
+  public let state: ParticleWalletAPI.SolanaStakeState
+  public let active: Swift.UInt64
+  public let inactive: Swift.UInt64
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum SolanaStakeState : Swift.String, Swift.Codable {
+  case active
+  case inactive
+  case activating
+  case deactivating
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SolanaSupply : Swift.Codable {
+  public let circulating: Swift.UInt64
+  public let total: Swift.UInt64
+  public let nonCirculating: Swift.UInt64
+  public let nonCirculatingAccounts: [Swift.String]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaTokenAccount : Swift.Codable {
+  public let address: Swift.String
+  public let amount: Swift.String
+  public let decimals: ParticleWalletAPI.Decimals
+  public let uiAmount: Swift.Double?
+  public let uiAmountString: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaVersion : Swift.Codable {
+  public let solanaCore: Swift.String
+  public let featureSet: Swift.UInt64
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case solanaCore
+    case featureSet
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaVoteAccounts : Swift.Codable {
+  public let current: [ParticleWalletAPI.SolanaVoteAccount]
+  public let delinquent: [ParticleWalletAPI.SolanaVoteAccount]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaVoteAccount : Swift.Codable {
+  public let votePubkey: Swift.String
+  public let nodePubkey: Swift.String
+  public let activatedStake: Swift.UInt64
+  public let epochVoteAccount: Swift.Bool
+  public let commission: Swift.Int
+  public let lastVote: Swift.UInt64
+  public let epochCredits: [[Swift.UInt64]]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaSimulateTransaction : Swift.Codable {
+  public let err: SwiftyJSON.JSON?
+  public let logs: [Swift.String]?
+  public let returnData: ParticleWalletAPI.SolanaReturnData?
+  public let unitsConsumed: Swift.UInt64?
+  public let accounts: [ParticleWalletAPI.AccountBufferInfo]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SolanaContext<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public let context: ParticleWalletAPI.SolanaContext<T>.Context
+  public let value: T
+  public struct Context : Swift.Codable {
+    public let slot: Swift.UInt64
+    public let apiVersion: Swift.String?
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BlockCommitment : Swift.Codable {
+  public let commitment: [Swift.UInt64]
+  public let totalStake: Swift.UInt64
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol SolanaChainService : ParticleWalletAPI.GeneralChainService {
+  func getTransactions(by address: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  func getTransactionsFromDB(by address: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  func serializeTransaction(type: ParticleWalletAPI.SolanaTransactionType, sender: Swift.String, receiver: Swift.String, lamports: ParticleNetworkBase.BInt, mintAddress: Swift.String?, payer: Swift.String?) -> RxSwift.Single<SwiftyJSON.JSON>
+  func getTokenTransactions(by address: Swift.String, mintAddress: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  func getTokenTransactionsFromDB(address: Swift.String, mintAddress: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  func rpc(method: Swift.String, params: [Swift.Encodable?]) -> RxSwift.Single<ParticleWalletAPI.Response<SwiftyJSON.JSON>>
+}
+extension ParticleWalletAPI.SolanaChain {
+  public struct SolanaSwapTransaction : Swift.Codable {
+    public let isPartialSigned: Swift.Bool
+    public let serialized: Swift.String
+    public let signers: [Swift.String]
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension ParticleWalletAPI.EVMChain {
+  public struct EVMSwapQuoteObject : Swift.Codable {
+    public let fromTokenAddress: Swift.String
+    public let toTokenAddress: Swift.String
+    public let amount: Swift.String
+    public let slippage: Swift.Double
+    public init(fromTokenAddress: Swift.String, toTokenAddress: Swift.String, amount: Swift.String, slippage: Swift.Double)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+@objc public enum SolanaTransactionType : Swift.Int, Swift.RawRepresentable, Swift.Encodable, Swift.Decodable {
+  case transferSol
+  case transferToken
+  case unknown
+  case unwrapSol
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+@_inheritsConvenienceInitializers @objc public class SolanaChain : ParticleWalletAPI.GeneralChain {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension ParticleWalletAPI.SolanaChain : ParticleWalletAPI.SolanaChainService {
+  public func getTransactions(by address: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  @objc dynamic public func getTransactions(by address: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int, successHandler: @escaping (([ParticleWalletAPI.SolanaTransactionModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTransactionsFromDB(by address: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  @objc dynamic public func getTransactionsFromDB(by address: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int, successHandler: @escaping (([ParticleWalletAPI.SolanaTransactionModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTokenTransactions(by address: Swift.String, mintAddress: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  @objc dynamic public func getTokenTransactions(by address: Swift.String, mintAddress: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int, successHandler: @escaping (([ParticleWalletAPI.SolanaTransactionModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTokenTransactionsFromDB(address: Swift.String, mintAddress: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int) -> RxSwift.Single<[ParticleWalletAPI.SolanaTransactionModel]>
+  @objc dynamic public func getTokenTransactionsFromDB(address: Swift.String, mintAddress: Swift.String, beforeSignature: Swift.String?, untilSignature: Swift.String?, limit: Swift.Int, successHandler: @escaping (([ParticleWalletAPI.SolanaTransactionModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func serializeTransaction(type: ParticleWalletAPI.SolanaTransactionType, sender: Swift.String, receiver: Swift.String, lamports: ParticleNetworkBase.BInt, mintAddress: Swift.String?, payer: Swift.String?) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc dynamic public func serializeTransaction(type: ParticleWalletAPI.SolanaTransactionType, sender: Swift.String, receiver: Swift.String, lamports: Swift.String, mintAddress: Swift.String?, payer: Swift.String?, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func swapGetQuote(address: Swift.String, quoteObject: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteObject) -> RxSwift.Single<[ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult]>
+  public func swapGetTransactions(address: Swift.String, quoteResult: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult) -> RxSwift.Single<ParticleWalletAPI.Response<[ParticleWalletAPI.SolanaChain.SolanaSwapTransaction]>>
+  public func rpc(method: Swift.String, params: [Swift.Encodable?]) -> RxSwift.Single<ParticleWalletAPI.Response<SwiftyJSON.JSON>>
+}
+@objc public class EVMSuggestFeeModel : ObjectiveC.NSObject, Swift.Encodable, Swift.Decodable {
+  final public let low: ParticleWalletAPI.SingleFeeModel
+  final public let medium: ParticleWalletAPI.SingleFeeModel
+  final public let high: ParticleWalletAPI.SingleFeeModel
+  final public let baseFee: Swift.Double
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case low, medium, high, baseFee
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct SingleFeeModel : Swift.Encodable, Swift.Decodable {
+  public let maxPriorityFeePerGas: Swift.Double
+  public let maxFeePerGas: Swift.Double
+  public let minWaitTime: Swift.Int
+  public let maxWaitTime: Swift.Int
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension ParticleWalletAPI.EVMChain : ParticleWalletAPI.EVMClientProtocol {
+  public func eth_chainId() -> RxSwift.Single<Swift.Int>
+  public func net_version() -> RxSwift.Single<ParticleNetworkBase.BInt>
+  public func eth_gasPrice() -> RxSwift.Single<ParticleNetworkBase.BInt>
+  public func eth_blockNumber() -> RxSwift.Single<ParticleNetworkBase.BInt>
+  public func eth_getBalance(address: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<ParticleNetworkBase.BInt>
+  public func eth_getCode(address: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.String>
+  public func eth_estimateGas(callParams: ParticleWalletAPI.CallParams, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<ParticleNetworkBase.BInt>
+  public func eth_getTransactionCount(address: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<ParticleNetworkBase.BInt>
+  public func eth_getTransaction(byHash txHash: Swift.String) -> RxSwift.Single<ParticleWalletAPI.EthereumTransaction>
+  public func eth_getTransactionReceipt(txHash: Swift.String) -> RxSwift.Single<ParticleWalletAPI.EthereumTransactionReceipt>
+  public func eth_call(callParams: ParticleWalletAPI.CallParams, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.String>
+  public func eth_getLogs(addresses: [Swift.String]?, topics: [Swift.String?]?, fromBlock: ParticleWalletAPI.EVMBlock?, toBlock: ParticleWalletAPI.EVMBlock?) -> RxSwift.Single<[ParticleWalletAPI.EthereumLog]>
+  public func eth_getBlockByNumber(_ block: ParticleWalletAPI.EVMBlock, fullTransactions: Swift.Bool = false) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+  public func web3_clientVersion() -> RxSwift.Single<Swift.String>
+  public func web3_sha3(data: Swift.String) -> RxSwift.Single<Swift.String>
+  public func eth_protocolVersion() -> RxSwift.Single<Swift.Int>
+  public func eth_syncing() -> RxSwift.Single<Swift.Bool>
+  public func eth_mining() -> RxSwift.Single<Swift.Bool>
+  public func eth_getStorageAt(address: Swift.String, position: Swift.String, block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.String>
+  public func eth_getBlockTransactionCount(byHash txHash: Swift.String) -> RxSwift.Single<Swift.Int>
+  public func eth_getBlockTransactionCount(byNumber block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.Int>
+  public func eth_getUncleCount(byBlockHash txHash: Swift.String) -> RxSwift.Single<Swift.Int>
+  public func eth_getUncleCount(byBlockNumber block: ParticleWalletAPI.EVMBlock) -> RxSwift.Single<Swift.Int>
+  public func eth_getBlock(byHash txHash: Swift.String, fullTransactions: Swift.Bool) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+  public func eth_getTransaction(byBlockHash txHash: Swift.String, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumTransaction>
+  public func eth_getTransaction(byBlockNumber block: ParticleWalletAPI.EVMBlock, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumTransaction>
+  public func eth_getUncle(byBlockHash txHash: Swift.String, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+  public func eth_getUncle(byBlockNumber block: ParticleWalletAPI.EVMBlock, index: Swift.Int) -> RxSwift.Single<ParticleWalletAPI.EthereumBlockInfo>
+}
+extension ParticleWalletAPI.EVMChain {
+  public struct EVMApproveResult : Swift.Decodable {
+    public let approved: Swift.Bool
+    public let tx: ParticleWalletAPI.EVMChain.TxSource?
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct TxSource : Swift.Decodable {
+    public let to: Swift.String
+    public let data: Swift.String
+    public let value: Swift.String
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+@_hasMissingDesignatedInitializers public class API {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class EVMChain : ParticleWalletAPI.GeneralChain, ParticleWalletAPI.EVMChainService {
+  public func getTokens(by address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  public func getNFTs(by address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<[ParticleWalletAPI.NFTModel]>
+  public func suggestedGasFees() -> RxSwift.Single<ParticleWalletAPI.EVMSuggestFeeModel>
+  @objc public func suggestedGasFees(successHandler: @escaping ((ParticleWalletAPI.EVMSuggestFeeModel?) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTransactionsFromDB(by address: Swift.String) -> RxSwift.Single<[ParticleWalletAPI.EVMTransactionModel]>
+  @objc public func getTransactionsFromDB(by address: Swift.String, successHandler: @escaping (([ParticleWalletAPI.EVMTransactionModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func getTransactions(by address: Swift.String) -> RxSwift.Single<[ParticleWalletAPI.EVMTransactionModel]>
+  @objc public func getTransactions(by address: Swift.String, successHandler: @escaping (([ParticleWalletAPI.EVMTransactionModel]) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func swapGetQuote(address: Swift.String, quoteObject: ParticleWalletAPI.EVMChain.EVMSwapQuoteObject) -> RxSwift.Single<ParticleWalletAPI.EVMChain.EVMSwapQuoteResult>
+  public func checkApprove(address: Swift.String, tokenAddress: Swift.String, amount: ParticleNetworkBase.BInt) -> RxSwift.Single<ParticleWalletAPI.EVMChain.EVMApproveResult>
+  public func getSwap(address: Swift.String, quoteObject: ParticleWalletAPI.EVMChain.EVMSwapQuoteObject) -> RxSwift.Single<ParticleWalletAPI.EVMChain.EVMSwapQuoteResult>
+  public func estimateGas(from: Swift.String, to: Swift.String?, value: ParticleNetworkBase.BInt, data: Swift.String) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc public func estimateGas(from: Swift.String, to: Swift.String, value: Swift.String, data: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func particleEncodeFunctionCall(type: ParticleWalletAPI.EVMTransactionType, sender: Swift.String, receiver: Swift.String, amount: ParticleNetworkBase.BInt, contractAddress: Swift.String, tokenId: Swift.String?, data: Swift.String?) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc public func particleEncodeFunctionCall(type: ParticleWalletAPI.EVMTransactionType, sender: Swift.String, receiver: Swift.String, amount: Swift.String, contractAddress: Swift.String, tokenId: Swift.String?, data: Swift.String?, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func erc20Transfer(contractAddress: Swift.String, to: Swift.String, amount: ParticleNetworkBase.BInt) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc public func erc20Transfer(contractAddress: Swift.String, to: Swift.String, amount: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func erc20Approve(contractAddress: Swift.String, spender: Swift.String, amount: ParticleNetworkBase.BInt) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc public func erc20Approve(contractAddress: Swift.String, spender: Swift.String, amount: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func erc20TransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, amount: ParticleNetworkBase.BInt) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc public func erc20TransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, amount: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func erc721SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, tokenId: Swift.String) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc public func erc721SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, tokenId: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func erc1155SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, id: Swift.String, amount: ParticleNetworkBase.BInt, data: Swift.String) -> RxSwift.Single<SwiftyJSON.JSON>
+  @objc public func erc1155SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, id: Swift.String, amount: Swift.String, data: Swift.String, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func abiEncodeFunctionCall(contractAddress address: Swift.String, methodName: Swift.String, params: [Swift.Encodable], abiJsonString: Swift.String? = nil) -> RxSwift.Single<SwiftyJSON.JSON>
+  public func abiEncodeFunctionCall(contractParams: ParticleWalletAPI.ContractParams) -> RxSwift.Single<SwiftyJSON.JSON>
+  public func rpc(method: Swift.String, params: [Swift.Encodable?]) -> RxSwift.Single<ParticleWalletAPI.Response<SwiftyJSON.JSON>>
+  public func createTransaction(from: Swift.String, to: Swift.String? = nil, value: Swift.String? = nil, contractParams: ParticleWalletAPI.ContractParams? = nil, type: Swift.String = "0x2", gasFeeLevel: ParticleWalletAPI.GasFeeLevel = .medium, action: ParticleNetworkBase.Action = .normal) -> RxSwift.Single<Swift.String>
+  @objc public func createTransaction(from: Swift.String, to: Swift.String? = nil, value: Swift.String? = nil, contractParams: ParticleWalletAPI.ContractParams? = nil, type: Swift.String = "0x2", gasFeeLevel: ParticleWalletAPI.GasFeeLevel = .medium, action: ParticleNetworkBase.Action = .normal, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func createTransaction(from: Swift.String, to: Swift.String? = nil, value: Swift.String? = nil, data: Swift.String = "0x", type: Swift.String = "0x2", gasFeeLevel: ParticleWalletAPI.GasFeeLevel = .medium, action: ParticleNetworkBase.Action = .normal) -> RxSwift.Single<Swift.String>
+  @objc public func createTransaction(from: Swift.String, to: Swift.String? = nil, value: Swift.String? = nil, data: Swift.String = "0x", type: Swift.String = "0x2", gasFeeLevel: ParticleWalletAPI.GasFeeLevel = .medium, action: ParticleNetworkBase.Action = .normal, successHandler: @escaping ((Swift.String) -> Swift.Void), failureHandler: @escaping ((Swift.Error) -> Swift.Void))
+  public func readContract(contractParams: ParticleWalletAPI.ContractParams) -> RxSwift.Single<SwiftyJSON.JSON>
+  public func writeContract(contractParams: ParticleWalletAPI.ContractParams, from: Swift.String) -> RxSwift.Single<Swift.String>
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ContractParams : ObjectiveC.NSObject {
+  public static func erc20Transfer(contractAddress: Swift.String, to: Swift.String, amount: ParticleNetworkBase.BInt) -> ParticleWalletAPI.ContractParams
+  @objc public static func erc20Transfer(contractAddress: Swift.String, to: Swift.String, amount: Swift.String) -> ParticleWalletAPI.ContractParams
+  public static func erc20Approve(contractAddress: Swift.String, spender: Swift.String, amount: ParticleNetworkBase.BInt) -> ParticleWalletAPI.ContractParams
+  @objc public static func erc20Approve(contractAddress: Swift.String, spender: Swift.String, amount: Swift.String) -> ParticleWalletAPI.ContractParams
+  public static func erc20TransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, amount: ParticleNetworkBase.BInt) -> ParticleWalletAPI.ContractParams
+  @objc public static func erc20TransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, amount: Swift.String) -> ParticleWalletAPI.ContractParams
+  @objc public static func erc721SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, tokenId: Swift.String) -> ParticleWalletAPI.ContractParams
+  public static func erc1155SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, id: Swift.String, amount: ParticleNetworkBase.BInt, data: Swift.String) -> ParticleWalletAPI.ContractParams
+  @objc public static func erc1155SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, id: Swift.String, amount: Swift.String, data: Swift.String) -> ParticleWalletAPI.ContractParams
+  public static func customAbiEncodeFunctionCall(contractAddress: Swift.String, methodName: Swift.String, params: [Swift.Encodable], abiJsonString: Swift.String? = nil) -> ParticleWalletAPI.ContractParams
+  @objc deinit
+}
+public struct CallParams : Swift.Codable {
+  public var from: Swift.String?
+  public var to: Swift.String?
+  public var value: Swift.String?
+  public var data: Swift.String
+  public var gas: Swift.String?
+  public var gasPrice: Swift.String?
+  public init(from: Swift.String? = nil, to: Swift.String? = nil, value: Swift.String? = nil, data: Swift.String, gas: Swift.String? = nil, gasPrice: Swift.String? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public enum GasFeeLevel : Swift.Int {
+  case low
+  case medium
+  case high
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class TokenResult : ObjectiveC.NSObject, Swift.Codable {
+  final public let nativeAmount: ParticleNetworkBase.BInt
+  final public let tokens: [ParticleWalletAPI.TokenModel]
+  final public let nfts: [ParticleWalletAPI.NFTModel]
+  public init(nativeAmount: ParticleNetworkBase.BInt, tokens: [ParticleWalletAPI.TokenModel], nfts: [ParticleWalletAPI.NFTModel])
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class TokenPrice : ObjectiveC.NSObject, Swift.Codable {
+  final public let address: Swift.String
+  final public let currencies: [ParticleWalletAPI.PriceModel]
+  @objc public init(address: Swift.String, currencies: [ParticleWalletAPI.PriceModel])
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+public protocol TransactionPresentation {
+  var uiAmount: Swift.Double { get }
+  var signature: Swift.String { get }
+  var dateString: Swift.String { get }
+  var transactionType: Swift.String { get }
+  var transactonFeeUiAmount: Swift.Double { get }
+  var from: Swift.String { get }
+  var to: Swift.String { get }
+  var interactionType: ParticleWalletAPI.TransactionInteractionType { get }
+  var symbolPresent: Swift.String { get }
+  var status: ParticleWalletAPI.TransactionStatus { get }
+  var nonce: ParticleNetworkBase.BInt { get }
+  var isNative: Swift.Bool { get }
+  var timestamp: Swift.Int { get }
+  var mintAddress: Swift.String? { get }
+}
+extension ParticleWalletAPI.TransactionPresentation {
+  public var mintAddress: Swift.String? {
+    get
+  }
+}
+public enum TransactionStatus : Swift.Int, Swift.Encodable, Swift.Decodable {
+  case local
+  case pending
+  case success
+  case failure
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum TransactionInteractionType : Swift.String {
+  case send
+  case receive
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension ParticleWalletAPI.SolanaChain {
+  public struct SolanaSwapQuoteResult : Swift.Encodable {
+    public let inAmount: ParticleNetworkBase.BInt
+    public let outAmount: ParticleNetworkBase.BInt
+    public let amount: ParticleNetworkBase.BInt
+    public let otherAmountThreshold: ParticleNetworkBase.BInt
+    public let outAmountWithSlippage: ParticleNetworkBase.BInt
+    public let swapMode: Swift.String
+    public let priceImpactPct: Swift.Double
+    public let marketInfos: [ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo]
+    public let fees: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.Fees
+    public init(inAmount: ParticleNetworkBase.BInt, outAmount: ParticleNetworkBase.BInt, amount: ParticleNetworkBase.BInt, otherAmountThreshold: ParticleNetworkBase.BInt, outAmountWithSlippage: ParticleNetworkBase.BInt, swapMode: Swift.String, priceImpactPct: Swift.Double, marketInfos: [ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo], fees: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.Fees)
+    public enum CodingKeys : Swift.String, Swift.CodingKey {
+      case inAmount, outAmount, amount, otherAmountThreshold, outAmountWithSlippage, swapMode, priceImpactPct, marketInfos, fees
+      public init?(rawValue: Swift.String)
+      public init?(stringValue: Swift.String)
+      public init?(intValue: Swift.Int)
+      public typealias RawValue = Swift.String
+      public var intValue: Swift.Int? {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+      public var stringValue: Swift.String {
+        get
+      }
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public struct MarketInfo : Swift.Encodable {
+      public let id: Swift.String
+      public let label: Swift.String
+      public let inputMint: Swift.String
+      public let outputMint: Swift.String
+      public let inAmount: ParticleNetworkBase.BInt
+      public let outAmount: ParticleNetworkBase.BInt
+      public let lpFee: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.LpFee
+      public let platformFee: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.LpFee
+      public let notEnoughLiquidity: Swift.Bool
+      public let priceImpactPct: Swift.Double
+      public init(id: Swift.String, label: Swift.String, inputMint: Swift.String, outputMint: Swift.String, inAmount: ParticleNetworkBase.BInt, outAmount: ParticleNetworkBase.BInt, lpFee: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.LpFee, platformFee: ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.LpFee, notEnoughLiquidity: Swift.Bool, priceImpactPct: Swift.Double)
+      public enum CodingKeys : Swift.String, Swift.CodingKey {
+        case id, label, inputMint, outputMint, inAmount, outAmount, lpFee, platformFee, notEnoughLiquidity, priceImpactPct
+        public init?(rawValue: Swift.String)
+        public init?(stringValue: Swift.String)
+        public init?(intValue: Swift.Int)
+        public typealias RawValue = Swift.String
+        public var intValue: Swift.Int? {
+          get
+        }
+        public var rawValue: Swift.String {
+          get
+        }
+        public var stringValue: Swift.String {
+          get
+        }
+      }
+      public func encode(to encoder: Swift.Encoder) throws
+      public struct LpFee : Swift.Encodable {
+        public let amount: ParticleNetworkBase.BInt
+        public let mint: Swift.String
+        public let pct: Swift.Double
+        public init(amount: ParticleNetworkBase.BInt, mint: Swift.String, pct: Swift.Double)
+        public enum CodingKeys : Swift.String, Swift.CodingKey {
+          case amount, mint, pct
+          public init?(rawValue: Swift.String)
+          public init?(stringValue: Swift.String)
+          public init?(intValue: Swift.Int)
+          public typealias RawValue = Swift.String
+          public var intValue: Swift.Int? {
+            get
+          }
+          public var rawValue: Swift.String {
+            get
+          }
+          public var stringValue: Swift.String {
+            get
+          }
+        }
+        public func encode(to encoder: Swift.Encoder) throws
+      }
+    }
+    public struct Fees : Swift.Encodable {
+      public let signatureFee: ParticleNetworkBase.BInt
+      public let totalFeeAndDeposits: ParticleNetworkBase.BInt
+      public let minimumSOLForTransaction: ParticleNetworkBase.BInt
+      public init(signatureFee: ParticleNetworkBase.BInt, totalFeeAndDeposits: ParticleNetworkBase.BInt, minimumSOLForTransaction: ParticleNetworkBase.BInt)
+      public enum CodingKeys : Swift.String, Swift.CodingKey {
+        case signatureFee, totalFeeAndDeposits, minimumSOLForTransaction
+        public init?(rawValue: Swift.String)
+        public init?(stringValue: Swift.String)
+        public init?(intValue: Swift.Int)
+        public typealias RawValue = Swift.String
+        public var intValue: Swift.Int? {
+          get
+        }
+        public var rawValue: Swift.String {
+          get
+        }
+        public var stringValue: Swift.String {
+          get
+        }
+      }
+      public func encode(to encoder: Swift.Encoder) throws
+    }
+  }
+}
+public protocol EVMChainService : ParticleWalletAPI.GeneralChainService {
+  func suggestedGasFees() -> RxSwift.Single<ParticleWalletAPI.EVMSuggestFeeModel>
+  func getTokensAndNFTs(by address: Swift.String, tokenAddresses: [Swift.String]) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  func getTokensAndNFTsFromDB(by address: Swift.String) -> RxSwift.Single<ParticleWalletAPI.TokenResult>
+  func getTransactions(by address: Swift.String) -> RxSwift.Single<[ParticleWalletAPI.EVMTransactionModel]>
+  func getTransactionsFromDB(by address: Swift.String) -> RxSwift.Single<[ParticleWalletAPI.EVMTransactionModel]>
+  func rpc(method: Swift.String, params: [Swift.Encodable?]) -> RxSwift.Single<ParticleWalletAPI.Response<SwiftyJSON.JSON>>
+  func erc20Transfer(contractAddress: Swift.String, to: Swift.String, amount: ParticleNetworkBase.BInt) -> RxSwift.Single<SwiftyJSON.JSON>
+  func erc20Approve(contractAddress: Swift.String, spender: Swift.String, amount: ParticleNetworkBase.BInt) -> RxSwift.Single<SwiftyJSON.JSON>
+  func erc20TransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, amount: ParticleNetworkBase.BInt) -> RxSwift.Single<SwiftyJSON.JSON>
+  func erc721SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, tokenId: Swift.String) -> RxSwift.Single<SwiftyJSON.JSON>
+  func erc1155SafeTransferFrom(contractAddress: Swift.String, from: Swift.String, to: Swift.String, id: Swift.String, amount: ParticleNetworkBase.BInt, data: Swift.String) -> RxSwift.Single<SwiftyJSON.JSON>
+}
+extension ParticleNetworkBase.BInt {
+  public func convertToBalance(decimals: Swift.Int?) -> Swift.Double
+  public func convertToBalance(decimals: Swift.UInt8?) -> Swift.Double
+}
+extension ParticleNetworkBase.BDouble {
+  public func convertToBalance(decimals: Swift.Int?) -> Swift.Double
+  public func convertToBalance(decimals: Swift.UInt8?) -> Swift.Double
+}
+extension Swift.Double {
+  public func toLamport(decimals: Swift.Int) -> ParticleNetworkBase.BInt
+  public func toLamport(decimals: Swift.UInt8) -> ParticleNetworkBase.BInt
+}
+extension ParticleWalletAPI.SolanaChain : ParticleWalletAPI.SolanaClientProtocol {
+  public func getAccountInfo(address: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<ParticleWalletAPI.AccountBufferInfo>
+  public func getBalance(address: Swift.String, configuration: ParticleWalletAPI.GetBalanceConfiguration?) -> RxSwift.Single<ParticleWalletAPI.Lamports>
+  public func getBlock(slot: ParticleWalletAPI.Lamports, configuration: ParticleWalletAPI.GetBlockConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaBlockInfo>
+  public func getBlockHeight(configuration: ParticleWalletAPI.GetBlockConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  public func getBlockProduction(configuration: ParticleWalletAPI.GetBlockProductionConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaBlockProduction>
+  public func getBlockCommitment(block: Swift.UInt64) -> RxSwift.Single<ParticleWalletAPI.BlockCommitment>
+  public func getBlocks(startSlot: Swift.UInt64, endSlot: Swift.UInt64?, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<[Swift.UInt64]>
+  public func getBlocksWithLimit(startSlot: Swift.UInt64, limit: Swift.UInt64, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<[Swift.UInt64]>
+  public func getBlockTime(block: Swift.UInt64) -> RxSwift.Single<Swift.UInt64>
+  public func getClusterNodes() -> RxSwift.Single<[ParticleWalletAPI.SolanaClusterNode]>
+  public func getEpochInfo(configuration: ParticleWalletAPI.GetEpochConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaEpochInfo>
+  public func getEpochSchedule() -> RxSwift.Single<ParticleWalletAPI.SolanaEpochSchedule>
+  public func getFeeForMessage(message: Swift.String, configuration: ParticleWalletAPI.GetFeeForMessageConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  public func getFirstAvailableBlock() -> RxSwift.Single<Swift.UInt64>
+  public func getGenesisHash() -> RxSwift.Single<Swift.String>
+  public func getHealth() -> RxSwift.Single<Swift.String>
+  public func getHighestSnapshotSlot() -> RxSwift.Single<ParticleWalletAPI.SolanaSnapShotSlot>
+  public func getIdentity() -> RxSwift.Single<Swift.String>
+  public func getInflationGovernor(configuration: ParticleWalletAPI.GetInflationGovernorConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaInflationGovernor>
+  public func getInflationRate() -> RxSwift.Single<ParticleWalletAPI.SolanaInflationRate>
+  public func getInflationReward(addresses: [Swift.String], configuration: ParticleWalletAPI.GetInflationRewardConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaInflationReward?]>
+  public func getLargestAccounts(configuration: ParticleWalletAPI.GetLargestAccountsConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaLargestAccount]>
+  public func getLatestBlockhash(configuration: ParticleWalletAPI.GetLatestBlockhashConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaBlockhash>
+  public func getLeaderSchedule(epoch: Swift.UInt64?, configuration: ParticleWalletAPI.GetLeaderScheduleConfiguration?) -> RxSwift.Single<[Swift.String : [Swift.UInt64]]>
+  public func getMaxRetransmitSlot() -> RxSwift.Single<Swift.UInt64>
+  public func getMaxShredInsertSlot() -> RxSwift.Single<Swift.UInt64>
+  public func getMinimumBalanceForRentExemption(length: Swift.UInt32, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<Swift.UInt64>
+  public func getMultipleAccounts(addresses: [Swift.String], configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.AccountBufferInfo]>
+  public func getProgramAccounts(address: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaProgramAccount]>
+  public func getRecentPerformanceSamples(limit: Swift.UInt32?) -> RxSwift.Single<[ParticleWalletAPI.SolanaPerformance]>
+  public func getSignaturesForAddress(address: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaSignature]>
+  public func getSignatureStatuses(signatures: [Swift.String], searchTransactionHistory: Swift.Bool?) -> RxSwift.Single<[ParticleWalletAPI.SolanaSignatureStatus?]>
+  public func getSlot(configuration: ParticleWalletAPI.GetSlotConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  public func getSlotLeader(configuration: ParticleWalletAPI.GetSlotConfiguration?) -> RxSwift.Single<Swift.String>
+  public func getSlotLeaders(startSlot: Swift.UInt64, limit: Swift.UInt64) -> RxSwift.Single<[Swift.String]>
+  public func getStakeActivation(address: Swift.String, configuration: ParticleWalletAPI.GetStakeActivationConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaStakeActivation>
+  public func getStakeMinimumDelegation(commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<Swift.UInt64>
+  public func getSupply(configuration: ParticleWalletAPI.GetSupplyConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaSupply>
+  public func getTokenAccountBalance(address: Swift.String, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<ParticleWalletAPI.SolanaTokenAmount>
+  public func getTokenAccountsByDelegate(address: Swift.String, mint: Swift.String?, programId: Swift.String?, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaProgramAccount]>
+  public func getTokenAccountsByOwner(address: Swift.String, mint: Swift.String?, programId: Swift.String?, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<[ParticleWalletAPI.SolanaProgramAccount]>
+  public func getTokenLargestAccounts(address: Swift.String, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<[ParticleWalletAPI.SolanaTokenAccount]>
+  public func getTokenSupply(address: Swift.String, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<ParticleWalletAPI.SolanaTokenAmount>
+  public func getTransaction(signature: Swift.String, configuration: ParticleWalletAPI.RequestConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaTransactionDetails>
+  public func getTransactionCount(configuration: ParticleWalletAPI.GetTransactionCountConfiguration?) -> RxSwift.Single<Swift.UInt64>
+  public func getVersion() -> RxSwift.Single<ParticleWalletAPI.SolanaVersion>
+  public func getVoteAccounts(configuration: ParticleWalletAPI.GetVoteAccountsConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaVoteAccounts>
+  public func isBlockhashValid(_ blockhash: Swift.String, configuration: ParticleWalletAPI.IsBlockhashValidConfiguration?) -> RxSwift.Single<Swift.Bool>
+  public func minimumLedgerSlot() -> RxSwift.Single<Swift.UInt64>
+  public func requestAirdrop(address: Swift.String, lamports: ParticleWalletAPI.Lamports, commitment: ParticleWalletAPI.Commitment?) -> RxSwift.Single<Swift.String>
+  public func sendTransaction(transaction: Swift.String, configuration: ParticleWalletAPI.SendTransactionConfiguration?) -> RxSwift.Single<Swift.String>
+  public func simulateTransaction(transaction: Swift.String, configuration: ParticleWalletAPI.SimulateTransactionConfiguration?) -> RxSwift.Single<ParticleWalletAPI.SolanaSimulateTransaction>
+}
+public protocol TokenInfoTokenPresentation {
+  var symbolPresent: Swift.String { get }
+}
+@objc public class TokenInfo : ObjectiveC.NSObject, Swift.Decodable, Swift.Encodable {
+  final public let chainName: Swift.String
+  final public let chainId: Swift.Int
+  final public let mintAddress: Swift.String
+  final public let symbol: Swift.String
+  final public let name: Swift.String
+  final public let decimals: ParticleWalletAPI.Decimals
+  final public let logoURI: Swift.String
+  @objc public init(chainName: Swift.String, chainId: Swift.Int, mintAddress: Swift.String, symbol: Swift.String, name: Swift.String, decimals: ParticleWalletAPI.Decimals, logoURI: Swift.String)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case chainName, chainId, mintAddress, symbol, name, decimals, logoURI
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public var isNative: Swift.Bool {
+    get
+  }
+  public func toData() -> Foundation.Data?
+  public static var nativeToken: ParticleWalletAPI.TokenInfo {
+    get
+  }
+  public static var wSol: ParticleWalletAPI.TokenInfo {
+    get
+  }
+  public var isUndefined: Swift.Bool {
+    get
+  }
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+extension ParticleWalletAPI.TokenInfo : ParticleWalletAPI.TokenInfoTokenPresentation {
+  public var symbolPresent: Swift.String {
+    get
+  }
+}
+extension ParticleWalletAPI.EVMChain {
+  public struct Token : Swift.Decodable {
+    public let address: Swift.String
+    public let symbol: Swift.String
+    public let name: Swift.String
+    public let decimals: ParticleWalletAPI.Decimals
+    public let logoURI: Swift.String
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct EVMSwapQuoteResult : Swift.Decodable {
+    public let fromToken: ParticleWalletAPI.EVMChain.Token
+    public let toToken: ParticleWalletAPI.EVMChain.Token
+    public let toTokenAmount: ParticleNetworkBase.BInt
+    public let fromTokenAmount: ParticleNetworkBase.BInt
+    public let estimatedGas: ParticleNetworkBase.BInt?
+    public let tx: ParticleWalletAPI.EVMChain.TxSource?
+    public enum CodingKeys : Swift.String, Swift.CodingKey {
+      case fromToken, toToken, toTokenAmount, fromTokenAmount, estimatedGas, tx
+      public init?(rawValue: Swift.String)
+      public init?(stringValue: Swift.String)
+      public init?(intValue: Swift.Int)
+      public typealias RawValue = Swift.String
+      public var intValue: Swift.Int? {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+      public var stringValue: Swift.String {
+        get
+      }
+    }
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+extension ParticleWalletAPI.SolanaChain {
+  public struct SolanaSwapQuoteObject : Swift.Codable {
+    public let inputMint: Swift.String
+    public let outputMint: Swift.String
+    public let amount: Swift.String
+    public let slippage: Swift.Double
+    public init(inputMint: Swift.String, outputMint: Swift.String, amount: Swift.String, slippage: Swift.Double)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+@objc public class EVMTransactionModel : ObjectiveC.NSObject, Swift.Encodable, Swift.Decodable {
+  final public let address: Swift.String
+  final public let chainName: Swift.String
+  final public let chainId: Swift.Int
+  final public let type: Swift.Int
+  final public let nonce: ParticleNetworkBase.BInt
+  final public let maxPriorityFeePerGas: ParticleNetworkBase.BInt
+  final public let maxFeePerGas: ParticleNetworkBase.BInt
+  final public let gasLimit: ParticleNetworkBase.BInt
+  final public let gasSpent: ParticleNetworkBase.BInt
+  final public let gasPrice: ParticleNetworkBase.BInt
+  final public let to: Swift.String
+  final public let value: ParticleNetworkBase.BInt
+  final public let data: Swift.String
+  final public let accessList: Swift.String
+  final public let v: Swift.String
+  final public let r: Swift.String
+  final public let s: Swift.String
+  final public let hashString: Swift.String
+  final public let from: Swift.String
+  final public let status: ParticleWalletAPI.TransactionStatus
+  final public let timestamp: Swift.Int
+  final public let fees: ParticleNetworkBase.BInt
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case address, chainName, chainId, type, nonce, maxPriorityFeePerGas, maxFeePerGas, gasLimit, gasSpent, gasPrice, to, value, data, accessList, v, r, s, hashString, from, status, timestamp, fees
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(address: Swift.String, chainName: Swift.String, chainId: Swift.Int, type: Swift.Int, nonce: ParticleNetworkBase.BInt, maxPriorityFeePerGas: ParticleNetworkBase.BInt, maxFeePerGas: ParticleNetworkBase.BInt, gasLimit: ParticleNetworkBase.BInt, gasSpent: ParticleNetworkBase.BInt, gasPrice: ParticleNetworkBase.BInt, to: Swift.String, value: ParticleNetworkBase.BInt, data: Swift.String, accessList: Swift.String, v: Swift.String, r: Swift.String, s: Swift.String, hashString: Swift.String, from: Swift.String, status: ParticleWalletAPI.TransactionStatus, timestamp: Swift.Int, fees: ParticleNetworkBase.BInt)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+extension ParticleWalletAPI.EVMTransactionModel : GRDB.FetchableRecord, GRDB.MutablePersistableRecord {
+}
+extension ParticleWalletAPI.EVMTransactionModel : ParticleWalletAPI.TransactionPresentation {
+  public var transactionType: Swift.String {
+    get
+  }
+  public var signature: Swift.String {
+    get
+  }
+  public var interactionType: ParticleWalletAPI.TransactionInteractionType {
+    get
+  }
+  public var uiAmount: Swift.Double {
+    get
+  }
+  public var dateString: Swift.String {
+    get
+  }
+  public var transactonFeeUiAmount: Swift.Double {
+    get
+  }
+  public var symbolPresent: Swift.String {
+    get
+  }
+  public var isNative: Swift.Bool {
+    get
+  }
+}
+public protocol TokenPresentation {
+  var symbol: Swift.String { get }
+  var imageUrl: Swift.String { get }
+  var uiAmount: Swift.Double { get }
+  var name: Swift.String { get }
+}
+@objc public class TokenModel : ObjectiveC.NSObject, Swift.Encodable, Swift.Decodable {
+  final public let tokenInfo: ParticleWalletAPI.TokenInfo
+  final public let address: Swift.String
+  final public let chainName: Swift.String
+  final public let chainId: Swift.Int
+  final public let mintAddress: Swift.String
+  public var amount: ParticleNetworkBase.BInt
+  final public let decimals: ParticleWalletAPI.Decimals
+  public var updateAt: Swift.Double
+  public var priceModel: ParticleWalletAPI.PriceModel?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case address, chainName, chainId, amount, tokenInfo, updateAt, decimals, mintAddress
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(address: Swift.String, chainName: Swift.String, chainId: Swift.Int, amount: ParticleNetworkBase.BInt, decimals: ParticleWalletAPI.Decimals, tokenInfo: ParticleWalletAPI.TokenInfo, mintAddress: Swift.String)
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public var isNative: Swift.Bool {
+    get
+  }
+  public var isUndefined: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
+extension ParticleWalletAPI.TokenModel : ParticleWalletAPI.TokenPresentation {
+  public var symbol: Swift.String {
+    get
+  }
+  public var imageUrl: Swift.String {
+    get
+  }
+  public var uiAmount: Swift.Double {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+}
+extension ParticleWalletAPI.TokenModel : GRDB.FetchableRecord, GRDB.MutablePersistableRecord {
+}
+@objc public class PriceModel : ObjectiveC.NSObject, Swift.Codable {
+  final public let marketCap: Swift.Double
+  final public let price: Swift.Double
+  final public let lastUpdateAt: Swift.Int
+  final public let vol24H: Swift.Double
+  final public let change24H: Swift.Double
+  final public let symbol: Swift.String
+  @objc public static func empty() -> ParticleWalletAPI.PriceModel
+  @objc public init(marketCap: Swift.Double, price: Swift.Double, lastUpdateAt: Swift.Int, vol24H: Swift.Double, change24H: Swift.Double, symbol: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public enum EVMTransactionType : Swift.Int, Swift.RawRepresentable, Swift.Encodable, Swift.Decodable {
+  case transferErc20
+  case transferErc721
+  case transferErc1155
+  case approveErc20
+  case transferFromErc20
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+}
+extension ParticleWalletAPI.NFTModel.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.NFTModel.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.NFTModel.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaTransactionModel.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaTransactionModel.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaTransactionModel.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.Response.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.Response.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.Response.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.EthereumTransactionReceiptStatus : Swift.Equatable {}
+extension ParticleWalletAPI.EthereumTransactionReceiptStatus : Swift.Hashable {}
+extension ParticleWalletAPI.EthereumTransactionReceiptStatus : Swift.RawRepresentable {}
+extension ParticleWalletAPI.Commitment : Swift.Equatable {}
+extension ParticleWalletAPI.Commitment : Swift.Hashable {}
+extension ParticleWalletAPI.Commitment : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaRewardType : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaRewardType : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaRewardType : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaStakeState : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaStakeState : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaStakeState : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaVersion.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaVersion.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaVersion.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaTransactionType : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaTransactionType : Swift.Hashable {}
+extension ParticleWalletAPI.EVMSuggestFeeModel.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.EVMSuggestFeeModel.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.EVMSuggestFeeModel.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.GasFeeLevel : Swift.Equatable {}
+extension ParticleWalletAPI.GasFeeLevel : Swift.Hashable {}
+extension ParticleWalletAPI.GasFeeLevel : Swift.RawRepresentable {}
+extension ParticleWalletAPI.TransactionStatus : Swift.Equatable {}
+extension ParticleWalletAPI.TransactionStatus : Swift.Hashable {}
+extension ParticleWalletAPI.TransactionStatus : Swift.RawRepresentable {}
+extension ParticleWalletAPI.TransactionInteractionType : Swift.Equatable {}
+extension ParticleWalletAPI.TransactionInteractionType : Swift.Hashable {}
+extension ParticleWalletAPI.TransactionInteractionType : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.LpFee.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.LpFee.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.MarketInfo.LpFee.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.Fees.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.Fees.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.SolanaChain.SolanaSwapQuoteResult.Fees.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.TokenInfo.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.TokenInfo.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.TokenInfo.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.EVMChain.EVMSwapQuoteResult.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.EVMChain.EVMSwapQuoteResult.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.EVMChain.EVMSwapQuoteResult.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.EVMTransactionModel.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.EVMTransactionModel.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.EVMTransactionModel.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.TokenModel.CodingKeys : Swift.Equatable {}
+extension ParticleWalletAPI.TokenModel.CodingKeys : Swift.Hashable {}
+extension ParticleWalletAPI.TokenModel.CodingKeys : Swift.RawRepresentable {}
+extension ParticleWalletAPI.EVMTransactionType : Swift.Equatable {}
+extension ParticleWalletAPI.EVMTransactionType : Swift.Hashable {}
