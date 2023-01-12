@@ -93,3 +93,10 @@ Each release is built using specific Xcode and Bazel versions (see `versions.jso
 python3 build-system/Make/Make.py --overrideBazelVersion build ... # Don't check the version of Bazel
 python3 build-system/Make/Make.py --overrideXcodeVersion build ... # Don't check the version of Xcode
 ```
+
+### Web3
+
+1. Web3Swift https://github.com/web3swift-team/web3swift
+2. TSS Wallet https://docs.particle.network/
+3. Wallet-Connect https://docs.walletconnect.com/1.0/
+4. OpenSeaAPI https://docs.opensea.io/reference/api-overview
