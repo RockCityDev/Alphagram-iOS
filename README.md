@@ -1,3 +1,27 @@
+## About
+
+Alphagram, the Web3 Telegram.
+
+Creates a secure 3rd party Web3 Telegram for worldwide users！ 
+
+## Features - Provides More Convenience
+
+1. Comfortable - Incognito Mode, The other party can't see the message read double checkmark.
+2. Fast - Unlimited Pinned Messages, Help you find important messages quickly.
+3. Instantly - Translate every message with one click, Help you manage the international communication and information.
+4. Helpful - Practical tools, Scan the code to add friends/Easy to clear up storage.
+5. Safe - Crypto Wallet, Fast Web3 Asset Transaction.
+6. Auto-sync - NFT Profile Verification, Give you immersive Web3 experience.
+7. Advanced - Crypto Transfer, Transactions will be done in a chat box.
+8. Statistics - Web3 Profile, Check your crypto public data easily.
+
+### Web3
+
+1. Web3Swift https://github.com/web3swift-team/web3swift
+2. TSS Wallet https://docs.particle.network/
+3. Wallet-Connect https://docs.walletconnect.com/1.0/
+4. OpenSeaAPI https://docs.opensea.io/reference/api-overview
+
 # Telegram iOS Source Code Compilation Guide
 
 We welcome all developers to use our API and source code to create applications on our platform.
@@ -93,10 +117,3 @@ Each release is built using specific Xcode and Bazel versions (see `versions.jso
 python3 build-system/Make/Make.py --overrideBazelVersion build ... # Don't check the version of Bazel
 python3 build-system/Make/Make.py --overrideXcodeVersion build ... # Don't check the version of Xcode
 ```
-
-### Web3
-
-1. Web3Swift https://github.com/web3swift-team/web3swift
-2. TSS Wallet https://docs.particle.network/
-3. Wallet-Connect https://docs.walletconnect.com/1.0/
-4. OpenSeaAPI https://docs.opensea.io/reference/api-overview
