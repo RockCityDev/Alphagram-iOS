@@ -1,10 +1,10 @@
-## About
+# About
 
 Alphagram, the Web3 Telegram.
 
 Creates a secure 3rd party Web3 Telegram for worldwide users！ 
 
-## Features - Provides More Convenience
+# Features - Provides More Convenience
 
 1. Comfortable - Incognito Mode, The other party can't see the message read double checkmark.
 2. Fast - Unlimited Pinned Messages, Help you find important messages quickly.
@@ -15,7 +15,7 @@ Creates a secure 3rd party Web3 Telegram for worldwide users！
 7. Advanced - Crypto Transfer, Transactions will be done in a chat box.
 8. Statistics - Web3 Profile, Check your crypto public data easily.
 
-### Web3
+# Web3
 
 1. Web3Swift https://github.com/web3swift-team/web3swift
 2. TSS Wallet https://docs.particle.network/
