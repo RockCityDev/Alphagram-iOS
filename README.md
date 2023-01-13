@@ -1,10 +1,12 @@
-# About
+# Alphagram
+
+## About
 
 Alphagram, the Web3 Telegram.
 
 Creates a secure 3rd party Web3 Telegram for worldwide users！ 
 
-# Features - Provides More Convenience
+## Features - Provides More Convenience
 
 1. Comfortable - Incognito Mode, The other party can't see the message read double checkmark.
 2. Fast - Unlimited Pinned Messages, Help you find important messages quickly.
@@ -15,19 +17,21 @@ Creates a secure 3rd party Web3 Telegram for worldwide users！
 7. Advanced - Crypto Transfer, Transactions will be done in a chat box.
 8. Statistics - Web3 Profile, Check your crypto public data easily.
 
-# Web3
+## Web3
 
 1. Web3Swift https://github.com/web3swift-team/web3swift
 2. TSS Wallet https://docs.particle.network/
 3. Wallet-Connect https://docs.walletconnect.com/1.0/
 4. OpenSeaAPI https://docs.opensea.io/reference/api-overview
 
-# Telegram iOS Source Code Compilation Guide
+# Telegram
+
+## Telegram iOS Source Code Compilation Guide
 
 We welcome all developers to use our API and source code to create applications on our platform.
 There are several things we require from **all developers** for the moment.
 
-# Creating your Telegram Application
+## Creating your Telegram Application
 
 1. [**Obtain your own api_id**](https://core.telegram.org/api/obtaining_api_id) for your application.
 2. Please **do not** use the name Telegram for your app — or make sure your users understand that it is unofficial.
@@ -35,7 +39,7 @@ There are several things we require from **all developers** for the moment.
 3. Please study our [**security guidelines**](https://core.telegram.org/mtproto/security_guidelines) and take good care of your users' data and privacy.
 4. Please remember to publish **your** code too in order to comply with the licences.
 
-# Compilation Guide
+## Compilation Guide
 
 1. Install Xcode (directly from https://developer.apple.com/download/more or using the App Store).
 2. Clone the project from GitHub:
@@ -99,7 +103,7 @@ python3 build-system/Make/Make.py \
 Tip: use `--disableExtensions` when developing to speed up development by not building application extensions and the WatchOS app.
 
 
-# Tips
+## Tips
 
 Bazel is used to build the app. To simplify the development setup a helper script is provided (`build-system/Make/Make.py`). See help:
 
